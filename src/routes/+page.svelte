@@ -1,4 +1,5 @@
 <script>
+   import { base } from "$app/path"
    import { onMount } from "svelte";
    import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
    import SvelteFa from "svelte-fa";
@@ -25,7 +26,7 @@
 
 <main>
    <section class="card">
-      <img class="headshot" alt="headshot" src={profile.cover} />
+      <img class="headshot" alt="headshot" src={`${base ? `${base}/` : ''}${profile.cover}`} />
       <h2>{profile.title}</h2>
       <p class="tagline">{profile.tagline}</p>
       <div class="contact-options">
