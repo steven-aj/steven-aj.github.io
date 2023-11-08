@@ -1,1 +1,0 @@
-import{w as r}from"./index.502ba138.js";class t{constructor(){this.store=r({hero:void 0,categories:void 0})}setHero(e){this.store.update(o=>(o.hero=e||void 0,o))}setCategories(e){this.store.update(o=>(o.categories=e.length?e:void 0,o))}}const p=new t;export{p as A};
