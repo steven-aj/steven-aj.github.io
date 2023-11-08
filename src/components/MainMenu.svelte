@@ -4,10 +4,11 @@
    import { AppRail, AppRailAnchor } from "@skeletonlabs/skeleton";
    import { faHouse, faBlog } from "@fortawesome/free-solid-svg-icons";
    import SvelteFa from "svelte-fa";
+   console.log(base);
 </script>
 
 <AppRail>
-   <AppRailAnchor href={base} selected={$page.route.id === "/"}>
+   <AppRailAnchor href={base ? base : '/'} selected={$page.route.id === "/"}>
       <svelte:fragment slot="lead">
          <SvelteFa icon={faHouse} />
       </svelte:fragment>
