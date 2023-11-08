@@ -1,5 +1,4 @@
 <script>
-   // import { base } from "$app/paths";
    import { beforeUpdate } from "svelte";
    import App from "$lib/store";
    import PostCard from "$components/PostCard.svelte";

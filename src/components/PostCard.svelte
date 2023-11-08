@@ -1,6 +1,4 @@
 <script>
-   // import { base } from "$app/paths";
-
    export let post;
 </script>
 
