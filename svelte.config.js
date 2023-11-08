@@ -20,10 +20,7 @@ const config = {
     alias: {
       '$components': 'src/components',
       '$content': 'src/content'
-    },
-    paths: {
-			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
-		}
+    }
   },
   extensions: [".svelte", ".md"],
 };

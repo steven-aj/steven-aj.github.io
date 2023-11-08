@@ -1,5 +1,5 @@
 <script>
-   import { base } from "$app/paths";
+   // import { base } from "$app/paths";
    import { scale, slide } from "svelte/transition";
 
    export let store;
@@ -24,7 +24,7 @@
                {#each $store.hero.categories as category}
                   <a
                      class="chip variant-filled-secondary"
-                     href={`${base}/blog/category/${category}`}>{category}</a
+                     href={`/blog/category/${category}`}>{category}</a
                   >
                {/each}
             </div>

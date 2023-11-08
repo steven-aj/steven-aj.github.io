@@ -1,5 +1,5 @@
 <script>
-   import { base } from "$app/paths";
+   // import { base } from "$app/paths";
    import { beforeUpdate } from "svelte";
    import App from "$lib/store";
    import PostCard from "$components/PostCard.svelte";
@@ -22,7 +22,7 @@
          <section class="categories">
             <h2>Tags:</h2>
             {#each categories as category}
-               <a class="chip" href={`${base}/blog/category/${category}`}>{category}</a
+               <a class="chip" href={`/blog/category/${category}`}>{category}</a
                >
             {/each}
          </section>
