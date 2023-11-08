@@ -1,0 +1,1 @@
+import{s as e}from"./scheduler.29c706ef.js";import{S as o,i as s}from"./index.c9709487.js";const i={title:"Steven Johnson",email:"devtheory@icloud.com"};class m extends o{constructor(t){super(),s(this,t,null,null,e,{})}}export{m as default,i as metadata};

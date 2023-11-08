@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="./favicon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+		<link href="./_app/immutable/assets/0.880c6e75.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/ProgressBar.4f1e9ba5.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/3.6a6886ed.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/PostCard.25aa26df.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.e63a4255.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.29c706ef.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.64983e90.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.502ba138.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.518641f2.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.a4192956.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.c9709487.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.f266780e.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/ProgressBar.svelte_svelte_type_style_lang.6d822878.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.a4977fcc.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/each.e59479a4.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.efa8af42.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/3.c515d93b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.548c564c.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/PostCard.3c6e911c.js"><!-- HEAD_svelte-1sszf8j_START --><!-- HTML_TAG_START --><script>function autoModeWatcher() {
+  const mql = window.matchMedia("(prefers-color-scheme: light)");
+  function setMode(value) {
+    const elemHtmlClasses = document.documentElement.classList;
+    const classDark = `dark`;
+    value === true ? elemHtmlClasses.remove(classDark) : elemHtmlClasses.add(classDark);
+  }
+  setMode(mql.matches);
+  mql.onchange = () => {
+    setMode(mql.matches);
+  };
+} autoModeWatcher();</script><!-- HTML_TAG_END --><!-- HEAD_svelte-1sszf8j_END --><!-- HEAD_svelte-gewkj4_START --><!-- HTML_TAG_START --><script nonce="%sveltekit.nonce%">(function setInitialClassState() {
+  const elemHtmlClasses = document.documentElement.classList;
+  const condLocalStorageUserPrefs = localStorage.getItem("modeUserPrefers") === "false";
+  const condLocalStorageUserPrefsExists = !("modeUserPrefers" in localStorage);
+  const condMatchMedia = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  if (condLocalStorageUserPrefs || condLocalStorageUserPrefsExists && condMatchMedia) {
+    elemHtmlClasses.add("dark");
+  } else {
+    elemHtmlClasses.remove("dark");
+  }
+})();</script><!-- HTML_TAG_END --><!-- HEAD_svelte-gewkj4_END -->
+</head>
+
+<body data-theme="crimson">
+	<div style="display: contents" class="h-full overflow-hidden">   <div id="appShell" class="w-full h-full flex flex-col overflow-hidden " data-testid="app-shell"> <header id="shell-header" class="flex-none z-10"><div class="app-bar flex flex-col bg-surface-100-800-token  space-y-4 p-4 shadow-lg " data-testid="app-bar" role="toolbar" aria-label="" aria-labelledby=""> <div class="app-bar-row-main grid items-center grid-cols-[auto_1fr_auto] gap-4 "> <div class="app-bar-slot-lead flex-none flex justify-between items-center "><h1 data-svelte-h="svelte-1vym6pg">Steven A.J.</h1></div>  <div class="app-bar-slot-default flex-auto "></div>  <div class="app-bar-slot-trail flex-none flex items-center space-x-4 "> <div class="lightswitch-track cursor-pointer transition-all duration-[200ms] w-12 h-6 ring-[1px] ring-surface-500/30 rounded-token bg-surface-900 " role="switch" aria-label="Light Switch" aria-checked="false" title="Toggle light or dark mode." tabindex="0"> <div class="lightswitch-thumb aspect-square scale-[0.8] flex justify-center items-center transition-all duration-[200ms] h-6 rounded-token bg-surface-50 "> <svg class="lightswitch-icon w-[70%] aspect-square fill-surface-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></div></div> </div></div>  </div> </header>  <div class="flex-auto w-full h-full flex overflow-hidden"> <aside id="sidebar-left" class="flex-none overflow-x-hidden overflow-y-auto w-auto"> <div class="app-rail grid grid-rows-[auto_1fr_auto] overflow-y-auto bg-surface-100-800-token  w-20 h-full gap-0 " data-testid="app-rail"> <div class="app-bar-lead box-border "></div>  <div class="app-bar-default box-border "><a class="app-rail-anchor unstyled " href="/" data-testid="app-rail-anchor"><div class="app-rail-wrapper w-full flex flex-col justify-center items-stretch text-center space-y-1 aspect-square bg-primary-hover-token space-y-1 "><div class="app-rail-lead flex justify-center items-center"><svg class="svelte-fa  svelte-1cj2gr0" style="height:1em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 576 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(288 256)" transform-origin="144 0"><g transform="translate(0,0) scale(1,1)"><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" fill="currentColor" transform="translate(-288 -256)"></path></g></g></svg> </div> <div class="app-rail-label font-bold text-xs ">Home</div></div></a></div>  <div class="app-bar-trail box-border "><a class="app-rail-anchor unstyled " href="/blog" data-testid="app-rail-anchor"><div class="app-rail-wrapper w-full flex flex-col justify-center items-stretch text-center space-y-1 aspect-square bg-primary-hover-token space-y-1 bg-primary-active-token"><div class="app-rail-lead flex justify-center items-center"><svg class="svelte-fa  svelte-1cj2gr0" style="height:1em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 512 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(256 256)" transform-origin="128 0"><g transform="translate(0,0) scale(1,1)"><path d="M192 32c0 17.7 14.3 32 32 32c123.7 0 224 100.3 224 224c0 17.7 14.3 32 32 32s32-14.3 32-32C512 128.9 383.1 0 224 0c-17.7 0-32 14.3-32 32zm0 96c0 17.7 14.3 32 32 32c70.7 0 128 57.3 128 128c0 17.7 14.3 32 32 32s32-14.3 32-32c0-106-86-192-192-192c-17.7 0-32 14.3-32 32zM96 144c0-26.5-21.5-48-48-48S0 117.5 0 144V368c0 79.5 64.5 144 144 144s144-64.5 144-144s-64.5-144-144-144H128v96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48s-48-21.5-48-48V144z" fill="currentColor" transform="translate(-256 -256)"></path></g></g></svg> </div> <div class="app-rail-label font-bold text-xs ">Blog</div></div></a> </div></div> </aside>  <div id="page" class=" flex-1 overflow-x-hidden flex flex-col" style="scrollbar-gutter: auto;"> <header id="page-header" class="flex-none "> </header>  <main id="page-content" class="flex-auto "><main class="svelte-d3md17"><section class="categories svelte-tpcvpb"><h2 class="svelte-tpcvpb" data-svelte-h="svelte-833lt5">Tags:</h2> <a class="chip svelte-tpcvpb" href="/blog/category/employment">employment</a><a class="chip svelte-tpcvpb" href="/blog/category/about me">about me</a></section> <div class="grid svelte-tpcvpb"><a href="/blog/are-we-a-good-fit" class="svelte-o0fvf6"><article class="card svelte-o0fvf6"> <section><div class="categories svelte-o0fvf6"><span class="badge variant-filled-secondary">employment</span> <span class="text-xs text-slate-500/50">+1 more</span></div> <h3 class="svelte-o0fvf6">Are We A Good Fit?</h3> <blockquote>Learn a bit more about me before getting in touch</blockquote></section> <footer><time class="svelte-o0fvf6">11/07/2023</time></footer></article> </a></div></main></main>  <footer id="page-footer" class="flex-none "><footer class="svelte-d3md17" data-svelte-h="svelte-1hwpx29"><span class="svelte-d3md17">Copyright 2023 Steven Johnson. All rights reserved.</span></footer> </footer></div>  </div>  </div> 
+			
+			<script>
+				{
+					__sveltekit_5984q9 = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.e63a4255.js"),
+						import("./_app/immutable/entry/app.518641f2.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+</body>
+
+</html>
