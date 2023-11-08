@@ -1,5 +1,6 @@
 ---
 title: Steven Johnson
+author: Steven A.J.
 cover: /profile/headshot.png
 tagline: JavaScript Developer
 email: devtheory@icloud.com

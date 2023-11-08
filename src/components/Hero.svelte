@@ -1,5 +1,4 @@
 <script>
-   // import { base } from "$app/paths";
    import { scale, slide } from "svelte/transition";
 
    export let store;
@@ -12,24 +11,30 @@
          $store.hero.cover ? `url(${$store.hero.cover})` : ""
       };`}
    >
-      <div class="content">
-         <h2 in:scale>{$store.hero.title}</h2>
+      <!-- {#key $store.hero} -->
+         <div class="content">
+            <h2 in:scale>{$store.hero.title}</h2>
 
-         {#if $store.hero.date}
-            <time>{$store.hero.date}</time>
-         {/if}
+            {#if $store.hero.description}
+               {$store.hero.description}
+            {/if}
 
-         {#if $store.hero.categories}
-            <div class="categories">
-               {#each $store.hero.categories as category}
-                  <a
-                     class="chip variant-filled-secondary"
-                     href={`/blog/category/${category}`}>{category}</a
-                  >
-               {/each}
-            </div>
-         {/if}
-      </div>
+            {#if $store.hero.date}
+               <time>{$store.hero.date}</time>
+            {/if}
+
+            {#if $store.hero.categories}
+               <div class="categories">
+                  {#each $store.hero.categories as category}
+                     <a
+                        class="chip variant-filled-secondary"
+                        href={`/blog/category/${category}`}>{category}</a
+                     >
+                  {/each}
+               </div>
+            {/if}
+         </div>
+      <!-- {/key} -->
    </div>
 {/if}
 
@@ -44,9 +49,8 @@
       bg-left
       bg-fixed
       bg-no-repeat
-      shadow-inner
-      !bg-slate-500;
-      height: 300px;
+      shadow-inner;
+      min-height: 300px;
    }
 
    .hero .content {
@@ -55,17 +59,19 @@
       items-center 
       justify-center
       gap-6
+      py-12
       w-full 
-      h-full 
-      bg-surface-600/60;
+      h-full
+      bg-surface-500/10;
    }
 
    .hero h2 {
-      @apply font-serif text-5xl drop-shadow-md;
+      @apply max-w-2xl w-full text-center font-serif text-5xl drop-shadow-md;
+      line-height: 130%;
    }
 
    .hero time {
-      @apply text-xs italic;
+      @apply text-xs italic text-slate-500/50;
    }
 
    .hero .categories {

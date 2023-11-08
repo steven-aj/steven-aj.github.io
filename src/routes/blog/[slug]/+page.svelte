@@ -30,3 +30,9 @@
 <article>
 	<svelte:component this={content} />
 </article>
+
+<style lang="postcss">
+	article {
+		@apply py-8;
+	}
+</style>

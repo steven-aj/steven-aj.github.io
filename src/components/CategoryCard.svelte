@@ -1,9 +1,7 @@
 <script>
-   // import { base } from "$app/paths";
    export let category;
 </script>
 
-<!-- <a href={`${base}/blog/category/${category}`}> -->
 <a href={`/blog/category/${category}`}>
    <article class="card">
       <header>

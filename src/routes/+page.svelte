@@ -1,5 +1,4 @@
 <script>
-   import { base } from "$app/paths"
    import { onMount } from "svelte";
    import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
    import SvelteFa from "svelte-fa";
@@ -26,7 +25,7 @@
 
 <main>
    <section class="card">
-      <img class="headshot" alt="headshot" src={`${base ? `${base}/` : ''}${profile.cover}`} />
+      <img class="headshot" alt="headshot" src={profile.cover} />
       <h2>{profile.title}</h2>
       <p class="tagline">{profile.tagline}</p>
       <div class="contact-options">
@@ -101,6 +100,6 @@
    }
 
    section.posts .grid {
-      @apply grid-cols-5 grid-flow-dense items-center justify-center self-center mx-auto px-4;
+      @apply md:grid-cols-2 lg:grid-cols-3 gap-4 self-center px-4;
    }
 </style>
