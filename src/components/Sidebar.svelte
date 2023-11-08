@@ -1,4 +1,5 @@
 <script>
+   import { base } from "$app/paths";
    import { slide } from "svelte/transition";
 
    export let store;
@@ -9,11 +10,15 @@
 </script>
 
 {#if $store.categories}
-   <div class="sidebar" transition:slide={{axis: 'x', duration: 200}}>
+   <div class="sidebar" transition:slide={{ axis: "x", duration: 200 }}>
       <h3>Categories</h3>
       <ul>
          {#each $store.categories as category}
-            <li><a href={`/blog/category/${category}`}>{toUpperCase(category)}</a></li>
+            <li>
+               <a href={`${base}/blog/category/${category}`}
+                  >{toUpperCase(category)}</a
+               >
+            </li>
          {/each}
       </ul>
    </div>

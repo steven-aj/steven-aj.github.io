@@ -1,4 +1,5 @@
 <script>
+   import {base} from '$app/paths';
    import { page } from "$app/stores";
    import { AppRail, AppRailAnchor } from "@skeletonlabs/skeleton";
    import { faHouse, faBlog } from "@fortawesome/free-solid-svg-icons";
@@ -13,7 +14,7 @@
       Home
    </AppRailAnchor>
    <svelte:fragment slot="trail">
-      <AppRailAnchor href="/blog" selected={$page.route.id.includes("/blog")}>
+      <AppRailAnchor href={`${base}/blog`} selected={$page.route.id.includes("/blog")}>
          <svelte:fragment slot="lead">
             <SvelteFa icon={faBlog} />
          </svelte:fragment>

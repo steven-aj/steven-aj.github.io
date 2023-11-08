@@ -1,10 +1,9 @@
 <script>
+   import {base} from '$app/paths';
    import { beforeUpdate } from "svelte";
-   import { TabGroup, TabAnchor } from "@skeletonlabs/skeleton";
    import App from "$lib/store";
    import PostCard from "$components/PostCard.svelte";
-   import { flip } from "svelte/animate";
-   import { fly, slide } from "svelte/transition";
+   import { slide } from "svelte/transition";
 
    export let data;
 
@@ -23,7 +22,7 @@
          <section class="categories">
             <h2>Tags:</h2>
             {#each categories as category}
-               <a class="chip" href={`/blog/category/${category}`}>{category}</a
+               <a class="chip" href={`${base}/blog/category/${category}`}>{category}</a
                >
             {/each}
          </section>
