@@ -1,0 +1,20 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { @apply h-full overflow-hidden; }
+
+main { @apply p-4; }
+
+article:not(.card) { @apply px-16; }
+article:not(.card) h3 { @apply font-serif italic text-3xl my-6 mt-14 text-primary-500; }
+article:not(.card) h4 { @apply italic text-xl px-10 my-6 text-primary-500; }
+article:not(.card) h5 { @apply italic px-10 my-6 text-primary-500/50; }
+article:not(.card) p { @apply leading-9 text-surface-400 text-lg px-10 mb-4; }
+article:not(.card) ul { @apply my-6 px-10; }
+
+article.card header { @apply card-header; }
+article.card section { @apply p-4; }
+article.card blockquote { @apply text-slate-400; }
+article.card footer { @apply flex flex-row justify-end card-footer; }
