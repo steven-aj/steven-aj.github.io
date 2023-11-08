@@ -1,5 +1,5 @@
 <script>
-   import { base } from "$app/paths";
+   // import { base } from "$app/paths";
    import { slide } from "svelte/transition";
 
    export let store;
@@ -15,7 +15,7 @@
       <ul>
          {#each $store.categories as category}
             <li>
-               <a href={`${base}/blog/category/${category}`}
+               <a href={`/blog/category/${category}`}
                   >{toUpperCase(category)}</a
                >
             </li>
