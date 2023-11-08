@@ -1,5 +1,5 @@
 <script>
-   import { base } from "$app/path"
+   import { base } from "$app/paths"
    import { onMount } from "svelte";
    import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
    import SvelteFa from "svelte-fa";
