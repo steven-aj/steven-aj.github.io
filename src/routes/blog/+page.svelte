@@ -27,11 +27,13 @@
          </section>
       {/if}
 
-      <div class="grid" transition:slide>
-         {#each posts as post}
-            <PostCard {post} />
-         {/each}
-      </div>
+      <section class="posts">
+         <div class="grid" transition:slide>
+            {#each posts as post}
+               <PostCard {post} />
+            {/each}
+         </div>
+      </section>
    {/if}
 </main>
 

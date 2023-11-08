@@ -35,7 +35,7 @@ class Posts {
 
    public async getRecent() {
       const posts: PostItem[] = await this.getAll();
-      return posts.slice(0, 10);
+      return posts.slice(0, 6);
    }
 }
 

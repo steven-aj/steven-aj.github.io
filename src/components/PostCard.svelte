@@ -39,7 +39,7 @@
    }
 
    article {
-      @apply max-w-sm w-full overflow-hidden;
+      @apply flex flex-col max-w-sm w-full overflow-hidden;
    }
 
    article:hover {
@@ -56,6 +56,10 @@
 
    article .categories {
       @apply flex flex-row justify-between items-center;
+   }
+
+   article footer {
+      @apply flex flex-row self-end justify-end;
    }
 
    article footer time {

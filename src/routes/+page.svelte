@@ -100,6 +100,6 @@
    }
 
    section.posts .grid {
-      @apply grid-cols-5 grid-flow-dense items-center justify-center self-center mx-auto px-4;
+      @apply md:grid-cols-2 lg:grid-cols-3 gap-4 self-center px-4;
    }
 </style>
