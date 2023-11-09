@@ -66,7 +66,7 @@
    }
 
    article.card .tagline {
-      @apply text-slate-500 lg:m-0 lg:p-0;
+      @apply text-slate-500 md:my-2 lg:p-0;
    }
 
    article.card .contact-options {
@@ -77,7 +77,6 @@
       @apply variant-soft-secondary
       w-fit
       p-2
-      my-4 
       rounded-lg
       hover:variant-filled-primary
       hover:shadow-lg;

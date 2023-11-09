@@ -20,10 +20,6 @@
             <p class="description">{$store.hero.description}</p>
          {/if}
 
-         {#if $store.hero.date}
-            <time>{$store.hero.date}</time>
-         {/if}
-
          {#if $store.hero.categories}
             <div class="categories">
                {#each $store.hero.categories as category}
@@ -35,6 +31,10 @@
                {/each}
             </div>
          {/if}
+
+         {#if $store.hero.date}
+            <time>{$store.hero.date}</time>
+         {/if}
       </div>
    </div>
 {/if}
@@ -44,19 +44,20 @@
    * Default Styles
    **********************************/
    .hero {
-      @apply relative 
-      w-full
-      h-full
-      items-center
-      justify-center
-      bg-cover
-      bg-center
-      bg-no-repeat
-      shadow-inner;
-      min-height: 400px;
+      /* Container */
+      @apply relative;
+
+      /* Sizing */
+      @apply w-full h-full;
+
+      /* Decoration */
+      @apply shadow-inner;
    }
 
    .hero .content {
+      /* Size */
+      @apply w-full h-full;
+
       /* Position */
       @apply relative;
 
@@ -76,7 +77,7 @@
       line-height: 130%;
 
       /* Decoration */
-      @apply drop-shadow-lg;
+      @apply drop-shadow-md;
 
       /* Gradient */
       @apply bg-clip-text text-transparent box-decoration-clone;
@@ -90,6 +91,10 @@
       @apply text-center;
    }
 
+   .hero .categories .chip {
+      @apply shadow-lg;
+   }
+
    .hero time {
       /* Typography */
       @apply text-xs italic text-slate-500;
@@ -99,63 +104,76 @@
    }
 
    /**********************************
-   * Hero WITH a Cover
+   * WITH Cover
    **********************************/
-   .hero[data-cover="true"] .content {
-      /* Size */
-      @apply w-full h-full;
+   .hero[data-cover="true"] {
 
-      /* Alignment */
-      @apply gap-6 p-4;
-      
+      /* Background (Cover) */
+      @apply bg-cover bg-center bg-no-repeat
+   }
+
+   .hero[data-cover="true"] .content {
+      /* Container */
+      @apply flex flex-col items-center justify-center;
+
+      /* Inner Alignment */
+      @apply md:gap-6 p-4;
+
+      min-height: 384px;
    }
 
    .hero[data-cover="true"] h2 {
-      /* Size */
+      /* Container */
       @apply lg:max-w-5xl;
 
       /* Position */
-      @apply absolute bottom-10 left-6;
+      @apply relative m-auto md:absolute md:bottom-10 md:left-6;
+
+      /* Spacing */
+      @apply my-4 md:my-0;
 
       /* Typography */
-      @apply text-start;
-   }
-
-   .hero[data-cover="true"] time {
-      /* Position */
-      @apply absolute bottom-6 right-4;
-
-      /* Typography */
-      @apply text-xs italic text-slate-500;
-
-      /* Decoration */
-      @apply drop-shadow-lg;
+      @apply text-center break-words md:text-start md:break-normal;
    }
 
    .hero[data-cover="true"] p.description {
       /* Position */
-      @apply absolute left-10 bottom-4;
+      @apply relative md:absolute md:left-10 md:bottom-4;
    }
 
    .hero[data-cover="true"] .categories {
-      /* Position */
-      @apply absolute top-4 left-4;
+      /* Container */
+      @apply flex flex-row flex-wrap;
 
-      /* Decoration*/
-      @apply space-x-2;
+      /* Position */
+      @apply relative items-center justify-center md:absolute md:top-4 md:left-4;
+
+      /* Spacing */
+      @apply my-4 md:my-0 gap-2;
+   }
+
+   .hero[data-cover="true"] time {
+      /* Position */
+      @apply relative md:absolute md:bottom-6 md:right-4;
+
+      /* Spacing */
+      @apply my-4 md:my-0;
    }
 
    /**********************************
-   * Hero WITHOUT a Cover
+   * WITHOUT Cover
    **********************************/
    .hero[data-cover="false"] .content {
-      @apply flex 
-      flex-col 
-      items-center 
-      justify-center
-      gap-6
-      py-12
-      px-4;
+      /* Container */
+      @apply flex flex-col bg-slate-500/50;
+
+      /* Alignment */
+      @apply justify-center items-center;
+
+      @apply min-h-max;
+
+      /* Spacing */
+      @apply gap-6 px-4 py-12;
    }
 
    .hero[data-cover="false"] h2 {
