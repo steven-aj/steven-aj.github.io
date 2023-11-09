@@ -10,23 +10,25 @@
 {#if $store.toolbar}
    <AppBar shadow="shadow-lg">
       <svelte:fragment slot="lead">
-         {#if $store.toolbar.back}
-            <button
-               class="go-back"
-               title="Go back"
-               on:click={() => history.back()}
-               in:fly={{ y: -100 }}
-            >
-               <SvelteFa icon={faArrowLeft} />
-            </button>
-         {:else}
-            <img
-               class="logo"
-               alt="steven-aj"
-               src="/assets/logo.svg"
-               in:fly={{ x: -100 }}
-            />
-         {/if}
+         <div class="navigation">
+            {#if $store.toolbar.back}
+               <button
+                  class="go-back"
+                  title="Go back"
+                  on:click={() => history.back()}
+                  in:fly={{ y: -100 }}
+               >
+                  <SvelteFa icon={faArrowLeft} />
+               </button>
+            {:else}
+               <img
+                  class="logo"
+                  alt="steven-aj"
+                  src="/assets/logo.svg"
+                  in:fly={{ x: -100 }}
+               />
+            {/if}
+         </div>
          <h1>{$store.toolbar.title}</h1>
       </svelte:fragment>
       <svelte:fragment slot="trail">
@@ -36,6 +38,10 @@
 {/if}
 
 <style lang="postcss">
+   div.navigation {
+      width: 80px;
+   }
+
    button.go-back {
       @apply btn variant-filled-tertiary mx-2;
    }

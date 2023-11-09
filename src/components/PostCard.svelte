@@ -39,7 +39,7 @@
    }
 
    article {
-      @apply flex flex-col max-w-sm w-full overflow-hidden;
+      @apply overflow-hidden;
    }
 
    article:hover {

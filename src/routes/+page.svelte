@@ -1,11 +1,13 @@
 <script>
    import { onMount } from "svelte";
-   import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-   import SvelteFa from "svelte-fa";
+   import { fade } from "svelte/transition";
    import App from "$lib/store";
+   import ProfileCard from "$components/ProfileCard.svelte";
    import PostCard from "$components/PostCard.svelte";
 
    export let data;
+   let quoteReady;
+   $: quoteReady;
    let { meta, profile, quotes, content, posts } = data;
 
    function randomQuote(quoteSection) {
@@ -18,6 +20,8 @@
          if (counter === show) item.classList.remove("hidden");
          counter++;
       }
+
+      quoteSection.classList.remove("!hidden");
    }
 
    function init() {
@@ -35,95 +39,40 @@
    <meta name="description" content={meta.description} />
 </svelte:head>
 
-<main>
-   <section class="card">
-      <img class="headshot" alt="headshot" src={profile.cover} />
-      <div class="content">
-         <h2>{profile.title}</h2>
-         <p class="tagline">{profile.tagline}</p>
-         <div class="contact-options">
-            {#if profile.email}
-               <a
-                  role="button"
-                  title="Email me"
-                  href={`mailto:${profile.email}`}
-               >
-                  <SvelteFa icon={faEnvelope} />
-               </a>
-            {/if}
-         </div>
-      </div>
-   </section>
+<!-- <main> -->
+<section>
+   <ProfileCard {profile} />
+</section>
 
-   <section class="quotes" use:randomQuote>
-      {#each quotes as quote}
-         <blockquote>{quote}</blockquote>
+<section class="quotes !hidden" in:fade use:randomQuote>
+   {#each quotes as quote}
+      <blockquote>{quote}</blockquote>
+   {/each}
+</section>
+
+<section class="posts">
+   <h2>Recent Posts</h2>
+   <div class="grid">
+      {#each posts as post}
+         <PostCard {post} />
       {/each}
-   </section>
+   </div>
+</section>
 
-   <section class="posts">
-      <h2>Recent Posts</h2>
-      <div class="grid">
-         {#each posts as post}
-            <PostCard {post} />
-         {/each}
-      </div>
-   </section>
-</main>
+<!-- </main> -->
 
 <style lang="postcss">
+   @keyframes fade {
+      from {
+         opacity: 0;
+      }
+      to {
+         opacity: 1;
+      }
+   }
+
    main {
       @apply flex flex-col gap-10;
-   }
-
-   section.card {
-      @apply lg:grid
-      lg:grid-cols-2
-      md:flex 
-      md:flex-col
-      md:items-center 
-      md:justify-center 
-      max-w-2xl 
-      w-full 
-      mx-auto
-      shadow-2xl
-      p-8;
-   }
-
-   section.card img.headshot {
-      @apply mx-auto
-      border-8
-      border-solid 
-      border-primary-500;
-      width: 150px;
-      height: auto;
-      border-radius: 50%;
-   }
-
-   section.card .content {
-      @apply flex flex-col items-center lg:items-start my-4;
-   }
-
-   section.card h2 {
-      @apply h2;
-   }
-
-   section.card .tagline {
-      @apply text-slate-500;
-   }
-
-   section.card .content .contact-options {
-      @apply grid grid-flow-col my-2;
-   }
-
-   section.card .contact-options a[role="button"] {
-      @apply variant-soft-primary
-      w-fit
-      p-2
-      my-4 
-      rounded-lg
-      hover:variant-filled-secondary
-      hover:shadow-lg;
    }
 
    section.quotes {
@@ -133,14 +82,12 @@
 
    section.quotes blockquote {
       @apply italic font-serif text-3xl text-center text-slate-500/50 leading-10;
-   }
-
-   section.posts {
-      @apply flex flex-col w-full gap-4 px-8;
+      transition: all;
+      animation: fade 1s;
    }
 
    section.posts h2 {
-      @apply text-2xl text-slate-500;
+      @apply text-center md:text-start text-2xl text-slate-500 my-4;
    }
 
    section.posts .grid {

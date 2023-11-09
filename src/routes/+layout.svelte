@@ -1,6 +1,11 @@
 <script>
    import "../app.postcss";
-   import { AppShell, autoModeWatcher } from "@skeletonlabs/skeleton";
+   import "highlight.js/styles/atom-one-dark.css";
+   import {
+      AppShell,
+      autoModeWatcher,
+      storeHighlightJs
+   } from "@skeletonlabs/skeleton";
    import { afterUpdate, onMount } from "svelte";
    import App from "$lib/store";
    import Toolbar from "$components/Toolbar.svelte";
@@ -9,22 +14,23 @@
 
    export let data;
 
+   let { hljs } = data;
+   storeHighlightJs.set(hljs);
+
    let { store } = App;
-
    let { title, author, keywords } = data;
-
-   function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-   }
 
    function init() {
       App.setToolbar({
          back: false,
-         title
-      })
+         title,
+      });
    }
 
-   afterUpdate(() => scrollToTop());
+   afterUpdate(() => {
+      window.scrollTo({ x: 0, behavior: "smooth" });
+   });
+
    onMount(init);
 </script>
 

@@ -19,7 +19,7 @@
 </script>
 
 {#if ready}
-   <main transition:fade>
+   <div transition:fade>
       {#if data}
          {#if categories}
             <section class="categories">
@@ -40,7 +40,7 @@
             </div>
          </section>
       {/if}
-   </main>
+   </div>
 {/if}
 
 <style lang="postcss">

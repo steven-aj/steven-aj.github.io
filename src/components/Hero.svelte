@@ -16,7 +16,7 @@
             <h2 in:scale>{$store.hero.title}</h2>
 
             {#if $store.hero.description}
-               {$store.hero.description}
+               <p class="description">{$store.hero.description}</p>
             {/if}
 
             {#if $store.hero.date}
@@ -60,14 +60,19 @@
       justify-center
       gap-6
       py-12
+      px-4
       w-full 
       h-full
-      bg-surface-500/70;
+      bg-surface-500/90;
    }
 
    .hero h2 {
       @apply max-w-2xl w-full text-center font-serif text-5xl drop-shadow-sm;
       line-height: 130%;
+   }
+
+   .hero p.description {
+      @apply text-center;
    }
 
    .hero time {
