@@ -1,7 +1,7 @@
 ---
 title: Steven Johnson
 tagline: JavaScript Developer
-cover: /assets/profile/headshot.png
+cover: /assets/profile/headshot-crop.png
 
 author: Steven Johnson
 email: devtheory@icloud.com
@@ -17,7 +17,8 @@ keywords:
    - freelancer
 
 quotes:
-   - I know that I could never know everything, but that won't stop me from trying.
-   - My dream is to build a small SaaS someday.
+   - I'll never know everything, but that won't stop me from trying.
+   - My ultimate goal is to build a small SaaS some day.
    - If you haven't broken it, you probably haven't learned anything, either.
+   - Did you know? This site was built with SvelteKit.
 ---

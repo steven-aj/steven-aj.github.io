@@ -1,5 +1,5 @@
 ---
-title: Would I Fit for Your Business?
+title: Would I Fit Your Business?
 date: 11/07/2023
 excerpt: Learn a bit more about me before getting in touch
 cover: /assets/covers/jigsaw-cube.jpeg
@@ -8,7 +8,7 @@ categories:
    - about me
 ---
 
-### Reasons I Might Be:
+### Reasons I Might:
 
 #### - I'm "Full-Stack" Ready
 
@@ -32,7 +32,7 @@ I'm not afraid to let you know what needs to be done, what it will take to do it
 
 I'll also let you know if I find any bugs, problems or potential creeps along the way.
 
-### Reasons I Might Not Be:
+### Reasons I Might Not:
 
 #### - I'm not the office-type
 

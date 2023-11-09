@@ -11,8 +11,8 @@
       App.setHero({
          title: meta.title,
          date: `Last updated: ${meta.date}`,
-         description: meta.description
-      })
+         description: meta.description,
+      });
    }
 
    onMount(init);
@@ -25,6 +25,6 @@
    <meta name="description" content={meta.description} />
 </svelte:head>
 
-<main id="Experience">
+<section id="Experience">
    <svelte:component this={content} />
-</main>
+</section>

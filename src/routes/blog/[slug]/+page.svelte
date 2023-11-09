@@ -1,6 +1,6 @@
 <script>
-	import App from "$lib/store";
 	import { beforeUpdate } from "svelte";
+	import App from "$lib/store";
 
 	export let data;
 

@@ -25,6 +25,6 @@
    <meta name="description" content={meta.description} />
 </svelte:head>
 
-<main id="Experience">
+<section id="About">
    <svelte:component this={content} />
-</main>
+</section>
