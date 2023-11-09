@@ -13,6 +13,7 @@
 <AppRail>
    <AppRailAnchor
       href="/"
+      title="Home"
       selected={$page.route.id === "/"}
    >
       <svelte:fragment slot="lead">
@@ -22,6 +23,7 @@
    </AppRailAnchor>
    <AppRailAnchor
       href="/about"
+      title="About"
       selected={$page.route.id === "/about"}
    >
       <svelte:fragment slot="lead">
@@ -31,6 +33,7 @@
    </AppRailAnchor>
    <AppRailAnchor
       href="/experience"
+      title="Experience"
       selected={$page.route.id === "/experience"}
    >
       <svelte:fragment slot="lead">
@@ -41,6 +44,7 @@
    <svelte:fragment slot="trail">
       <AppRailAnchor
          href="/blog"
+         title="Blog"
          selected={$page.route.id.includes("/blog")}
       >
          <svelte:fragment slot="lead">

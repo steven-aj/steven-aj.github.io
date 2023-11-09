@@ -11,6 +11,7 @@
       App.setHero({
          title: meta.title,
          date: `Last updated: ${meta.date}`,
+         cover: meta.cover,
          description: meta.description,
       });
    }
