@@ -7,6 +7,7 @@
       storeHighlightJs
    } from "@skeletonlabs/skeleton";
    import { afterUpdate, onMount } from "svelte";
+   import { afterNavigate } from "$app/navigation";
    import App from "$lib/store";
    import Toolbar from "$components/Toolbar.svelte";
    import MainMenu from "$components/MainMenu.svelte";
@@ -27,9 +28,9 @@
       });
    }
 
-   afterUpdate(() => {
-      window.scrollTo({ x: 0, behavior: "smooth" });
-   });
+   afterNavigate(() => document
+      .getElementById('page')
+      .scrollTo({top: 0, behavior: 'instant'}));
 
    onMount(init);
 </script>
