@@ -1,6 +1,6 @@
 ---
 title: Work Experience
-author: Steven A.J.
+author: Steven Johnson
 date: 11/8/2023
 description: A brief overview of things I've worked on over the years
 keywords:

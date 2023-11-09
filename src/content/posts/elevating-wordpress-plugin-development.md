@@ -2,6 +2,7 @@
 title: 'Elevating WordPress Plugin Development for 2023: An Introduction to Improving User Experience'
 date: 09/15/2023
 excerpt: An overview of implementing modern front-end frameworks as WordPress Plugins
+cover: /assets/covers/rocket-plug.jpeg
 categories:
    - wordpress
    - wordpress plugins

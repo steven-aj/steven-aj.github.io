@@ -6,22 +6,13 @@
 
 	let { title, date, categories, cover, content } = data;
 
-	function initHero() {
+	function init() {
 		App.setHero({
 			title,
 			date,
 			categories,
 			cover,
 		});
-	}
-
-	function initCategories() {
-		App.setCategories(false);
-	}
-
-	function init() {
-		initHero();
-		initCategories();
 	}
 
 	beforeUpdate(init);

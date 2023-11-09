@@ -1,32 +1,43 @@
 <script>
    import "../app.postcss";
-   import {
-      AppShell,
-      AppBar,
-      LightSwitch,
-      autoModeWatcher,
-   } from "@skeletonlabs/skeleton";
+   import { AppShell, autoModeWatcher } from "@skeletonlabs/skeleton";
+   import { afterUpdate, onMount } from "svelte";
    import App from "$lib/store";
-   import Hero from "$components/Hero.svelte";
+   import Toolbar from "$components/Toolbar.svelte";
    import MainMenu from "$components/MainMenu.svelte";
+   import Hero from "$components/Hero.svelte";
+
+   export let data;
 
    let { store } = App;
+
+   let { title, author, keywords } = data;
+
+   function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+   }
+
+   function init() {
+      App.setToolbar({
+         back: false,
+         title
+      })
+   }
+
+   afterUpdate(() => scrollToTop());
+   onMount(init);
 </script>
 
 <svelte:head>
    {@html `<script>${autoModeWatcher.toString()} autoModeWatcher();</script>`}
+   <meta name="title" content={title} />
+   <meta name="author" content={author} />
+   <meta name="keywords" content={keywords} />
 </svelte:head>
 
 <AppShell>
    <svelte:fragment slot="header">
-      <AppBar shadow="shadow-lg">
-         <svelte:fragment slot="lead">
-            <h1>Steven A.J.</h1>
-         </svelte:fragment>
-         <svelte:fragment slot="trail">
-            <LightSwitch />
-         </svelte:fragment>
-      </AppBar>
+      <Toolbar {store} />
    </svelte:fragment>
 
    <svelte:fragment slot="pageHeader">

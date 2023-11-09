@@ -11,7 +11,10 @@
 </script>
 
 <AppRail>
-   <AppRailAnchor href="/" selected={$page.route.id === "/"}>
+   <AppRailAnchor
+      href="/"
+      selected={$page.route.id === "/"}
+   >
       <svelte:fragment slot="lead">
          <SvelteFa icon={faHouse} />
       </svelte:fragment>
@@ -36,7 +39,10 @@
       Experience
    </AppRailAnchor>
    <svelte:fragment slot="trail">
-      <AppRailAnchor href="/blog" selected={$page.route.id.includes("/blog")}>
+      <AppRailAnchor
+         href="/blog"
+         selected={$page.route.id.includes("/blog")}
+      >
          <svelte:fragment slot="lead">
             <SvelteFa icon={faBlog} />
          </svelte:fragment>

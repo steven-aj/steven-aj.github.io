@@ -1,6 +1,6 @@
 ---
 title: About Me
-author: Steven A.J.
+author: Steven Johnson
 date: 11/8/2023
 description: A bit about me, my history and plans for the future
 keywords:
