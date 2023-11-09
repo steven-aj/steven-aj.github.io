@@ -20,5 +20,5 @@ quotes:
    - I'll never know everything, but that won't stop me from trying.
    - My ultimate goal is to build a small SaaS some day.
    - If you haven't broken it, you probably haven't learned anything, either.
-   - Did you know? This site was built with SvelteKit.
+   - Did you know? This app was built with SvelteKit.
 ---

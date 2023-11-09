@@ -5,7 +5,7 @@ excerpt: How do dynamic & static websites differ from one another? What about we
 cover: /assets/covers/abstract-tech-cube.jpeg
 categories:
    - beginners
-   - helpful stuff
+   - informative
 ---
 
 When browsing the internet, you encounter various websites and web applications daily, but have you ever wondered what sets them apart? In this article, we'll explore the key differences between dynamic and static websites, as well as clarify the distinction between websites and web applications.

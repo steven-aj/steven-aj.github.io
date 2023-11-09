@@ -7,6 +7,7 @@ categories:
    - wordpress
    - wordpress plugins
    - applications
+   - informative
 ---
 
 WordPress' popularity is based largely on its ecosystem of plugins & their ability to simplify constructing solutions for.. well.. everyone. In reality, a large portion of those plugins are poorly implemented with respect to the platform's core-development principles, ultimately impacting performance of the final product in a not-so-good way.

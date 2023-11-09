@@ -2,7 +2,7 @@
    export let post;
 </script>
 
-<a href={post.path}>
+<a title={post.title} href={post.path}>
    <article class="card">
       {#if post.cover}
          <header>
@@ -56,10 +56,6 @@
 
    article .categories {
       @apply flex flex-row justify-between items-center;
-   }
-
-   article footer {
-      @apply flex flex-row self-end justify-end;
    }
 
    article footer time {

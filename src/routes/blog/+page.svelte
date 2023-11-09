@@ -45,7 +45,7 @@
 
 <style lang="postcss">
    .categories {
-      @apply flex flex-row gap-2 overflow-y-auto mt-4 mb-6;
+      @apply flex flex-row gap-2 overflow-y-auto mt-4 mb-6 py-4;
    }
 
    .categories h2 {
@@ -53,7 +53,7 @@
    }
 
    .categories a.chip {
-      @apply variant-filled-tertiary 
-      hover:variant-filled-secondary;
+      @apply variant-filled-secondary 
+      hover:variant-filled-tertiary;
    }
 </style>

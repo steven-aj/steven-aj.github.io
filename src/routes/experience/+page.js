@@ -1,7 +1,7 @@
 export async function load({ params }) {
 	const page = await import(`../../content/experience.md`);
 
-	const { title, author, description, date, keywords } = page.metadata;
+	const { title, author, description, cover, date, keywords } = page.metadata;
 	const content = page.default;
 
 	return {
@@ -10,6 +10,7 @@ export async function load({ params }) {
          date,
 			author,
 			description,
+			cover,
 			keywords
 		},
 		content

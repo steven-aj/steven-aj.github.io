@@ -2,7 +2,7 @@
 title: Work Experience
 author: Steven Johnson
 date: 11/8/2023
-description: A brief overview of things I've worked on over the years
+description: A brief overview of things I've worked on through the years
 keywords:
    - experience
    - resume
