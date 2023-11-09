@@ -76,8 +76,8 @@
    }
 
    section.quotes {
-      @apply flex items-center justify-center max-w-3xl w-full mx-auto;
-      height: 300px;
+      @apply flex items-center justify-center max-w-3xl max-h-80 md:max-h-72 h-full w-full mx-auto;
+      /* height: 300px; */
    }
 
    section.quotes blockquote {
