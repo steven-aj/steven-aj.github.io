@@ -7,6 +7,7 @@
 	let { title, date, categories, cover, content } = data;
 
 	function init() {
+		App.showBackButton(true);
 		App.setHero({
 			title,
 			date,

@@ -10,8 +10,9 @@
    let ready = false;
 
    function init() {
+      App.showBackButton(false);
       App.setHero(false);
-      setTimeout(() => ready = true, 100)
+      setTimeout(() => (ready = true), 100);
    }
 
    beforeUpdate(init);

@@ -20,10 +20,9 @@
       }
    }
 
-   console.log(quotes);
-
    function init() {
       App.setHero(false);
+      App.showBackButton(false);
    }
 
    onMount(init);
@@ -95,7 +94,7 @@
       @apply mx-auto
       border-8
       border-solid 
-      border-primary-500/50;
+      border-primary-500;
       width: 150px;
       height: auto;
       border-radius: 50%;
@@ -118,17 +117,17 @@
    }
 
    section.card .contact-options a[role="button"] {
-      @apply variant-filled-primary 
+      @apply variant-soft-primary
       w-fit
       p-2
       my-4 
       rounded-lg
-      hover:variant-filled-secondary 
+      hover:variant-filled-secondary
       hover:shadow-lg;
    }
 
    section.quotes {
-      @apply flex items-center justify-center max-w-2xl w-full mx-auto;
+      @apply flex items-center justify-center max-w-3xl w-full mx-auto;
       height: 300px;
    }
 

@@ -17,6 +17,7 @@ keywords:
    - freelancer
 
 quotes:
-   - I know that I could never know everything. That won't stop me from trying.
+   - I know that I could never know everything, but that won't stop me from trying.
    - My dream is to build a small SaaS someday.
+   - If you haven't broken it, you probably haven't learned anything, either.
 ---

@@ -7,6 +7,7 @@
    let { meta, content } = data;
 
    function init() {
+      App.showBackButton(false);
       App.setHero({
          title: meta.title,
          date: `Last updated: ${meta.date}`,

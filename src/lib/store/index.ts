@@ -24,6 +24,15 @@ class App {
          return state;
       });
    }
+
+   public showBackButton(show: boolean) {
+      this.store.update(state => {
+         if (state.toolbar) {
+            state.toolbar.back = show;
+         }
+         return state;
+      })
+   }
 }
 
 export default new App();
