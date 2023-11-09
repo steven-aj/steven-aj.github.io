@@ -1,3 +1,7 @@
+export interface IToolbar {
+   back?: boolean;
+}
+
 export interface IHero {
    title: string;
    date?: string;
@@ -8,5 +12,5 @@ export interface IHero {
 
 export interface IAppStore {
    hero?: IHero;
-   categories?: string[];
+   toolbar?: IToolbar;
 }

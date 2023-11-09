@@ -6,11 +6,23 @@
    import PostCard from "$components/PostCard.svelte";
 
    export let data;
-   let { meta, profile, posts } = data;
+   let { meta, profile, quotes, content, posts } = data;
+
+   function randomQuote(quoteSection) {
+      const list = quoteSection.querySelectorAll("blockquote");
+      const show = Math.floor(Math.random() * list.length);
+      let counter = 0;
+
+      for (let item of list) {
+         item.classList.add("hidden");
+         if (counter === show) item.classList.remove("hidden");
+         counter++;
+      }
+   }
 
    function init() {
       App.setHero(false);
-      App.setCategories(false);
+      App.showBackButton(false);
    }
 
    onMount(init);
@@ -26,15 +38,27 @@
 <main>
    <section class="card">
       <img class="headshot" alt="headshot" src={profile.cover} />
-      <h2>{profile.title}</h2>
-      <p class="tagline">{profile.tagline}</p>
-      <div class="contact-options">
-         {#if profile.email}
-            <a role="button" href={`mailto:${profile.email}`}>
-               <SvelteFa icon={faEnvelope} />
-            </a>
-         {/if}
+      <div class="content">
+         <h2>{profile.title}</h2>
+         <p class="tagline">{profile.tagline}</p>
+         <div class="contact-options">
+            {#if profile.email}
+               <a
+                  role="button"
+                  title="Email me"
+                  href={`mailto:${profile.email}`}
+               >
+                  <SvelteFa icon={faEnvelope} />
+               </a>
+            {/if}
+         </div>
       </div>
+   </section>
+
+   <section class="quotes" use:randomQuote>
+      {#each quotes as quote}
+         <blockquote>{quote}</blockquote>
+      {/each}
    </section>
 
    <section class="posts">
@@ -51,24 +75,33 @@
    main {
       @apply flex flex-col gap-10;
    }
+
    section.card {
-      @apply flex 
-      flex-col 
-      items-center 
-      justify-center 
+      @apply lg:grid
+      lg:grid-cols-2
+      md:flex 
+      md:flex-col
+      md:items-center 
+      md:justify-center 
       max-w-2xl 
       w-full 
-      mx-auto 
-      gap-4
+      mx-auto
       shadow-2xl
       p-8;
    }
 
    section.card img.headshot {
-      @apply border-4 border-solid border-primary-500/50;
+      @apply mx-auto
+      border-8
+      border-solid 
+      border-primary-500;
       width: 150px;
       height: auto;
       border-radius: 50%;
+   }
+
+   section.card .content {
+      @apply flex flex-col items-center lg:items-start my-4;
    }
 
    section.card h2 {
@@ -79,16 +112,27 @@
       @apply text-slate-500;
    }
 
-   section.card .contact-options {
-      @apply grid grid-flow-col;
+   section.card .content .contact-options {
+      @apply grid grid-flow-col my-2;
    }
 
    section.card .contact-options a[role="button"] {
-      @apply variant-filled-tertiary 
-      p-2 
+      @apply variant-soft-primary
+      w-fit
+      p-2
+      my-4 
       rounded-lg
-      hover:variant-filled-secondary 
+      hover:variant-filled-secondary
       hover:shadow-lg;
+   }
+
+   section.quotes {
+      @apply flex items-center justify-center max-w-3xl w-full mx-auto;
+      height: 300px;
+   }
+
+   section.quotes blockquote {
+      @apply italic font-serif text-3xl text-center text-slate-500/50 leading-10;
    }
 
    section.posts {

@@ -45,8 +45,8 @@
       h-full
       items-center
       justify-center
-      bg-auto
-      bg-left
+      bg-cover
+      bg-center
       bg-fixed
       bg-no-repeat
       shadow-inner;
@@ -62,16 +62,16 @@
       py-12
       w-full 
       h-full
-      bg-surface-500/10;
+      bg-surface-500/70;
    }
 
    .hero h2 {
-      @apply max-w-2xl w-full text-center font-serif text-5xl drop-shadow-md;
+      @apply max-w-2xl w-full text-center font-serif text-5xl drop-shadow-sm;
       line-height: 130%;
    }
 
    .hero time {
-      @apply text-xs italic text-slate-500/50;
+      @apply text-xs italic text-slate-200/50;
    }
 
    .hero .categories {

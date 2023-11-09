@@ -9,6 +9,7 @@
 
    function init() {
       App.setHero(false);
+      App.showBackButton(true);
    }
 
    beforeUpdate(init);

@@ -1,14 +1,21 @@
 import { writable, type Writable } from "svelte/store";
-import type { IAppStore, IHero } from "./shared/interface";
+import type { IAppStore, IHero, IToolbar } from "./shared/interface";
 
 class App {
    public readonly store: Writable<IAppStore>;
 
    constructor() {
       this.store = writable({
+         toolbar: undefined,
          hero: undefined,
-         categories: undefined
       });
+   }
+
+   public setToolbar(toolbar: IToolbar) {
+      this.store.update(state => {
+         state.toolbar = toolbar ? toolbar : undefined;
+         return state;
+      })
    }
 
    public setHero(hero: IHero) {
@@ -18,11 +25,13 @@ class App {
       });
    }
 
-   public setCategories(list: string[]) {
+   public showBackButton(show: boolean) {
       this.store.update(state => {
-         state.categories = list.length ? list : undefined;
+         if (state.toolbar) {
+            state.toolbar.back = show;
+         }
          return state;
-      });
+      })
    }
 }
 
