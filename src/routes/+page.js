@@ -1,8 +1,9 @@
-import Posts from "$lib/posts";
+import { Posts } from "$lib/data";
 
-export async function load({ params }) {
+export async function load() {
+	const posts = await Posts.getRecent(6);
+	
 	const page = await import(`../content/home.md`);
-	const posts = await Posts.getRecent();
 	const { title, author, cover, quotes, email, description, tagline, keywords } = page.metadata;
 	const content = page.default;
 

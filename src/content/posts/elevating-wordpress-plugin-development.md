@@ -5,7 +5,7 @@ date: 09/15/2023
 author: Steven Johnson
 excerpt: An overview of implementing modern front-end frameworks as WordPress Plugins
 cover: /assets/covers/rocket-plug.jpeg
-categories:
+tags:
   - wordpress
   - wordpress plugins
   - applications

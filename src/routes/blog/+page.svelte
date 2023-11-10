@@ -6,7 +6,7 @@
 
    export let data;
 
-   let { posts, categories } = data;
+   let { posts, tags } = data;
    let ready = false;
 
    function init() {
@@ -21,12 +21,12 @@
 {#if ready}
    <div transition:fade>
       {#if data}
-         {#if categories}
-            <section class="categories">
+         {#if tags}
+            <section class="tags">
                <h2>Tags:</h2>
-               {#each categories as category}
-                  <a class="chip" href={`/blog/category/${category}`}
-                     >{category}</a
+               {#each tags as tag}
+                  <a class="chip" href={`/blog/tag/${tag}`}
+                     >{tag}</a
                   >
                {/each}
             </section>
@@ -44,15 +44,15 @@
 {/if}
 
 <style lang="postcss">
-   .categories {
+   .tags {
       @apply flex flex-row gap-2 overflow-y-auto mt-4 mb-6 py-4;
    }
 
-   .categories h2 {
+   .tags h2 {
       @apply text-slate-500/50;
    }
 
-   .categories a.chip {
+   .tags a.chip {
       @apply variant-filled-secondary 
       hover:variant-filled-tertiary;
    }

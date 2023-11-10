@@ -10,7 +10,7 @@ export interface IPostMeta {
    author: string;
    excerpt?: string;
    cover?: string;
-   categories: string;
+   tags: string;
 }
 
 export interface IPostItem {

@@ -1,4 +1,4 @@
-export async function load({ params }) {
+export async function load() {
 	const page = await import(`../../content/experience.md`);
 
 	const { title, author, description, cover, date, keywords } = page.metadata;

@@ -1,11 +1,11 @@
 <script>
-   export let category;
+   export let tag;
 </script>
 
-<a href={`/blog/category/${category}`}>
+<a href={`/blog/tag/${tag}`}>
    <article class="card">
       <header>
-         <h3>{category}</h3>
+         <h3>{tag}</h3>
       </header>
    </article>
 </a>

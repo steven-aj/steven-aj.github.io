@@ -11,11 +11,12 @@
    function randomQuote(quoteSection) {
       // let counter = 0;
       const list = quoteSection.getElementsByTagName("blockquote");
-      const show = Math.floor(Math.random() * list.length);
+      const random = Math.floor(Math.random() * list.length);
 
       quoteSection
-         .querySelector(`blockquote[data-index="${show}"]`)
-         .classList.remove("!hidden");
+         .querySelector(`blockquote[data-index="${random}"]`)
+         .classList
+         .remove("!invisible", "!hidden");
    }
 
    function init() {
@@ -37,9 +38,9 @@
    <ProfileCard {profile} />
 </section>
 
-<section class="quotes" in:fade use:randomQuote>
+<section class="quotes" use:randomQuote>
    {#each quotes as quote, i}
-      <blockquote data-index={i} class="!hidden">{quote}</blockquote>
+      <blockquote data-index={i} class="!invisible !hidden">{quote}</blockquote>
    {/each}
 </section>
 
@@ -67,7 +68,7 @@
    }
 
    section.quotes {
-      @apply flex items-center justify-center max-w-3xl max-h-60  md:max-h-64 h-full w-full mx-auto;
+      @apply flex flex-col items-center justify-center max-w-3xl h-60 md:h-64 w-full mx-auto;
    }
 
    section.quotes blockquote {

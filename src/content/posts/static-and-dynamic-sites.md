@@ -5,7 +5,7 @@ date: 09/15/2023
 author: Steven Johnson
 excerpt: How do dynamic & static websites differ from one another? What about web sites vs applications?
 cover: /assets/covers/abstract-tech-cube.jpeg
-categories:
+tags:
   - beginners
   - informative
 ---

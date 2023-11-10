@@ -1,4 +1,4 @@
-import { IPostItem, IPostMeta } from "../shared/interfaces";
+import { IPostItem, IPostMeta } from "../shared/interfaces/post.interfaces";
 
 export default class PostItem implements IPostItem {
    path: string;
@@ -29,11 +29,21 @@ export default class PostItem implements IPostItem {
       return this.meta.cover;
    }
 
-   public get categories() {
-      return this.meta.categories;
+   public get tags() {
+      return this.meta.tags;
    }
 
    public hasCategory(str: string) {
-      return this.meta.categories.includes(str);
+      return this.meta.tags.includes(str);
+   }
+
+   static async create([path, resolver]) {
+      const { metadata } = await resolver();
+      const postPath = path.slice(19, -3);
+   
+      return new PostItem({
+         path: `/blog/${postPath}`,
+         meta: metadata
+      });
    }
 }

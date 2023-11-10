@@ -5,7 +5,7 @@
 
    export let data;
 
-   let { category, posts } = data;
+   let { tag, posts } = data;
 
    function init() {
       Shell.setHero(false);
@@ -15,7 +15,7 @@
    beforeUpdate(init);
 </script>
 
-<h2>Tag: {category}</h2>
+<h2>Tag: {tag}</h2>
 
 <section class="posts">
    <div class="grid">

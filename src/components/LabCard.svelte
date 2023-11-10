@@ -1,34 +1,24 @@
 <script>
-   export let post;
+   export let lab;
 </script>
 
-<a title={post.title} href={post.path}>
+<a title={lab.title} href={lab.path}>
    <article class="card">
-      {#if post.cover}
+      {#if lab.meta.screenshot}
          <header>
-            <img alt={post.title} src={post.cover} />
+            <img alt={`Screenshot of ${lab.meta.title}`} src={lab.meta.screenshot} />
          </header>
       {/if}
 
       <section>
-         {#if post.tags}
-            <div class="tags">
-               <span class="badge variant-filled-secondary">
-                  {post.tags[0]}
-               </span>
-               <span class="text-xs text-slate-500/50">
-                  +{post.tags.length - 1} more
-               </span>
-            </div>
-         {/if}
-         <h3>{post.title}</h3>
-         {#if post.excerpt}
-            <blockquote>{post.excerpt}</blockquote>
+         <h3>{lab.title}</h3>
+         {#if lab.description}
+            <blockquote>{lab.description}</blockquote>
          {/if}
       </section>
 
       <footer>
-         <time>{post.date}</time>
+         <time>{lab.language}</time>
       </footer>
    </article>
 </a>

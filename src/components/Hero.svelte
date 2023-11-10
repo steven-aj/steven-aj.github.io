@@ -20,13 +20,13 @@
             <p class="description">{$store.hero.description}</p>
          {/if}
 
-         {#if $store.hero.categories}
-            <div class="categories">
-               {#each $store.hero.categories as category}
+         {#if $store.hero.tags}
+            <div class="tags">
+               {#each $store.hero.tags as tag}
                   <a
                      class="chip variant-filled-secondary"
-                     title={category}
-                     href={`/blog/category/${category}`}>{category}</a
+                     title={tag}
+                     href={`/blog/tag/${tag}`}>{tag}</a
                   >
                {/each}
             </div>
@@ -91,7 +91,7 @@
       @apply text-center;
    }
 
-   .hero .categories .chip {
+   .hero .tags .chip {
       @apply shadow-lg;
    }
 
@@ -141,7 +141,7 @@
       @apply relative md:absolute md:left-10 md:bottom-4;
    }
 
-   .hero[data-cover="true"] .categories {
+   .hero[data-cover="true"] .tags {
       /* Container */
       @apply flex flex-row flex-wrap;
 

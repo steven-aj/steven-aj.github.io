@@ -1,3 +1,6 @@
 {
-  "livePreview": true
+  "livePreview": true,
+  "userIgnoreFilters": [
+    "_templates/"
+  ]
 }
