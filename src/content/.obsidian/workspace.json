@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "labs.md",
+                "file": "posts/are-we-a-good-fit.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "labs.md",
+                "file": "posts/are-we-a-good-fit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "labs.md",
+                "file": "posts/are-we-a-good-fit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "labs.md"
+                "file": "posts/are-we-a-good-fit.md"
               }
             }
           }
@@ -162,13 +162,13 @@
   },
   "active": "96ffff5a7cd82de7",
   "lastOpenFiles": [
+    "labs.md",
     "labs/ww-etl.md",
     "labs/todo-svelte.md",
     "labs/tauri-sveltekit.md",
     "labs/lost-in-space-day-four-loop.md",
     "labs/library-demo.md",
     "_templates/lab.md",
-    "labs.md",
     "about.md",
     "posts/are-we-a-good-fit.md",
     "posts/elevating-wordpress-plugin-development.md",

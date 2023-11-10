@@ -4,12 +4,6 @@
 
 <a title={lab.title} href={lab.path}>
    <article class="card">
-      {#if lab.meta.screenshot}
-         <header>
-            <img alt={`Screenshot of ${lab.meta.title}`} src={lab.meta.screenshot} />
-         </header>
-      {/if}
-
       <section>
          <h3>{lab.title}</h3>
          {#if lab.description}
@@ -34,6 +28,10 @@
 
    article header {
       @apply flex flex-col p-0;
+   }
+
+   article header img {
+      @apply max-w-3xl w-full h-auto;
    }
 
    article h3 {
