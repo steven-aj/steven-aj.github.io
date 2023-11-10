@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "7ecff770eebf6e58",
+        "id": "5f8ac9875cdd6140",
         "type": "tabs",
         "children": [
           {
-            "id": "74be187c51568e69",
+            "id": "13c43228f7243259",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/are-we-a-good-fit.md",
+                "file": "labs/tauri-sveltekit.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "96ffff5a7cd82de7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "labs.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/are-we-a-good-fit.md",
+                "file": "labs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/are-we-a-good-fit.md",
+                "file": "labs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/are-we-a-good-fit.md"
+                "file": "labs.md"
               }
             }
           }
@@ -147,15 +160,20 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "74be187c51568e69",
+  "active": "96ffff5a7cd82de7",
   "lastOpenFiles": [
-    "posts/elevating-wordpress-plugin-development.md",
-    "posts/static-and-dynamic-sites.md",
-    "posts/are-we-a-good-fit.md",
-    "experience.md",
-    "labs.md",
+    "labs/ww-etl.md",
+    "labs/todo-svelte.md",
+    "labs/tauri-sveltekit.md",
+    "labs/lost-in-space-day-four-loop.md",
     "labs/library-demo.md",
     "_templates/lab.md",
+    "labs.md",
+    "about.md",
+    "posts/are-we-a-good-fit.md",
+    "posts/elevating-wordpress-plugin-development.md",
+    "posts/static-and-dynamic-sites.md",
+    "experience.md",
     "labs",
     "_templates/post-single.md",
     "_templates/post-series.md",
@@ -168,7 +186,6 @@
     "_templates",
     "site.md",
     "home.md",
-    "about.md",
     "_templates/about-page.md",
     "_templates/home-page.md",
     "Untitled.canvas"

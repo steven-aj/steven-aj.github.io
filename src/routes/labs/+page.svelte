@@ -1,6 +1,7 @@
 <script>
    import { onMount } from "svelte";
    import App from "$lib/shell";
+   import LabCard from "$components/LabCard.svelte";
    import EmptyNotice from "$components/EmptyNotice.svelte";
 
    export let data;
@@ -29,9 +30,16 @@
 
 {#if labs.length}
    <section id="labs" class="posts">
-      <h3>Labs</h3>
-      <div class="grid" />
+      <div class="grid">
+         {#each labs as lab}
+            <LabCard {lab} />
+         {/each}
+      </div>
    </section>
-   {:else}
-   <EmptyNotice showIcon={false} title={false} message="It looks like I haven't posted any Labs yet. Check back later!"/>
+{:else}
+   <EmptyNotice
+      showIcon={false}
+      title={false}
+      message="It looks like I haven't posted any Labs yet. Check back later!"
+   />
 {/if}

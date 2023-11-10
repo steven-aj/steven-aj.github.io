@@ -1,8 +1,8 @@
 ---
-title: Labs
+title: Code Labs
 author: Steven Johnson
 date: 11/10/2023
-description: My collection of personal projects
+description: Demos from my personal collection of stuff
 cover: 
 keywords:
   - demos

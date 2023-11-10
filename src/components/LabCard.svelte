@@ -24,10 +24,6 @@
 </a>
 
 <style lang="postcss">
-   a {
-      @apply flex !w-fit;
-   }
-
    article {
       @apply overflow-hidden;
    }
