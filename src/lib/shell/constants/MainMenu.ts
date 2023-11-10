@@ -1,4 +1,5 @@
-import type { IMainMenu, IMenuItem } from "../shared/interface";
+import "../shared/extensions/array.extension";
+import type { IMainMenu } from "../shared/interfaces/app.interfaces";
 import { faAddressCard, faBlog, faBriefcase, faHouse } from "@fortawesome/free-solid-svg-icons";
 
 const MainMenu: IMainMenu = {
@@ -18,14 +19,15 @@ const MainMenu: IMainMenu = {
          label: 'Experience',
          icon: faBriefcase
       },
-   ],
+   ].toMenuItems(),
+
    trail: [
       {
          anchor: '/blog',
          label: "Blog",
          icon: faBlog
       }
-   ]
+   ].toMenuItems()
 }
 
 export default MainMenu;
