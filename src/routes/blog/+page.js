@@ -1,8 +1,8 @@
-import Posts from '$lib/posts';
+import { Posts } from "$lib/data";
 
 export async function load() {
    return {
       posts: await Posts.getAll(),
-      categories: await Posts.getCategories()
+      tags: await Posts.getTags()
    };
 }

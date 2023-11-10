@@ -11,13 +11,13 @@
       {/if}
 
       <section>
-         {#if post.categories}
-            <div class="categories">
+         {#if post.tags}
+            <div class="tags">
                <span class="badge variant-filled-secondary">
-                  {post.categories[0]}
+                  {post.tags[0]}
                </span>
                <span class="text-xs text-slate-500/50">
-                  +{post.categories.length - 1} more
+                  +{post.tags.length - 1} more
                </span>
             </div>
          {/if}
@@ -54,7 +54,7 @@
       @apply text-xl my-4;
    }
 
-   article .categories {
+   article .tags {
       @apply flex flex-row justify-between items-center;
    }
 

@@ -4,6 +4,7 @@
    import Shell from "$lib/shell";
    import ProfileCard from "$components/ProfileCard.svelte";
    import PostCard from "$components/PostCard.svelte";
+   import EmptyNotice from "$components/EmptyNotice.svelte";
 
    export let data;
    let { meta, profile, quotes, content, posts } = data;
@@ -11,11 +12,11 @@
    function randomQuote(quoteSection) {
       // let counter = 0;
       const list = quoteSection.getElementsByTagName("blockquote");
-      const show = Math.floor(Math.random() * list.length);
+      const random = Math.floor(Math.random() * list.length);
 
       quoteSection
-         .querySelector(`blockquote[data-index="${show}"]`)
-         .classList.remove("!hidden");
+         .querySelector(`blockquote[data-index="${random}"]`)
+         .classList.remove("!invisible", "!hidden");
    }
 
    function init() {
@@ -37,20 +38,22 @@
    <ProfileCard {profile} />
 </section>
 
-<section class="quotes" in:fade use:randomQuote>
+<section class="quotes" use:randomQuote>
    {#each quotes as quote, i}
-      <blockquote data-index={i} class="!hidden">{quote}</blockquote>
+      <blockquote data-index={i} class="!invisible !hidden">{quote}</blockquote>
    {/each}
 </section>
 
-<section class="posts">
-   <h2>Recent Posts</h2>
-   <div class="grid">
-      {#each posts as post}
-         <PostCard {post} />
-      {/each}
-   </div>
-</section>
+{#if posts.length}
+   <section class="posts">
+      <h2>Recent Posts</h2>
+      <div class="grid">
+         {#each posts as post}
+            <PostCard {post} />
+         {/each}
+      </div>
+   </section>
+{/if}
 
 <style lang="postcss">
    @keyframes fade {
@@ -67,7 +70,7 @@
    }
 
    section.quotes {
-      @apply flex items-center justify-center max-w-3xl max-h-60  md:max-h-64 h-full w-full mx-auto;
+      @apply flex flex-col items-center justify-center max-w-3xl h-60 md:h-64 w-full mx-auto;
    }
 
    section.quotes blockquote {

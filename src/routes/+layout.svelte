@@ -9,9 +9,9 @@
    import { afterUpdate, onMount } from "svelte";
    import { afterNavigate } from "$app/navigation";
    import Shell from "$lib/shell";
-   import Toolbar from "$components/Toolbar.svelte";
-   import MainMenu from "$components/MainMenu.svelte";
-   import MobileMenu from "$components/MobileMenu.svelte";
+   import Toolbar from "$components/shell/Toolbar.svelte";
+   import MainMenu from "$components/shell/MainMenu.svelte";
+   import MobileMenu from "$components/shell/MobileMenu.svelte";
    import Hero from "$components/Hero.svelte";
 
    export let data;

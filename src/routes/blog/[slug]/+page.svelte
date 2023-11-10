@@ -4,14 +4,14 @@
 
 	export let data;
 
-	let { title, date, categories, cover, content } = data;
+	let { title, date, tags, cover, content } = data;
 
 	function init() {
 		Shell.showBackButton(true);
 		Shell.setHero({
 			title,
 			date,
-			categories,
+			tags,
 			cover,
 		});
 	}

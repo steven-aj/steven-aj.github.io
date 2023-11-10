@@ -1,5 +1,5 @@
 <script>
-   import { scale, slide } from "svelte/transition";
+   import { scale } from "svelte/transition";
 
    export let store;
 </script>
@@ -14,19 +14,21 @@
       };`}
    >
       <div class="content">
-         <h2 in:scale>{$store.hero.title}</h2>
+         <!-- {#key $store.hero} -->
+            <h2 in:scale>{$store.hero.title}</h2>
+         <!-- {/key} -->
 
          {#if $store.hero.description}
             <p class="description">{$store.hero.description}</p>
          {/if}
 
-         {#if $store.hero.categories}
-            <div class="categories">
-               {#each $store.hero.categories as category}
+         {#if $store.hero.tags}
+            <div class="tags">
+               {#each $store.hero.tags as tag}
                   <a
                      class="chip variant-filled-secondary"
-                     title={category}
-                     href={`/blog/category/${category}`}>{category}</a
+                     title={tag}
+                     href={`/blog/tag/${tag}`}>{tag}</a
                   >
                {/each}
             </div>
@@ -62,7 +64,7 @@
       @apply relative;
 
       /* Gradient Direction */
-      @apply bg-gradient-to-br;
+      @apply bg-gradient-to-tl;
 
       /* Color Stops */
       @apply from-surface-900/70 via-surface-900/90 to-surface-900;
@@ -91,7 +93,7 @@
       @apply text-center;
    }
 
-   .hero .categories .chip {
+   .hero .tags .chip {
       @apply shadow-lg;
    }
 
@@ -107,9 +109,8 @@
    * WITH Cover
    **********************************/
    .hero[data-cover="true"] {
-
       /* Background (Cover) */
-      @apply bg-cover bg-center bg-no-repeat
+      @apply bg-cover bg-center bg-no-repeat;
    }
 
    .hero[data-cover="true"] .content {
@@ -141,7 +142,7 @@
       @apply relative md:absolute md:left-10 md:bottom-4;
    }
 
-   .hero[data-cover="true"] .categories {
+   .hero[data-cover="true"] .tags {
       /* Container */
       @apply flex flex-row flex-wrap;
 

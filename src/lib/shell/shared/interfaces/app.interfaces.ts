@@ -8,7 +8,7 @@ export interface IHero {
    title: string;
    date?: string;
    description?: string;
-   categories?: string[];
+   tags?: string[];
    cover?: string;
 }
 
