@@ -15,7 +15,7 @@
    beforeUpdate(init);
 </script>
 
-<h2>Category: {category}</h2>
+<h2>Tag: {category}</h2>
 
 <section class="posts">
    <div class="grid">

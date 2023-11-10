@@ -6,22 +6,16 @@
    import PostCard from "$components/PostCard.svelte";
 
    export let data;
-   let quoteReady;
-   $: quoteReady;
    let { meta, profile, quotes, content, posts } = data;
 
    function randomQuote(quoteSection) {
-      const list = quoteSection.querySelectorAll("blockquote");
+      // let counter = 0;
+      const list = quoteSection.getElementsByTagName("blockquote");
       const show = Math.floor(Math.random() * list.length);
-      let counter = 0;
 
-      for (let item of list) {
-         item.classList.add("hidden");
-         if (counter === show) item.classList.remove("hidden");
-         counter++;
-      }
-
-      quoteSection.classList.remove("!hidden");
+      quoteSection
+         .querySelector(`blockquote[data-index="${show}"]`)
+         .classList.remove("!hidden");
    }
 
    function init() {
@@ -39,14 +33,13 @@
    <meta name="description" content={meta.description} />
 </svelte:head>
 
-<!-- <main> -->
 <section>
    <ProfileCard {profile} />
 </section>
 
-<section class="quotes !hidden" in:fade use:randomQuote>
-   {#each quotes as quote}
-      <blockquote>{quote}</blockquote>
+<section class="quotes" in:fade use:randomQuote>
+   {#each quotes as quote, i}
+      <blockquote data-index={i} class="!hidden">{quote}</blockquote>
    {/each}
 </section>
 
@@ -58,8 +51,6 @@
       {/each}
    </div>
 </section>
-
-<!-- </main> -->
 
 <style lang="postcss">
    @keyframes fade {
@@ -76,8 +67,7 @@
    }
 
    section.quotes {
-      @apply flex items-center justify-center max-w-3xl max-h-80 md:max-h-72 h-full w-full mx-auto;
-      /* height: 300px; */
+      @apply flex items-center justify-center max-w-3xl h-80 md:h-72 h-full w-full mx-auto;
    }
 
    section.quotes blockquote {
