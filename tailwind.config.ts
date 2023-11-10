@@ -25,7 +25,8 @@ const config = {
       themes: {
         preset: [
           { name: "crimson", enhancements: true },
-          { name: "vintage", enhancements: true }
+          { name: "vintage", enhancements: true },
+          { name: "wintry", enhancements: true },
         ]
       }
     })

@@ -9,7 +9,7 @@ import shell from 'highlight.js/lib/languages/shell';
 export const prerender = true;
 
 export async function load() {
-   const page = await import(`../content/site.md`);
+   const page = await import(`../content/site-meta.md`);
    const { title, author, description, keywords } = page.metadata;
 
    // Register each imported language module
