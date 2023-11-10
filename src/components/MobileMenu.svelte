@@ -22,7 +22,7 @@
                <TabAnchor
                   href={menuItem.anchor}
                   title={menuItem.label}
-                  active={$page.route.id === menuItem.anchor}
+                  selected={$page.route.id === menuItem.anchor}
                >
                   <svelte:fragment slot="lead">
                      <span class="icon">
@@ -39,7 +39,7 @@
                <TabAnchor
                   href={menuItem.anchor}
                   title={menuItem.label}
-                  active={$page.route.id === menuItem.anchor}
+                  selected={$page.route.id === menuItem.anchor}
                >
                   <svelte:fragment slot="lead">
                      <span class="icon">
