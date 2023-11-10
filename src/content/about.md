@@ -1,22 +1,37 @@
 ---
-title: About Me
-author: Steven Johnson
-date: 11/8/2023
-description: A bit about me, my history and plans for the future
+title: About Me  
+author: Steven Johnson  
+date: 11/9/2023  
+description: A bit about me, my history and plans for the future  
 keywords:
-   - history
    - about
+   - history
+   - career
    - steven a.j.
    - steven-aj
    - steven johnson
 ---
 
 ### History
-My family bought our first computer in 2000. I was eight at the time. We got dial-up internet shortly after and I started really sinking my teeth into the web just weeks after. After discovering HTML & PHP, I was pretty certain then that development was what I wanted to do for a living. This was twenty-three years ago and my motivations haven't changed.
+
+I started dabbling in web languages shortly after my family bought our first computer back in in 2000. I was certain *then* that development was what I wanted to do for a living and my motivation for that hasn't change in over twenty years.
+
+Before building a professional status, I bounced between jobs in the food-service and electrical industries until deciding that I would pursue my dream career in 2016 when I built a WordPress storefront selling Print-on-Demand stuff. Like most startups, that fell through and my wife and I ended up traveling the West Coast where I bartered freelancing services in exchange for places to stay - slowly building my resume as we went. We moved back home a year later and I enrolled in an in-person coding bootcamp the following year to help hone my skills in more modern stacks. I learned a ton there, earned a certificate in Software Development and returned to freelancing stronger than ever.
+
+Despite my initial success upon return, it turns out that I'm pretty terrible at marketing myself. When COVID hit, freelancing competition got fierce and I honestly thought my career in development was over, so I returned to electrical work thinking I wouldn't come back. By the beginning of 2023, the pandemic had subsided well enough to make me wonder, so I put out some applications and it wasn't long before I started hearing back. I'm grateful to be have been able to return to doing what I love.
 
 ### Career
-About seven years ago, my (now) wife & I spent some time traveling and living along the West coast where I offered freelancing dev services to people that we'd meet in an effort to build up a resume. I thought that was my ticket to landing a job doing what I love, but it ended up being a bust. Kind of. I spent several years gaining professional experience before finally enrolling in an in-person coding bootcamp where I earned a certificate in development. Since then, I've gone from freelancing to side-stuff and eventually back to full-time work. While my bootcamp days are behind me, the experience taught me perhaps the most valuable lesson I've learned in my career - a fear of breaking things is the only thing that's ever held me back.
 
-Today, I market myself as a "full stack" JavaScript developer. In reality, though, I'm still just a hobbyist with an insatiable thirst for knowledge. I've been fortunate enough to work on a lot of stacks and I'm always excited to see what else there is to learn.
+I've had amazing opportunities to work with universites, law firms, doctor's offices, and agencies. I've built a some projects from the ground up, debugged more things than I can count and helped many solve their problems to keep things moving for them.
+
+You can find an overview of my work history in the [Experience](/experience) section.
 
 ### Goals
+
+My short-term goal is to settle permanently into a software development position on a modern JavaScript stack. That's partially why I built this site as a web app (*also because it's my prefered technology*) - to showcase a bit of what I can do. My ideal stack would be SvelteKit or Vue on a Node.js backend & NoSQL database, but I have experience in NativeScript, React and PHP-based backends, too.
+
+My long-term goal is to build a small SaaS to help freelancers operate more easily like the business that they are. I started working on it Summer of this year and I'm super excited to launch some time at the end of next year.
+
+### Let's Connect
+
+I'm mostly an open book, so feel free to reach out with any questions you might have (keep it professional, of course). I'm always eager to better myself & help people with their projects, so don't hesitate to connect if you think I might be fit for an opportunity!
