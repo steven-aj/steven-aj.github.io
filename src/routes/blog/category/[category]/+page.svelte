@@ -1,6 +1,6 @@
 <script>
    import { beforeUpdate } from "svelte";
-   import App from "$lib/store";
+   import Shell from "$lib/shell";
    import PostCard from "$components/PostCard.svelte";
 
    export let data;
@@ -8,8 +8,8 @@
    let { category, posts } = data;
 
    function init() {
-      App.setHero(false);
-      App.showBackButton(true);
+      Shell.setHero(false);
+      Shell.showBackButton(true);
    }
 
    beforeUpdate(init);

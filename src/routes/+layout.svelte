@@ -4,13 +4,14 @@
    import {
       AppShell,
       autoModeWatcher,
-      storeHighlightJs
+      storeHighlightJs,
    } from "@skeletonlabs/skeleton";
    import { afterUpdate, onMount } from "svelte";
    import { afterNavigate } from "$app/navigation";
-   import App from "$lib/store";
+   import Shell from "$lib/shell";
    import Toolbar from "$components/Toolbar.svelte";
    import MainMenu from "$components/MainMenu.svelte";
+   import MobileMenu from "$components/MobileMenu.svelte";
    import Hero from "$components/Hero.svelte";
 
    export let data;
@@ -18,19 +19,19 @@
    let { hljs } = data;
    storeHighlightJs.set(hljs);
 
-   let { store } = App;
+   let { menu, store } = Shell;
    let { title, author, keywords } = data;
 
    function init() {
-      App.setToolbar({
+      Shell.setToolbar({
          back: false,
          title,
       });
    }
 
-   afterNavigate(() => document
-      .getElementById('page')
-      .scrollTo({top: 0, behavior: 'instant'}));
+   afterNavigate(() =>
+      document.getElementById("page").scrollTo({ top: 0, behavior: "instant" })
+   );
 
    onMount(init);
 </script>
@@ -52,7 +53,7 @@
    </svelte:fragment>
 
    <svelte:fragment slot="sidebarLeft">
-      <MainMenu />
+      <MainMenu {menu} />
    </svelte:fragment>
 
    <slot />
@@ -61,6 +62,10 @@
       <footer>
          <span>Copyright 2023 Steven Johnson. All rights reserved.</span>
       </footer>
+   </svelte:fragment>
+
+   <svelte:fragment slot="footer">
+      <MobileMenu {menu} />
    </svelte:fragment>
 </AppShell>
 

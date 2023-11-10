@@ -8,7 +8,7 @@
 </script>
 
 {#if $store.toolbar}
-   <AppBar shadow="shadow-lg">
+   <AppBar slotDefault="place-self-center" shadow="shadow-lg">
       <svelte:fragment slot="lead">
          <div class="navigation">
             {#if $store.toolbar.back}
@@ -29,8 +29,9 @@
                />
             {/if}
          </div>
-         <h1>{$store.toolbar.title}</h1>
+         <h1 class="desktop">{$store.toolbar.title}</h1>
       </svelte:fragment>
+      <h1 class="mobile">{$store.toolbar.title}</h1>
       <svelte:fragment slot="trail">
          <LightSwitch />
       </svelte:fragment>
@@ -39,16 +40,23 @@
 
 <style lang="postcss">
    div.navigation {
-      width: 80px;
+      @apply w-8 md:w-20;
+   }
+
+   h1.desktop {
+      @apply hidden md:contents;
+   }
+
+   h1.mobile {
+      @apply md:!hidden;
    }
 
    button.go-back {
-      @apply btn variant-filled-tertiary mx-2;
+      @apply btn variant-filled-tertiary md:mx-2;
    }
 
    img.logo {
-      @apply mx-2 p-0;
-      height: 34px;
+      @apply h-8 mx-0 md:mx-2 p-0;
       width: auto;
    }
 </style>

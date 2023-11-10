@@ -1,14 +1,14 @@
 <script>
 	import { beforeUpdate } from "svelte";
-	import App from "$lib/store";
+	import Shell from "$lib/shell";
 
 	export let data;
 
 	let { title, date, categories, cover, content } = data;
 
 	function init() {
-		App.showBackButton(true);
-		App.setHero({
+		Shell.showBackButton(true);
+		Shell.setHero({
 			title,
 			date,
 			categories,

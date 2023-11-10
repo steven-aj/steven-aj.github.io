@@ -1,7 +1,7 @@
 <script>
    import { onMount } from "svelte";
    import { fade } from "svelte/transition";
-   import App from "$lib/store";
+   import Shell from "$lib/shell";
    import ProfileCard from "$components/ProfileCard.svelte";
    import PostCard from "$components/PostCard.svelte";
 
@@ -19,8 +19,8 @@
    }
 
    function init() {
-      App.setHero(false);
-      App.showBackButton(false);
+      Shell.setHero(false);
+      Shell.showBackButton(false);
    }
 
    onMount(init);

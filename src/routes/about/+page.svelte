@@ -1,14 +1,14 @@
 <script>
    import { onMount } from "svelte";
-   import App from "$lib/store";
+   import Shell from "$lib/shell";
 
    export let data;
 
    let { meta, content } = data;
 
    function init() {
-      App.showBackButton(false);
-      App.setHero({
+      Shell.showBackButton(false);
+      Shell.setHero({
          title: meta.title,
          date: `Last updated: ${meta.date}`,
          cover: meta.cover,

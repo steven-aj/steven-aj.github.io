@@ -1,56 +1,53 @@
 <script>
    import { page } from "$app/stores";
    import { AppRail, AppRailAnchor } from "@skeletonlabs/skeleton";
-   import {
-      faHouse,
-      faBlog,
-      faBriefcase,
-      faAddressCard,
-   } from "@fortawesome/free-solid-svg-icons";
    import SvelteFa from "svelte-fa";
+
+   export let menu;
 </script>
 
-<AppRail>
-   <AppRailAnchor
-      href="/"
-      title="Home"
-      selected={$page.route.id === "/"}
-   >
+{#if menu}
+<div class="main-menu">
+   <AppRail>
       <svelte:fragment slot="lead">
-         <SvelteFa icon={faHouse} />
+         {#if menu.lead}
+            {#each menu.lead as menuItem}
+               <AppRailAnchor
+                  href={menuItem.anchor}
+                  title={menuItem.label}
+                  selected={($page.route.id === menuItem.anchor)}
+               >
+                  <svelte:fragment slot="lead">
+                     <SvelteFa icon={menuItem.icon} />
+                  </svelte:fragment>
+                  {menuItem.label}
+               </AppRailAnchor>
+            {/each}
+         {/if}
       </svelte:fragment>
-      Home
-   </AppRailAnchor>
-   <AppRailAnchor
-      href="/about"
-      title="About"
-      selected={$page.route.id === "/about"}
-   >
-      <svelte:fragment slot="lead">
-         <SvelteFa icon={faAddressCard} />
+
+      <svelte:fragment slot="trail">
+         {#if menu.trail}
+            {#each menu.trail as menuItem}
+               <AppRailAnchor
+                  href={menuItem.anchor}
+                  title={menuItem.label}
+                  selected={($page.route.id === menuItem.anchor)}
+               >
+                  <svelte:fragment slot="lead">
+                     <SvelteFa icon={menuItem.icon} />
+                  </svelte:fragment>
+                  {menuItem.label}
+               </AppRailAnchor>
+            {/each}
+         {/if}
       </svelte:fragment>
-      About
-   </AppRailAnchor>
-   <AppRailAnchor
-      href="/experience"
-      title="Experience"
-      selected={$page.route.id === "/experience"}
-   >
-      <svelte:fragment slot="lead">
-         <SvelteFa icon={faBriefcase} />
-      </svelte:fragment>
-      Experience
-   </AppRailAnchor>
-   <svelte:fragment slot="trail">
-      <AppRailAnchor
-         href="/blog"
-         title="Blog"
-         selected={$page.route.id.includes("/blog")}
-      >
-         <svelte:fragment slot="lead">
-            <SvelteFa icon={faBlog} />
-         </svelte:fragment>
-         Blog
-      </AppRailAnchor>
-   </svelte:fragment>
-</AppRail>
+   </AppRail>
+   </div>
+{/if}
+
+<style lang="postcss">
+   .main-menu {
+      @apply hidden md:contents;
+   }
+</style>
