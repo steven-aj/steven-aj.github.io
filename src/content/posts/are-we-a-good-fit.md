@@ -7,7 +7,8 @@ excerpt: Learn a bit more about me before getting in touch
 cover: /assets/covers/jigsaw-cube.jpeg
 tags:
   - employment
-  - about me
+  - about
+  - me
 ---
 
 ### Reasons We Might Be

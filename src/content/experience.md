@@ -71,4 +71,4 @@ keywords:
 
 ### Contract Developer
 #### First Choice CNA Education
-**May 2016 - August 2016**
+*May 2016 - August 2016*

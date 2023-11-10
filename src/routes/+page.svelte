@@ -4,6 +4,7 @@
    import Shell from "$lib/shell";
    import ProfileCard from "$components/ProfileCard.svelte";
    import PostCard from "$components/PostCard.svelte";
+   import EmptyNotice from "$components/EmptyNotice.svelte";
 
    export let data;
    let { meta, profile, quotes, content, posts } = data;
@@ -15,8 +16,7 @@
 
       quoteSection
          .querySelector(`blockquote[data-index="${random}"]`)
-         .classList
-         .remove("!invisible", "!hidden");
+         .classList.remove("!invisible", "!hidden");
    }
 
    function init() {
@@ -44,14 +44,16 @@
    {/each}
 </section>
 
-<section class="posts">
-   <h2>Recent Posts</h2>
-   <div class="grid">
-      {#each posts as post}
-         <PostCard {post} />
-      {/each}
-   </div>
-</section>
+{#if posts.length}
+   <section class="posts">
+      <h2>Recent Posts</h2>
+      <div class="grid">
+         {#each posts as post}
+            <PostCard {post} />
+         {/each}
+      </div>
+   </section>
+{/if}
 
 <style lang="postcss">
    @keyframes fade {

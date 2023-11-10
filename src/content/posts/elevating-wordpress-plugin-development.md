@@ -7,7 +7,8 @@ excerpt: An overview of implementing modern front-end frameworks as WordPress Pl
 cover: /assets/covers/rocket-plug.jpeg
 tags:
   - wordpress
-  - wordpress plugins
+  - wordpress
+  - plugins
   - applications
   - informative
 ---

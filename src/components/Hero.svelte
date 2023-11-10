@@ -1,5 +1,5 @@
 <script>
-   import { scale, slide } from "svelte/transition";
+   import { scale } from "svelte/transition";
 
    export let store;
 </script>
@@ -14,7 +14,9 @@
       };`}
    >
       <div class="content">
-         <h2 in:scale>{$store.hero.title}</h2>
+         <!-- {#key $store.hero} -->
+            <h2 in:scale>{$store.hero.title}</h2>
+         <!-- {/key} -->
 
          {#if $store.hero.description}
             <p class="description">{$store.hero.description}</p>
@@ -62,7 +64,7 @@
       @apply relative;
 
       /* Gradient Direction */
-      @apply bg-gradient-to-br;
+      @apply bg-gradient-to-tl;
 
       /* Color Stops */
       @apply from-surface-900/70 via-surface-900/90 to-surface-900;
@@ -107,9 +109,8 @@
    * WITH Cover
    **********************************/
    .hero[data-cover="true"] {
-
       /* Background (Cover) */
-      @apply bg-cover bg-center bg-no-repeat
+      @apply bg-cover bg-center bg-no-repeat;
    }
 
    .hero[data-cover="true"] .content {

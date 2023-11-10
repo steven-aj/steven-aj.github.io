@@ -1,8 +1,9 @@
 <script>
    import { beforeUpdate } from "svelte";
+   import { fade } from "svelte/transition";
    import Shell from "$lib/shell";
    import PostCard from "$components/PostCard.svelte";
-   import { fade } from "svelte/transition";
+   import EmptyNotice from "$components/EmptyNotice.svelte";
 
    export let data;
 
@@ -19,28 +20,28 @@
 </script>
 
 {#if ready}
-   <div transition:fade>
       {#if data}
-         {#if tags}
+         {#if tags.length}
             <section class="tags">
                <h2>Tags:</h2>
                {#each tags as tag}
-                  <a class="chip" href={`/blog/tag/${tag}`}
-                     >{tag}</a
-                  >
+                  <a class="chip" href={`/blog/tag/${tag}`}>{tag}</a>
                {/each}
             </section>
          {/if}
 
-         <section class="posts">
-            <div class="grid">
-               {#each posts as post}
-                  <PostCard {post} />
-               {/each}
-            </div>
-         </section>
+         {#if posts.length}
+            <section class="posts" transition:fade>
+               <div class="grid">
+                  {#each posts as post}
+                     <PostCard {post} />
+                  {/each}
+               </div>
+            </section>
+         {:else}
+            <EmptyNotice />
+         {/if}
       {/if}
-   </div>
 {/if}
 
 <style lang="postcss">

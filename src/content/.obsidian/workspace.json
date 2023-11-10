@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0074ac5c4b2d9778",
+            "id": "74be187c51568e69",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "labs/library-demo.md",
+                "file": "posts/are-we-a-good-fit.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "labs/library-demo.md",
+                "file": "posts/are-we-a-good-fit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "labs/library-demo.md",
+                "file": "posts/are-we-a-good-fit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "labs/library-demo.md"
+                "file": "posts/are-we-a-good-fit.md"
               }
             }
           }
@@ -147,14 +147,16 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "0074ac5c4b2d9778",
+  "active": "74be187c51568e69",
   "lastOpenFiles": [
+    "posts/elevating-wordpress-plugin-development.md",
+    "posts/static-and-dynamic-sites.md",
+    "posts/are-we-a-good-fit.md",
+    "experience.md",
+    "labs.md",
     "labs/library-demo.md",
     "_templates/lab.md",
     "labs",
-    "posts/static-and-dynamic-sites.md",
-    "posts/elevating-wordpress-plugin-development.md",
-    "posts/are-we-a-good-fit.md",
     "_templates/post-single.md",
     "_templates/post-series.md",
     "posts/drafted-post.md",
@@ -166,7 +168,6 @@
     "_templates",
     "site.md",
     "home.md",
-    "experience.md",
     "about.md",
     "_templates/about-page.md",
     "_templates/home-page.md",
