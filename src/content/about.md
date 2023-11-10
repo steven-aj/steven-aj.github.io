@@ -22,13 +22,13 @@ Despite my initial success upon return, it turns out that I'm pretty terrible at
 
 ### Career
 
-I've had amazing opportunities to work with universites, law firms, doctor's offices, and agencies. I've built a some projects from the ground up, debugged more things than I can count and helped many solve their problems to keep things moving for them.
+I've had amazing opportunities to work with universities, law firms, doctor's offices, and agencies. I've built a some projects from the ground up, debugged more things than I can count and helped many solve their problems to keep things moving for them.
 
 You can find an overview of my work history in the [Experience](/experience) section.
 
 ### Goals
 
-My short-term goal is to settle permanently into a software development position on a modern JavaScript stack. That's partially why I built this site as a web app (*also because it's my prefered technology*) - to showcase a bit of what I can do. My ideal stack would be SvelteKit or Vue on a Node.js backend & NoSQL database, but I have experience in NativeScript, React and PHP-based backends, too.
+My short-term goal is to settle permanently into a software development position on a modern JavaScript stack. That's partially why I built this site as a web app (*also because it's my preferred technology*) - to showcase a bit of what I can do. My ideal stack would be SvelteKit or Vue on a Node.js backend & NoSQL database, but I have experience in NativeScript, React and PHP-based backends, too.
 
 My long-term goal is to build a small SaaS to help freelancers operate more easily like the business that they are. I started working on it Summer of this year and I'm super excited to launch some time at the end of next year.
 
