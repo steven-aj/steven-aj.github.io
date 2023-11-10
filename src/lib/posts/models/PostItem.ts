@@ -9,6 +9,10 @@ export default class PostItem implements IPostItem {
       this.meta = post.meta;
    }
 
+   public get published() {
+      return this.meta.status === 'published';
+   }
+
    public get title() {
       return this.meta.title;
    }

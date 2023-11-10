@@ -1,7 +1,9 @@
 ---
+status: 
 title: 
 date: 
+author: 
 excerpt: 
 cover: 
-categories: []
+categories:
 ---

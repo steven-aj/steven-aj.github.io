@@ -10,6 +10,10 @@ export async function toPostItem([path, resolver]) {
    });
 }
 
-export async function sortByDate(posts) {
+export async function filterPublished(posts) {
+   return posts.filter(post => post.published)
+}
+
+export function sortByDate(posts) {
    return posts.sort((a, b) => a.date - b.date)
 }
