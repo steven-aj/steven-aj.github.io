@@ -1,4 +1,4 @@
-import type { IAppStore, IHero, IMainMenu, IToolbar } from "./shared/interface";
+import type { IAppStore, IHero, IMainMenu, IToolbar } from "./shared/interfaces/app.interfaces";
 import { writable, type Writable } from "svelte/store";
 import MainMenu from "./constants/MainMenu";
 

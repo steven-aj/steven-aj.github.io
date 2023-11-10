@@ -67,7 +67,7 @@
    }
 
    section.quotes {
-      @apply flex items-center justify-center max-w-3xl h-80 md:h-72 h-full w-full mx-auto;
+      @apply flex items-center justify-center max-w-3xl max-h-60  md:max-h-64 h-full w-full mx-auto;
    }
 
    section.quotes blockquote {
