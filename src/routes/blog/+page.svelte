@@ -1,6 +1,6 @@
 <script>
    import { beforeUpdate } from "svelte";
-   import App from "$lib/store";
+   import Shell from "$lib/shell";
    import PostCard from "$components/PostCard.svelte";
    import { fade } from "svelte/transition";
 
@@ -10,8 +10,8 @@
    let ready = false;
 
    function init() {
-      App.showBackButton(false);
-      App.setHero(false);
+      Shell.showBackButton(false);
+      Shell.setHero(false);
       setTimeout(() => (ready = true), 100);
    }
 

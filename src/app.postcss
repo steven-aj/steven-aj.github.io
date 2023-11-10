@@ -12,7 +12,7 @@ main > section > h4 { @apply text-xl px-10 my-6 text-secondary-500; }
 main > section > h5 { @apply italic px-10 my-6 text-primary-500/50; }
 main > section > p { @apply leading-9 text-surface-400 text-lg px-10 mb-4; }
 main > section > ul { @apply list-disc list-outside my-6 px-10; }
-main > section > ul { @apply list-decimal list-outside my-6 px-10 text-surface-400; }
+main > section > ol { @apply list-decimal list-outside my-6 px-10 text-surface-400; }
 
 article:not(.card) { @apply lg:px-16; }
 article:not(.card) h3 { @apply font-serif italic text-3xl mb-10 mt-14 text-primary-500; }
@@ -22,7 +22,7 @@ article:not(.card) p { @apply leading-9 text-surface-400 text-lg lg:px-10 mb-4; 
 article:not(.card) ul { @apply list-disc leading-8 list-inside my-6 px-10; }
 article:not(.card) ol { @apply list-decimal leading-8 list-inside my-6 mx-4 md:mx-14 text-surface-400; }
 
-section.posts .grid { @apply lg:grid-cols-3 lg:px-4 gap-4 self-center p-2; }
+section.posts .grid { @apply gap-4 self-center p-2 lg:grid-cols-3 lg:px-4; }
 article.card { @apply flex flex-col; }
 article.card header { @apply card-header; }
 article.card section { @apply h-full p-4; }

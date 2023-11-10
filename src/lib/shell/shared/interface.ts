@@ -1,3 +1,5 @@
+import type { IconDefinition } from "@fortawesome/free-solid-svg-icons";
+
 export interface IToolbar {
    back?: boolean;
 }
@@ -13,4 +15,15 @@ export interface IHero {
 export interface IAppStore {
    hero?: IHero;
    toolbar?: IToolbar;
+}
+
+export interface IMenuItem {
+   anchor: string;
+   label: string;
+   icon: IconDefinition;
+}
+
+export interface IMainMenu {
+   lead: IMenuItem[];
+   trail: IMenuItem[];
 }

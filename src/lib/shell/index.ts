@@ -1,10 +1,13 @@
+import type { IAppStore, IHero, IMainMenu, IToolbar } from "./shared/interface";
 import { writable, type Writable } from "svelte/store";
-import type { IAppStore, IHero, IToolbar } from "./shared/interface";
+import MainMenu from "./constants/MainMenu";
 
-class App {
+class Shell {
    public readonly store: Writable<IAppStore>;
+   public readonly menu: IMainMenu;
 
    constructor() {
+      this.menu = MainMenu;
       this.store = writable({
          toolbar: undefined,
          hero: undefined,
@@ -35,4 +38,4 @@ class App {
    }
 }
 
-export default new App();
+export default new Shell();
