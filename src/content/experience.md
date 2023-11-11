@@ -2,13 +2,12 @@
 title: Work Experience
 author: Steven Johnson
 date: 11/8/2023
-description: A brief overview of things I've worked on through the years
+description: Just some things I've worked on over the years
 keywords:
-   - experience
-   - resume
-   - work history
+  - experience
+  - resume
+  - work history
 ---
-
 ### Web Developer
 #### AdPro
 *March 2023 - Present*
