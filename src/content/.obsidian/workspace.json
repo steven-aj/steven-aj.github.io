@@ -55,7 +55,7 @@
                       },
                       "serial": {
                         "columns": 123,
-                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"update content\"; git push origin devel",
+                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"update content\"; git push origin develop\r\n[develop bd301f7] update content\r\n 7 files changed, 89 insertions(+), 65 deletions(-)\r\nUsername for 'https://github.com': gh login\r\nPassword for 'https://gh login@github.com': \r\nEnumerating objects: 25, done.\r\nCounting objects: 100% (25/25), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (13/13), done.\r\nWriting objects: 100% (13/13), 2.36 KiB | 2.36 MiB/s, done.\r\nTotal 13 (delta 11), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (11/11), completed with 11 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   1adc542..bd301f7  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"update content\"; git push origin develop",
                         "rows": 18
                       }
                     }
