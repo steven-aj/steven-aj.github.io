@@ -1,5 +1,5 @@
 ---
-status: draft
+status: published
 title: Tauri Sveltekit
 description: Tauri + Sveltekit starter application.
 language: JavaScript

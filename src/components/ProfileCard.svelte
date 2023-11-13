@@ -8,7 +8,11 @@
 {#if profile}
    <article class="card">
       <header>
-         <img class="headshot" alt={`Headshot of ${profile.title}`} src={profile.cover} />
+         <img
+            class="headshot"
+            alt={`Headshot of ${profile.title}`}
+            src={profile.cover}
+         />
       </header>
       <section>
          <h2>{profile.title}</h2>

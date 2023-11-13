@@ -38,6 +38,10 @@
    <ProfileCard {profile} />
 </section>
 
+<section class="content">
+   <svelte:component this={content} />
+</section>
+
 <section class="quotes" use:randomQuote>
    {#each quotes as quote, i}
       <blockquote data-index={i} class="!invisible !hidden">{quote}</blockquote>
@@ -67,6 +71,10 @@
 
    main {
       @apply flex flex-col gap-10;
+   }
+
+   section.content {
+      @apply my-14;
    }
 
    section.quotes {
