@@ -4,6 +4,7 @@ tagline: Full-Stack Developer
 cover: /assets/profile/headshot-crop.png
 author: Steven Johnson
 email: devtheory@icloud.com
+github: https://github.com/steven-aj
 description: I'm a full-stack JavaScript developer with 7+ years of professional experience across WordPress and web application development.
 keywords:
   - full-stack
@@ -13,8 +14,9 @@ keywords:
   - api
   - freelancer
 quotes:
-  - My ultimate goal is to build a small SaaS some day.
   - Did you know? This app was built with SvelteKit.
+  - Have a look around and feel free to get in touch.
+  - Want your own SvelteKit blog on GitHub? Check out my lab, 'GH Smoothie'.
 ---
 ### Still Tidying Up Here
 

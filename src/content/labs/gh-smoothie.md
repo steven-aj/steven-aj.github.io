@@ -11,11 +11,9 @@ demo: https://steven-aj.github.io/gh-smoothie/
 	import { CodeBlock } from '@skeletonlabs/skeleton';
 </script>
 
-GH Smoothie is a blogging framework that I built as an alternative for Jekyll. Content can be managed with any markdown editor. Metadata for pages and posts is supplied via the document's front matter.
+GH Smoothie is a blogging framework that I built as an alternative for Jekyll. Content can be managed with any markdown editor. Metadata for pages and posts is supplied via the document's front matter. The repo also features workflow configurations for GitHub Pages to simplify deploying your blog - just push your changes into `main` and GitHub will do the rest.
 
-The repo also features workflow configurations for GitHub Pages to simplify deploying your blog - just push your changes into `main` and GitHub will do the rest.
-
-Feel free to fork it to your own collection & hack it as much as you want.
+Feel free to fork it to your own collection & hack away.
 
 ## Built for Obsidian
 
@@ -25,10 +23,10 @@ Feel free to fork it to your own collection & hack it as much as you want.
 - page
 - post-single
 
-For convenience, the vault also comes configured with a community-built <a target="_blank" href="https://github.com/polyipseity/obsidian-terminal/releases/tag/3.14.0">Obsidian Terminal</a> so you can commit and push changes from within [Obsidian](https://obsidian.md) itself.
+For convenience, the vault also comes configured with a community-built <a target="_blank" href="https://github.com/polyipseity/obsidian-terminal/releases/tag/3.14.0">Obsidian Terminal</a> so you can commit and push changes directly from Obsidian.
 ### Front Matter Templates
 
-In its default configuration, Smoothie's front matter is used to generate meta data across the site. The `posts` library pulls from this to render article cards.
+In its default configuration, Smoothie's front matter is used to generate metadata across the site. The `posts` library pulls from this to render article cards. To see metadata in action, check out this <a target="_blank" href="https://metatags.io/?url=https%3A%2F%2Fsteven-aj.github.io%2Fgh-smoothie">meta preview</a>.
 
 #### Site-Meta
 

@@ -1,5 +1,6 @@
 <script>
    import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+   import { faGithub } from "@fortawesome/free-brands-svg-icons";
    import { Avatar } from "@skeletonlabs/skeleton";
    import SvelteFa from "svelte-fa";
 
@@ -27,6 +28,16 @@
          <h2>{profile.title}</h2>
          <p class="tagline">{profile.tagline}</p>
          <div class="contact-options">
+            {#if profile.github}
+               <a
+                  role="button"
+                  title="GitHub"
+                  target="_blank"
+                  href={`${profile.github}`}
+               >
+                  <SvelteFa icon={faGithub} />
+               </a>
+            {/if}
             {#if profile.email}
                <a
                   role="button"
@@ -76,7 +87,7 @@
    }
 
    article.card .contact-options {
-      @apply flex flex-row mt-2;
+      @apply flex flex-row mt-2 space-x-2;
    }
 
    article.card .contact-options a[role="button"] {

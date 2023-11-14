@@ -35,12 +35,20 @@
    <meta name="description" content={meta.description} />
 </svelte:head>
 
+<section>
+   <ProfileCard {profile} />
+</section>
+
+<section class="quotes" use:randomQuote>
+   {#each quotes as quote, i}
+      <blockquote data-index={i} class="!invisible !hidden">{quote}</blockquote>
+   {/each}
+</section>
+
 {#if labs.length}
-   <section class="posts">
+   <section class="featured posts">
       <h2>Featured Labs</h2>
-      <div
-         class="snap-x justify-center scroll-px-4 snap-mandatory scroll-smooth flex gap-4 overflow-x-auto px-4 py-10"
-      >
+      <div class="grid">
          {#each labs as lab}
             <LabCard {lab} />
          {/each}
@@ -59,20 +67,6 @@
    </section>
 {/if}
 
-<section class="quotes" use:randomQuote>
-   {#each quotes as quote, i}
-      <blockquote data-index={i} class="!invisible !hidden">{quote}</blockquote>
-   {/each}
-</section>
-
-<section>
-   <ProfileCard {profile} />
-</section>
-
-<!-- <section class="content">
-   <svelte:component this={content} />
-</section> -->
-
 <style lang="postcss">
    @keyframes fade {
       from {
@@ -88,7 +82,7 @@
    }
 
    section.quotes {
-      @apply flex flex-col items-center justify-center max-w-3xl h-48 md:h-56 w-full mx-auto;
+      @apply flex flex-col items-center justify-center max-w-3xl h-40 md:h-48 w-full mx-auto;
    }
 
    section.quotes blockquote {
