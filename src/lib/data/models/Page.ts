@@ -23,8 +23,6 @@ export default class Page implements IPage {
       const page = await resolver();
       const pagePath = path.split('/').reverse()[0].slice(null, -3);
 
-      console.dir(page.metadata);
-
       return new Page({
          path: pagePath,
          meta: page.metadata,
