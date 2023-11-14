@@ -10,6 +10,7 @@
           {
             "id": "6df8d2d9b610bdbe",
             "type": "tabs",
+            "dimension": 63.55555555555556,
             "children": [
               {
                 "id": "628aba728798d660",
@@ -28,6 +29,7 @@
           {
             "id": "bcfcfe19fac82a2c",
             "type": "tabs",
+            "dimension": 36.44444444444444,
             "children": [
               {
                 "id": "d80cbacf3d596887",
@@ -59,8 +61,8 @@
                       },
                       "serial": {
                         "columns": 123,
-                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"fix typo\"; git push origin develop",
-                        "rows": 18
+                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"fix typo\"; git push origin develop\r\n[develop e78dc9e] fix typo\r\n 2 files changed, 87 insertions(+), 40 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 1.40 KiB | 1.40 MiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   5781216..e78dc9e  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"tagged: rant\"; git push orgin devel",
+                        "rows": 12
                       }
                     }
                   },
