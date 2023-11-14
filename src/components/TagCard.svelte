@@ -2,7 +2,7 @@
    export let tag;
 </script>
 
-<a href={`/blog/tag/${tag}`}>
+<a href={`/blog/tags/${tag}`}>
    <article class="card">
       <header>
          <h3>{tag}</h3>
