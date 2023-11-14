@@ -1,14 +1,22 @@
 <script>
    import { beforeUpdate } from "svelte";
    import { fade } from "svelte/transition";
+   import { Drawer, getDrawerStore } from "@skeletonlabs/skeleton";
    import Shell from "$lib/shell";
    import PostCard from "$components/PostCard.svelte";
    import EmptyNotice from "$components/EmptyNotice.svelte";
+   import TagCloud from "$components/TagCloud.svelte";
 
    export let data;
 
+   let drawer = getDrawerStore();
+
    let { posts, tags } = data;
    let ready = false;
+
+   function openTagCloud() {
+      drawer.open();
+   }
 
    function init() {
       Shell.showBackButton(false);
@@ -19,19 +27,17 @@
    beforeUpdate(init);
 </script>
 
-<section hidden>
-   {#if tags.length}
-      {#each tags as tag}
-         <a class="chip" href={`/blog/tags/${tag}`}>{tag}</a>
-      {/each}
-   {/if}
-</section>
+<Drawer position="right" width="max-w-md w-full">
+   <TagCloud {tags} on:select={() => drawer.close()}/>
+</Drawer>
 
 {#if ready}
    {#if data}
       <header>
          <h2>Blog</h2>
-         <button class="btn variant-filled-secondary">Tag Cloud</button>
+         <button class="btn variant-filled-secondary" on:click={openTagCloud}
+            >Tag Cloud</button
+         >
       </header>
 
       {#if posts.length}
@@ -58,15 +64,6 @@
    }
 
    header button {
-      @apply w-full lg:w-fit;
-   }
-
-   .tags {
-      @apply flex flex-row gap-2 overflow-y-auto mt-4 mb-6 py-4;
-   }
-
-   .tags a.chip {
-      @apply variant-filled-secondary 
-      hover:variant-filled-tertiary;
+      @apply w-full lg:w-fit md:my-6;
    }
 </style>

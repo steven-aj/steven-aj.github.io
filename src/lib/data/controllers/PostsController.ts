@@ -28,7 +28,7 @@ export default class PostsController {
       var tags: PostItem[] | string[] = await this.getAll();
       tags = tags.map(toTag).flat(1);
 
-      return uniq(tags);
+      return uniq(tags.sort());
    }
 
    public async getRecent(count = 6) {

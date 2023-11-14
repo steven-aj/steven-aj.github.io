@@ -5,6 +5,7 @@
       AppShell,
       autoModeWatcher,
       storeHighlightJs,
+      initializeStores,
    } from "@skeletonlabs/skeleton";
    import { afterUpdate, onMount } from "svelte";
    import { afterNavigate } from "$app/navigation";
@@ -21,6 +22,8 @@
 
    let { menu, store } = Shell;
    let { title, author, keywords } = data;
+
+   initializeStores();
 
    function init() {
       Shell.setToolbar({
