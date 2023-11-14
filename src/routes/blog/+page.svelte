@@ -56,7 +56,7 @@
 
 <style lang="postcss">
    header {
-      @apply flex flex-col lg:flex-row lg:justify-between my-6 p-4;
+      @apply relative flex flex-col md:flex-row md:justify-between my-6 p-4;
    }
 
    header h2 {
@@ -64,6 +64,6 @@
    }
 
    header button {
-      @apply w-full lg:w-fit md:my-6;
+      @apply w-full my-6 md:my-0 md:w-fit;
    }
 </style>
