@@ -1,17 +1,26 @@
 <script>
    import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+   import { Avatar } from "@skeletonlabs/skeleton";
    import SvelteFa from "svelte-fa";
 
    export let profile;
+
+   function getInitialials(name) {
+      let initials = name.split(" ");
+      if (initials.length) {
+         return initials[0].charAt(0) + initials[1].charAt(0);
+      }
+   }
 </script>
 
 {#if profile}
    <article class="card">
       <header>
-         <img
-            class="headshot"
-            alt={`Headshot of ${profile.title}`}
+         <Avatar
+            width="w-32"
+            border="border-4 border-solid border-primary-500/80"
             src={profile.cover}
+            initials={getInitialials(profile.title)}
          />
       </header>
       <section>
@@ -50,15 +59,8 @@
       grid-template-columns: 1fr 2fr;
    }
 
-   article.card header img.headshot {
-      @apply m-auto
-      border-4
-      drop-shadow-lg
-      border-solid 
-      border-primary-500/80;
-      width: 150px;
-      height: auto;
-      border-radius: 50%;
+   article.card header {
+      @apply flex flex-col justify-center items-center p-0;
    }
 
    article.card section {

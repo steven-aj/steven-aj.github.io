@@ -5,6 +5,7 @@ import json from 'highlight.js/lib/languages/json';
 import javascript from 'highlight.js/lib/languages/javascript';
 import typescript from 'highlight.js/lib/languages/typescript';
 import shell from 'highlight.js/lib/languages/shell';
+import markdown from 'highlight.js/lib/languages/markdown';
 
 export const prerender = true;
 
@@ -19,6 +20,7 @@ export async function load() {
    hljs.registerLanguage('javascript', javascript);
    hljs.registerLanguage('typescript', typescript);
    hljs.registerLanguage('shell', shell);
+   hljs.registerLanguage('markdown', markdown);
 
    return {
       hljs,

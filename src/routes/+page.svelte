@@ -38,16 +38,6 @@
    <ProfileCard {profile} />
 </section>
 
-<section class="content">
-   <svelte:component this={content} />
-</section>
-
-<section class="quotes" use:randomQuote>
-   {#each quotes as quote, i}
-      <blockquote data-index={i} class="!invisible !hidden">{quote}</blockquote>
-   {/each}
-</section>
-
 {#if posts.length}
    <section class="posts">
       <h2>Recent Posts</h2>
@@ -58,6 +48,16 @@
       </div>
    </section>
 {/if}
+
+<section class="quotes" use:randomQuote>
+   {#each quotes as quote, i}
+      <blockquote data-index={i} class="!invisible !hidden">{quote}</blockquote>
+   {/each}
+</section>
+
+<!-- <section class="content">
+   <svelte:component this={content} />
+</section> -->
 
 <style lang="postcss">
    @keyframes fade {
@@ -73,25 +73,21 @@
       @apply flex flex-col gap-10;
    }
 
-   section.content {
-      @apply my-14;
-   }
-
    section.quotes {
-      @apply flex flex-col items-center justify-center max-w-3xl h-60 md:h-64 w-full mx-auto;
+      @apply flex flex-col items-center justify-center max-w-3xl h-48 md:h-56 w-full mx-auto;
    }
 
    section.quotes blockquote {
-      @apply italic font-serif text-3xl text-center text-slate-500/50 leading-10;
+      @apply italic font-serif text-3xl text-center text-slate-500/50 leading-10 border-0 shadow-none;
       transition: all;
       animation: fade 1s;
    }
 
    section.posts h2 {
-      @apply text-center md:text-start text-2xl text-slate-500 my-4;
+      @apply text-center md:text-start text-3xl text-slate-500 my-8;
    }
 
    section.posts .grid {
-      @apply md:grid-cols-2 lg:grid-cols-3 gap-4 self-center px-4;
+      @apply md:grid-cols-2 lg:grid-cols-4 gap-8 self-center px-4;
    }
 </style>

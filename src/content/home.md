@@ -18,7 +18,9 @@ quotes:
 ---
 ### Still Tidying Up Here
 
-This project is still relatively new and you've caught me in the middle of development. Feel free to have a look around but, if you have any questions or find bugs along the way, please use the email button in my profile card at the top to let me know.
+This project is still relatively new and you've caught me in the middle of development. Feel free to have a look around. 
+
+If you have any questions or find bugs along the way, please use the email button in my profile card at the top to let me know.
 
 #### 2023 Roadmap
 

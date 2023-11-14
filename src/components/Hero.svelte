@@ -28,7 +28,7 @@
                   <a
                      class="chip variant-filled-secondary"
                      title={tag}
-                     href={`/blog/tag/${tag}`}>{tag}</a
+                     href={`/blog/tags/${tag}`}>{tag}</a
                   >
                {/each}
             </div>
@@ -62,12 +62,6 @@
 
       /* Position */
       @apply relative;
-
-      /* Gradient Direction */
-      @apply bg-gradient-to-tl;
-
-      /* Color Stops */
-      @apply from-surface-900/70 via-surface-900/90 to-surface-900;
    }
 
    .hero h2 {
@@ -120,6 +114,12 @@
       /* Inner Alignment */
       @apply md:gap-6 p-4;
 
+      /* Gradient Direction */
+      @apply bg-gradient-to-tl;
+
+      /* Color Stops */
+      @apply from-surface-900/70 via-surface-900/90 to-surface-900;
+
       min-height: 384px;
    }
 
@@ -166,11 +166,12 @@
    **********************************/
    .hero[data-cover="false"] .content {
       /* Container */
-      @apply flex flex-col bg-slate-500/50;
+      @apply flex flex-col;
 
       /* Alignment */
       @apply justify-center items-center;
 
+      /* Sizing */
       @apply min-h-max;
 
       /* Spacing */

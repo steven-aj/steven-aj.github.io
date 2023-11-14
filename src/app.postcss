@@ -5,31 +5,55 @@
 
 html, body { @apply h-full overflow-hidden; }
 
-main { @apply p-4; }
+main > section { @apply p-4 my-4; }
 
-main > section > h3 { @apply text-3xl my-6 px-4 text-primary-500; }
-main > section > h4 { @apply text-xl px-10 my-6 text-secondary-500; }
-main > section > h5 { @apply italic px-10 my-6 text-primary-500/50; }
-main > section > p { @apply leading-9 text-surface-400 text-lg px-10 mb-4; }
-main > section > ul { @apply list-disc list-inside my-6 px-10 text-surface-400; }
-main > section > ol { @apply list-decimal list-outside my-6 px-10 text-surface-400; }
+main > section > h2 { 
+   /* Spacing */
+   @apply  my-6 px-4; 
+
+   /* Typography */
+   @apply text-4xl text-primary-500;
+}
+
+main > section > h3 { 
+   /* Spacing */
+   @apply  my-6 px-4; 
+
+   /* Typography */
+   @apply text-3xl text-primary-500;
+}
+
+main > section > h4 { 
+   /* Typography */
+   @apply text-xl text-secondary-500;
+
+   /* Spacing */
+   @apply px-10 my-6; 
+}
+
+main > section > h5 { 
+   /* Typography */
+   @apply italic text-primary-500/50;
+
+   /* Spacing */
+   @apply px-10 my-6; 
+}
+
+main > nav > a[role="button"] { @apply btn variant-soft-secondary mb-10; }
+main > section > p { @apply leading-9 text-surface-400 text-lg px-2 md:px-10 mb-4; }
 main > section > p > a { @apply anchor !text-secondary-500; }
-
-article:not(.card) { @apply lg:px-16; }
-article:not(.card) h3 { @apply text-3xl mb-10 mt-14 text-primary-500; }
-article:not(.card) h4 { @apply italic text-xl px-10 my-6 text-secondary-500; }
-article:not(.card) h5 { @apply italic px-10 my-6 text-primary-500/50; }
-article:not(.card) p { @apply leading-9 text-surface-400 text-lg lg:px-10 mb-4; }
-article:not(.card) ul { @apply list-disc leading-8 list-inside my-6 px-10; }
-article:not(.card) ol { @apply list-decimal leading-8 list-inside my-6 mx-4 md:mx-14 text-surface-400; }
+main > section > ul { @apply list-disc list-inside mx-6 my-6 px-2 md:px-10 text-surface-400; }
+main > section > ol { @apply list-decimal list-inside mx-6 my-6 px-2 md:px-10 text-surface-400; }
+main > section > blockquote { @apply px-4 py-2 max-w-3xl w-full mx-auto my-12 italic text-surface-400 shadow-lg border-l-4 border-solid border-secondary-500; }
+main > section > div.codeblock { @apply mx-4 md:mx-10; }
 
 section.posts .grid { @apply gap-4 self-center p-2 grid-cols-2 lg:grid-cols-4 lg:px-4; }
 section#labs.posts .grid { @apply lg:grid-cols-4; }
 
+/* Article Cards */
 article.card { @apply flex flex-col; }
 article.card header { @apply card-header; }
 article.card section { @apply h-full p-4; }
 article.card section h3 { @apply text-3xl text-primary-500; }
 article.card blockquote { @apply text-slate-400; }
 article.card footer { @apply card-footer flex flex-row justify-end self-end; }
-

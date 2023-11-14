@@ -50,7 +50,7 @@
 
 <style lang="postcss">
    header {
-      @apply flex flex-col lg:flex-row lg:justify-between my-6;
+      @apply flex flex-col lg:flex-row lg:justify-between my-6 p-4;
    }
 
    header h2 {
