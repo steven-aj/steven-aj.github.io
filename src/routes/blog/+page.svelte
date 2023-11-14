@@ -22,7 +22,7 @@
 <section hidden>
    {#if tags.length}
       {#each tags as tag}
-         <a class="chip" href={`/blog/tag/${tag}`}>{tag}</a>
+         <a class="chip" href={`/blog/tags/${tag}`}>{tag}</a>
       {/each}
    {/if}
 </section>
