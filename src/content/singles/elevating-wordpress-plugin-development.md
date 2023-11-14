@@ -7,10 +7,9 @@ excerpt: An overview of implementing modern front-end frameworks as WordPress Pl
 cover: /assets/covers/rocket-plug.jpeg
 tags:
   - wordpress
-  - wordpress
-  - plugins
   - applications
   - informative
+  - wordpress-plugins
 ---
 
 WordPress' popularity is based largely on its ecosystem of plugins & their ability to simplify constructing solutions for.. well.. everyone. In reality, a large portion of those plugins are poorly implemented with respect to the platform's core-development principles, ultimately impacting performance of the final product in a not-so-good way.
@@ -38,11 +37,11 @@ On the front-end, let's consider the component of individual members (the post) 
 
 Where data is concerned, it seems pretty obvious that a post's cover photo would serve well for the team member's Headshot. For the content section, we can use the post's title to house and display the member's Name. For their Overview, however, we have two options - the post's content-body, or its excerpt. On one hand, the content-body could be useful for rendering HTML out-of-the-box (something that excerpts aren't natively built for). On the other hand, we could use the content-body to house a Bio for each user, while the excerpt could be useful for our Overview of their roles & responsibilities. Since the option of a Bio for each member opens further opportunities to build a template around a single post - effectively giving each member their own page - let's go with the latter.
 
-### Conceptualizing an Application Layer
+### The Application Layer
 
 While we could (probably) train most users to understand what we define as a Card and how the post's excerpt would be featured within it, we can go the extra distance by re-defining the excerpt itself as the member's Overview. Since we're using the post's content-body for a member's Bio, we can appropriately re-define that as well. While we're at it, why not call the cover photo a Headshot, too?
 
-Now that we've determined how we'll leverage different elements of the post, we can start conceptualizing an application layer to expand on our post-type of Staff Members. With newly-defined context for each element of a Staff Member, we can build this layer in a way that seamlessly bridges the user's expectations by rendering similarities between the Dashboard and the front-end. To do this, we'll build our application's UI to display posts in a Card-like manner with additional interactivity to modify each element of the card. Maybe an on-hover event to show a button on our Heashots, perhaps some buttons to toggle independent editors for the Overview & Bio and, finally, a sidebar to help organize members by our custom taxonomy of Team (or Department).
+Now that we've determined how we'll leverage different elements of the post, we can start conceptualizing an application layer to expand on our post-type of Staff Members. With newly-defined context for each element of a Staff Member, we can build this layer in a way that seamlessly bridges the user's expectations by rendering similarities between the Dashboard and the front-end. To do this, we'll build our application's UI to display posts in a Card-like manner with additional interactivity to modify each element of the card. Maybe an on-hover event to show a button on our Headshots, perhaps some buttons to toggle independent editors for the Overview & Bio and, finally, a sidebar to help organize members by our custom taxonomy of Team (or Department).
 
 We could, of course, build this layer in PHP, but our objective is to modernize the experience with the powers of reactivity and state management. To do this, we could opt for any one of the modern front-end frameworks and interact with WordPress' native REST API to manage our posts - a concept not far from the direction that WordPress is heading, anyway.
 
@@ -58,6 +57,6 @@ By bundling a custom post-type, an application layer on top of it and a set of c
 
 ### Further Considerations
 
-Ealier, I mentioned the addition of custom fields within a post-type. These essentially represent object models that we can use to define additional information for our posts. Imagine laying out individual slides of a slideshow within a single post, then defining properties of that slideshow (*speed, animation, etc.*) using custom fields.
+Earlier, I mentioned the addition of custom fields within a post-type. These essentially represent object models that we can use to define additional information for our posts. Imagine laying out individual slides of a slideshow within a single post, then defining properties of that slideshow (*speed, animation, etc.*) using custom fields.
 
 With this in mind, the possibilities of expanding on the core feature of a Post are nearly limitless.

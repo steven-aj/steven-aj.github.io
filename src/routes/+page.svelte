@@ -2,12 +2,13 @@
    import { onMount } from "svelte";
    import { fade } from "svelte/transition";
    import Shell from "$lib/shell";
+   import LabCard from "$components/LabCard.svelte";
    import ProfileCard from "$components/ProfileCard.svelte";
    import PostCard from "$components/PostCard.svelte";
    import EmptyNotice from "$components/EmptyNotice.svelte";
 
    export let data;
-   let { meta, profile, quotes, content, posts } = data;
+   let { meta, profile, quotes, content, posts, labs } = data;
 
    function randomQuote(quoteSection) {
       // let counter = 0;
@@ -44,6 +45,17 @@
    {/each}
 </section>
 
+{#if labs.length}
+   <section class="featured posts">
+      <h2>Featured Labs</h2>
+      <div class="grid">
+         {#each labs as lab}
+            <LabCard {lab} />
+         {/each}
+      </div>
+   </section>
+{/if}
+
 {#if posts.length}
    <section class="posts">
       <h2>Recent Posts</h2>
@@ -70,20 +82,20 @@
    }
 
    section.quotes {
-      @apply flex flex-col items-center justify-center max-w-3xl h-60 md:h-64 w-full mx-auto;
+      @apply flex flex-col items-center justify-center max-w-3xl h-40 md:h-48 w-full mx-auto;
    }
 
    section.quotes blockquote {
-      @apply italic font-serif text-3xl text-center text-slate-500/50 leading-10;
+      @apply italic font-serif text-3xl text-center text-slate-500/50 leading-10 border-0 shadow-none;
       transition: all;
       animation: fade 1s;
    }
 
    section.posts h2 {
-      @apply text-center md:text-start text-2xl text-slate-500 my-4;
+      @apply text-center md:text-start text-3xl text-slate-500 my-8;
    }
 
    section.posts .grid {
-      @apply md:grid-cols-2 lg:grid-cols-3 gap-4 self-center px-4;
+      @apply md:grid-cols-2 lg:grid-cols-4 gap-8 self-center px-4;
    }
 </style>

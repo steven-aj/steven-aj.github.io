@@ -40,6 +40,5 @@
    <EmptyNotice
       showIcon={false}
       title={false}
-      message="It looks like I haven't posted any Labs yet. Check back later!"
    />
 {/if}

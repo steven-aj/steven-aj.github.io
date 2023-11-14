@@ -13,6 +13,10 @@ export default class LabItem implements ILabItem {
       return this.meta.status === 'published';
    }
 
+   public get featured() {
+      return this.meta.featured === 'true';
+   }
+
    public get title() {
       return this.meta.title;
    }

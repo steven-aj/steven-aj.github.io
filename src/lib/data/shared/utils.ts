@@ -3,5 +3,6 @@ export async function filterPublished(posts) {
 }
 
 export function sortByDate(posts) {
-   return posts.sort((a, b) => a.date - b.date)
+   // @ts-expect-error
+   return posts.sort((a, b) => new Date(a.date) - new Date(b.date)).reverse();
 }

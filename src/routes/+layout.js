@@ -5,11 +5,12 @@ import json from 'highlight.js/lib/languages/json';
 import javascript from 'highlight.js/lib/languages/javascript';
 import typescript from 'highlight.js/lib/languages/typescript';
 import shell from 'highlight.js/lib/languages/shell';
+import markdown from 'highlight.js/lib/languages/markdown';
 
 export const prerender = true;
 
 export async function load() {
-   const page = await import(`../content/site.md`);
+   const page = await import(`../content/site-meta.md`);
    const { title, author, description, keywords } = page.metadata;
 
    // Register each imported language module
@@ -19,6 +20,7 @@ export async function load() {
    hljs.registerLanguage('javascript', javascript);
    hljs.registerLanguage('typescript', typescript);
    hljs.registerLanguage('shell', shell);
+   hljs.registerLanguage('markdown', markdown);
 
    return {
       hljs,

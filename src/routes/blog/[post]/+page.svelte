@@ -19,9 +19,9 @@
 	beforeUpdate(init);
 </script>
 
-<article>
+<section>
 	<svelte:component this={content} />
-</article>
+</section>
 
 <style lang="postcss">
 	article {

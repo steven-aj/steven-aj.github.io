@@ -5,15 +5,20 @@ export default class LabsController {
    private markdownEntries = Object.entries(import.meta.glob('/src/content/labs/*.md'));
 
    public async getAll() {
-      const posts: LabItem[] = await Promise.all(
+      const labs: LabItem[] = await Promise.all(
          this.markdownEntries.map(LabItem.createFromPromise)
-      ).then(filterPublished).then(sortByDate);
+      ).then(filterPublished);
 
-      return posts;
+      return labs;
    }
 
    public async getRecent(count = 6) {
-      const posts: LabItem[] = await this.getAll();
-      return posts.slice(0, count);
+      const labs: LabItem[] = await this.getAll();
+      return labs.slice(0, count);
+   }
+
+   public async getFeatured() {
+      const labs: LabItem[] = (await this.getAll()).filter(lab => lab.featured);
+      return labs;
    }
 }

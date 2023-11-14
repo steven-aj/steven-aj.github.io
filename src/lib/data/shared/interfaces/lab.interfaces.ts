@@ -1,7 +1,8 @@
-import { EnumStatus } from "./enums";
+import { EnumStatus, EnumFeatured } from "./enums";
 
 export interface ILabMeta {
    status: EnumStatus;
+   featured: EnumFeatured;
    title: string;
    language: string;
    description: string;

@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "5f8ac9875cdd6140",
+        "id": "6df8d2d9b610bdbe",
         "type": "tabs",
         "children": [
           {
-            "id": "13c43228f7243259",
+            "id": "628aba728798d660",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "labs/tauri-sveltekit.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "96ffff5a7cd82de7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/are-we-a-good-fit.md",
+                "file": "labs/gh-smoothie.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/are-we-a-good-fit.md",
+                "file": "labs/gh-smoothie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/are-we-a-good-fit.md",
+                "file": "labs/gh-smoothie.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/are-we-a-good-fit.md"
+                "file": "labs/gh-smoothie.md"
               }
             }
           }
@@ -160,34 +147,38 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "96ffff5a7cd82de7",
+  "active": "628aba728798d660",
   "lastOpenFiles": [
-    "labs.md",
-    "labs/ww-etl.md",
-    "labs/todo-svelte.md",
-    "labs/tauri-sveltekit.md",
+    "home.md",
+    "labs/gh-smoothie.md",
     "labs/lost-in-space-day-four-loop.md",
+    "labs/tauri-sveltekit.md",
+    "labs/todo-svelte.md",
+    "labs/ww-etl.md",
     "labs/library-demo.md",
-    "_templates/lab.md",
-    "about.md",
-    "posts/are-we-a-good-fit.md",
-    "posts/elevating-wordpress-plugin-development.md",
-    "posts/static-and-dynamic-sites.md",
     "experience.md",
-    "labs",
+    "about.md",
+    "singles/elevating-wordpress-plugin-development.md",
     "_templates/post-single.md",
     "_templates/post-series.md",
+    "singles/static-and-dynamic-sites.md",
+    "singles/are-we-a-good-fit.md",
+    "singles",
+    "singsles/static-and-dynamic-sites.md",
+    "singsles/elevating-wordpress-plugin-development.md",
+    "singsles/are-we-a-good-fit.md",
+    "singsles",
+    "posts/elevating-wordpress-plugin-development.md",
+    "site-meta.md",
+    "labs.md",
+    "posts/are-we-a-good-fit.md",
+    "_templates/lab.md",
+    "posts/static-and-dynamic-sites.md",
+    "labs",
     "posts/drafted-post.md",
     "posts/new-post.md",
     "posts/test-post.md",
-    "2023-11-10.md",
-    "_templates/page.md",
-    "_templates/site.md",
     "_templates",
-    "site.md",
-    "home.md",
-    "_templates/about-page.md",
-    "_templates/home-page.md",
     "Untitled.canvas"
   ]
 }

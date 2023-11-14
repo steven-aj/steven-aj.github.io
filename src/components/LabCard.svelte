@@ -18,8 +18,12 @@
 </a>
 
 <style lang="postcss">
+   a {
+      @apply flex max-w-sm w-full snap-center;
+   }
+
    article {
-      @apply overflow-hidden;
+      @apply w-full overflow-hidden;
    }
 
    article:hover {

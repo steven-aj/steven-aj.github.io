@@ -3,7 +3,7 @@ import { sortByDate, filterPublished } from "../shared/utils";
 import uniq from "lodash/uniq";
 
 export default class PostsController {
-   private markdownEntries = Object.entries(import.meta.glob('/src/content/posts/*.md'));
+   private markdownEntries = Object.entries(import.meta.glob('/src/content/singles/*.md'));
 
    public async getAll() {
       const posts: PostItem[] = await Promise.all(

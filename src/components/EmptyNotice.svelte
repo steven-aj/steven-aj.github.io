@@ -1,7 +1,7 @@
 <script>
    export let title = "Nothing to see here!";
    export let message =
-      "It looks like I haven't posted anything to this yet. Check back later!";
+      "It looks like I haven't published anything here yet. Check back later!";
 
    export let showIcon = true;
 </script>
