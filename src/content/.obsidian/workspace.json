@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "labs/gh-smoothie.md",
+                "file": "singles/static-and-dynamic-sites.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "labs/gh-smoothie.md",
+                "file": "singles/static-and-dynamic-sites.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "labs/gh-smoothie.md",
+                "file": "singles/static-and-dynamic-sites.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "labs/gh-smoothie.md"
+                "file": "singles/static-and-dynamic-sites.md"
               }
             }
           }
@@ -149,20 +149,20 @@
   },
   "active": "628aba728798d660",
   "lastOpenFiles": [
-    "home.md",
+    "about.md",
+    "singles/elevating-wordpress-plugin-development.md",
+    "singles/are-we-a-good-fit.md",
     "labs/gh-smoothie.md",
+    "home.md",
     "labs/lost-in-space-day-four-loop.md",
     "labs/tauri-sveltekit.md",
     "labs/todo-svelte.md",
     "labs/ww-etl.md",
     "labs/library-demo.md",
     "experience.md",
-    "about.md",
-    "singles/elevating-wordpress-plugin-development.md",
     "_templates/post-single.md",
     "_templates/post-series.md",
     "singles/static-and-dynamic-sites.md",
-    "singles/are-we-a-good-fit.md",
     "singles",
     "singsles/static-and-dynamic-sites.md",
     "singsles/elevating-wordpress-plugin-development.md",
