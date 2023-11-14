@@ -1,5 +1,6 @@
 ---
 status: published
+featured: "false"
 title: To-Do Svelte
 description: A to-do list built with Tauri & Svelte.
 language: Svelte

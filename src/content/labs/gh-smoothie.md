@@ -1,5 +1,6 @@
 ---
 status: published
+featured: "true"
 title: GH Smoothie
 description: A markdown-powered blogging framework for GitHub Pages. Built with SvelteKit.
 language: Svelte
@@ -10,13 +11,11 @@ demo: https://steven-aj.github.io/gh-smoothie/
 	import { CodeBlock } from '@skeletonlabs/skeleton';
 </script>
 
-GH Smoothie is a blogging framework that I built as an alternative for Jekyll.
+GH Smoothie is a blogging framework that I built as an alternative for Jekyll. Content can be managed with any markdown editor. Metadata for pages and posts is supplied via the document's front matter.
 
-Content can be managed with any markdown editor. Metadata for pages and posts is supplied via the document's front matter.
+The repo also features workflow configurations for GitHub Pages to simplify deploying your blog - just push your changes into `main` and GitHub will do the rest.
 
-The repo also features deployment configurations for GitHub Pages. To deploy the app or post new articles, push your changes into `main` and GitHub will do the rest.
-
-Feel free to fork this repo to your own collection & hack it as much as you want.
+Feel free to fork it to your own collection & hack it as much as you want.
 
 ## Built for Obsidian
 
@@ -27,47 +26,53 @@ Feel free to fork this repo to your own collection & hack it as much as you want
 - post-single
 
 For convenience, the vault also comes configured with a community-built <a target="_blank" href="https://github.com/polyipseity/obsidian-terminal/releases/tag/3.14.0">Obsidian Terminal</a> so you can commit and push changes from within [Obsidian](https://obsidian.md) itself.
-### Front Matter Examples
+### Front Matter Templates
 
 In its default configuration, Smoothie's front matter is used to generate meta data across the site. The `posts` library pulls from this to render article cards.
 
-#### Site-Meta Template
+#### Site-Meta
 
 <CodeBlock 
 		   language="markdown" 
 		   code="---
+		   
 title:
 author:
 description: 
-keywords:
----"></CodeBlock>
+keywords: 
+				 
+---"/>
 
-#### Page Template
+#### Page
 
 <CodeBlock 
 		   language="markdown" 
 		   code="---
+		
 title:
 author:
 date:
 description:
 cover:
-keywords
+keywords: 
+				 
 ---
 "></CodeBlock>
 
 
-#### Post-Single Template
+#### Post-Single
 
 <CodeBlock 
 		   language="markdown" 
 		   code="---
+		   
 status: draft | published
 title:
 date:
 author:
 excerpt:
 cover:
-tags:
+tags: 
+				 
 ---
 "></CodeBlock>

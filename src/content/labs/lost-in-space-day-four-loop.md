@@ -1,5 +1,6 @@
 ---
 status: published
+featured: "false"
 title: Day 4 - "Lost in Space" (Inventr.io)
 description: An intro to for-loops written for the "Lost in Space" kit by Inventr.io
 language: C/C++

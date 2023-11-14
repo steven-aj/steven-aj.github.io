@@ -9,7 +9,7 @@
 	function init() {
 		App.showBackButton(true);
 		App.setHero({
-			title: meta.title,
+			title: "Lab: " + meta.title,
 			description: meta.description,
 			cover: meta.screenshot,
 		});
@@ -19,11 +19,21 @@
 </script>
 
 <nav>
-	{#if meta.repo}
-		<a role="button" target="_blank" href={meta.repo}>Repo</a>
-	{/if}
 	{#if meta.demo}
-		<a role="button" target="_blank" href={meta.demo}>Demo</a>
+		<a
+			role="button"
+			class="variant-filled-primary"
+			target="_blank"
+			href={meta.demo}>Demo</a
+		>
+	{/if}
+	{#if meta.repo}
+		<a
+			role="button"
+			class={meta.demo ? "variant-soft-secondary" : "variant-filled-primary"}
+			target="_blank"
+			href={meta.repo}>Repo</a
+		>
 	{/if}
 </nav>
 
@@ -35,12 +45,17 @@
 	nav {
 		@apply flex flex-row;
 
-		@apply justify-evenly;
+		@apply justify-evenly space-x-4;
 
 		@apply max-w-sm w-full;
 
 		@apply m-auto;
 	}
+
+	nav a[role="button"] {
+		@apply btn w-full rounded-md py-4 px-6 mb-10;
+	}
+
 	article {
 		@apply py-8;
 	}

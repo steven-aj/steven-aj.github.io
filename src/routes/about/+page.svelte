@@ -12,8 +12,8 @@
          title: meta.title,
          date: `Last updated: ${meta.date}`,
          cover: meta.cover,
-         description: meta.description
-      })
+         description: meta.description,
+      });
    }
 
    onMount(init);
@@ -26,6 +26,6 @@
    <meta name="description" content={meta.description} />
 </svelte:head>
 
-<section id="About">
+<section>
    <svelte:component this={content} />
 </section>

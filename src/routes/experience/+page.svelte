@@ -29,3 +29,40 @@
 <section id="Experience">
    <svelte:component this={content} />
 </section>
+
+<form>
+   <input required type="text" name="name" placeholder="Full Name" />
+   <input required type="text" placeholder="Business Name" />
+   <input required type="email" name="email" placeholder="Email Address" />
+   <input type="tel" name="phone" placeholder="Business Phone (optional)" />
+   <textarea
+      name="details"
+      rows="7"
+      placeholder="What can you tell me about your opportunity?"
+   />
+   <button>Submit Request</button>
+</form>
+
+<style lang="postcss">
+   #Experience {
+      @apply text-center;
+   }
+
+   form {
+      @apply max-w-5xl w-full;
+
+      @apply space-y-4 m-auto;
+   }
+
+   input {
+      @apply input px-4 py-2;
+   }
+
+   textarea {
+      @apply textarea px-4 py-2;
+   }
+
+   form button {
+      @apply btn variant-filled-primary float-right w-full;
+   }
+</style>

@@ -2,12 +2,13 @@
    import { onMount } from "svelte";
    import { fade } from "svelte/transition";
    import Shell from "$lib/shell";
+   import LabCard from "$components/LabCard.svelte";
    import ProfileCard from "$components/ProfileCard.svelte";
    import PostCard from "$components/PostCard.svelte";
    import EmptyNotice from "$components/EmptyNotice.svelte";
 
    export let data;
-   let { meta, profile, quotes, content, posts } = data;
+   let { meta, profile, quotes, content, posts, labs } = data;
 
    function randomQuote(quoteSection) {
       // let counter = 0;
@@ -34,9 +35,18 @@
    <meta name="description" content={meta.description} />
 </svelte:head>
 
-<section>
-   <ProfileCard {profile} />
-</section>
+{#if labs.length}
+   <section class="posts">
+      <h2>Featured Labs</h2>
+      <div
+         class="snap-x justify-center scroll-px-4 snap-mandatory scroll-smooth flex gap-4 overflow-x-auto px-4 py-10"
+      >
+         {#each labs as lab}
+            <LabCard {lab} />
+         {/each}
+      </div>
+   </section>
+{/if}
 
 {#if posts.length}
    <section class="posts">
@@ -53,6 +63,10 @@
    {#each quotes as quote, i}
       <blockquote data-index={i} class="!invisible !hidden">{quote}</blockquote>
    {/each}
+</section>
+
+<section>
+   <ProfileCard {profile} />
 </section>
 
 <!-- <section class="content">

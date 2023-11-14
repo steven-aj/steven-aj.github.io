@@ -1,6 +1,7 @@
 
 import { join } from 'path';
 import type { Config } from 'tailwindcss';
+import forms from '@tailwindcss/forms';
 
 // 1. Import the Skeleton plugin
 import { skeleton } from '@skeletonlabs/tw-plugin';
@@ -29,7 +30,8 @@ const config = {
           { name: "wintry", enhancements: true },
         ]
       }
-    })
+    }),
+    forms
   ]
 } satisfies Config;
 

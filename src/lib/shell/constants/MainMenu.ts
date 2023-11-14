@@ -15,11 +15,6 @@ const MainMenu: IMainMenu = {
          icon: faAddressCard
       },
       {
-         anchor: '/experience',
-         label: 'Experience',
-         icon: faClockRotateLeft
-      },
-      {
          anchor: '/labs',
          label: 'Labs',
          icon: faFlask

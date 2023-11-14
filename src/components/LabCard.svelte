@@ -19,7 +19,7 @@
 
 <style lang="postcss">
    a {
-      @apply flex max-w-sm w-full;
+      @apply flex max-w-sm w-full snap-center;
    }
 
    article {
