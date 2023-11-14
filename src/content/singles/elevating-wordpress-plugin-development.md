@@ -11,7 +11,6 @@ tags:
   - informative
   - wordpress-plugins
 ---
-
 WordPress' popularity is based largely on its ecosystem of plugins & their ability to simplify constructing solutions for.. well.. everyone. In reality, a large portion of those plugins are poorly implemented with respect to the platform's core-development principles, ultimately impacting performance of the final product in a not-so-good way.
 
 As time has gone on, WordPress has shifted much of its attention to expanding its block-building tools for both end-users and developers alike. Much of this has been in efforts to modernize the platform's potential, but it's lended itself to offering opportunities to enhance performance as well.
@@ -33,7 +32,7 @@ For reference, let's consider a custom post-type of 'Staff Members'.
 
 To bridge content management with front-end development, it would be helpful to pre-define some common language to help non-developers understand how these two areas connect to each other.  To do that, let's consider how we want to use the elements that WordPress gives us.
 
-On the front-end, let's consider the component of individual members (the post) to be a Card rendered as a column featuring a Heashot of the Staff Member with a segment of content immediately below it that holds the person's name and a brief Overview of their roles within the company. To organize members into their respective Teams (or Departments), we can use a custom taxonomy. 
+On the front-end, let's consider the component of individual members (the post) to be a Card rendered as a column featuring a Headshot of the Staff Member with a segment of content immediately below it that holds the person's name and a brief Overview of their roles within the company. To organize members into their respective Teams (or Departments), we can use a custom taxonomy. 
 
 Where data is concerned, it seems pretty obvious that a post's cover photo would serve well for the team member's Headshot. For the content section, we can use the post's title to house and display the member's Name. For their Overview, however, we have two options - the post's content-body, or its excerpt. On one hand, the content-body could be useful for rendering HTML out-of-the-box (something that excerpts aren't natively built for). On the other hand, we could use the content-body to house a Bio for each user, while the excerpt could be useful for our Overview of their roles & responsibilities. Since the option of a Bio for each member opens further opportunities to build a template around a single post - effectively giving each member their own page - let's go with the latter.
 
