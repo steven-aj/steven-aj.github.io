@@ -29,9 +29,9 @@
                />
             {/if}
          </div>
-         <h1 class="desktop">{$store.toolbar.title}</h1>
+         <strong class="desktop">{$store.toolbar.title}</strong>
       </svelte:fragment>
-      <h1 class="mobile">{$store.toolbar.title}</h1>
+      <strong class="mobile">{$store.toolbar.title}</strong>
       <svelte:fragment slot="trail">
          <LightSwitch />
       </svelte:fragment>
@@ -43,11 +43,11 @@
       @apply w-8 md:w-20;
    }
 
-   h1.desktop {
+   strong.desktop {
       @apply hidden md:contents;
    }
 
-   h1.mobile {
+   strong.mobile {
       @apply md:!hidden;
    }
 

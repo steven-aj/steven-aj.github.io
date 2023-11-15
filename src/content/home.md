@@ -16,9 +16,9 @@ keywords:
 quotes:
   - Did you know? This app was built with SvelteKit.
   - Have a look around and feel free to get in touch.
-  - Want your own SvelteKit blog on GitHub? Check out my lab, 'GH Smoothie'.
+  - Want your own SvelteKit blog on GitHub? Check out 'GH Smoothie'.
 ---
-### Still Tidying Up Here
+## Still Tidying Up Here
 
 This project is still relatively new and you've caught me in the middle of development. Feel free to have a look around. 
 

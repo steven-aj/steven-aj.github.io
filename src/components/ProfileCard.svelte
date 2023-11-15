@@ -25,7 +25,7 @@
          />
       </header>
       <section>
-         <h2>{profile.title}</h2>
+         <h1>{profile.title}</h1>
          <p class="tagline">{profile.tagline}</p>
          <div class="contact-options">
             {#if profile.github}
@@ -78,8 +78,8 @@
       @apply flex flex-col items-center lg:items-start my-2;
    }
 
-   article.card h2 {
-      @apply h2;
+   article.card h1 {
+      @apply h1;
    }
 
    article.card .tagline {

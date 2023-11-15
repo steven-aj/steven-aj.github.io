@@ -1,8 +1,15 @@
 <script>
+   import { faStar } from "@fortawesome/free-solid-svg-icons";
+   import SvelteFa from "svelte-fa";
    export let lab;
 </script>
 
 <a title={lab.title} href={lab.path}>
+   {#if lab.featured}
+      <span title="Featured Lab" class="featured-badge">
+         <SvelteFa icon={faStar} />
+      </span>
+   {/if}
    <article class="card">
       <section>
          <h3>{lab.title}</h3>
@@ -19,7 +26,11 @@
 
 <style lang="postcss">
    a {
-      @apply flex max-w-sm w-full snap-center;
+      @apply relative flex max-w-sm w-full snap-center;
+   }
+
+   a span.featured-badge {
+      @apply badge variant-filled-secondary absolute p-2 -top-2 right-4 z-10;
    }
 
    article {
@@ -27,7 +38,7 @@
    }
 
    article:hover {
-      @apply shadow-2xl;
+      @apply shadow-lg;
    }
 
    article header {

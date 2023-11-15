@@ -24,7 +24,7 @@
 </section>
 
 <style lang="postcss">
-	article {
-		@apply py-8;
+	section {
+		@apply py-16;
 	}
 </style>
