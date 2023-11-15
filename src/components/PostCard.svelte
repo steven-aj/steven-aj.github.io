@@ -6,7 +6,7 @@
    <article class="card">
       {#if post.cover}
          <header>
-            <img alt={post.title} src={post.cover} />
+            <img src={post.cover} alt={post.title} />
          </header>
       {/if}
 

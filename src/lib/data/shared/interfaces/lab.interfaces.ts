@@ -13,4 +13,5 @@ export interface ILabMeta {
 export interface ILabItem {
    path: string;
    meta: ILabMeta;
+   content: any;
 }

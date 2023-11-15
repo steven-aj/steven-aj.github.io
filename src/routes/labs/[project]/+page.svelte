@@ -49,14 +49,14 @@
 
 		@apply max-w-sm w-full;
 
-		@apply m-auto;
+		@apply mx-auto my-10;
 	}
 
 	nav a[role="button"] {
 		@apply btn w-full rounded-md py-4 px-6 mb-10;
 	}
 
-	article {
+	section {
 		@apply py-8;
 	}
 </style>
