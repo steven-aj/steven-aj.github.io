@@ -7,8 +7,8 @@
       storeHighlightJs,
       initializeStores,
    } from "@skeletonlabs/skeleton";
-   import { afterUpdate, onMount } from "svelte";
-   import { afterNavigate } from "$app/navigation";
+   import { onMount } from "svelte";
+   import { beforeNavigate, afterNavigate } from "$app/navigation";
    import Shell from "$lib/shell";
    import Toolbar from "$components/shell/Toolbar.svelte";
    import MainMenu from "$components/shell/MainMenu.svelte";
@@ -32,9 +32,14 @@
       });
    }
 
-   afterNavigate(() =>
-      document.getElementById("page").scrollTo({ top: 0, behavior: "instant" })
-   );
+   beforeNavigate(() => {
+      Shell.setLoading(true);
+   })
+
+   afterNavigate(() => {
+      document.getElementById("page").scrollTo({ top: 0, behavior: "instant" });
+      Shell.setLoading(false);
+   });
 
    onMount(init);
 </script>
