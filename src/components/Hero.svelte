@@ -8,14 +8,13 @@
    <div
       class="hero"
       data-cover={$store.hero.cover ? "true" : "false"}
-      data-bg={$store.hero.cover}
       style={`background-image: ${
          $store.hero.cover ? `url(${$store.hero.cover})` : ""
       };`}
    >
       <div class="content">
          <!-- {#key $store.hero} -->
-            <h2 in:scale>{$store.hero.title}</h2>
+            <h1 in:scale>{$store.hero.title}</h1>
          <!-- {/key} -->
 
          {#if $store.hero.description}
@@ -62,25 +61,18 @@
 
       /* Position */
       @apply relative;
+
+      /* Decoration */
+      @apply variant-glass-surface;
    }
 
-   .hero h2 {
+   .hero h1 {
       /* Size */
       @apply max-w-2xl w-full;
 
       /* Typography */
       @apply font-bold text-5xl;
       line-height: 130%;
-
-      /* Decoration */
-      @apply drop-shadow-md;
-
-      /* Gradient */
-      @apply bg-clip-text text-transparent box-decoration-clone;
-      /* Direction */
-      @apply bg-gradient-to-br;
-      /* Color Stops */
-      @apply from-primary-600 via-primary-700 to-primary-800;
    }
 
    .hero p.description {
@@ -93,7 +85,7 @@
 
    .hero time {
       /* Typography */
-      @apply text-xs italic text-slate-500;
+      @apply text-xs italic;
 
       /* Decoration */
       @apply drop-shadow-lg;
@@ -104,26 +96,26 @@
    **********************************/
    .hero[data-cover="true"] {
       /* Background (Cover) */
-      @apply bg-cover bg-center bg-no-repeat;
+      @apply bg-cover bg-center bg-no-repeat bg-blend-exclusion bg-surface-100-800-token;
    }
 
    .hero[data-cover="true"] .content {
       /* Container */
-      @apply flex flex-col items-center justify-center;
+      @apply relative flex flex-col items-center justify-center;
 
       /* Inner Alignment */
       @apply md:gap-6 p-4;
 
       /* Gradient Direction */
-      @apply bg-gradient-to-tl;
+      @apply bg-gradient-to-t;
 
       /* Color Stops */
-      @apply from-surface-900/70 via-surface-900/90 to-surface-900;
+      @apply from-surface-900 via-surface-900/70 to-surface-900/10;
 
       min-height: 384px;
    }
 
-   .hero[data-cover="true"] h2 {
+   .hero[data-cover="true"] h1 {
       /* Container */
       @apply lg:max-w-5xl;
 
@@ -155,15 +147,22 @@
 
    .hero[data-cover="true"] time {
       /* Position */
-      @apply relative md:absolute md:bottom-6 md:right-4;
+      @apply relative md:absolute md:bottom-6 md:right-6;
 
       /* Spacing */
       @apply my-4 md:my-0;
+
+      /* Typography */
+      @apply text-slate-200;
    }
 
    /**********************************
    * WITHOUT Cover
    **********************************/
+   .hero[data-cover="false"] {
+      @apply shadow-inner;
+   }
+
    .hero[data-cover="false"] .content {
       /* Container */
       @apply flex flex-col;
@@ -178,8 +177,12 @@
       @apply gap-6 px-4 py-12;
    }
 
-   .hero[data-cover="false"] h2 {
+   .hero[data-cover="false"] h1 {
       /* Typography */
       @apply text-center;
+   }
+
+   .hero[data-cover="false"] time {
+      @apply text-slate-500;
    }
 </style>

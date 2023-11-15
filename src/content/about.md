@@ -12,7 +12,7 @@ keywords:
    - steven johnson
 ---
 
-### Coding History
+## Coding History
 
 We bought our first computer in 2000 and I've wanted to be a developer since.
 
@@ -22,18 +22,18 @@ We moved back home a year later and I enrolled in an in-person bootcamp to help 
 
 Despite my initial success, I'm pretty terrible at marketing myself. When COVID hit, competition got fierce, so I returned to electrical work and came back after the pandemic subsided. I'm grateful to be back doing what I love.
 
-### Career So Far
+## Career So Far
 
 I've had opportunities to work with universities, law firms, doctor's offices, agencies and bloggers. I've built a some projects from the ground up, debugged more things than I can count and helped solve problems to keep things moving.
 
 You can find an overview of my work history in the [Experience](/experience) section.
 
-### Personal Goals
+## Personal Goals
 
 My short-term goal is to settle into a software development position on a modern JavaScript stack. That's partially why I built this site as a web app (*and because it's my preferred technology*). My ideal stack would be SvelteKit or Vue on a Node.js backend & NoSQL database, but I have experience in NativeScript & React plus PHP backends, too.
 
 My long-term goal is to build a small SaaS to help freelancers operate more like the business that they are. I started working on it Summer of this year and I'm super excited to launch next year.
 
-### Let's Connect
+## Let's Connect
 
 I'm mostly an open book, so feel free to reach out with any questions you might have (keep it professional, of course). I'm always eager to better myself & help people with their projects, so don't hesitate to connect if you think I might be a good fit for your project.

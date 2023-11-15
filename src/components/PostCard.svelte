@@ -43,11 +43,15 @@
    }
 
    article:hover {
-      @apply shadow-2xl;
+      @apply shadow-lg;
    }
 
    article header {
       @apply flex flex-col p-0;
+   }
+
+   article header img {
+      @apply brightness-75;
    }
 
    article h3 {
@@ -59,6 +63,6 @@
    }
 
    article footer time {
-      @apply my-2 text-surface-500 text-xs;
+      @apply my-2 text-slate-500 text-xs;
    }
 </style>

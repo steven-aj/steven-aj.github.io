@@ -9,18 +9,18 @@ main > section { @apply p-4 mb-4; }
 
 main > section > h2 { 
    /* Spacing */
-   @apply  my-6 px-4; 
+   @apply  my-6 mt-10 px-4; 
 
    /* Typography */
-   @apply text-4xl text-primary-500;
+   @apply text-4xl text-primary-700 text-center;
 }
 
 main > section > h3 { 
    /* Spacing */
-   @apply  my-6 px-4; 
+   @apply  my-6 px-10; 
 
    /* Typography */
-   @apply text-3xl text-primary-500;
+   @apply text-3xl text-secondary-700;
 }
 
 main > section > h4 { 
@@ -28,7 +28,7 @@ main > section > h4 {
    @apply text-xl text-secondary-500;
 
    /* Spacing */
-   @apply px-10 my-6; 
+   @apply px-14 my-6; 
 }
 
 main > section > h5 { 
@@ -36,10 +36,10 @@ main > section > h5 {
    @apply italic text-primary-500/50;
 
    /* Spacing */
-   @apply px-10 my-6; 
+   @apply px-16 my-6; 
 }
 
-main > section > p { @apply leading-9 text-surface-400 text-lg px-2 md:px-10 mb-4; }
+main > section > p { @apply leading-9 brightness-50 text-xl px-2 md:px-10 mb-4; }
 main > section > p > a { @apply anchor !text-secondary-500; }
 main > section > ul { @apply list-disc list-inside mx-6 my-6 px-2 md:px-10 text-surface-400; }
 main > section > ol { @apply list-decimal list-inside mx-6 my-6 px-2 md:px-10 text-surface-400; }
@@ -47,8 +47,8 @@ main > section > blockquote { @apply px-4 py-2 max-w-3xl w-full mx-auto my-12 it
 main > section > div.codeblock { @apply mx-4 md:mx-10; }
 
 section.posts { @apply flex flex-col justify-center w-full; }
-section.posts .grid { @apply gap-4 p-2 self-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:px-4; }
-section.featured .grid { @apply grid-cols-1 md:!grid-cols-2 self-center lg:!self-start; }
+section.posts > .grid { @apply gap-x-4 gap-y-6 p-2 self-center grid-cols-1 md:grid-cols-2 lg:!grid-cols-3 lg:px-4; }
+section.featured > .grid { @apply grid-cols-1 md:!grid-cols-2 self-center lg:!self-start; }
 section#labs.posts .grid { @apply self-center md:grid-cols-2 lg:grid-cols-4; }
 
 /* Article Cards */
@@ -56,5 +56,5 @@ article.card { @apply flex flex-col; }
 article.card header { @apply card-header; }
 article.card section { @apply h-full p-4; }
 article.card section h3 { @apply text-3xl text-primary-500; }
-article.card blockquote { @apply text-slate-400; }
+article.card blockquote { @apply text-slate-500; }
 article.card footer { @apply card-footer flex flex-row justify-end self-end; }
