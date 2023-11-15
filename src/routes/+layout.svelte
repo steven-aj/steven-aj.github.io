@@ -68,7 +68,7 @@
 
    <svelte:fragment slot="pageFooter">
       <footer>
-         <span>Copyright 2023 Steven Johnson. All rights reserved.</span>
+         <span>Copyright &copy 2023 Steven Johnson. All rights reserved.</span>
       </footer>
    </svelte:fragment>
 
@@ -88,6 +88,6 @@
    }
 
    footer span {
-      @apply text-surface-500;
+      @apply brightness-50;
    }
 </style>

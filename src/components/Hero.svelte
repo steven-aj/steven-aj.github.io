@@ -96,7 +96,7 @@
    **********************************/
    .hero[data-cover="true"] {
       /* Background (Cover) */
-      @apply bg-cover bg-center bg-no-repeat bg-blend-exclusion bg-surface-100-800-token;
+      @apply bg-fixed bg-cover bg-center bg-no-repeat bg-blend-exclusion bg-surface-100-800-token;
    }
 
    .hero[data-cover="true"] .content {
@@ -120,7 +120,7 @@
       @apply lg:max-w-5xl;
 
       /* Position */
-      @apply relative m-auto md:absolute md:bottom-10 md:left-6;
+      @apply m-auto md:absolute md:bottom-10 md:left-6;
 
       /* Spacing */
       @apply my-4 md:my-0;
