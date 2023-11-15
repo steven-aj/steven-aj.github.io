@@ -34,7 +34,7 @@
 {#if ready}
    {#if data}
       <header>
-         <h2>Blog</h2>
+         <h1>Blog</h1>
          <button class="btn variant-filled-secondary" on:click={openTagCloud}
             >Tag Cloud</button
          >
