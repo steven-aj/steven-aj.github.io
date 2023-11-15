@@ -13,6 +13,7 @@ export interface IHero {
 }
 
 export interface IAppStore {
+   loading: boolean;
    hero?: IHero;
    toolbar?: IToolbar;
 }

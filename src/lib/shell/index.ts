@@ -9,8 +9,16 @@ class Shell {
    constructor() {
       this.menu = MainMenu;
       this.store = writable({
+         loading: false,
          toolbar: undefined,
          hero: undefined,
+      });
+   }
+
+   public setLoading(value: boolean) {
+      this.store.update(state => {
+         state.loading = value;
+         return state;
       });
    }
 
@@ -18,7 +26,7 @@ class Shell {
       this.store.update(state => {
          state.toolbar = toolbar ? toolbar : undefined;
          return state;
-      })
+      });
    }
 
    public setHero(hero: IHero) {
@@ -34,7 +42,7 @@ class Shell {
             state.toolbar.back = show;
          }
          return state;
-      })
+      });
    }
 }
 

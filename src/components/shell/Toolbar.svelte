@@ -1,6 +1,6 @@
 <script>
    import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-   import { AppBar, LightSwitch } from "@skeletonlabs/skeleton";
+   import { AppBar, LightSwitch, ProgressRadial } from "@skeletonlabs/skeleton";
    import { fly } from "svelte/transition";
    import SvelteFa from "svelte-fa";
 
@@ -11,6 +11,9 @@
    <AppBar slotDefault="place-self-center" shadow="shadow-lg">
       <svelte:fragment slot="lead">
          <div class="navigation">
+            {#if $store.loading}
+               <ProgressRadial width="w-8 md:w-20" value={$store.loading} />
+            {:else}
             {#if $store.toolbar.back}
                <button
                   class="go-back"
@@ -27,6 +30,7 @@
                   src="/assets/logo.svg"
                   in:fly={{ x: -100 }}
                />
+            {/if}
             {/if}
          </div>
          <strong class="desktop">{$store.toolbar.title}</strong>
