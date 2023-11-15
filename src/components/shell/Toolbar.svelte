@@ -12,7 +12,7 @@
       <svelte:fragment slot="lead">
          <div class="navigation">
             {#if $store.loading}
-               <ProgressRadial width="w-8 md:w-20" value={$store.loading} />
+               <ProgressRadial width="w-8" value={undefined} />
             {:else}
             {#if $store.toolbar.back}
                <button
