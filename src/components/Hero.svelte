@@ -61,6 +61,9 @@
 
       /* Position */
       @apply relative;
+
+      /* Decoration */
+      @apply variant-glass-surface;
    }
 
    .hero h1 {
@@ -93,7 +96,7 @@
    **********************************/
    .hero[data-cover="true"] {
       /* Background (Cover) */
-      @apply bg-cover bg-center bg-no-repeat bg-blend-darken bg-tertiary-900;
+      @apply bg-cover bg-center bg-no-repeat bg-blend-exclusion bg-surface-100-800-token;
    }
 
    .hero[data-cover="true"] .content {
@@ -104,10 +107,10 @@
       @apply md:gap-6 p-4;
 
       /* Gradient Direction */
-      /* @apply bg-gradient-to-tl; */
+      @apply bg-gradient-to-t;
 
       /* Color Stops */
-      /* @apply from-surface-900/50 via-surface-900/80 to-surface-900; */
+      @apply from-surface-900 via-surface-900/70 to-surface-900/10;
 
       min-height: 384px;
    }
@@ -156,6 +159,10 @@
    /**********************************
    * WITHOUT Cover
    **********************************/
+   .hero[data-cover="false"] {
+      @apply shadow-inner;
+   }
+
    .hero[data-cover="false"] .content {
       /* Container */
       @apply flex flex-col;

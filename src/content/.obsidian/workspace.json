@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "singles/content-audit-checklist.md",
+                "file": "home.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "singles/content-audit-checklist.md",
+                "file": "home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "singles/content-audit-checklist.md",
+                "file": "home.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "singles/content-audit-checklist.md"
+                "file": "home.md"
               }
             }
           }
@@ -149,11 +149,11 @@
   },
   "active": "628aba728798d660",
   "lastOpenFiles": [
+    "singles/content-audit-checklist.md",
     "home.md",
     "singles/are-we-a-good-fit.md",
     "singles/static-and-dynamic-sites.md",
     "singles/elevating-wordpress-plugin-development.md",
-    "singles/content-audit-checklist.md",
     "site-meta.md",
     "labs.md",
     "experience.md",
