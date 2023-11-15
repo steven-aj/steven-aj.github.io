@@ -12,7 +12,7 @@
    {/if}
    <article class="card">
       <section>
-         <h3>{lab.title}</h3>
+         <h2>{lab.title}</h2>
          {#if lab.description}
             <blockquote>{lab.description}</blockquote>
          {/if}
@@ -49,7 +49,7 @@
       @apply max-w-3xl w-full h-auto;
    }
 
-   article h3 {
+   article h2 {
       @apply text-xl my-4;
    }
 
