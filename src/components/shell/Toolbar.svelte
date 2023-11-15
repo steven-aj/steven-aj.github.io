@@ -13,8 +13,7 @@
          <div class="navigation">
             {#if $store.loading}
                <ProgressRadial width="w-8" value={undefined} />
-            {:else}
-            {#if $store.toolbar.back}
+            {:else if $store.toolbar.back}
                <button
                   class="go-back"
                   title="Go back"
@@ -30,7 +29,6 @@
                   src="/assets/logo.svg"
                   in:fly={{ x: -100 }}
                />
-            {/if}
             {/if}
          </div>
          <strong class="desktop">{$store.toolbar.title}</strong>

@@ -1,6 +1,6 @@
 ---
 status: draft
-title: The Importance of a Content Audit (Downloadable Checklist Included)
+title: Content Audit Checklist (PDF Included)
 date: 07/01/2023
 author: Steven Johnson
 excerpt: Understand the significance of performing a content audit before entering development on any new project. Includes a free PDF checklist of materials to gather.
@@ -12,24 +12,25 @@ tags:
   - web
   - beginners
 ---
-Clients usually have a clear picture of what they want and are typically able to convey the *groundwork* of that picture, but the rest can sometimes be left to interpretation. By performing a content audit during discovery, we can help fill the gaps between the client's vision and our interpretation of it. We can even help the client determine an appropriate scope of work and uncover discrepancies in their understanding of where they *actually* are versus where they want to be. The most common first mistake that rookies make is failing to perform a content audit before beginning a project.
+## Avoid Early Mistakes
+Clients generally have a clear picture of what they want and, while they're usually able to convey the groundwork of that picture, the rest can sometimes be left to interpretation. By performing a content audit during discovery, we can help fill the gaps between the client's vision and our interpretation of it. For new websites, a content audit is essential for determining the project's scope. They can even help uncover discrepancies in the client's understanding of where they *actually* are versus *where they want to be*. The most common first mistake that rookies make is failing to request a content audit before beginning a project.
 
 ## Collectible Material
-You're a professional now! It's time to act like it. Don't be afraid to ask for the things you need to do your job to the best of your abilities. In the long run, you'll be grateful that you did and your client will appreciate your expertise on the matter.
+Never be afraid to be upfront about the things you need to perform to the best of your abilities. In the long run, you'll be grateful that you did and your client will appreciate your expertise on the matter.
 
-As promised, you can download the checklist of material here. I encourage you, however, to read on to better understand the significance of each piece of content that you'll be collecting.
+As promised, you can download the checklist of material here. I encourage you, however, to read on to better understand the significance of each piece of content worth collecting.
 
 ### Marketing Collateral
-Marketing collateral can provide valuable insights into the client's branding, messaging, and target audience. This includes material like brochures, flyers, pamphlets, catalogs, product sheets, or newsletters they've used (*or plan to use*) for marketing purposes
+Marketing collateral can provide valuable insights into the client's branding, messaging, and target audience. This includes material like brochures, flyers, pamphlets, catalogs, product sheets or newsletters they've used (*or plan to use*) for marketing purposes
 
 ### Case Studies and Success Stories
-Case Studies & Success Stories can be repurposed for the website to build credibility and demonstrate the client's expertise. Don't be afraid to request access to their achievements, customer testimonials or any examples of positive impacts their products or services have made on customers.
+Case Studies & Success Stories can be repurposed for the website to build credibility and demonstrate the client's expertise. Don't be afraid to request access to their achievements, customer testimonials or any examples of positive impacts their products or services have made on their customers.
 
 ### Press Releases and Media Coverage
 Press Releases & Media Coverage can help identify significant milestones, awards, partnerships, or notable achievements that can be showcased on their project. Look out for any news articles that feature the client or their products.
 
 ### Marketing Videos and Multimedia Content
-Videos and other multimedia can be embedded to engage visitors and provide a richer user experience. Ask for marketing videos, product demonstrations, webinars, and any other multimedia content they can provide.
+Videos and other multimedia can be embedded to engage visitors and provide a richer user experience. Ask for marketing videos, product demonstrations, webinars and any other multimedia content they can provide.
 
 > **Note**: If you're new to the industry, be cautious of how you implement these. Heavy items like videos can have a negative impact on the project's performance for the end-user.
 
@@ -43,12 +44,10 @@ Market Research and Surveys can provide valuable data and insights that can be u
 Gathering Brand & Style Guidelines early on will help you to ensure consistency in the website's design and content. You can glean a lot from logos and other materials listed here but, if they can provide it, be sure to get their specs for color schemes, typography, and tone of voice.
 
 ### Competitor Analysis
-They can provide insights into industry trends, best practices, and areas where the client can differentiate themselves on the website. Any _competitor analysis_ or _benchmarking studies_ performed will do.
+A competitor analysis can provide insights into industry trends, best practices and areas where the client can differentiate themselves on their website. Any competitor analysis or benchmarking studies performed will do.
 
 ### Previous Websites
-Reviewing the content and structure of previous websites can help identify strengths, weaknesses, and areas for improvement in the proposed sitemap. 
-
-Any _existing websites_ or _accessible codebases_.
+Reviewing the content and structure of previous websites can help identify strengths, weaknesses, and areas for improvement in the proposed sitemap. Request any any existing live URLs or accessible codebases.
 
 ### Blog Content
 This content can provide valuable industry insights, thought leadership, and help identify topics of interest to their target audience.

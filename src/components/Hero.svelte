@@ -96,7 +96,7 @@
    **********************************/
    .hero[data-cover="true"] {
       /* Background (Cover) */
-      @apply bg-cover bg-center bg-no-repeat bg-blend-exclusion bg-surface-100-800-token;
+      @apply bg-fixed bg-cover bg-center bg-no-repeat bg-blend-exclusion bg-surface-100-800-token;
    }
 
    .hero[data-cover="true"] .content {
