@@ -120,7 +120,7 @@
       @apply lg:max-w-5xl;
 
       /* Position */
-      @apply m-auto md:absolute md:bottom-10 md:left-6;
+      @apply relative m-auto md:absolute md:bottom-10 md:left-6;
 
       /* Spacing */
       @apply my-4 md:my-0;
