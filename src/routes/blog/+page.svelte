@@ -34,7 +34,7 @@
 {#if ready}
    {#if data}
       <header>
-         <h2>Blog</h2>
+         <h1>Blog</h1>
          <button class="btn variant-filled-secondary" on:click={openTagCloud}
             >Tag Cloud</button
          >
@@ -55,14 +55,6 @@
 {/if}
 
 <style lang="postcss">
-   header {
-      @apply relative flex flex-col md:flex-row md:justify-between my-6 p-4;
-   }
-
-   header h2 {
-      @apply text-4xl text-slate-500/50;
-   }
-
    header button {
       @apply w-full my-6 md:my-0 md:w-fit;
    }

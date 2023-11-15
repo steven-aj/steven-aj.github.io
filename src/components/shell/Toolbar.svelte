@@ -11,9 +11,7 @@
    <AppBar slotDefault="place-self-center" shadow="shadow-lg">
       <svelte:fragment slot="lead">
          <div class="navigation">
-            {#if $store.loading}
-               <ProgressRadial width="w-8" value={undefined} />
-            {:else if $store.toolbar.back}
+            {#if $store.toolbar.back}
                <button
                   class="go-back"
                   title="Go back"

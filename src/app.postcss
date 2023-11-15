@@ -5,6 +5,14 @@
 
 html, body { @apply h-full overflow-hidden; }
 
+main > header {
+   @apply relative flex flex-col md:flex-row md:justify-between my-6 p-4;
+}
+
+main > header h1 {
+   @apply text-4xl text-slate-500/50;
+}
+
 main > section { @apply p-4 mb-4; }
 
 main > section > h2 { 
@@ -40,10 +48,10 @@ main > section > h5 {
 }
 
 main > section > p { @apply leading-9 brightness-50 text-xl px-2 md:px-10 mb-4; }
-main > section > p > a { @apply anchor !text-secondary-400 no-underline; }
+main > section > p > a { @apply anchor !text-secondary-400 no-underline hover:!text-primary-400 hover:underline; }
 main > section > ul { @apply list-disc list-inside mx-6 my-6 px-2 md:px-10 text-surface-400; }
 main > section > ol { @apply list-decimal list-inside mx-6 my-6 px-2 md:px-10 text-surface-400; }
-main > section > blockquote { @apply px-4 py-2 max-w-3xl w-full mx-auto my-12 italic text-surface-400 shadow-lg border-l-4 border-solid border-secondary-500; }
+main > section > blockquote { @apply px-4 py-2 mx-14 my-12 justify-center italic text-lg text-surface-400 border-l-4 border-solid border-primary-500; }
 main > section > div.codeblock { @apply mx-4 md:mx-10; }
 
 section.posts { @apply flex flex-col justify-center w-full; }
@@ -55,6 +63,6 @@ section#labs.posts .grid { @apply self-center md:grid-cols-2 lg:grid-cols-4; }
 article.card { @apply flex flex-col; }
 article.card header { @apply card-header; }
 article.card section { @apply h-full p-4; }
-article.card section h3 { @apply text-3xl text-primary-500; }
+article.card section h2 { @apply text-3xl text-primary-500; }
 article.card blockquote { @apply brightness-75; }
 article.card footer { @apply card-footer flex flex-row justify-end self-end; }

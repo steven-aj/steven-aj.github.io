@@ -73,7 +73,7 @@
       @apply max-w-2xl w-full;
 
       /* Typography */
-      @apply font-bold text-5xl;
+      @apply font-bold text-5xl brightness-75;
       line-height: 130%;
    }
 
@@ -126,7 +126,7 @@
       @apply my-4 md:my-0;
 
       /* Typography */
-      @apply text-center break-words md:text-start md:break-normal;
+      @apply text-center break-words md:text-start md:break-normal text-white;
    }
 
    .hero[data-cover="true"] p.description {

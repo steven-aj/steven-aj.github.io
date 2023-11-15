@@ -21,7 +21,7 @@
                </span>
             </div>
          {/if}
-         <h3>{post.title}</h3>
+         <h2>{post.title}</h2>
          {#if post.excerpt}
             <blockquote>{post.excerpt}</blockquote>
          {/if}
@@ -54,7 +54,7 @@
       @apply brightness-75;
    }
 
-   article h3 {
+   article h2 {
       @apply text-xl my-4;
    }
 
