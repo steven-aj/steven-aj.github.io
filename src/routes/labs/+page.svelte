@@ -42,3 +42,9 @@
       title={false}
    />
 {/if}
+
+<style lang="postcss">
+   section {
+      @apply pt-10;
+   }
+</style>

@@ -64,6 +64,8 @@
 
       /* Decoration */
       @apply variant-glass-surface;
+
+      min-height: 384px;
    }
 
    .hero h1 {
@@ -111,8 +113,6 @@
 
       /* Color Stops */
       @apply from-surface-900 via-surface-900/70 to-surface-900/10;
-
-      min-height: 384px;
    }
 
    .hero[data-cover="true"] h1 {

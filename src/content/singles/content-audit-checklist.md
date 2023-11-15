@@ -1,5 +1,5 @@
 ---
-status: draft
+status: preview
 title: Content Audit Checklist (PDF Included)
 date: 07/01/2023
 author: Steven Johnson
