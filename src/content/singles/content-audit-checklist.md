@@ -13,12 +13,12 @@ tags:
   - beginners
 ---
 ## Avoid Early Mistakes
-Clients generally have a clear picture of what they want and, while they're usually able to convey the groundwork of that picture, the rest can sometimes be left to interpretation. By performing a content audit during discovery, we can help fill the gaps between the client's vision and our interpretation of it. For new websites, a content audit is essential for determining the project's scope. They can even help uncover discrepancies in the client's understanding of where they *actually* are versus *where they want to be*. The most common first mistake that rookies make is failing to request a content audit before beginning a project.
+Clients generally have a clear picture of what they want and, while they're usually able to convey basics of it, the rest can be left to interpretation. A content audit during discovery can help fill the gaps between the client's vision and your interpretation of it. For new websites, a content audit is essential for determining the project's scope. It can even help uncover discrepancies in the client's understanding of where they *actually* are versus *where they want to be*. The most common first mistake that rookies make is failing to conduct an audit before beginning a project.
 
 ## Collectible Material
-Never be afraid to be upfront about the things you need to perform to the best of your abilities. In the long run, you'll be grateful that you did and your client will appreciate your expertise on the matter.
+Never be afraid to be upfront about the things you need. In the long run, you'll be grateful that you did and your client will appreciate your expertise on the matter.
 
-As promised, you can [download the checklist of material here](/downloads/documents/content-audit-checklist.pdf). I encourage you, however, to read on to better understand the significance of each piece of content worth collecting.
+As promised, you can [download the checklist of material here](/downloads/documents/content-audit-checklist.pdf). I encourage you to continue reading, though, to get a clear understanding of each piece of content worth collecting.
 
 ### Marketing Collateral
 Marketing collateral can provide valuable insights into the client's branding, messaging, and target audience. This includes material like brochures, flyers, pamphlets, catalogs, product sheets or newsletters they've used (*or plan to use*) for marketing purposes
@@ -32,7 +32,9 @@ Press Releases & Media Coverage can help identify significant milestones, awards
 ### Marketing Videos and Multimedia Content
 Videos and other multimedia can be embedded to engage visitors and provide a richer user experience. Ask for marketing videos, product demonstrations, webinars and any other multimedia content they can provide.
 
-> **Note**: If you're new to the industry, be cautious of how you implement these. Heavy items like videos can have a negative impact on the project's performance for the end-user.
+> **Note to new developers**: 
+> 
+> Heavy items like videos can have a negative impact on a project's performance. Use a CDN or other cloud service to do the heavy lifting.
 
 ### Sales Presentations and Pitch Decks
 Sales Presentations and Pitch Decks often contain valuable insights into the client's value proposition, key messaging, and unique selling points, which can inform the content strategy for the website. Collect these and glean all that you can.

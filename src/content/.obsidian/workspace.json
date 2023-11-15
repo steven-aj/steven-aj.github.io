@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "singles/are-we-a-good-fit.md",
+                    "file": "about.md",
                     "mode": "source",
                     "source": false
                   }
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "singles/are-we-a-good-fit.md",
+                "file": "about.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "singles/are-we-a-good-fit.md",
+                "file": "about.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "singles/are-we-a-good-fit.md"
+                "file": "about.md"
               }
             }
           }
@@ -202,21 +202,21 @@
   },
   "active": "628aba728798d660",
   "lastOpenFiles": [
+    "home.md",
     "singles/content-audit-checklist.md",
+    "site-meta.md",
+    "about.md",
+    "singles/are-we-a-good-fit.md",
     "singles/static-and-dynamic-sites.md",
     "singles/elevating-wordpress-plugin-development.md",
-    "singles/are-we-a-good-fit.md",
     "labs/gh-smoothie.md",
     "labs/lost-in-space-day-four-loop.md",
     "labs/tauri-sveltekit.md",
     "labs/todo-svelte.md",
     "labs/ww-etl.md",
     "labs/library-demo.md",
-    "home.md",
-    "site-meta.md",
     "labs.md",
     "experience.md",
-    "about.md",
     "singles",
     "labs",
     "_templates/site.md",

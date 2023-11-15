@@ -1,6 +1,6 @@
 <script>
    import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-   import { faGithub } from "@fortawesome/free-brands-svg-icons";
+   import { faGithub, faSlack } from "@fortawesome/free-brands-svg-icons";
    import { Avatar } from "@skeletonlabs/skeleton";
    import SvelteFa from "svelte-fa";
 
@@ -28,10 +28,20 @@
          <h1>{profile.title}</h1>
          <p class="tagline">{profile.tagline}</p>
          <div class="contact-options">
+            {#if profile.slack}
+               <a
+                  role="button"
+                  title="Slack Lobby"
+                  target="_blank"
+                  href={`${profile.slack}`}
+               >
+                  <SvelteFa icon={faSlack} />
+               </a>
+            {/if}
             {#if profile.github}
                <a
                   role="button"
-                  title="GitHub"
+                  title="GitHub Profile"
                   target="_blank"
                   href={`${profile.github}`}
                >
@@ -41,7 +51,7 @@
             {#if profile.email}
                <a
                   role="button"
-                  title="Email me"
+                  title="Email Me"
                   href={`mailto:${profile.email}`}
                >
                   <SvelteFa icon={faEnvelope} />
@@ -66,7 +76,8 @@
       w-full 
       mx-auto
       shadow-2xl
-      py-2;
+      py-2
+      variant-glass-surface;
       grid-template-columns: 1fr 2fr;
    }
 

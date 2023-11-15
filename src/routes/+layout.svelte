@@ -13,7 +13,7 @@
    import Toolbar from "$components/shell/Toolbar.svelte";
    import MainMenu from "$components/shell/MainMenu.svelte";
    import MobileMenu from "$components/shell/MobileMenu.svelte";
-   import Hero from "$components/Hero.svelte";
+   import Hero from "$components/shell/Hero.svelte";
 
    export let data;
 

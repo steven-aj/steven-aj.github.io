@@ -11,12 +11,6 @@ export async function load() {
 		meta,
 		content: content,
 		quotes: meta.quotes,
-		profile: {
-			title: meta.title,
-			cover: meta.cover,
-			tagline: meta.tagline,
-			email: meta.email,
-			github: meta.github
-		}
+		profile: meta
 	};
 }
