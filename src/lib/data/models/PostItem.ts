@@ -23,7 +23,10 @@ export default class PostItem implements IPostItem {
    }
 
    public get published() {
-      return this.meta.status === 'published';
+      if (import.meta.env.DEV) {
+         return this.meta.status === 'published' || 'preview';
+      }
+      else return this.meta.status === 'published';
    }
 
    public get title() {

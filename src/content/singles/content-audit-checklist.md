@@ -1,6 +1,6 @@
 ---
-status: published
-title: The Importance of a Content Audit (Downloadable Checklist Included)
+status: draft
+title: Content Audit Checklist (PDF Included)
 date: 07/01/2023
 author: Steven Johnson
 excerpt: Understand the significance of performing a content audit before entering development on any new project. Includes a free PDF checklist of materials to gather.
