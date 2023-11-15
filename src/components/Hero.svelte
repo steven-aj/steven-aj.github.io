@@ -126,7 +126,7 @@
       @apply my-4 md:my-0;
 
       /* Typography */
-      @apply text-center break-words md:text-start md:break-normal;
+      @apply text-center break-words md:text-start md:break-normal text-white brightness-75;
    }
 
    .hero[data-cover="true"] p.description {

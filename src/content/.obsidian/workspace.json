@@ -61,7 +61,7 @@
                       },
                       "serial": {
                         "columns": 123,
-                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"content update\"; git push origin devel",
+                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"content update\"; git push origin develop\r\n[develop 826f230] content update\r\n 2 files changed, 73 insertions(+), 30 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 1.39 KiB | 1.39 MiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   9f9e121..826f230  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % ",
                         "rows": 5
                       }
                     }
@@ -138,6 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "singles/are-we-a-good-fit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,6 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "singles/are-we-a-good-fit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +177,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "singles/are-we-a-good-fit.md"
+              }
             }
           }
         ]
@@ -196,12 +200,12 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "22f82eeb5353095f",
+  "active": "628aba728798d660",
   "lastOpenFiles": [
-    "singles/are-we-a-good-fit.md",
     "singles/content-audit-checklist.md",
-    "singles/elevating-wordpress-plugin-development.md",
     "singles/static-and-dynamic-sites.md",
+    "singles/elevating-wordpress-plugin-development.md",
+    "singles/are-we-a-good-fit.md",
     "labs/gh-smoothie.md",
     "labs/lost-in-space-day-four-loop.md",
     "labs/tauri-sveltekit.md",

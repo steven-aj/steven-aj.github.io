@@ -18,7 +18,7 @@ Clients generally have a clear picture of what they want and, while they're usua
 ## Collectible Material
 Never be afraid to be upfront about the things you need to perform to the best of your abilities. In the long run, you'll be grateful that you did and your client will appreciate your expertise on the matter.
 
-As promised, you can download the checklist of material here. I encourage you, however, to read on to better understand the significance of each piece of content worth collecting.
+As promised, you can [download the checklist of material here](/downloads/documents/content-audit-checklist.pdf). I encourage you, however, to read on to better understand the significance of each piece of content worth collecting.
 
 ### Marketing Collateral
 Marketing collateral can provide valuable insights into the client's branding, messaging, and target audience. This includes material like brochures, flyers, pamphlets, catalogs, product sheets or newsletters they've used (*or plan to use*) for marketing purposes
