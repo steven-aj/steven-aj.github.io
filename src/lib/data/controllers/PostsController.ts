@@ -13,6 +13,13 @@ export default class PostsController {
       return posts;
    }
 
+   public async get(path) {
+      const post: PostItem = (await this.getAll()).filter(post => post.path.includes(path))[0];
+
+      if (post) return post;
+      else throw new Error(`Post path not found: ${path}`)
+   }
+
    public async filterTag(tag: string) {
       const byTag = (post: PostItem) => post.hasCategory(tag);
 
@@ -34,15 +41,5 @@ export default class PostsController {
    public async getRecent(count = 6) {
       const posts: PostItem[] = await this.getAll();
       return posts.slice(0, count);
-   }
-
-   static async create([path, resolver]) {
-      const { metadata } = await resolver();
-      const postPath = path.slice(19, -3);
-   
-      return new PostItem({
-         path: `/blog/${postPath}`,
-         meta: metadata
-      });
    }
 }

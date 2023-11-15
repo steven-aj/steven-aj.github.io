@@ -12,6 +12,13 @@ export default class LabsController {
       return labs;
    }
 
+   public async get(path) {
+      const lab: LabItem = (await this.getAll()).filter(lab => lab.path.includes(path))[0];
+
+      if (lab) return lab;
+      else throw new Error(`Lab path not found: ${path}`)
+   }
+
    public async getRecent(count = 6) {
       const labs: LabItem[] = await this.getAll();
       return labs.slice(0, count);

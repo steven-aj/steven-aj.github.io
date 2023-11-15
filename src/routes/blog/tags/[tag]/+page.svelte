@@ -15,7 +15,9 @@
    beforeUpdate(init);
 </script>
 
-<h2>Tag: {tag}</h2>
+<header>
+   <h2>Tag: {tag}</h2>
+</header>
 
 <section class="posts">
    <div class="grid">
@@ -26,7 +28,11 @@
 </section>
 
 <style lang="postcss">
-   h2 {
-      @apply text-2xl text-slate-500/50 uppercase mb-4;
+   header {
+      @apply relative flex flex-col md:flex-row md:justify-between my-6 p-4;
+   }
+
+   header h2 {
+      @apply text-4xl text-slate-500/50;
    }
 </style>

@@ -3,10 +3,23 @@ import { ILabItem, ILabMeta } from "../shared/interfaces/lab.interfaces";
 export default class LabItem implements ILabItem {
    path: string;
    meta: ILabMeta;
+   content: any;
 
    constructor(post: ILabItem) {
       this.path = post.path;
       this.meta = post.meta;
+      this.content = post.content;
+   }
+
+   static async createFromPromise([path, resolver]) {
+      const lab = await resolver();
+      const labPath = path.slice(18, -3);
+   
+      return new LabItem({
+         path: `/labs/${labPath}`,
+         meta: lab.metadata,
+         content: lab.default
+      });
    }
 
    public get published() {
@@ -35,15 +48,5 @@ export default class LabItem implements ILabItem {
 
    public get demo() {
       return this.meta.demo;
-   }
-
-   static async createFromPromise([path, resolver]) {
-      const { metadata } = await resolver();
-      const labPath = path.slice(18, -3);
-   
-      return new LabItem({
-         path: `/labs/${labPath}`,
-         meta: metadata
-      });
    }
 }

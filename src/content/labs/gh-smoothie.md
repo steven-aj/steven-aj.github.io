@@ -17,7 +17,7 @@ Feel free to fork it to your own collection & hack away.
 
 ## Built for Obsidian
 
-[Obsidian](https://obsidian.md) is a markdown editor with a ton of features to help manage your markdown blog (I highly recommend it). GH Smoothie comes pre-installed with an <a target="_blank" href="https://help.obsidian.md/Files+and+folders/How+Obsidian+stores+data">Obsidian Vault</a> and three different front-matter templates to help you get started.
+[Obsidian](https://obsidian.md) is a markdown editor with useful features to help you manage your markdown blog. GH Smoothie comes pre-installed with an <a target="_blank" href="https://help.obsidian.md/Files+and+folders/How+Obsidian+stores+data">Obsidian Vault</a> and three different front-matter templates to help you get started.
 
 - site-meta
 - page

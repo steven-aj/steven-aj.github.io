@@ -1,18 +1,10 @@
-export async function load() {
-	const page = await import(`../../content/experience.md`);
+import { Pages } from "$lib/data";
 
-	const { title, author, description, cover, date, keywords } = page.metadata;
-	const content = page.default;
+export async function load() {
+	const { meta, content } = await Pages.get('experience');
 
 	return {
-		meta: {
-			title,
-         date,
-			author,
-			description,
-			cover,
-			keywords
-		},
+		meta,
 		content
 	};
 }

@@ -16,4 +16,5 @@ export interface IPostMeta {
 export interface IPostItem {
    path: string;
    meta: IPostMeta;
+   content: any;
 }

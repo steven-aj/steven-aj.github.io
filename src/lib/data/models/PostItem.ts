@@ -3,10 +3,23 @@ import { IPostItem, IPostMeta } from "../shared/interfaces/post.interfaces";
 export default class PostItem implements IPostItem {
    path: string;
    meta: IPostMeta;
+   content: any;
 
    constructor(post: IPostItem) {
       this.path = post.path;
       this.meta = post.meta;
+      this.content = post.content;
+   }
+
+   static async create([path, resolver]) {
+      const post = await resolver();
+      const slug = path.split('/').reverse()[0].slice(null, -3);
+      
+      return new PostItem({
+         path: `/blog/${slug}`,
+         meta: post.metadata,
+         content: post.default
+      });
    }
 
    public get published() {
@@ -35,15 +48,5 @@ export default class PostItem implements IPostItem {
 
    public hasCategory(str: string) {
       return this.meta.tags.includes(str);
-   }
-
-   static async create([path, resolver]) {
-      const { metadata } = await resolver();
-      const slug = path.split('/').reverse()[0].slice(null, -3);
-      
-      return new PostItem({
-         path: `/blog/${slug}`,
-         meta: metadata
-      });
    }
 }

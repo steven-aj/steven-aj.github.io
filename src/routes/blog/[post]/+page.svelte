@@ -4,15 +4,15 @@
 
 	export let data;
 
-	let { title, date, tags, cover, content } = data;
+	let { meta, content } = data;
 
 	function init() {
 		Shell.showBackButton(true);
 		Shell.setHero({
-			title,
-			date,
-			tags,
-			cover,
+			title: meta.title,
+			date: meta.date,
+			tags: meta.tags,
+			cover: meta.cover,
 		});
 	}
 

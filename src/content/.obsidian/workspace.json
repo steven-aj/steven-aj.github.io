@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "home.md",
+                "file": "labs/gh-smoothie.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "home.md",
+                "file": "labs/gh-smoothie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "home.md",
+                "file": "labs/gh-smoothie.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "home.md"
+                "file": "labs/gh-smoothie.md"
               }
             }
           }
@@ -149,21 +149,21 @@
   },
   "active": "628aba728798d660",
   "lastOpenFiles": [
-    "singles/content-audit-checklist.md",
-    "home.md",
+    "labs/lost-in-space-day-four-loop.md",
+    "labs/tauri-sveltekit.md",
+    "labs/todo-svelte.md",
+    "labs/ww-etl.md",
+    "labs/library-demo.md",
     "singles/are-we-a-good-fit.md",
-    "singles/static-and-dynamic-sites.md",
+    "singles/content-audit-checklist.md",
     "singles/elevating-wordpress-plugin-development.md",
+    "singles/static-and-dynamic-sites.md",
+    "home.md",
     "site-meta.md",
     "labs.md",
     "experience.md",
     "about.md",
     "singles",
-    "labs/ww-etl.md",
-    "labs/todo-svelte.md",
-    "labs/tauri-sveltekit.md",
-    "labs/lost-in-space-day-four-loop.md",
-    "labs/library-demo.md",
     "labs/gh-smoothie.md",
     "labs",
     "_templates/site.md",
