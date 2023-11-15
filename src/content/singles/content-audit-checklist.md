@@ -7,9 +7,6 @@ excerpt: Understand the significance of performing a content audit before enteri
 cover: /assets/covers/web-content.jpeg
 tags:
   - informative
-  - development
-  - wordpress
-  - web
   - beginners
 ---
 ## Avoid Early Mistakes
