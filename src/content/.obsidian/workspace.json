@@ -4,13 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "ff26f2b33c1688f8",
+        "id": "acd8152c9e978ab8",
         "type": "split",
         "children": [
           {
             "id": "6df8d2d9b610bdbe",
             "type": "tabs",
-            "dimension": 77.77777777777779,
             "children": [
               {
                 "id": "628aba728798d660",
@@ -27,12 +26,11 @@
             ]
           },
           {
-            "id": "7a47743c9ccc355d",
+            "id": "c67e2c6043eee7cf",
             "type": "tabs",
-            "dimension": 22.22222222222222,
             "children": [
               {
-                "id": "22f82eeb5353095f",
+                "id": "8d06ddc6afd09695",
                 "type": "leaf",
                 "pinned": true,
                 "state": {
@@ -61,8 +59,8 @@
                       },
                       "serial": {
                         "columns": 123,
-                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"content update\"; git push origin develop\r\n[develop 826f230] content update\r\n 2 files changed, 73 insertions(+), 30 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 1.39 KiB | 1.39 MiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   9f9e121..826f230  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"remove unnecessary tags\"; git push origin develop\r\n[develop a8822e9] remove unnecessary tags\r\n 2 files changed, 6 insertions(+), 13 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 765 bytes | 765.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   768d550..a8822e9  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git checkout -b content\r\nSwitched to a new branch 'content'\r\nsteven@Stevens-MacBook-Pro content % git branch\r\n  content\r\n* \u001b[32mdevelop\r\n\u001b[0m  main\r\nsteven@Stevens-MacBook-Pro content %           \u001b[10D",
-                        "rows": 5
+                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"updated content\"; git push origin develop",
+                        "rows": 18
                       }
                     }
                   },
@@ -196,7 +194,7 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "22f82eeb5353095f",
+  "active": "8d06ddc6afd09695",
   "lastOpenFiles": [
     "singles/content-audit-checklist.md",
     "singles/are-we-a-good-fit.md",
