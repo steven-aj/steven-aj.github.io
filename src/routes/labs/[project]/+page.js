@@ -1,4 +1,4 @@
-import { Labs } from "$lib/data";
+import { Labs } from "$lib/api";
 
 export async function load({ params }) {
 	const { project } = params;

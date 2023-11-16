@@ -28,20 +28,20 @@
 </script>
 
 <Drawer position="right" width="max-w-md w-full">
-   <TagCloud {tags} on:select={() => drawer.close()}/>
+   <TagCloud {tags} on:select={() => drawer.close()} />
 </Drawer>
 
 {#if ready}
    {#if data}
-      <header>
-         <h1>Blog</h1>
-         <button class="btn variant-filled-secondary" on:click={openTagCloud}
-            >Tag Cloud</button
-         >
-      </header>
-
       {#if posts.length}
          <section class="posts" transition:fade>
+            <header>
+               <h1>Blog</h1>
+               <button
+                  class="btn variant-filled-secondary"
+                  on:click={openTagCloud}>Tag Cloud</button
+               >
+            </header>
             <div class="grid">
                {#each posts as post}
                   <PostCard {post} />
