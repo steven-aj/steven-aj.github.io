@@ -6,12 +6,14 @@
    let dispatch = createEventDispatcher();
 </script>
 
-<h2>Tag Cloud</h2>
-<section class="tags">
+<section>
+   <h2>Tag Cloud</h2>
    {#if tags.length}
-      {#each tags as tag}
-         <a class="chip" href={`/blog/tags/${tag}`} on:click={() => dispatch('select')}>{tag}</a>
-      {/each}
+      <div class="tags">
+         {#each tags as tag}
+            <a class="chip" href={`/blog/tags/${tag}`} on:click={() => dispatch('select')}>{tag}</a>
+         {/each}
+      </div>
    {/if}
 </section>
 

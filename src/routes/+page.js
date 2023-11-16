@@ -1,4 +1,4 @@
-import { Pages, Posts, Labs } from "$lib/data";
+import { Pages, Posts, Labs } from "$lib/api";
 
 export async function load() {
 	const { meta, content } = await Pages.get('home');

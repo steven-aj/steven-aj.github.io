@@ -1,4 +1,4 @@
-import { Posts } from "$lib/data";
+import { Posts } from "$lib/api";
 
 export const load = async ({ params }) => {
    const { tag } = params;

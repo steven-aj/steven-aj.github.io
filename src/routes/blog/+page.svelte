@@ -3,9 +3,9 @@
    import { fade } from "svelte/transition";
    import { Drawer, getDrawerStore } from "@skeletonlabs/skeleton";
    import Shell from "$lib/shell";
-   import PostCard from "$components/PostCard.svelte";
-   import EmptyNotice from "$components/EmptyNotice.svelte";
-   import TagCloud from "$components/TagCloud.svelte";
+   import PostCard from "$components/cards/PostCard.svelte";
+   import EmptyNotice from "$components/sections/EmptyNotice.svelte";
+   import TagCloud from "$components/sections/TagCloud.svelte";
 
    export let data;
 
@@ -28,20 +28,20 @@
 </script>
 
 <Drawer position="right" width="max-w-md w-full">
-   <TagCloud {tags} on:select={() => drawer.close()}/>
+   <TagCloud {tags} on:select={() => drawer.close()} />
 </Drawer>
 
 {#if ready}
    {#if data}
-      <header>
-         <h1>Blog</h1>
-         <button class="btn variant-filled-secondary" on:click={openTagCloud}
-            >Tag Cloud</button
-         >
-      </header>
-
       {#if posts.length}
          <section class="posts" transition:fade>
+            <header>
+               <h1>Blog</h1>
+               <button
+                  class="btn variant-filled-secondary"
+                  on:click={openTagCloud}>Tag Cloud</button
+               >
+            </header>
             <div class="grid">
                {#each posts as post}
                   <PostCard {post} />

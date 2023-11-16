@@ -1,8 +1,8 @@
 <script>
    import { onMount } from "svelte";
    import App from "$lib/shell";
-   import LabCard from "$components/LabCard.svelte";
-   import EmptyNotice from "$components/EmptyNotice.svelte";
+   import LabCard from "$components/cards/LabCard.svelte";
+   import EmptyNotice from "$components/sections/EmptyNotice.svelte";
 
    export let data;
 
