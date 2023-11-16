@@ -1,3 +1,5 @@
+// @ts-expect-error
+import { dev } from '$app/environment';
 import { IPostItem, IPostMeta } from "../shared/interfaces/post.interfaces";
 
 export default class PostItem implements IPostItem {
@@ -23,8 +25,8 @@ export default class PostItem implements IPostItem {
    }
 
    public get published() {
-      if (import.meta.env.DEV) {
-         return this.meta.status === 'published' || 'preview';
+      if (dev) {
+         return this.meta.status === 'published' || this.meta.status === 'review';
       }
       else return this.meta.status === 'published';
    }
