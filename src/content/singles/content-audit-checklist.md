@@ -11,7 +11,7 @@ tags:
 ---
 ## Avoid Early Mistakes
 
-Clients generally have a clear picture of what they want and, while they're usually able to convey basics of it, the rest can be left to interpretation. A content audit during discovery can help fill the gaps between the client's vision and your interpretation of it. For new websites, a content audit is essential for determining the project's scope. It can even help uncover discrepancies in the client's understanding of where they *actually* are versus *where they want to be*. The most common first mistake that rookies make is failing to conduct an audit before beginning a project.
+Clients generally have a clear picture of what they want, but not always of how to get there. A content audit during discovery can help fill the gaps between the client's vision and your interpretation of it. For new websites, a content audit is essential for determining the project's scope. It can even help uncover discrepancies in the client's understanding of where they *actually* are versus *where they want to be*. The most common first mistake that rookies make is failing to conduct an audit before beginning a project.
 
 ## Collectible Material
 Never be afraid to be upfront about the things you need. In the long run, you'll be grateful that you did and your client will appreciate your expertise on the matter.

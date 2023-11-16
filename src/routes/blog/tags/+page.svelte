@@ -1,5 +1,5 @@
 <script>
-   import TagCard from "$components/TagCard.svelte";
+   import TagCard from "$components/cards/TagCard.svelte";
 
    export let data;
 

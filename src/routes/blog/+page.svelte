@@ -3,9 +3,9 @@
    import { fade } from "svelte/transition";
    import { Drawer, getDrawerStore } from "@skeletonlabs/skeleton";
    import Shell from "$lib/shell";
-   import PostCard from "$components/PostCard.svelte";
-   import EmptyNotice from "$components/EmptyNotice.svelte";
-   import TagCloud from "$components/TagCloud.svelte";
+   import PostCard from "$components/cards/PostCard.svelte";
+   import EmptyNotice from "$components/sections/EmptyNotice.svelte";
+   import TagCloud from "$components/sections/TagCloud.svelte";
 
    export let data;
 

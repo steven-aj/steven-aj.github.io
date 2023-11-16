@@ -2,16 +2,15 @@
    import { onMount } from "svelte";
    import { fade } from "svelte/transition";
    import Shell from "$lib/shell";
-   import LabCard from "$components/LabCard.svelte";
-   import ProfileCard from "$components/ProfileCard.svelte";
-   import PostCard from "$components/PostCard.svelte";
-   import EmptyNotice from "$components/EmptyNotice.svelte";
+   import LabCard from "$components/cards/LabCard.svelte";
+   import ProfileCard from "$components/cards/ProfileCard.svelte";
+   import PostCard from "$components/cards/PostCard.svelte";
+   import EmptyNotice from "$components/sections/EmptyNotice.svelte";
 
    export let data;
    let { meta, profile, quotes, content, posts, labs } = data;
 
    function randomQuote(quoteSection) {
-      // let counter = 0;
       const list = quoteSection.getElementsByTagName("blockquote");
       const random = Math.floor(Math.random() * list.length);
 

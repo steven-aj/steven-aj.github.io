@@ -1,7 +1,7 @@
 <script>
    import { beforeUpdate } from "svelte";
    import Shell from "$lib/shell";
-   import PostCard from "$components/PostCard.svelte";
+   import PostCard from "$components/cards/PostCard.svelte";
 
    export let data;
 
