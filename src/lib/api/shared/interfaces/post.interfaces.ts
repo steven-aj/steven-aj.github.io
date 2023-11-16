@@ -1,7 +1,7 @@
 enum EnumPostStatus {
    published = "published",
    draft = "draft",
-   preview = "preview"
+   review = "review"
 }
 
 export interface IPostMeta {

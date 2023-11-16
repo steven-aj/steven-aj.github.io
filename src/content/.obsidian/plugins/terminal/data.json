@@ -10,7 +10,7 @@
   "newInstanceBehavior": "newHorizontalSplit",
   "noticeTimeout": 5,
   "openChangelogOnUpdate": true,
-  "pinNewInstance": true,
+  "pinNewInstance": false,
   "preferredRenderer": "webgl",
   "profiles": {
     "bd954951-a03f-48ed-9ec5-d5f93e028366": {

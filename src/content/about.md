@@ -34,4 +34,4 @@ My long-term goal is to build a small SaaS to help freelancers operate more like
 
 ## Let's Connect
 
-I'm mostly an open book, so feel free to reach out with any questions you might have (keep it professional, of course). I'm always eager to better myself & help people with their projects, so don't hesitate to connect if you think I might be a good fit for your project.
+I'm mostly an open book, so feel free to reach out with any questions you might have (*keep it professional, of course*). I'm always eager to better myself & help people with their projects, so don't hesitate to connect if you think [I might be a good fit for your project](/blog/are-we-a-good-fit).
