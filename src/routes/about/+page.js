@@ -1,17 +1,8 @@
+import { Pages } from "$lib/api";
+
 export async function load({ params }) {
-	const page = await import(`../../content/about.md`);
+	const page = await Pages.get('about');
+	const { meta, content } = page;
 
-	const { title, author, description, date, keywords } = page.metadata;
-	const content = page.default;
-
-	return {
-		meta: {
-			title,
-         date,
-			author,
-			description,
-			keywords
-		},
-		content
-	};
+	return { meta, content };
 }
