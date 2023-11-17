@@ -11,6 +11,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Update content
+        run: git submodule update
+
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
@@ -19,9 +22,6 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
-      - name: Update content
-        run: git submodule sync
 
       - name: build
         env:
