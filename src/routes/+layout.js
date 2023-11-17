@@ -1,3 +1,4 @@
+import { Pages } from "$lib/api";
 import hljs from 'highlight.js/lib/core';
 import xml from 'highlight.js/lib/languages/xml'; // for HTML
 import css from 'highlight.js/lib/languages/css';
@@ -10,8 +11,8 @@ import markdown from 'highlight.js/lib/languages/markdown';
 export const prerender = true;
 
 export async function load() {
-   const page = await import(`../content/site-meta.md`);
-   const { title, author, description, keywords } = page.metadata;
+   const page = await Pages.get('site-meta');
+   const { title, author, description, keywords } = page.meta;
 
    // Register each imported language module
    hljs.registerLanguage('xml', xml); // for HTML
