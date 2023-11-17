@@ -1,24 +1,26 @@
 ---
 status: review
-title: 12 Types of Material to Collect in a Content Audit (Free PDF Included)
 date: 07/01/2023
-author: Steven Johnson
+title: 12 Types of Material to Collect in a Content Audit (Free PDF Included)
 excerpt: Understand the significance of performing a content audit before entering development on any new project. Download a free checklist of materials to be gathered.
+author: Steven Johnson
 cover: /assets/covers/web-content.jpeg
 tags:
   - informative
   - beginners
   - free-stuff
 ---
-This isn't just a list of items to collect. It's a strategic roadmap toward building a project that resonates with the client's brand and engages their audience effectively. A thorough content audit will serve as your cornerstone for success, helping to prevent the most common pitfalls that new freelancers encounter. By addressing every facet, a comprehensive audit ensures that no stone is left unturned in the pursuit of a compelling and cohesive online presence. It can also help with aligning expectations, building a sitemap and (*by extension*) defining a project's scope. Failing to conduct a content audit is probably the most common mistake that new freelancers make
+Clients generally know exactly what they want, but not always how to get there or if they're even ready to try. For new projects, a content audit is essential for aligning expectations, building a sitemap and (*by extension*) defining a proper scope. Failing to conduct this is probably the most common mistake that new freelancers make.
 
 ## Collectible Material
 
-In general, clients know exactly what they want, but not always how to get there (*or, occasionally,  if they're even ready to try*). The provided PDF is a great starting point for a structured approach to collecting essential materials. Organize this material into folders by context to make it easier to break them into manageable pieces, and be sure to organize those pieces into a sitemap proposal along the way. Systematic organization early on not only facilitates the breakdown into manageable parts, but can also demonstrate the expertise and foresight they're paying you for.
+This isn't just a list of items to collect. It's a strategic roadmap toward building any project. A thorough content audit will serve as your cornerstone for success, helping to prevent the most common pitfalls that new freelancers encounter.
 
-> Never be afraid to be upfront about the things you need.  In the long run, you'll be grateful that you did and your client will appreciate your expertise.
+The provided PDF is a great starting point for a structured approach to collecting these materials. Organize them into folders by context to make it easier to break them into manageable pieces. Further organize those pieces into a sitemap proposal along the way. Systematic organization early on not only facilitates the breakdown into manageable parts, but can also demonstrate expertise and foresight.
 
 As promised, you can [download the checklist of material here](/downloads/documents/content-audit-checklist.pdf). I encourage you to continue reading, though, to get a clear understanding of each piece worth collecting.
+
+> Never be afraid to be upfront about the things you need.  In the long run, you'll be grateful that you did and your client will appreciate your expertise.
 
 ### Brand Guidelines and Style Guides
 Gathering brand & style guidelines early on will help you to ensure consistency in the website's design and content. You can glean a lot from logos and other materials listed here but, if they can provide it, be sure to get their specs for color schemes, typography and tone of voice.

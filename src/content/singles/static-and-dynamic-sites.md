@@ -1,10 +1,10 @@
 ---
 status: published
-title: Differences Between Dynamic and Static Websites, and Websites vs. Web Applications
-date: 09/15/2023
+date: 2023-09-15
 author: Steven Johnson
-excerpt: How do dynamic & static websites differ from one another? What about web sites vs applications?
 cover: /assets/covers/abstract-tech-cube.jpeg
+title: Differences Between Dynamic and Static Websites, and Websites vs. Web Applications
+excerpt: How do dynamic & static websites differ from one another? What about web sites vs applications?
 tags:
   - beginners
   - informative

@@ -1,10 +1,10 @@
 ---
 status: published
-title: Elevating WordPress Plugin Development in 2023
-date: 09/15/2023
+date: 2023-09-15
 author: Steven Johnson
-excerpt: An overview of implementing modern front-end frameworks as WordPress Plugins
 cover: /assets/covers/rocket-plug.jpeg
+title: Elevating WordPress Plugin Development in 2023
+excerpt: An overview of implementing modern front-end frameworks as WordPress Plugins
 tags:
   - wordpress
   - applications

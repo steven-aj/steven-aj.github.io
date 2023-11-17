@@ -1,9 +1,9 @@
 ---
 status: draft
-title: 
 date: 
 author: 
-excerpt: 
 cover: 
+title: 
+excerpt: 
 tags:
 ---

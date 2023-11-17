@@ -1,10 +1,10 @@
 ---
 status: draft
-title: How to Build A Sitemap
-date: 11/15/2023
+date: 2023-11-15
 author: Steven Johnson
-excerpt: 
 cover: 
+title: How to Build A Sitemap
+excerpt: 
 tags:
 ---
 ## Build a Sitemap
