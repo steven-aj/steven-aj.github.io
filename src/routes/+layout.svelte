@@ -17,11 +17,10 @@
 
    export let data;
 
-   let { hljs } = data;
-   storeHighlightJs.set(hljs);
+   const { hljs, meta } = data;
+   const { menu, store } = Shell;
 
-   let { menu, store } = Shell;
-   let { title, author, keywords } = data;
+   storeHighlightJs.set(hljs);
 
    initializeStores();
 
@@ -46,9 +45,9 @@
 
 <svelte:head>
    {@html `<script>${autoModeWatcher.toString()} autoModeWatcher();</script>`}
-   <meta name="title" content={title} />
-   <meta name="author" content={author} />
-   <meta name="keywords" content={keywords} />
+   <meta name="title" content={meta.title} />
+   <meta name="author" content={meta.author} />
+   <meta name="keywords" content={meta.keywords} />
 </svelte:head>
 
 <AppShell>

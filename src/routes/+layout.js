@@ -12,7 +12,7 @@ export const prerender = true;
 
 export async function load() {
    const page = await Pages.get('site-meta');
-   const { title, author, description, keywords } = page.meta;
+   const { meta } = page;
 
    // Register each imported language module
    hljs.registerLanguage('xml', xml); // for HTML
@@ -23,11 +23,5 @@ export async function load() {
    hljs.registerLanguage('shell', shell);
    hljs.registerLanguage('markdown', markdown);
 
-   return {
-      hljs,
-      title,
-      author,
-      description,
-      keywords
-   }
+   return { hljs, meta }
 }
