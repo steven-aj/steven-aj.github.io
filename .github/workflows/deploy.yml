@@ -21,8 +21,7 @@ jobs:
         run: npm install
 
       - name: Update content
-        run: | 
-          git submodule update --remote
+        run: git submodule sync
 
       - name: build
         env:
