@@ -11,9 +11,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Update Content
-        run: git subtree pull --prefix src/content https://github.com/steven-aj/steven-aj.content.git main --squash
-
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:

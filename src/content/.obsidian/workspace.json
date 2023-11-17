@@ -12,18 +12,6 @@
             "type": "tabs",
             "children": [
               {
-                "id": "fdc5788c7a11a0e9",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "singles/test-post.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
                 "id": "d562be67c9c6f081",
                 "type": "leaf",
                 "state": {
@@ -73,7 +61,7 @@
                       },
                       "serial": {
                         "columns": 123,
-                        "data": "steven@Stevens-MacBook-Pro steven-aj.content % git add .; git commit -m \"test post\"; git push origin ma",
+                        "data": "steven@Stevens-MacBook-Pro steven-aj.content % git add .; git commit -m \"test post\"; git push origin main\r\n[main 4c3abfc] test post\r\n 16 files changed, 664 insertions(+), 1 deletion(-)\r\n create mode 100644 .DS_Store\r\n create mode 100644 .obsidian/app.json\r\n create mode 100644 .obsidian/appearance.json\r\n create mode 100644 .obsidian/community-plugins.json\r\n create mode 100644 .obsidian/core-plugins-migration.json\r\n create mode 100644 .obsidian/core-plugins.json\r\n create mode 100644 .obsidian/graph.json\r\n create mode 100644 .obsidian/hotkeys.json\r\n create mode 100644 .obsidian/plugins/terminal/data.json\r\n create mode 100644 .obsidian/plugins/terminal/main.js\r\n create mode 100644 .obsidian/plugins/terminal/manifest.json\r\n create mode 100644 .obsidian/plugins/terminal/styles.css\r\n create mode 100644 .obsidian/templates.json\r\n create mode 100644 .obsidian/workspace.json\r\n create mode 100644 singles/test-post.md\r\nEnumerating objects: 25, done.\r\nCounting objects: 100% (25/25), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (18/18), done.\r\nWriting objects: 100% (22/22), 453.77 KiB | 11.07 MiB/s, done.\r\nTotal 22 (delta 3), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (3/3), completed with 3 local objects.\r\nTo https://github.com/steven-aj/steven-aj.content.git\r\n   bf6ce09..4c3abfc  main -> main\r\nsteven@Stevens-MacBook-Pro steven-aj.content % git add .; git commit -m \"remove test post\"; git push origin main\r\n[main 49270e3] remove test post\r\n 2 files changed, 1 insertion(+), 22 deletions(-)\r\n delete mode 100644 singles/test-post.md\r\nEnumerating objects: 9, done.\r\nCounting objects: 100% (9/9), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (5/5), done.\r\nWriting objects: 100% (5/5), 962 bytes | 962.00 KiB/s, done.\r\nTotal 5 (delta 4), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (4/4), completed with 4 local objects.\r\nTo https://github.com/steven-aj/steven-aj.content.git\r\n   4c3abfc..49270e3  main -> main\r\nsteven@Stevens-MacBook-Pro steven-aj.content % ",
                         "rows": 18
                       }
                     }
