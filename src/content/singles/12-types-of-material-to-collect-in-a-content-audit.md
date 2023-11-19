@@ -1,5 +1,5 @@
 ---
-status: review
+status: published
 date: 07/01/2023
 title: 12 Types of Material to Collect in a Content Audit (Free PDF Included)
 excerpt: Understand the significance of performing a content audit before entering development on any new project. Download a free checklist of materials to be gathered.
@@ -10,7 +10,7 @@ tags:
   - beginners
   - free-stuff
 ---
-Clients generally know exactly what they want, but not always how to get there or if they're even ready to try. For new projects, a content audit is essential for aligning expectations, building a sitemap and (*by extension*) defining a proper scope. Failing to conduct this is probably the most common mistake that new freelancers make.
+Clients generally know exactly what they want, but not always how to get there (or if they're even ready to try). For new projects, a content audit is essential for aligning expectations, building a sitemap and (*by extension*) defining a proper scope. Failing to conduct this is probably the most common mistake that new freelancers make.
 
 ## Collectible Material
 

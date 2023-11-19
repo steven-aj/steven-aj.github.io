@@ -76,10 +76,6 @@
       }
    }
 
-   main {
-      @apply flex flex-col gap-10;
-   }
-
    section.quotes {
       @apply flex flex-col items-center justify-center max-w-3xl h-40 md:h-48 w-full mx-auto;
    }

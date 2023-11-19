@@ -14,7 +14,7 @@ keywords:
 
 ## History
 
-We bought our first computer in 2000 and I've wanted to be a developer since. In my early twenties, I bounced between food service and electrical work until finally deciding to pursue development in 2016. I built a WordPress storefront selling Print-on-Demand stuff, but (like most startups) that fell through. My wife and I ended up traveling the West Coast where I bartered freelancing services as a nomad.
+We bought our first computer in 2000 and I've wanted to be a developer since. In my early twenties, I bounced bet`ween food service and electrical work until finally deciding to pursue development in 2016. I built a WordPress storefront selling Print-on-Demand stuff, but (like most startups) that fell through. My wife and I ended up traveling the West Coast where I bartered freelancing services as a nomad.
 
 We moved back home a year later and I enrolled in an in-person bootcamp to help fill the gaps in what I had been studying of headless stacks. I learned a ton there, earned a certificate in Software Development and returned to freelancing.
 
@@ -23,8 +23,6 @@ Despite my initial success, I'm pretty terrible at marketing myself. When COVID 
 ## Career
 
 I've had opportunities to work with universities, law firms, doctor's offices, agencies and bloggers. I've built a some projects from the ground up, debugged more things than I can count and helped solve problems to keep things moving.
-
-You can find an overview of my work history in the [Experience](/experience) section.
 
 ## Goals
 
