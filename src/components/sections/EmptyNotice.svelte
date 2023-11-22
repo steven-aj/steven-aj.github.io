@@ -16,23 +16,6 @@
    <p>{message}</p>
 </section>
 
-<style lang="postcss">
-   section.empty {
-      @apply flex flex-col;
-      @apply gap-4 justify-center items-center;
-      @apply h-full;
-   }
-
-   section.empty .emoji {
-      @apply text-7xl;
-   }
-
-   section.empty h2 {
-      @apply text-surface-500;
-      @apply text-3xl;
-   }
-
-   section.empty p {
-      @apply italic;
-   }
+<style>
+   
 </style>

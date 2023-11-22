@@ -12,8 +12,6 @@
    {/each}
 </div>
 
-<style lang="postcss">
-   .grid {
-      @apply grid-cols-5;
-   }
+<style>
+
 </style>

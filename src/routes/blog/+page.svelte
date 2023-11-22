@@ -1,7 +1,7 @@
 <script>
    import { beforeUpdate } from "svelte";
    import { fade } from "svelte/transition";
-   import { Drawer, getDrawerStore } from "@skeletonlabs/skeleton";
+   // import { Drawer, getDrawerStore } from "@skeletonlabs/skeleton";
    import Shell from "$lib/shell";
    import PostCard from "$components/cards/PostCard.svelte";
    import EmptyNotice from "$components/sections/EmptyNotice.svelte";
@@ -9,7 +9,7 @@
 
    export let data;
 
-   let drawer = getDrawerStore();
+   // let drawer = getDrawerStore();
 
    let { posts, tags } = data;
    let ready = false;
@@ -27,14 +27,14 @@
    beforeUpdate(init);
 </script>
 
-<Drawer position="right" width="max-w-md w-full">
+<!-- <Drawer position="right" width="max-w-md w-full">
    <TagCloud {tags} on:select={() => drawer.close()} />
-</Drawer>
+</Drawer> -->
 
-{#if ready}
+<main class="container" in:fade>
    {#if data}
       {#if posts.length}
-         <section class="posts" transition:fade>
+         <section class="container posts" transition:fade>
             <header>
                <h1>Blog</h1>
                <button
@@ -42,7 +42,7 @@
                   on:click={openTagCloud}>Tag Cloud</button
                >
             </header>
-            <div class="grid">
+            <div class="row">
                {#each posts as post}
                   <PostCard {post} />
                {/each}
@@ -52,10 +52,7 @@
          <EmptyNotice />
       {/if}
    {/if}
-{/if}
+</main>
 
-<style lang="postcss">
-   header button {
-      @apply w-full my-6 md:my-0 md:w-fit;
-   }
+<style>
 </style>

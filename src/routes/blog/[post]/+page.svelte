@@ -23,8 +23,6 @@
 	<svelte:component this={content} />
 </section>
 
-<style lang="postcss">
-	section {
-		@apply py-16;
-	}
+<style>
+	
 </style>

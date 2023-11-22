@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "singles/how-to-build-a-sitemap.md",
+                    "file": "singles/12-types-of-material-to-collect-in-a-content-audit.md",
                     "mode": "source",
                     "source": false
                   }
@@ -115,7 +115,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "[\"status\":review]",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -132,8 +132,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -153,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "singles/how-to-build-a-sitemap.md",
+                "file": "singles/12-types-of-material-to-collect-in-a-content-audit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "singles/how-to-build-a-sitemap.md",
+                "file": "singles/12-types-of-material-to-collect-in-a-content-audit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,7 +192,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "singles/how-to-build-a-sitemap.md"
+                "file": "singles/12-types-of-material-to-collect-in-a-content-audit.md"
               }
             }
           }

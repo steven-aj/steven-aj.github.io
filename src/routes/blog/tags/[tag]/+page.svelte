@@ -27,12 +27,6 @@
    </div>
 </section>
 
-<style lang="postcss">
-   /* header {
-      @apply relative flex flex-col md:flex-row md:justify-between my-6 p-4;
-   } */
+<style>
 
-   /* header h2 {
-      @apply text-4xl text-slate-500/50;
-   } */
 </style>
