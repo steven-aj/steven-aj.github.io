@@ -1,7 +1,7 @@
 <script>
    import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
    import { fly } from "svelte/transition";
-   import { afterNavigate } from "$app/navigation";
+   import { page } from "$app/stores";
    import SvelteFa from "svelte-fa";
 
    export let store;
@@ -16,19 +16,6 @@
          } else el.classList.remove("elevated");
       };
    }
-
-   afterNavigate(({ to }) => {
-      const links = document.querySelectorAll("#links > li > a");
-      for (let i = 0; i < links.length; i++) {
-         if (to.route.id === links[i].getAttribute("href")) {
-            links[i].classList.add("primary");
-            links[i].classList.remove("secondary");
-         } else {
-            links[i].classList.add("secondary");
-            links[i].classList.remove("primary");
-         }
-      }
-   });
 </script>
 
 {#if $store.toolbar}
@@ -51,8 +38,11 @@
             {#if menu.lead}
                {#each menu.lead as menuItem}
                   <li>
-                     <a class="secondary" href={menuItem.anchor}
-                        >{menuItem.label}</a
+                     <a
+                        class={$page.route.id === menuItem.anchor
+                           ? "active"
+                           : "secondary"}
+                        href={menuItem.anchor}>{menuItem.label}</a
                      >
                   </li>
                {/each}
@@ -60,7 +50,12 @@
             {#if menu.trail}
                {#each menu.trail as menuItem}
                   <li>
-                     <a href={menuItem.anchor} role="button">{menuItem.label}</a
+                     <a
+                        class={$page.route.id.includes(menuItem.anchor)
+                           ? "active"
+                           : "secondary"}
+                        href={menuItem.anchor}
+                        role="button">{menuItem.label}</a
                      >
                   </li>
                {/each}

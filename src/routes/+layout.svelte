@@ -1,20 +1,16 @@
 <script>
-   import "../styles.css";
+   import "../default.postcss";
    import "highlight.js/styles/atom-one-dark.css";
    import { onMount } from "svelte";
    import { beforeNavigate, afterNavigate } from "$app/navigation";
    import Shell from "$lib/shell";
    import Toolbar from "$components/shell/Toolbar.svelte";
-   import Hero from "$components/shell/Hero.svelte";
+   // import Hero from "$components/shell/Hero.svelte";
 
    export let data;
 
    const { hljs, meta } = data;
    const { menu, store } = Shell;
-
-   // storeHighlightJs.set(hljs);
-
-   // initializeStores();
 
    function init() {
       Shell.setToolbar({

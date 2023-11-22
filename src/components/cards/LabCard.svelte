@@ -4,7 +4,7 @@
    export let lab;
 </script>
 
-<article class="card col-6">
+<article class="card">
    <header>
       {#if lab.featured}
          <span title="Featured Lab" class="featured-badge">

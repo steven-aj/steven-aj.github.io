@@ -7,10 +7,6 @@ language: Svelte
 repo: https://github.com/steven-aj/gh-smoothie
 demo: https://steven-aj.github.io/gh-smoothie/
 ---
-<script>
-	import { CodeBlock } from '@skeletonlabs/skeleton';
-</script>
-
 GH Smoothie is a blogging framework that I built as an alternative for Jekyll. Content can be managed with any markdown editor. Metadata for pages and posts is supplied via the document's front matter. The repo also features workflow configurations for GitHub Pages to simplify deploying your blog - just push your changes into `main` and GitHub will do the rest.
 
 Feel free to fork it to your own collection & hack away.
@@ -30,40 +26,28 @@ In its default configuration, Smoothie's front matter is used to generate metada
 
 #### Site-Meta
 
-<CodeBlock 
-		   language="markdown" 
-		   code="---
-		   
+```markdown
 title:
 author:
 description: 
 keywords: 
-				 
----"/>
+```
 
 #### Page
 
-<CodeBlock 
-		   language="markdown" 
-		   code="---
-		
+```markdown
 title:
 author:
 date:
 description:
 cover:
 keywords: 
-				 
----
-"></CodeBlock>
+```
 
 
 #### Post-Single
 
-<CodeBlock 
-		   language="markdown" 
-		   code="---
-		   
+```markdown
 status: draft | published
 title:
 date:
@@ -71,6 +55,4 @@ author:
 excerpt:
 cover:
 tags: 
-				 
----
-"></CodeBlock>
+```

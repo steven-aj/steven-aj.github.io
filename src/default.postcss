@@ -9,20 +9,24 @@ nav.elevated {
    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.2);
 }
 
+section.quotes blockquote {
+   @apply !invisible !hidden;
+}
+
 /**************************
 *   Cards
 **************************/
 
-article header h1 {
-   font-size: xx-large;
-   opacity: 0.5;
-   margin: 0;
-   padding: 0;
+article {
+   @apply flex flex-col justify-between m-0;
 }
+
+article header h1 {
+   @apply opacity-50 m-0 p-0 text-2xl;
+}
+
 article footer {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
+   @apply flex flex-row justify-between;
 }
 
 article footer time {

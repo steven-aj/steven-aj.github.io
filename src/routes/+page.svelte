@@ -16,8 +16,7 @@
 
       quoteSection
          .querySelector(`blockquote[data-index="${random}"]`)
-         .classList
-         .remove("!invisible", "!hidden");
+         .classList.remove("!invisible", "!hidden");
    }
 
    function init() {
@@ -35,21 +34,21 @@
    <meta name="description" content={meta.description} />
 </svelte:head>
 
-<main class="container" in:fade>
-   <section>
+<main in:fade>
+   <section class="container">
       <ProfileCard {profile} />
    </section>
 
    <section class="quotes" use:randomQuote>
       {#each quotes as quote, i}
-         <blockquote data-index={i} class="!invisible !hidden">
+         <blockquote data-index={i}>
             {quote}
          </blockquote>
       {/each}
    </section>
 
    {#if labs.length}
-      <section class="featured posts">
+   <section id="labs" class="labs container">
          <h2>Featured Labs</h2>
          <div class="grid">
             {#each labs as lab}
@@ -60,7 +59,7 @@
    {/if}
 
    {#if posts.length}
-      <section class="posts">
+      <section id="posts" class="posts container-fluid">
          <h2>Recent Posts</h2>
          <div class="grid">
             {#each posts as post}
@@ -71,5 +70,12 @@
    {/if}
 </main>
 
-<style>
+<style lang="postcss">
+   #labs .grid {
+      @apply grid-cols-2 gap-4;
+   }
+
+   #posts .grid {
+      @apply grid-cols-3 gap-4;
+   }
 </style>

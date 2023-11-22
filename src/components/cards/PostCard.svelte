@@ -2,18 +2,11 @@
    export let post;
 </script>
 
-<!-- <a role="button" title={post.title} href={post.path}> -->
-<article class="col-6">
-   {#if post.cover}
-      <header>
-         <h1>{post.title}</h1>
-      </header>
-   {/if}
-
+<article>
    <section>
-      {#if post.excerpt}
-         {post.excerpt}
-      {/if}
+      <a href={post.path}>
+         <h1>{post.title}</h1>
+      </a>
    </section>
 
    <footer>
@@ -31,5 +24,16 @@
    </footer>
 </article>
 
-<style>
+<style lang="postcss">
+   article {
+      @apply m-0;
+   }
+
+   section {
+      @apply flex m-0 p-0 h-full w-full items-center justify-center;
+   }
+
+   section h1 {
+      @apply text-2xl m-auto text-center;
+   }
 </style>

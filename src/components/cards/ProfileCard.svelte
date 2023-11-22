@@ -76,7 +76,7 @@
    }
 
    article img.headshot {
-      @apply w-full h-auto m-auto rounded-lg;
+      @apply w-full h-auto m-auto rounded-full;
    }
 
    article section {

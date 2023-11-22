@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "singles/12-types-of-material-to-collect-in-a-content-audit.md",
+                    "file": "labs/gh-smoothie.md",
                     "mode": "source",
                     "source": false
                   }
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "singles/12-types-of-material-to-collect-in-a-content-audit.md",
+                "file": "labs/gh-smoothie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "singles/12-types-of-material-to-collect-in-a-content-audit.md",
+                "file": "labs/gh-smoothie.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,7 +192,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "singles/12-types-of-material-to-collect-in-a-content-audit.md"
+                "file": "labs/gh-smoothie.md"
               }
             }
           }
@@ -216,9 +216,11 @@
   },
   "active": "fdc5788c7a11a0e9",
   "lastOpenFiles": [
+    "labs/library-demo.md",
+    "labs.md",
+    "singles/12-types-of-material-to-collect-in-a-content-audit.md",
     "singles/how-to-build-a-sitemap.md",
     "about.md",
-    "singles/12-types-of-material-to-collect-in-a-content-audit.md",
     "experience.md",
     "singles/elevating-wordpress-plugin-development.md",
     "singles/are-we-a-good-fit.md",
@@ -240,9 +242,7 @@
     "labs/tauri-sveltekit.md",
     "labs/todo-svelte.md",
     "labs/ww-etl.md",
-    "labs/library-demo.md",
     "labs/lost-in-space-day-four-loop.md",
-    "labs.md",
     "posts/are-we-a-good-fit.md",
     "labs",
     "_templates",
