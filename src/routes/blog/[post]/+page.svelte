@@ -19,10 +19,11 @@
 	beforeUpdate(init);
 </script>
 
-<section>
-	<svelte:component this={content} />
-</section>
+<main>
+	<section class="container">
+		<svelte:component this={content} />
+	</section>
+</main>
 
 <style>
-	
 </style>

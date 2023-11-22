@@ -80,7 +80,7 @@
    }
 
    article section {
-      @apply flex flex-col col-span-4 p-4;
+      @apply flex flex-col items-center justify-center col-span-4 m-0;
    }
 
    article section h1 {

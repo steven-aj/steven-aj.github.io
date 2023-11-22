@@ -5,12 +5,13 @@
 *   Navigation
 **************************/
 
-nav.elevated {
-   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.2);
+header.elevated {
+   @apply shadow-lg;
+   /* box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.2) !important; */
 }
 
-section.quotes blockquote {
-   @apply !invisible !hidden;
+section.container h2 {
+   @apply text-center;
 }
 
 /**************************
@@ -26,7 +27,7 @@ article header h1 {
 }
 
 article footer {
-   @apply flex flex-row justify-between;
+   @apply flex flex-row justify-between !py-4;
 }
 
 article footer time {

@@ -14,9 +14,11 @@
       const list = quoteSection.getElementsByTagName("blockquote");
       const random = Math.floor(Math.random() * list.length);
 
-      quoteSection
-         .querySelector(`blockquote[data-index="${random}"]`)
-         .classList.remove("!invisible", "!hidden");
+      setInterval(() => {
+         quoteSection
+            .querySelector(`blockquote[data-index="${random}"]`)
+            .classList.toggle("!invisible", "!hidden");
+      }, 1500);
    }
 
    function init() {
@@ -41,14 +43,14 @@
 
    <section class="quotes" use:randomQuote>
       {#each quotes as quote, i}
-         <blockquote data-index={i}>
+         <blockquote data-index={i} class="!hidden !invisible">
             {quote}
          </blockquote>
       {/each}
    </section>
 
    {#if labs.length}
-   <section id="labs" class="labs container">
+      <section id="labs" class="labs container">
          <h2>Featured Labs</h2>
          <div class="grid">
             {#each labs as lab}
@@ -72,10 +74,10 @@
 
 <style lang="postcss">
    #labs .grid {
-      @apply grid-cols-2 gap-4;
+      @apply grid-cols-1 md:grid-cols-2 gap-4;
    }
 
    #posts .grid {
-      @apply grid-cols-3 gap-4;
+      @apply grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4;
    }
 </style>

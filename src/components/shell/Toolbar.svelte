@@ -3,6 +3,7 @@
    import { fly } from "svelte/transition";
    import { page } from "$app/stores";
    import SvelteFa from "svelte-fa";
+   import ThemeButton from "./ThemeButton.svelte";
 
    export let store;
    export let menu;
@@ -19,8 +20,8 @@
 </script>
 
 {#if $store.toolbar}
-   <header>
-      <nav use:elevator>
+   <header class="container-fluid" use:elevator>
+      <nav>
          <ul>
             <li>
                <img
@@ -60,6 +61,9 @@
                   </li>
                {/each}
             {/if}
+            <li>
+               <ThemeButton />
+            </li>
          </ul>
       </nav>
    </header>
@@ -67,13 +71,17 @@
 
 <style>
    header {
-      padding: 0 1rem;
       z-index: 1000;
       position: sticky;
       top: 0;
       left: 0;
-      transition: all 0.55s;
+      transition: box-shadow 1.33s;
       background-color: var(--background-color);
+      padding: 0;
+   }
+   
+   header nav {
+      padding: 0 1rem;
    }
 
    .logo {
