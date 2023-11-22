@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "about.md",
+                    "file": "singles/how-to-build-a-sitemap.md",
                     "mode": "source",
                     "source": false
                   }
@@ -74,7 +74,7 @@
                         "useWin32Conhost": true
                       },
                       "serial": {
-                        "columns": 123,
+                        "columns": 122,
                         "data": "steven@Stevens-MacBook-Pro content % ",
                         "rows": 7
                       }
@@ -115,7 +115,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "[\"status\":review]",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -132,11 +132,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 237.5
+    "width": 247.5
   },
   "right": {
     "id": "f40341d69b51707b",
@@ -152,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "about.md",
+                "file": "singles/how-to-build-a-sitemap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "about.md",
+                "file": "singles/how-to-build-a-sitemap.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,7 +193,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "about.md"
+                "file": "singles/how-to-build-a-sitemap.md"
               }
             }
           }
@@ -216,14 +217,14 @@
   },
   "active": "fdc5788c7a11a0e9",
   "lastOpenFiles": [
+    "singles/how-to-build-a-sitemap.md",
+    "about.md",
     "singles/12-types-of-material-to-collect-in-a-content-audit.md",
     "experience.md",
-    "singles/how-to-build-a-sitemap.md",
     "singles/elevating-wordpress-plugin-development.md",
     "singles/are-we-a-good-fit.md",
     "home.md",
     "site-meta.md",
-    "about.md",
     "_templates/page.md",
     "singles/a-published-post.md",
     "singles/another-published-oster.md",

@@ -27,7 +27,7 @@
    function init() {
       Shell.setToolbar({
          back: false,
-         title,
+         title: meta.title,
       });
    }
 

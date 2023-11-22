@@ -4,7 +4,7 @@
    export let lab;
 </script>
 
-<a title={lab.title} href={lab.path}>
+<a role="button" title={lab.title} href={lab.path}>
    {#if lab.featured}
       <span title="Featured Lab" class="featured-badge">
          <SvelteFa icon={faStar} />

@@ -2,7 +2,7 @@
    export let post;
 </script>
 
-<a title={post.title} href={post.path}>
+<a role="button" title={post.title} href={post.path}>
    <article class="card">
       {#if post.cover}
          <header>
