@@ -4,25 +4,40 @@
    export let lab;
 </script>
 
-<article class="card">
-   <header>
-      {#if lab.featured}
-         <span title="Featured Lab" class="featured-badge">
-            <SvelteFa icon={faStar} />
-         </span>
-      {/if}
-      <h2>{lab.title}</h2>
-   </header>
-   <section>
-      {#if lab.description}
-         {lab.description}
-      {/if}
-   </section>
+<a href={lab.path}>
+   <article class="card">
+      <section>
+         {#if lab.featured}
+            <span title="Featured Lab" class="featured-badge">
+               <SvelteFa icon={faStar} />
+            </span>
+         {/if}
+         <h2>{lab.title}</h2>
+         {#if lab.description}
+            {lab.description}
+         {/if}
+      </section>
+   
+      <footer>
+         <time>{lab.language}</time>
+      </footer>
+   </article>
+</a>
 
-   <footer>
-      <time>{lab.language}</time>
-   </footer>
-</article>
+<style lang="postcss">
+   a {
+      @apply contents;
+   }
+   
+   article {
+      @apply flex flex-col m-0;
+   }
 
-<style>
+   article section {
+      @apply contents items-center justify-center;
+   }
+
+   article section * {
+      @apply m-auto text-center;
+   }
 </style>

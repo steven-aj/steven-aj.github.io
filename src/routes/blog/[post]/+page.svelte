@@ -1,6 +1,7 @@
 <script>
 	import { beforeUpdate } from "svelte";
 	import Shell from "$lib/shell";
+    import { fade } from "svelte/transition";
 
 	export let data;
 
@@ -19,7 +20,7 @@
 	beforeUpdate(init);
 </script>
 
-<main>
+<main in:fade>
 	<section class="container">
 		<svelte:component this={content} />
 	</section>

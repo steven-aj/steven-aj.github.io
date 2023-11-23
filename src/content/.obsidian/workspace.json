@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "labs/gh-smoothie.md",
+                    "file": "home.md",
                     "mode": "source",
                     "source": false
                   }
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "labs/gh-smoothie.md",
+                "file": "home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "labs/gh-smoothie.md",
+                "file": "home.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,7 +192,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "labs/gh-smoothie.md"
+                "file": "home.md"
               }
             }
           }
@@ -216,8 +216,9 @@
   },
   "active": "fdc5788c7a11a0e9",
   "lastOpenFiles": [
-    "labs/library-demo.md",
     "labs.md",
+    "labs/gh-smoothie.md",
+    "labs/library-demo.md",
     "singles/12-types-of-material-to-collect-in-a-content-audit.md",
     "singles/how-to-build-a-sitemap.md",
     "about.md",
@@ -243,7 +244,6 @@
     "labs/todo-svelte.md",
     "labs/ww-etl.md",
     "labs/lost-in-space-day-four-loop.md",
-    "posts/are-we-a-good-fit.md",
     "labs",
     "_templates",
     "Untitled.canvas"

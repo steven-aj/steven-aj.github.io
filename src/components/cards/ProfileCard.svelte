@@ -5,13 +5,6 @@
    import SvelteFa from "svelte-fa";
 
    export let profile;
-
-   function getInitialials(name) {
-      let initials = name.split(" ");
-      if (initials.length) {
-         return initials[0].charAt(0) + initials[1].charAt(0);
-      }
-   }
 </script>
 
 {#if profile}
@@ -67,7 +60,7 @@
 
 <style lang="postcss">
    article {
-      @apply grid grid-cols-6 p-0 rounded-xl;
+      @apply grid grid-cols-6 max-w-lg w-full m-auto p-0 !shadow-xl rounded-xl;
    }
 
    article header {
@@ -88,7 +81,11 @@
    }
 
    article .contact-options {
-      @apply p-0 m-0;
+      @apply flex flex-row space-x-2;
+   }
+
+   article .contact-options a[role="button"] {
+      @apply p-2;
    }
 
    article .contact-options a[role="button"]:hover {

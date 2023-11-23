@@ -12,13 +12,13 @@
 
    function randomQuote(quoteSection) {
       const list = quoteSection.getElementsByTagName("blockquote");
-      const random = Math.floor(Math.random() * list.length);
 
       setInterval(() => {
+         const random = Math.floor(Math.random() * list.length);
          quoteSection
             .querySelector(`blockquote[data-index="${random}"]`)
             .classList.toggle("!invisible", "!hidden");
-      }, 1500);
+      }, 3000);
    }
 
    function init() {
@@ -39,6 +39,10 @@
 <main in:fade>
    <section class="container">
       <ProfileCard {profile} />
+   </section>
+
+   <section class="container">
+      <p class="text-center">{meta.description}</p>
    </section>
 
    <section class="quotes" use:randomQuote>
@@ -73,11 +77,4 @@
 </main>
 
 <style lang="postcss">
-   #labs .grid {
-      @apply grid-cols-1 md:grid-cols-2 gap-4;
-   }
-
-   #posts .grid {
-      @apply grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4;
-   }
 </style>

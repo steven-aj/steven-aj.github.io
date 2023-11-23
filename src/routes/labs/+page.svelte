@@ -29,14 +29,14 @@
    <meta name="description" content={meta.description} />
 </svelte:head>
 
-<main class="container" in:fade>
+<main class="container-fluid" in:fade>
    {#if labs.length}
-      <section id="labs" class="grid">
-         <!-- <div class="row"> -->
+      <section id="labs" class="labs container">
+         <div class="grid">
             {#each labs as lab}
                <LabCard {lab} />
             {/each}
-         <!-- </div> -->
+         </div>
       </section>
    {:else}
       <EmptyNotice showIcon={false} title={false} />
