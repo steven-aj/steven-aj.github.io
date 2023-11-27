@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "singles/preventing-eye-strain-with-softer-transitions-between-light-and-dark-modes.md",
+                    "file": "singles/softer-transitions-between-light-and-dark-modes.md",
                     "mode": "source",
                     "source": false
                   }
@@ -75,7 +75,7 @@
                       },
                       "serial": {
                         "columns": 122,
-                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"added new blog idea; implement prismjs for code highlightin\r\ng\"; git push origin picocss",
+                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"added new blog idea; implement prismjs for code highlightin\r\ng\"; git push origin picocss\r\n[picocss d8cc9e7] added new blog idea; implement prismjs for code highlighting\r\n 3 files changed, 69 insertions(+), 16 deletions(-)\r\n create mode 100644 src/content/singles/preventing-eye-strain-with-softer-transitions-between-light-and-dark-modes.md\r\nEnumerating objects: 16, done.\r\nCounting objects: 100% (16/16), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (9/9), done.\r\nWriting objects: 100% (9/9), 2.72 KiB | 2.72 MiB/s, done.\r\nTotal 9 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   1c1b482..d8cc9e7  picocss -> picocss\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"continue draft\"; git push origin picocs",
                         "rows": 7
                       }
                     }
@@ -212,7 +212,7 @@
   },
   "active": "f7a0031648a1ea61",
   "lastOpenFiles": [
-    "singles/preventing-eye-strain-with-softer-transitions-between-light-and-dark-modes.md",
+    "singles/softer-transitions-between-light-and-dark-modes.md",
     "singles/static-and-dynamic-sites.md",
     "home.md",
     "singles/how-to-build-a-sitemap.md",

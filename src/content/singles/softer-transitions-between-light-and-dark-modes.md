@@ -16,17 +16,17 @@ I don't know if this is a problem for everyone, to be honest. I'm writing this f
 
 ## Why it Hurts
 
-The iris is a muscle of the eye that contracts to restrict the amount of light that's transmitted to the eye's lens. The big takeaway here is that *the iris is a muscle*. Its contraction is a reflex to the stimulus of light and, while that reflex can be pretty quick, it's still exponentially slower than light itself. 
+The iris is a muscle of the eye that contracts to restrict the amount of light that's transmitted to the eye's lens. The big takeaway here is that *the iris is a muscle*. Its contraction is *a reflex to the stimulus of light* and, while that reflex can be pretty quick, it's still exponentially slower than light itself. 
 
-Since the brain needs time to process how much the iris should adjust to changes, there's a extended period of time that the lens is exposed to potentially damaging amounts of light. This is especially true in dark environments where the iris is most relaxed, which is why the sudden shift from *Dark* mode to *Light* mode can be *literally* painful for some.
+Since the brain needs time to process how much the iris should adjust to changes, and since the iris takes time to adjust, there's a extended period of time that the lens is exposed to potentially damaging amounts of light. This is especially true in dark environments where the iris is most relaxed, which is why the sudden shift from *Dark* mode to *Light* mode can be *literally* painful for some.
 
-The problem *is time*. To the sensible person, this probably sounds pretty obvious. *We instinctively know that the eyes must adjust to changes in light*, but there are so many engineers that fail to take this into consideration when implementing optional theme modes.
+**The problem is time**. To a sensible person, this probably sounds too obvious to blog about. *We instinctively know that the eyes must adjust to changes in light*. Unfortunately, however, there are demonstrably too many engineers that fail to take this into consideration when implementing optional theme modes.
 
 ## A Simple Solution
 
-Since the time it takes for our eyes to adjust is the primary factor, the solution is to extend the amount of time it takes to transition between different theme modes.
+Since the issue is the time that it takes for our eyes to adjust, the solution is to extend the amount of time it takes to transition between different theme modes. If you haven't already, toggle this page between light and dark mode for an example of how this could work. Better, right?
 
-Assuming you've already built your project to handle *Light* and Dark modes - or you're using a library that handles it for you -  there's an easy way to prevent your users from feeling like someone's speed-bagging their optical nerves. We can do this with as little as one line of CSS.
+Assuming you've already built your project to handle *Light* and *Dark* modes - or you're using a library that handles it for you -  there's an easy way to prevent your users from feeling like someone's speed-bagging their optical nerves. We can do this with as little as one line of CSS.
 
 ```css
 * {
