@@ -34,9 +34,30 @@ section#posts .grid {
    @apply grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4;
 }
 
+section#posts .content {
+   @apply space-y-4;
+}
+
+.badge {
+   @apply hover:opacity-50 active:opacity-50 inline-flex w-fit items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10;
+}
+
+.badge.primary {
+   @apply !text-black;
+   background-color: var(--primary) !important;
+}
+
+.badge.secondary {
+   color: @apply !text-white;
+   background-color: var(--secondary) !important;
+}
+
 /**************************
 *   Cards
 **************************/
+a.card {
+   @apply my-4;
+}
 
 article {
    @apply flex flex-col shadow-md justify-between m-0;
