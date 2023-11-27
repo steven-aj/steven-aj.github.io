@@ -2,7 +2,7 @@
    export let post;
 </script>
 
-<a href={post.path}>
+<a class="card" href={post.path}>
    <article>
       <section>
          <h1>{post.title}</h1>
@@ -11,7 +11,7 @@
       <footer>
          {#if post.tags}
             <div class="tags">
-               <span class="badge variant-filled-secondary">
+               <span>
                   {post.tags[0]}
                </span>
                <span class="text-xs text-slate-500/50">
@@ -25,7 +25,7 @@
 </a>
 
 <style lang="postcss">
-   a {
+   a.card {
       @apply contents h-full;
    }
 
@@ -44,5 +44,13 @@
 
    article:hover section h1 {
       @apply !opacity-95;
+   }
+
+   article footer .tags {
+      @apply space-x-2;
+   }
+
+   article footer time {
+      @apply text-neutral-500;
    }
 </style>
