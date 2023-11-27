@@ -6,7 +6,7 @@ author: Steven Johnson
 email: devtheory@icloud.com
 github: https://github.com/steven-aj
 slack: https://stevenaj.slack.com/archives/C066L1KJ256
-description: I'm a full-stack JavaScript developer with over seven years of professional experience across WordPress and web application development.
+description: I'm a full-stack JavaScript developer who blogs about random, non-innovative things.
 keywords:
   - full-stack
   - developer

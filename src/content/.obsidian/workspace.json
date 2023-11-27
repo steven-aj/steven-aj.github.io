@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "home.md",
+                    "file": "singles/preventing-eye-strain-with-softer-transitions-between-light-and-dark-modes.md",
                     "mode": "source",
                     "source": false
                   }
@@ -75,7 +75,7 @@
                       },
                       "serial": {
                         "columns": 122,
-                        "data": "steven@Stevens-MacBook-Pro content % ",
+                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"added new blog idea; implement prismjs for code highlightin\r\ng\"; git push origin picocss",
                         "rows": 7
                       }
                     }
@@ -152,7 +152,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +168,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "home.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,9 +189,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "home.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -214,18 +210,20 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "fdc5788c7a11a0e9",
+  "active": "f7a0031648a1ea61",
   "lastOpenFiles": [
+    "singles/preventing-eye-strain-with-softer-transitions-between-light-and-dark-modes.md",
+    "singles/static-and-dynamic-sites.md",
+    "home.md",
+    "singles/how-to-build-a-sitemap.md",
+    "singles/are-we-a-good-fit.md",
+    "singles/elevating-wordpress-plugin-development.md",
+    "singles/12-types-of-material-to-collect-in-a-content-audit.md",
     "labs.md",
     "labs/gh-smoothie.md",
     "labs/library-demo.md",
-    "singles/12-types-of-material-to-collect-in-a-content-audit.md",
-    "singles/how-to-build-a-sitemap.md",
     "about.md",
     "experience.md",
-    "singles/elevating-wordpress-plugin-development.md",
-    "singles/are-we-a-good-fit.md",
-    "home.md",
     "site-meta.md",
     "_templates/page.md",
     "singles/a-published-post.md",
@@ -242,8 +240,6 @@
     "posts/elevating-wordpress-plugin-development.md",
     "labs/tauri-sveltekit.md",
     "labs/todo-svelte.md",
-    "labs/ww-etl.md",
-    "labs/lost-in-space-day-four-loop.md",
     "labs",
     "_templates",
     "Untitled.canvas"
