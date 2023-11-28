@@ -20,13 +20,16 @@ I like money just as much as anyone else, but I chose this career because I genu
 ### *I'm Not Afraid to Break Stuff*
 I have a natural curiosity for the way stuff works, which means many years of taking things apart (*sorry, pops*). I like to expedite ramp-up time on projects by creating a local branch and dissecting it to see how it was put together. 
 
+### *I'm Not Afraid to Ask Questions*
+You should know that I know that I don't know everything and I'm not afraid to ask when I don't. If I come across a problem that takes me an hour or more to solve, I generally defer to someone stronger that me in that area.
+
 ## Things to Consider
 
-### *I'm Not the Office-Type*
+### *I Work Remotely*
 I thrive on communication and teamwork, but I prefer remote collaboration. That said, I'm never opposed to meeting local clients for a coffee to discuss a project.
 
 ### *I'm Not a Designer*
 I've taken courses on design theory & know enough to (*barely*) scrape by in this department, but I've had the privilege of working with *real* designers who are just as passionate about their work as I am of mine. I prefer to let those folks do their job.
 
 ### *No Formal Education*
-If you're looking exclusively for someone with a degree, it ain't me (*and won't be*). My education consists of deep-dives into docs, exploring complex topics, and occasional Udemy courses - basically, continuing education for anyone *with* a degree.
+I don't have a degree in computer science and don't really intend to pursue one. My education consists of deep-dives into docs, exploring topics, and occasional Udemy courses - basically, continuing education for anyone *with* a degree.
