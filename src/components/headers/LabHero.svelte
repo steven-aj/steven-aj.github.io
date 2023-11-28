@@ -35,6 +35,6 @@
    }
 
    header h1 {
-      @apply my-0;
+      @apply my-0 text-center;
    }
 </style>
