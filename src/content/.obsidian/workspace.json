@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "singles/prevent-eye-strain-with-softer-transitions.md",
+                    "file": "singles/12-types-of-material-to-collect-in-a-content-audit.md",
                     "mode": "source",
                     "source": false
                   }
@@ -138,6 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "singles/12-types-of-material-to-collect-in-a-content-audit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,6 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "singles/12-types-of-material-to-collect-in-a-content-audit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +177,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "singles/12-types-of-material-to-collect-in-a-content-audit.md"
+              }
             }
           }
         ]
@@ -196,7 +200,7 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "3cb1641c8db70649",
+  "active": "694c6399452c87df",
   "lastOpenFiles": [
     "singles/prevent-eye-strain-with-softer-transitions.md",
     "singles/how-to-build-a-sitemap.md",
