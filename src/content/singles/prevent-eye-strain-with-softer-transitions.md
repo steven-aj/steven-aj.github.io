@@ -62,4 +62,4 @@ With very little effort, we can pretty easily give our users time to adjust when
 
 ## Final Words
 
-I'll admit - this post probably could've been reduced to just the CSS examples, but I've tagged it as a `rant` for a reason. I find it interesting (*and honestly frustrating*) that the purpose of accessibility is to respect our biological differences, while *in practice*, it fails to pay homage to our biological similarities.
+I'll admit - this post probably could've been reduced to just the CSS examples, but I've tagged it as a `rant` for a reason. To me, this seems like a pretty obvious fix given how simple it is to implement. Maybe I just work in the dark too often.
