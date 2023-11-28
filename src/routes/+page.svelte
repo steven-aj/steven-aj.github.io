@@ -10,16 +10,16 @@
    export let data;
    let { meta, profile, quotes, content, posts, labs } = data;
 
-   function randomQuote(quoteSection) {
-      const list = quoteSection.getElementsByTagName("blockquote");
+   // function randomQuote(quoteSection) {
+   //    const list = quoteSection.getElementsByTagName("blockquote");
 
-      setInterval(() => {
-         const random = Math.floor(Math.random() * list.length);
-         quoteSection
-            .querySelector(`blockquote[data-index="${random}"]`)
-            .classList.toggle("!invisible", "!hidden");
-      }, 3000);
-   }
+   //    setInterval(() => {
+   //       const random = Math.floor(Math.random() * list.length);
+   //       quoteSection
+   //          .querySelector(`blockquote[data-index="${random}"]`)
+   //          .classList.toggle("!invisible", "!hidden");
+   //    }, 3000);
+   // }
 
    function init() {
       Shell.setHero(false);
@@ -45,7 +45,7 @@
       <svelte:component this={content} />
    </section>
 
-   <section class="quotes" use:randomQuote>
+   <section class="quotes">
       {#each quotes as quote, i}
          <blockquote data-index={i} class="!hidden !invisible">
             {quote}
