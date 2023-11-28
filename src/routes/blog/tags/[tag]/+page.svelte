@@ -15,18 +15,20 @@
    beforeUpdate(init);
 </script>
 
+<h1 class="container-fluid">Tagged: {tag}</h1>
 
-<section class="posts">
-   <header>
-      <h1>Tagged: {tag}</h1>
-   </header>
-   <div class="grid">
-      {#each posts as post}
-         <PostCard {post} />
-      {/each}
-   </div>
-</section>
+<main class="container">
+   <section class="posts">
+      <div class="grid">
+         {#each posts as post}
+            <PostCard {post} />
+         {/each}
+      </div>
+   </section>
+</main>
 
-<style>
-
+<style lang="postcss">
+   h1 {
+      @apply my-4;
+   }
 </style>

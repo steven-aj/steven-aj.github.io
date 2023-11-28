@@ -80,7 +80,7 @@
    }
 
    main aside {
-      @apply flex flex-col-reverse md:block col-span-2 px-4;
+      @apply flex flex-col-reverse lg:block col-span-2 px-4;
    }
 
    main aside button {
