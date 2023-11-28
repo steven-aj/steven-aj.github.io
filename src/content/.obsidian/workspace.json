@@ -10,6 +10,7 @@
           {
             "id": "8ba00766c1b16eed",
             "type": "tabs",
+            "dimension": 77.77777777777779,
             "children": [
               {
                 "id": "694c6399452c87df",
@@ -17,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "singles/prevent-eye-strain-with-softer-transitions.md",
+                    "file": "singles/how-to-build-a-sitemap.md",
                     "mode": "source",
                     "source": false
                   }
@@ -28,6 +29,7 @@
           {
             "id": "29b9e657c6f9c765",
             "type": "tabs",
+            "dimension": 22.22222222222222,
             "children": [
               {
                 "id": "3cb1641c8db70649",
@@ -59,8 +61,8 @@
                       },
                       "serial": {
                         "columns": 122,
-                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"continue draft\"; git push origin dev",
-                        "rows": 18
+                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"continue draft\"; git push origin develop\r\n[develop d5bf0fb] continue draft\r\n 2 files changed, 68 insertions(+), 21 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 1.39 KiB | 1.39 MiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   afe37bc..d5bf0fb  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"modify draft\"; git push origin dev",
+                        "rows": 5
                       }
                     }
                   },
@@ -196,17 +198,17 @@
   },
   "active": "3cb1641c8db70649",
   "lastOpenFiles": [
-    "singles/prevent-eye-strain-with-softer-transitions.md",
     "singles/how-to-build-a-sitemap.md",
-    "singles/12-types-of-material-to-collect-in-a-content-audit.md",
+    "singles/prevent-eye-strain-with-softer-transitions.md",
+    "singles/static-and-dynamic-sites.md",
+    "singles/elevating-wordpress-plugin-development.md",
     "singles/are-we-a-good-fit.md",
+    "singles/12-types-of-material-to-collect-in-a-content-audit.md",
     "blog/are-we-a-good-fit.md",
     "blog/12-types-of-material-to-collect-in-a-content-audit.md",
     "blog",
     "singles/building-a-sitemap.md",
     "experience.md",
-    "singles/elevating-wordpress-plugin-development.md",
-    "singles/static-and-dynamic-sites.md",
     "site-meta.md",
     "labs.md",
     "home.md",
