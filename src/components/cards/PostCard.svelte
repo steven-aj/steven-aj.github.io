@@ -2,7 +2,7 @@
    export let post;
 </script>
 
-<a class="card" href={post.path}>
+<a title={post.title} class="card" href={post.path}>
    <article>
       <section style={`${post.cover ? `background-image: url(${post.cover});` : ''}`}>
          <h1>{post.title}</h1>

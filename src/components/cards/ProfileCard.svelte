@@ -11,6 +11,7 @@
    <article>
       <header>
          <img
+            title={`Headshot of ${profile.title}`}
             class="headshot"
             alt={`Headshot of ${profile.title}`}
             src={profile.cover}

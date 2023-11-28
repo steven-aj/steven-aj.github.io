@@ -24,6 +24,7 @@
             <li>
                <a href="/">
                   <img
+                     title="Go Home"
                      class="logo"
                      alt="steven-aj"
                      src="/assets/logo.svg"
@@ -40,6 +41,7 @@
                {#each menu.lead as menuItem}
                   <li>
                      <a
+                        title={menuItem.label}
                         href={menuItem.anchor}
                         class={$page.route.id === menuItem.anchor
                            ? "active"
@@ -54,6 +56,7 @@
                {#each menu.trail as menuItem}
                   <li>
                      <a
+                        title={menuItem.label}
                         href={menuItem.anchor}
                         class={$page.route.id.includes(menuItem.anchor)
                            ? "active"
