@@ -4,7 +4,7 @@
 
 <a class="card" href={post.path}>
    <article>
-      <section style={`background-image: url(${post.cover});`}>
+      <section style={`${post.cover ? `background-image: url(${post.cover});` : ''}`}>
          <h1>{post.title}</h1>
       </section>
    

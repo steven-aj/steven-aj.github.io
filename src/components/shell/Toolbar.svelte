@@ -1,8 +1,6 @@
 <script>
-   import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
    import { fly } from "svelte/transition";
    import { page } from "$app/stores";
-   import SvelteFa from "svelte-fa";
    import ThemeButton from "./ThemeButton.svelte";
 
    export let store;
@@ -22,7 +20,7 @@
 {#if $store.toolbar}
    <header class="container-fluid" use:elevator>
       <nav>
-         <ul>
+         <ul class="hidden md:block">
             <li>
                <a href="/">
                   <img
@@ -42,11 +40,13 @@
                {#each menu.lead as menuItem}
                   <li>
                      <a
+                        href={menuItem.anchor}
                         class={$page.route.id === menuItem.anchor
                            ? "active"
                            : "secondary"}
-                        href={menuItem.anchor}>{menuItem.label}</a
                      >
+                        {menuItem.label}
+                     </a>
                   </li>
                {/each}
             {/if}
@@ -54,12 +54,13 @@
                {#each menu.trail as menuItem}
                   <li>
                      <a
+                        href={menuItem.anchor}
                         class={$page.route.id.includes(menuItem.anchor)
                            ? "active"
                            : "secondary"}
-                        href={menuItem.anchor}
-                        role="button">{menuItem.label}</a
                      >
+                        {menuItem.label}
+                     </a>
                   </li>
                {/each}
             {/if}
@@ -71,24 +72,19 @@
    </header>
 {/if}
 
-<style>
+<style lang="postcss">
    header {
-      z-index: 1000;
-      position: sticky;
-      top: 0;
-      left: 0;
+      @apply sticky top-0 left-0 p-0 z-50;
       transition: box-shadow 1.33s, var(--theme-mode);
       background-color: var(--background-color);
-      padding: 0;
    }
 
    header nav {
-      padding: 0 1rem;
+      @apply flex flex-col items-center md:flex-row py-0 px-4;
    }
 
    .logo {
-      width: 23px;
-      height: auto;
+      @apply w-6 h-auto;
    }
 
    #links a {

@@ -73,7 +73,7 @@
    }
 
    article section {
-      @apply flex flex-col items-center justify-center col-span-4 m-0;
+      @apply flex flex-col items-center justify-center col-span-4 m-0 py-4;
    }
 
    article section h1 {

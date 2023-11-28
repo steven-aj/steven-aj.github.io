@@ -2,7 +2,6 @@
    import "../default.postcss";
    import "prism-themes/themes/prism-atom-dark.min.css";
    import { onMount } from "svelte";
-   // import { beforeNavigate, afterNavigate } from "$app/navigation";
    import Shell from "$lib/shell";
    import Toolbar from "$components/shell/Toolbar.svelte";
 
@@ -17,14 +16,6 @@
          title: meta.title,
       });
    }
-
-   // beforeNavigate(() => {
-   //    Shell.setLoading(true);
-   // });
-
-   // afterNavigate(() => {
-   //    Shell.setLoading(false);
-   // });
 
    onMount(init);
 </script>

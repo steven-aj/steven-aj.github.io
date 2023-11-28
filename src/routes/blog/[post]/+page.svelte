@@ -1,12 +1,20 @@
 <script>
-	import { beforeUpdate } from "svelte";
-	import Shell from "$lib/shell";
-	import { page } from "$app/stores";
 	import { fade } from "svelte/transition";
 
 	export let data;
 
 	$: ({ meta, content } = data);
+
+	function downloads(container) {
+		const anchors = container.getElementsByTagName('a');
+		if (anchors.length) {
+			for (let link of anchors) {
+				if (link.href.includes('/downloads/')) {
+					link.setAttribute('download', true);
+				}
+			}
+		}
+	}
 </script>
 
 <svelte:head>
@@ -18,7 +26,7 @@
 
 {#key content}
 	<main in:fade>
-		<section class="container">
+		<section class="container" use:downloads>
 			<svelte:component this={content} />
 		</section>
 	</main>

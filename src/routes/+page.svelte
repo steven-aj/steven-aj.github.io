@@ -61,6 +61,7 @@
                <LabCard {lab} />
             {/each}
          </div>
+         <a title="View Labs" href="/labs" role="button">View Labs</a>
       </section>
    {/if}
 
@@ -72,9 +73,13 @@
                <PostCard {post} />
             {/each}
          </div>
+         <a title="Visit Blog" href="/blog" role="button">Visit Blog</a>
       </section>
    {/if}
 </main>
 
 <style lang="postcss">
+   a[role="button"] {
+      @apply flex max-w-lg w-full mx-auto self-center justify-center my-8;
+   }
 </style>

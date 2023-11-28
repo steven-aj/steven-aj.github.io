@@ -22,7 +22,6 @@
       Shell.showBackButton(false);
       Shell.setHero(false);
       setTimeout(() => (ready = true), 100);
-      console.log(tags);
    }
 
    beforeUpdate(init);
