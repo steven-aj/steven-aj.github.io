@@ -17,7 +17,9 @@ I don't know if this is a problem for everyone, to be honest. I'm writing this f
 
 ## Why it Hurts
 
-The iris is a muscle of the eye that contracts to restrict the amount of light that's transmitted to the eye's lens. The big takeaway here is that *the iris is a muscle*. Its contraction *is a reflex to the stimulus of light* and, while that reflex can be pretty quick, it's still exponentially slower than light itself. 
+**Beware. Obvious information inbound.**
+
+The iris is a muscle of the eye that contracts to restrict the amount of light transmitted to the eye's lens. The big takeaway here is that *the iris is a muscle*. Its contraction *is a reflex to the stimulus of light* and, while that reflex can be pretty quick, it's still exponentially slower than light itself. 
 
 Since the brain needs time to process how much the iris should adjust to changes, and since the iris takes time to adjust, there's an extended period of time that the lens is exposed to potentially damaging amounts of light. This is especially true in dark environments where the iris is most relaxed, which is why the sudden shift from *Dark* mode to *Light* mode can be *literally painful* for some.
 
