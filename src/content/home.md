@@ -20,8 +20,8 @@ quotes:
   - Want your own SvelteKit blog on GitHub? Check out 'GH Smoothie'.
   - Ready to work? Click the Slack icon in my profile card to get started.
 ---
-I blog about random, non-innovative things that come to mind. This space is mostly a catch-all for various thoughts and experiences, but I'm sure that you can find plenty to learn about me. 
+I blog about random, non-innovative things that come to mind. 
 
-<article>
-<p class="font-extrabold">Want to get in touch? Try the <em>Slack</em> icon in the profile card above.</p>
-</article>
+This space is mostly a catch-all for various thoughts and experiences, but I'm sure that you can find plenty to learn about me. 
+
+**Want to get in touch? Try the *Slack* icon in the profile card above.**
