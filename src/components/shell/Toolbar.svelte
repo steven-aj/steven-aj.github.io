@@ -24,12 +24,14 @@
       <nav>
          <ul>
             <li>
-               <img
-                  class="logo"
-                  alt="steven-aj"
-                  src="/assets/logo.svg"
-                  in:fly={{ x: -100 }}
-               />
+               <a href="/">
+                  <img
+                     class="logo"
+                     alt="steven-aj"
+                     src="/assets/logo.svg"
+                     in:fly={{ x: -100 }}
+                  />
+               </a>
             </li>
             <li>
                <strong>{$store.toolbar.title}</strong>
@@ -75,11 +77,11 @@
       position: sticky;
       top: 0;
       left: 0;
-      transition: box-shadow 1.33s;
+      transition: box-shadow 1.33s, var(--theme-mode);
       background-color: var(--background-color);
       padding: 0;
    }
-   
+
    header nav {
       padding: 0 1rem;
    }

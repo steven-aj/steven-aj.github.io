@@ -3,7 +3,7 @@ status: review
 date: 11/23/2023
 author: Steven Johnson
 cover: 
-title: Preventing Eye-Strain With Softer Transitions Between Light & Dark Modes
+title: "Prevent Eye-Strain: Softer Transitions Between Light & Dark Modes"
 excerpt: Toggling between light and dark modes of your website or application can make a world of difference for people with sensitive eyes or the night owls that live and work in the dark. There isn't a technical standard for how this should be accomplished and an instant transition can be pretty harsh. We can fix that with a few lines of CSS.
 tags:
   - informative
@@ -62,4 +62,4 @@ With very little effort, we can pretty easily give our users time to adjust when
 
 ## Final Words
 
-I'll admit - this post probably could've been reduced to just the CSS examples, but I've tagged it as a `rant` for a reason. I find it interesting (*and somewhat frustrating*) that the purpose of accessibility is to respect our biological differences, while *in practice*, it doesn't always seem to respect our similarities.
+I'll admit - this post probably could've been reduced to just the CSS examples, but I've tagged it as a `rant` for a reason. I find it interesting (*and honestly frustrating*) that the purpose of accessibility is to respect our biological differences, while *in practice*, it fails to pay homage to our biological similarities.

@@ -31,8 +31,9 @@
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@sveltejs/adapter-static": "^2.0.3",
-    "highlight.js": "^11.9.0",
     "lodash": "^4.17.21",
+    "prism-themes": "^1.9.0",
+    "prismjs": "^1.29.0",
     "svelte-fa": "^3.0.4"
   }
 }

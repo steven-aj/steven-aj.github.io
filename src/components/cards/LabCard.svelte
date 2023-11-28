@@ -13,11 +13,13 @@
             </span>
          {/if}
          <h2>{lab.title}</h2>
-         {#if lab.description}
-            {lab.description}
-         {/if}
+         <p class="!text-neutral-500 text-center">
+            {#if lab.description}
+               {lab.description}
+            {/if}
+         </p>
       </section>
-   
+
       <footer>
          <time>{lab.language}</time>
       </footer>
@@ -28,7 +30,7 @@
    a {
       @apply contents;
    }
-   
+
    article {
       @apply flex flex-col m-0;
    }

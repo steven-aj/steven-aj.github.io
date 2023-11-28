@@ -33,6 +33,7 @@
 </Drawer> -->
 
 <h1 class="container">Blog</h1>
+
 <main class="container-fluid" in:fade>
    <aside>
       <button class="btn variant-filled-secondary" on:click={openTagCloud}
@@ -43,7 +44,7 @@
          <h2>Tag Cloud</h2>
          <div class="wrapper">
             {#each tags as tag}
-            <a class="primary badge" href={`/blog/tags/${tag}`}>{tag}</a>
+               <a class="primary badge" href={`/blog/tags/${tag}`}>{tag}</a>
             {/each}
          </div>
       </section>
@@ -51,15 +52,18 @@
       <section id="recent">
          <h2>Recent Posts</h2>
          <div class="wrapper">
-            {#each recent as post}
-            <a href={post.path}>{post.title}</a>
-            {/each}
+            <ul>
+               {#each recent as post}
+                  <li>
+                     <a href={post.path}>{post.title}</a>
+                  </li>
+               {/each}
+            </ul>
          </div>
       </section>
    </aside>
    {#if data}
       {#if posts.length}
-
          <section id="posts" class="container-fluid" transition:fade>
             {#each posts as post}
                <PostCard {post} />
@@ -77,11 +81,11 @@
    }
 
    h1 {
-      @apply text-center;
+      @apply text-center my-4;
    }
 
    main aside {
-      @apply self-start block lg:sticky lg:top-24 lg:left-0 lg:col-span-2 px-4;
+      @apply col-span-2 px-4;
    }
 
    main aside button {
@@ -109,10 +113,10 @@
    }
 
    main aside section#recent .wrapper {
-      @apply flex flex-col;
+      @apply contents space-y-4;
    }
 
    section#posts {
-      @apply flex flex-col lg:grid lg:col-span-10 md:grid-cols-3 gap-4;
+      @apply flex flex-col gap-4 md:grid md:grid-cols-2 md:col-span-10;
    }
 </style>

@@ -1,8 +1,24 @@
 @tailwind base;
 @tailwind utilities;
 
+/**************************
+*   Theme Helper(s)
+**************************/
+
+:root {
+   --theme-mode: background-color 5s, color 5s;
+}
+
 * {
-   transition: background-color 3s, color 3s;
+   transition: var(--theme-mode);
+}
+
+/**************************
+*   Typography
+**************************/
+
+p {
+   @apply leading-8 text-2xl;
 }
 
 /**************************
@@ -22,6 +38,7 @@ main {
    @apply py-4;
 }
 
+
 section.container h2 {
    @apply text-center;
 }
@@ -31,16 +48,23 @@ section#labs .grid {
 }
 
 section#posts .grid {
-   @apply grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4;
+   @apply grid-cols-1 md:grid-cols-3 gap-6;
 }
 
 section#posts .content {
    @apply space-y-4;
 }
 
-.badge {
-   @apply hover:opacity-50 active:opacity-50 inline-flex w-fit items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10;
+blockquote p {
+   @apply italic font-serif text-xl my-0 leading-10;
+   color: var(--primary);
 }
+
+
+.badge {
+   @apply hover:opacity-50 active:opacity-50 inline-flex w-fit items-center text-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10;
+}
+
 
 .badge.primary {
    @apply !text-black;

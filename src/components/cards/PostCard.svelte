@@ -4,7 +4,7 @@
 
 <a class="card" href={post.path}>
    <article>
-      <section>
+      <section style={`background-image: url(${post.cover});`}>
          <h1>{post.title}</h1>
       </section>
    
@@ -30,20 +30,16 @@
    }
 
    article {
-      @apply m-0;
+      @apply relative m-0;
    }
-
+   
    section {
-      @apply flex m-0 p-0 h-full w-full items-center justify-center;
+      @apply rounded-lg overflow-hidden bg-cover bg-blend-multiply m-0 p-0 h-full w-full;
    }
 
    section h1 {
-      @apply text-2xl m-auto text-center opacity-50;
+      @apply flex p-4 backdrop-blur-lg backdrop-brightness-50 text-neutral-200 text-xl w-full h-full items-center justify-center m-auto text-center self-center;
       transition: opacity 1s;
-   }
-
-   article:hover section h1 {
-      @apply !opacity-95;
    }
 
    article footer .tags {

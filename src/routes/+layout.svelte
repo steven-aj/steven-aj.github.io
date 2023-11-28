@@ -1,15 +1,14 @@
 <script>
    import "../default.postcss";
-   import "highlight.js/styles/atom-one-dark.css";
+   import "prism-themes/themes/prism-atom-dark.min.css";
    import { onMount } from "svelte";
-   import { beforeNavigate, afterNavigate } from "$app/navigation";
+   // import { beforeNavigate, afterNavigate } from "$app/navigation";
    import Shell from "$lib/shell";
    import Toolbar from "$components/shell/Toolbar.svelte";
-   // import Hero from "$components/shell/Hero.svelte";
 
    export let data;
 
-   const { hljs, meta } = data;
+   const { meta } = data;
    const { menu, store } = Shell;
 
    function init() {
@@ -19,14 +18,13 @@
       });
    }
 
-   beforeNavigate(() => {
-      Shell.setLoading(true);
-   });
+   // beforeNavigate(() => {
+   //    Shell.setLoading(true);
+   // });
 
-   afterNavigate(() => {
-      window.scrollTo({ top: 0, behavior: "instant" });
-      Shell.setLoading(false);
-   });
+   // afterNavigate(() => {
+   //    Shell.setLoading(false);
+   // });
 
    onMount(init);
 </script>
@@ -49,7 +47,9 @@
    @import "/styles/pico.min.css";
 
    footer {
+      font-size: 0.75rem;
       text-align: center;
       padding: 1rem 0;
+      opacity: 0.5;
    }
 </style>

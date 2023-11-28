@@ -41,8 +41,8 @@
       <ProfileCard {profile} />
    </section>
 
-   <section class="container">
-      <p class="text-center">{meta.description}</p>
+   <section class="container text-center">
+      <svelte:component this={content} />
    </section>
 
    <section class="quotes" use:randomQuote>
