@@ -4,75 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "09a3b2cafa74d1f1",
-        "type": "split",
+        "id": "29b9e657c6f9c765",
+        "type": "tabs",
         "children": [
           {
-            "id": "8ba00766c1b16eed",
-            "type": "tabs",
-            "dimension": 77.77777777777779,
-            "children": [
-              {
-                "id": "694c6399452c87df",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "home.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
+            "id": "c23eed7521f96ea6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "singles/are-we-a-good-fit.md",
+                "mode": "source",
+                "source": false
               }
-            ]
-          },
-          {
-            "id": "29b9e657c6f9c765",
-            "type": "tabs",
-            "dimension": 22.22222222222222,
-            "children": [
-              {
-                "id": "3cb1641c8db70649",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "terminal:terminal",
-                  "state": {
-                    "terminal:terminal": {
-                      "cwd": "/Users/steven/Projects/steven-aj.github.io/src/content",
-                      "focus": false,
-                      "profile": {
-                        "args": [],
-                        "executable": "/bin/zsh",
-                        "name": "",
-                        "platforms": {
-                          "darwin": true
-                        },
-                        "pythonExecutable": "python3",
-                        "restoreHistory": true,
-                        "successExitCodes": [
-                          "0",
-                          "SIGINT",
-                          "SIGTERM"
-                        ],
-                        "terminalOptions": {},
-                        "type": "integrated",
-                        "useWin32Conhost": true
-                      },
-                      "serial": {
-                        "columns": 119,
-                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"continue draft\"; git push origin develop\r\n[develop d5bf0fb] continue draft\r\n 2 files changed, 68 insertions(+), 21 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 1.39 KiB | 1.39 MiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   afe37bc..d5bf0fb  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"modify draft\"; git push origin develop\r\n[develop ad36c76] modify draft\r\n 2 files changed, 9 insertions(+), 9 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 1.06 KiB | 1.06 MiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   d5bf0fb..ad36c76  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"updated draft\"; git push origin develop\r\n[develop b86ff51] updated draft\r\n 5 files changed, 21 insertions(+), 13 deletions(-)\r\n create mode 100644 src/content/.obsidian/types.json\r\nEnumerating objects: 20, done.\r\nCounting objects: 100% (20/20), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (11/11), done.\r\nWriting objects: 100% (11/11), 1.03 KiB | 1.03 MiB/s, done.\r\nTotal 11 (delta 9), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (9/9), completed with 9 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   fce27bd..b86ff51  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"update content\"; git push origin develop\r\n[develop 63e8b34] update content\r\n 2 files changed, 9 insertions(+), 10 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 989 bytes | 989.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   9cc89a5..63e8b34  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"update content\"; git push origin develop\r\n[develop 836919c] update content\r\n 3 files changed, 13 insertions(+), 11 deletions(-)\r\nEnumerating objects: 17, done.\r\nCounting objects: 100% (17/17), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (9/9), done.\r\nWriting objects: 100% (9/9), 1.21 KiB | 1.21 MiB/s, done.\r\nTotal 9 (delta 8), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (8/8), completed with 8 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   63e8b34..836919c  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"published 'Preventing Eye-Strain'\"; git push origin deve\r\nlop\r\n[develop daf110e] published 'Preventing Eye-Strain'\r\n 2 files changed, 5 insertions(+), 5 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 905 bytes | 905.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   836919c..daf110e  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"updated content\"; git push origin develop\r\n[develop 91d0c81] updated content\r\n 2 files changed, 4 insertions(+), 2 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 802 bytes | 802.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   daf110e..91d0c81  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"styles to home content\"; git push origin develop\r\n[develop fea8f75] styles to home content\r\n 3 files changed, 12 insertions(+), 13 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 894 bytes | 894.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   97cbc37..fea8f75  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % ",
-                        "rows": 5
-                      }
-                    }
-                  },
-                  "pinned": true
-                }
-              }
-            ]
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -138,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "singles/are-we-a-good-fit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "singles/are-we-a-good-fit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "singles/are-we-a-good-fit.md"
+              }
             }
           }
         ]
@@ -196,15 +147,16 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "3cb1641c8db70649",
+  "active": "c23eed7521f96ea6",
   "lastOpenFiles": [
-    "home.md",
-    "singles/12-types-of-material-to-collect-in-a-content-audit.md",
-    "singles/prevent-eye-strain-with-softer-transitions.md",
-    "singles/how-to-build-a-sitemap.md",
-    "singles/elevating-wordpress-plugin-development.md",
     "singles/are-we-a-good-fit.md",
+    "2023-11-15.md",
+    "singles/how-to-build-a-sitemap.md",
+    "singles/12-types-of-material-to-collect-in-a-content-audit.md",
+    "singles/elevating-wordpress-plugin-development.md",
+    "singles/prevent-eye-strain-with-softer-transitions.md",
     "singles/static-and-dynamic-sites.md",
+    "home.md",
     "_templates/post-single.md",
     "blog/are-we-a-good-fit.md",
     "blog/12-types-of-material-to-collect-in-a-content-audit.md",

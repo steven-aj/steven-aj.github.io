@@ -8,10 +8,15 @@
 
 	function downloads(container) {
 		const anchors = container.getElementsByTagName("a");
+		const extractTitle = (link) => {
+			let fileName = link.href.split('/');
+			return fileName[fileName.length-1].split('.')[0];
+		}
+
 		if (anchors.length) {
 			for (let link of anchors) {
 				if (link.href.includes("/downloads/")) {
-					link.setAttribute("download", true);
+					link.setAttribute("download", extractTitle(link));
 				}
 			}
 		}
