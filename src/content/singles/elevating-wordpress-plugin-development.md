@@ -19,13 +19,14 @@ As time has gone on, WordPress has shifted much of its attention to expanding it
 
 While I don't intend to write a How-To of plugin development and, while nothing about this post is particularly ground-breaking, I hope this article helps to shed some light on ways we can improve practices to ensure optimal performance while still leveraging plugins. 
 
-I'll start with how we can help guide a user's expectations by building an app layer over custom post-types, then talk a bit about how today's block-tooling can improve performance for the end-user (touching on how this granularly helps with SEO) and how it all ties together in the form of a modulated plugin. While there are several ways to expand the platform, this article explores scaling custom post-types.
+I'll start with how we can help guide a user's expectations by building an app layer over custom post-types, then talk a bit about how today's block-tooling can improve performance for the end-user (touching on how this granularly helps with SEO) and how it all ties together in the form of a modulated plugin. 
+
+While there are several ways to expand the platform, this article explores scaling custom post-types.
 
 ## Re-Defining Custom Post-Types
+While there are many features that can be enabled on a custom type, there are four primary elements to any post: its `content`, an `excerpt`, a `cover photo` and `taxonomies`. An additional bonus of the post is its ability to house `custom fields` - the significance of which I'll get to later. 
 
-Let's start with data - specifically of the custom post-type. While there are other features that can be enabled on a custom type, there are four primary elements to any post: its `content`, an `excerpt`, a `cover photo` and `taxonomies`. An additional bonus of the post is its ability to house `custom fields` - the significance of which I'll get to later. 
-
-Traditionally, the post-type was (and remains) an excellent foundation for building query loops to dynamically render repeatable models of content specific to their given context. Modern tooling gives us the advantage of enhancing the way posts are created and maintained - effectively enhancing UX.
+Traditionally, the post-type was (*and remains*) an excellent foundation for building query loops to dynamically render repeatable models of content specific to their given context. Modern tooling gives us the advantage of enhancing the way posts are created and maintained - effectively enhancing UX.
 
 For reference, let's consider a custom post-type of 'Staff Members'. 
 
