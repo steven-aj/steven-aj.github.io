@@ -34,6 +34,7 @@
 </script>
 
 <button
+   title="Toggle Dark Mode"
    class="!text-black opacity-50"
    hidden={$mode === "dark"}
    on:click={() => toggleMode("dark")}
@@ -41,7 +42,7 @@
    <SvelteFa icon={faMoon} />
 </button>
 
-<button hidden={$mode === "light"} on:click={() => toggleMode("light")}>
+<button title="Toggle Light Mode" hidden={$mode === "light"} on:click={() => toggleMode("light")}>
    <SvelteFa icon={faSun} />
 </button>
 
