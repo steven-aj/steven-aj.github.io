@@ -1,6 +1,6 @@
 ---
 status: published
-date: 09/15/2023
+date: 2023-09-15
 author: Steven Johnson
 cover: /assets/covers/abstract-tech-cube.jpeg
 title: Differences Between Dynamic and Static Websites, and Websites vs. Web Applications

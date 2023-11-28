@@ -1,4 +1,3 @@
-// @ts-expect-error
 import { dev } from '$app/environment';
 import { IPostItem, IPostMeta } from "../shared/interfaces/post.interfaces";
 
@@ -35,12 +34,12 @@ export default class PostItem implements IPostItem {
       return this.meta.title;
    }
 
-   public get date() {
-      return new Date(this.meta.date).toLocaleDateString();
-   }
-
    public get excerpt() {
       return this.meta.excerpt;
+   }
+
+   public get date() {
+      return new Date(this.meta.date).toLocaleDateString();
    }
 
    public get cover() {

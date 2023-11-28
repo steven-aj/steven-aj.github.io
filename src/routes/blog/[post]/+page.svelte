@@ -1,16 +1,17 @@
 <script>
 	import { fade } from "svelte/transition";
+	import PostHero from "$components/headers/PostHero.svelte";
 
 	export let data;
 
 	$: ({ meta, content } = data);
 
 	function downloads(container) {
-		const anchors = container.getElementsByTagName('a');
+		const anchors = container.getElementsByTagName("a");
 		if (anchors.length) {
 			for (let link of anchors) {
-				if (link.href.includes('/downloads/')) {
-					link.setAttribute('download', true);
+				if (link.href.includes("/downloads/")) {
+					link.setAttribute("download", true);
 				}
 			}
 		}
@@ -18,19 +19,17 @@
 </script>
 
 <svelte:head>
-   <meta name="title" content={meta.title} />
-   <meta name="author" content={meta.author} />
-   <meta name="keywords" content={meta.keywords} />
+	<meta name="title" content={meta.title} />
+	<meta name="author" content={meta.author} />
+	<meta name="keywords" content={meta.keywords} />
 </svelte:head>
-
 
 {#key content}
 	<main in:fade>
-		<section class="container" use:downloads>
+		<PostHero {meta} />
+
+		<section class="container py-10" use:downloads>
 			<svelte:component this={content} />
 		</section>
 	</main>
 {/key}
-
-<style>
-</style>
