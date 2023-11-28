@@ -57,6 +57,7 @@
          </div>
       </section>
    </aside>
+   
    {#if data}
       {#if posts.length}
          <section id="posts" class="container-fluid" transition:fade>
