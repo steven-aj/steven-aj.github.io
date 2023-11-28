@@ -29,6 +29,8 @@
    <meta name="description" content={meta.description} />
 </svelte:head>
 
+<h1 class="page-heading">Labs</h1>
+
 <main class="container-fluid" in:fade>
    {#if labs.length}
       <section id="labs" class="labs container">

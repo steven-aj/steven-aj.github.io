@@ -27,11 +27,7 @@
    beforeUpdate(init);
 </script>
 
-<!-- <Drawer position="right" width="max-w-md w-full">
-   <TagCloud {tags} on:select={() => drawer.close()} />
-</Drawer> -->
-
-<h1 class="container">Blog</h1>
+<h1 class="page-heading">Blog</h1>
 
 <main class="container-fluid" in:fade>
    <aside>
@@ -74,10 +70,6 @@
 <style lang="postcss">
    main {
       @apply flex flex-col-reverse lg:grid lg:grid-cols-12 gap-2;
-   }
-
-   h1 {
-      @apply text-center my-4;
    }
 
    main aside {
