@@ -20,7 +20,7 @@
 {#if $store.toolbar}
    <header class="container-fluid" use:elevator>
       <nav>
-         <ul class="hidden md:block">
+         <ul class="hidden md:flex md:flex-row md:items-center md:justify-center">
             <li>
                <a href="/">
                   <img
@@ -36,7 +36,7 @@
                <strong>{$store.toolbar.title}</strong>
             </li>
          </ul>
-         <menu id="links">
+         <menu>
             {#if menu.lead}
                {#each menu.lead as menuItem}
                   <li>
@@ -90,11 +90,12 @@
       @apply w-6 h-auto;
    }
 
-   #links {
-      @apply w-full justify-between md:w-auto md:justify-end;
+   header nav menu {
+      @apply w-full justify-between items-center md:w-auto md:justify-end;
    }
 
-   #links a {
+   header nav menu a {
+      @apply m-auto;
       transition: all 1s;
    }
 </style>
