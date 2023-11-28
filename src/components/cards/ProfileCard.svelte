@@ -60,7 +60,7 @@
 
 <style lang="postcss">
    article {
-      @apply grid grid-cols-6 max-w-lg w-full m-auto p-0 !shadow-xl rounded-xl;
+      @apply md:grid md:grid-cols-6 md:max-w-lg md:w-full md:m-auto p-0 md:!shadow-xl md:rounded-xl;
    }
 
    article header {
@@ -69,11 +69,11 @@
    }
 
    article img.headshot {
-      @apply w-full h-auto m-auto rounded-full;
+      @apply max-w-xs md:max-w-lg w-full h-auto m-auto rounded-full;
    }
 
    article section {
-      @apply flex flex-col items-center justify-center col-span-4 m-0 py-4;
+      @apply flex flex-col items-center justify-center col-span-4 m-0 md:py-4 py-8 px-4;
    }
 
    article section h1 {

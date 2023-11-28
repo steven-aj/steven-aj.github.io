@@ -35,10 +35,6 @@
 
 <main class="container-fluid" in:fade>
    <aside>
-      <button class="btn variant-filled-secondary" on:click={openTagCloud}
-         >Tag Cloud</button
-      >
-
       <section id="tags">
          <h2>Tag Cloud</h2>
          <div class="wrapper">
@@ -76,7 +72,7 @@
 
 <style lang="postcss">
    main {
-      @apply flex flex-col lg:grid lg:grid-cols-12 gap-2;
+      @apply flex flex-col-reverse lg:grid lg:grid-cols-12 gap-2;
    }
 
    h1 {
@@ -84,7 +80,7 @@
    }
 
    main aside {
-      @apply col-span-2 px-4;
+      @apply flex flex-col-reverse md:block col-span-2 px-4;
    }
 
    main aside button {

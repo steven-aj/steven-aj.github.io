@@ -41,7 +41,7 @@
       <ProfileCard {profile} />
    </section>
 
-   <section class="container text-center">
+   <section class="container text-center my-14">
       <svelte:component this={content} />
    </section>
 
@@ -80,6 +80,6 @@
 
 <style lang="postcss">
    a[role="button"] {
-      @apply flex max-w-lg w-full mx-auto self-center justify-center my-8;
+      @apply flex max-w-lg w-full mx-auto self-center justify-center my-10;
    }
 </style>
