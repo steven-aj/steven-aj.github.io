@@ -1,18 +1,22 @@
 {
   "main": {
-    "id": "e304e6eb78715902",
+    "id": "727b03725475af63",
     "type": "split",
     "children": [
       {
-        "id": "006c672b0bd67c17",
+        "id": "8ba00766c1b16eed",
         "type": "tabs",
         "children": [
           {
-            "id": "64187335b90de8d9",
+            "id": "694c6399452c87df",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "singles/are-we-a-good-fit.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -21,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "1e2da6171a8bea9c",
+    "id": "ee8b01a7a7e7e5ca",
     "type": "split",
     "children": [
       {
-        "id": "0b44425c15623d58",
+        "id": "51fc284aa4fd7c78",
         "type": "tabs",
         "children": [
           {
-            "id": "1711ac7162d0560f",
+            "id": "66455f34b6f5886e",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -39,7 +43,7 @@
             }
           },
           {
-            "id": "0218e6cf80c61d6f",
+            "id": "bef877aaff19bac0",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -54,7 +58,7 @@
             }
           },
           {
-            "id": "30c25a7d82157464",
+            "id": "f27e8f4da41a0eca",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -65,22 +69,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 247.5
   },
   "right": {
-    "id": "defece813c486949",
+    "id": "f40341d69b51707b",
     "type": "split",
     "children": [
       {
-        "id": "829696f026cb08fe",
+        "id": "c95bb192ebe76464",
         "type": "tabs",
         "children": [
           {
-            "id": "4e3ee9d90f2be9d0",
+            "id": "ea4c4266a491fe6e",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "singles/are-we-a-good-fit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,18 +97,19 @@
             }
           },
           {
-            "id": "f367317369929cec",
+            "id": "ee415ead481a4fc8",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "singles/are-we-a-good-fit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "d255889eaba9042f",
+            "id": "46d22dce296ea570",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -114,11 +120,13 @@
             }
           },
           {
-            "id": "4e420df40d5121e7",
+            "id": "1c2a66669cd74513",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "singles/are-we-a-good-fit.md"
+              }
             }
           }
         ]
@@ -130,40 +138,48 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
+      "templates:Insert template": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:Open quick switcher": false,
+      "command-palette:Open command palette": false,
+      "terminal:Open terminal": false
     }
   },
-  "active": "64187335b90de8d9",
+  "active": "694c6399452c87df",
   "lastOpenFiles": [
-    "site-meta.md",
-    "singles/static-and-dynamic-sites.md",
     "singles/elevating-wordpress-plugin-development.md",
-    "singles/building-a-sitemap.md",
+    "singles/how-to-build-a-sitemap.md",
+    "singles/prevent-eye-strain-with-softer-transitions.md",
+    "singles/static-and-dynamic-sites.md",
     "singles/are-we-a-good-fit.md",
     "singles/12-types-of-material-to-collect-in-a-content-audit.md",
-    "singles",
-    "labs/ww-etl.md",
-    "labs/todo-svelte.md",
-    "labs/tauri-sveltekit.md",
-    "labs/lost-in-space-day-four-loop.md",
-    "labs/library-demo.md",
-    "labs/gh-smoothie.md",
-    "labs",
+    "site-meta.md",
     "labs.md",
     "home.md",
-    "experience.md",
-    "blog.md",
+    "blog/12-types-of-material-to-collect-in-a-content-audit.md",
     "about.md",
-    "_templates/site.md",
-    "_templates/post-single.md",
-    "_templates/post-series.md",
+    "blog/are-we-a-good-fit.md",
+    "blog",
+    "labs/gh-smoothie.md",
+    "labs/library-demo.md",
+    "experience.md",
     "_templates/page.md",
-    "_templates/lab.md",
-    "_templates"
+    "singles/a-published-post.md",
+    "singles/another-published-oster.md",
+    "_templates/post-single.md",
+    "_templates/site-meta.md",
+    "singles/draft-post.md",
+    "_templates/post-series.md",
+    "singles",
+    "singsles/static-and-dynamic-sites.md",
+    "singsles/elevating-wordpress-plugin-development.md",
+    "singsles/are-we-a-good-fit.md",
+    "singsles",
+    "posts/elevating-wordpress-plugin-development.md",
+    "labs",
+    "_templates",
+    "Untitled.canvas"
   ]
 }

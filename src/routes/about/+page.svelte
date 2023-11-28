@@ -1,6 +1,7 @@
 <script>
    import { onMount } from "svelte";
    import Shell from "$lib/shell";
+    import { fade } from "svelte/transition";
 
    export let data;
 
@@ -26,6 +27,8 @@
    <meta name="description" content={meta.description} />
 </svelte:head>
 
-<section>
-   <svelte:component this={content} />
-</section>
+<main class="container" in:fade>
+   <section>
+      <svelte:component this={content} />
+   </section>
+</main>

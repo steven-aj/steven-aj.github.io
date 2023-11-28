@@ -12,11 +12,13 @@
 
    function randomQuote(quoteSection) {
       const list = quoteSection.getElementsByTagName("blockquote");
-      const random = Math.floor(Math.random() * list.length);
 
-      quoteSection
-         .querySelector(`blockquote[data-index="${random}"]`)
-         .classList.remove("!invisible", "!hidden");
+      setInterval(() => {
+         const random = Math.floor(Math.random() * list.length);
+         quoteSection
+            .querySelector(`blockquote[data-index="${random}"]`)
+            .classList.toggle("!invisible", "!hidden");
+      }, 3000);
    }
 
    function init() {
@@ -34,67 +36,50 @@
    <meta name="description" content={meta.description} />
 </svelte:head>
 
-<section>
-   <ProfileCard {profile} />
-</section>
-
-<section class="quotes" use:randomQuote>
-   {#each quotes as quote, i}
-      <blockquote data-index={i} class="!invisible !hidden">{quote}</blockquote>
-   {/each}
-</section>
-
-{#if labs.length}
-   <section class="featured posts">
-      <h2>Featured Labs</h2>
-      <div class="grid">
-         {#each labs as lab}
-            <LabCard {lab} />
-         {/each}
-      </div>
+<main in:fade>
+   <section class="container">
+      <ProfileCard {profile} />
    </section>
-{/if}
 
-{#if posts.length}
-   <section class="posts">
-      <h2>Recent Posts</h2>
-      <div class="grid">
-         {#each posts as post}
-            <PostCard {post} />
-         {/each}
-      </div>
+   <section class="container text-center my-14">
+      <svelte:component this={content} />
    </section>
-{/if}
+
+   <section class="quotes" use:randomQuote>
+      {#each quotes as quote, i}
+         <blockquote data-index={i} class="!hidden !invisible">
+            {quote}
+         </blockquote>
+      {/each}
+   </section>
+
+   {#if labs.length}
+      <section id="labs" class="labs container">
+         <h2>Featured Labs</h2>
+         <div class="grid">
+            {#each labs as lab}
+               <LabCard {lab} />
+            {/each}
+         </div>
+         <a title="View Labs" href="/labs" role="button">View Labs</a>
+      </section>
+   {/if}
+
+   {#if posts.length}
+      <section id="posts" class="posts container-fluid">
+         <h2>Recent Posts</h2>
+         <div class="grid">
+            {#each posts as post}
+               <PostCard {post} />
+            {/each}
+         </div>
+         <a title="Visit Blog" href="/blog" role="button">Visit Blog</a>
+      </section>
+   {/if}
+</main>
 
 <style lang="postcss">
-   @keyframes fade {
-      from {
-         opacity: 0;
-      }
-      to {
-         opacity: 1;
-      }
-   }
-
-   main {
-      @apply flex flex-col gap-10;
-   }
-
-   section.quotes {
-      @apply flex flex-col items-center justify-center max-w-3xl h-40 md:h-48 w-full mx-auto;
-   }
-
-   section.quotes blockquote {
-      @apply italic font-serif text-3xl text-center text-slate-500/50 leading-10 border-0 shadow-none;
-      transition: all;
-      animation: fade 1s;
-   }
-
-   section.posts h2 {
-      @apply text-center md:text-start text-3xl text-slate-500 my-8;
-   }
-
-   section.posts .grid {
-      @apply md:grid-cols-2 lg:grid-cols-4 gap-8 self-center px-4;
+   a[role="button"] {
+      @apply flex max-w-lg w-full mx-auto self-center justify-center my-10;
    }
 </style>

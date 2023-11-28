@@ -1,62 +1,93 @@
 <script>
-   import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-   import { AppBar, LightSwitch, ProgressRadial } from "@skeletonlabs/skeleton";
    import { fly } from "svelte/transition";
-   import SvelteFa from "svelte-fa";
+   import { page } from "$app/stores";
+   import ThemeButton from "./ThemeButton.svelte";
 
    export let store;
+   export let menu;
+
+   function elevator(el) {
+      window.onscroll = () => {
+         if (window.scrollY >= 1) {
+            if (!el.classList.contains("elevated")) {
+               el.classList.add("elevated");
+            }
+         } else el.classList.remove("elevated");
+      };
+   }
 </script>
 
 {#if $store.toolbar}
-   <AppBar slotDefault="place-self-center" shadow="shadow-lg">
-      <svelte:fragment slot="lead">
-         <div class="navigation">
-            {#if $store.toolbar.back}
-               <button
-                  class="go-back"
-                  title="Go back"
-                  on:click={() => history.back()}
-                  in:fly={{ y: -100 }}
-               >
-                  <SvelteFa icon={faArrowLeft} />
-               </button>
-            {:else}
-               <img
-                  class="logo"
-                  alt="steven-aj"
-                  src="/assets/logo.svg"
-                  in:fly={{ x: -100 }}
-               />
+   <header class="container-fluid" use:elevator>
+      <nav>
+         <ul class="hidden md:block">
+            <li>
+               <a href="/">
+                  <img
+                     class="logo"
+                     alt="steven-aj"
+                     src="/assets/logo.svg"
+                     in:fly={{ x: -100 }}
+                  />
+               </a>
+            </li>
+            <li>
+               <strong>{$store.toolbar.title}</strong>
+            </li>
+         </ul>
+         <ul id="links">
+            {#if menu.lead}
+               {#each menu.lead as menuItem}
+                  <li>
+                     <a
+                        href={menuItem.anchor}
+                        class={$page.route.id === menuItem.anchor
+                           ? "active"
+                           : "secondary"}
+                     >
+                        {menuItem.label}
+                     </a>
+                  </li>
+               {/each}
             {/if}
-         </div>
-         <strong class="desktop">{$store.toolbar.title}</strong>
-      </svelte:fragment>
-      <strong class="mobile">{$store.toolbar.title}</strong>
-      <svelte:fragment slot="trail">
-         <LightSwitch />
-      </svelte:fragment>
-   </AppBar>
+            {#if menu.trail}
+               {#each menu.trail as menuItem}
+                  <li>
+                     <a
+                        href={menuItem.anchor}
+                        class={$page.route.id.includes(menuItem.anchor)
+                           ? "active"
+                           : "secondary"}
+                     >
+                        {menuItem.label}
+                     </a>
+                  </li>
+               {/each}
+            {/if}
+            <li>
+               <ThemeButton />
+            </li>
+         </ul>
+      </nav>
+   </header>
 {/if}
 
 <style lang="postcss">
-   div.navigation {
-      @apply w-8 md:w-20;
+   header {
+      @apply sticky top-0 left-0 p-0 z-50;
+      transition: box-shadow 1.33s, var(--theme-mode);
+      background-color: var(--background-color);
    }
 
-   strong.desktop {
-      @apply hidden md:contents;
+   header nav {
+      @apply flex flex-col items-center md:flex-row py-0 px-4;
    }
 
-   strong.mobile {
-      @apply md:!hidden;
+   .logo {
+      @apply w-6 h-auto;
    }
 
-   button.go-back {
-      @apply btn variant-filled-tertiary md:mx-2;
-   }
-
-   img.logo {
-      @apply h-8 mx-0 md:mx-2 p-0;
-      width: auto;
+   #links a {
+      transition: all 1s;
    }
 </style>
