@@ -1,5 +1,6 @@
 <script>
 	import { beforeUpdate } from "svelte";
+	import LabHero from "$components/headers/LabHero.svelte";
 	import App from "$lib/shell";
 
 	export let data;
@@ -18,29 +19,10 @@
 	beforeUpdate(init);
 </script>
 
-<nav>
-	{#if meta.demo}
-		<a
-			role="button"
-			class="variant-filled-primary"
-			target="_blank"
-			href={meta.demo}>Demo</a
-		>
-	{/if}
-	{#if meta.repo}
-		<a
-			role="button"
-			class={meta.demo ? "variant-soft-secondary" : "variant-filled-primary"}
-			target="_blank"
-			href={meta.repo}>Repo</a
-		>
-	{/if}
-</nav>
+<main>
+	<LabHero {meta} />
 
-<section>
-	<svelte:component this={content} />
-</section>
-
-<style>
-
-</style>
+	<section class="container">
+		<svelte:component this={content} />
+	</section>
+</main>
