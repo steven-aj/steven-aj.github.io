@@ -73,7 +73,7 @@
                <PostCard {post} />
             {/each}
          </div>
-         <a title="Visit Blog" href="/blog" role="button">Visit Blog</a>
+         <a title="All Posts" href="/blog" role="button">All Posts</a>
       </section>
    {/if}
 </main>
