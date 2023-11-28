@@ -1,5 +1,5 @@
 ---
-status: review
+status: published
 date: 2023-11-23
 author: Steven Johnson
 cover: /assets/covers/eye-light.jpeg
