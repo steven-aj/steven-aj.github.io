@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "labs/gh-smoothie.md",
+                "file": "labs/todo-svelte.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "labs/gh-smoothie.md",
+                "file": "labs/todo-svelte.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "labs/gh-smoothie.md",
+                "file": "labs/todo-svelte.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "labs/gh-smoothie.md"
+                "file": "labs/todo-svelte.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "c23eed7521f96ea6",
   "lastOpenFiles": [
+    "labs/gh-smoothie.md",
     "singles/are-we-a-good-fit.md",
     "2023-11-15.md",
     "singles/how-to-build-a-sitemap.md",
@@ -166,7 +167,6 @@
     "site-meta.md",
     "labs.md",
     "about.md",
-    "labs/gh-smoothie.md",
     "labs/library-demo.md",
     "_templates/page.md",
     "singles/a-published-post.md",
