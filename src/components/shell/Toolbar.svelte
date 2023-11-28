@@ -37,36 +37,38 @@
             </li>
          </ul>
          <ul id="links">
-            {#if menu.lead}
-               {#each menu.lead as menuItem}
-                  <li>
-                     <a
-                        title={menuItem.label}
-                        href={menuItem.anchor}
-                        class={$page.route.id === menuItem.anchor
-                           ? "active"
-                           : "secondary"}
-                     >
-                        {menuItem.label}
-                     </a>
-                  </li>
-               {/each}
-            {/if}
-            {#if menu.trail}
-               {#each menu.trail as menuItem}
-                  <li>
-                     <a
-                        title={menuItem.label}
-                        href={menuItem.anchor}
-                        class={$page.route.id.includes(menuItem.anchor)
-                           ? "active"
-                           : "secondary"}
-                     >
-                        {menuItem.label}
-                     </a>
-                  </li>
-               {/each}
-            {/if}
+            <span class="lead">
+               {#if menu.lead}
+                  {#each menu.lead as menuItem}
+                     <li>
+                        <a
+                           title={menuItem.label}
+                           href={menuItem.anchor}
+                           class={$page.route.id === menuItem.anchor
+                              ? "active"
+                              : "secondary"}
+                        >
+                           {menuItem.label}
+                        </a>
+                     </li>
+                  {/each}
+               {/if}
+               {#if menu.trail}
+                  {#each menu.trail as menuItem}
+                     <li>
+                        <a
+                           title={menuItem.label}
+                           href={menuItem.anchor}
+                           class={$page.route.id.includes(menuItem.anchor)
+                              ? "active"
+                              : "secondary"}
+                        >
+                           {menuItem.label}
+                        </a>
+                     </li>
+                  {/each}
+               {/if}
+            </span>
             <li>
                <ThemeButton />
             </li>
@@ -88,6 +90,10 @@
 
    .logo {
       @apply w-6 h-auto;
+   }
+
+   #links {
+      @apply w-full justify-between md:w-auto md:justify-end;
    }
 
    #links a {
