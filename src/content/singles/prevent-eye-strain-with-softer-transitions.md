@@ -1,14 +1,15 @@
 ---
-status: review
+status: published
 date: 2023-11-23
 author: Steven Johnson
 cover: /assets/covers/eye-light.jpeg
-title: "Prevent Eye-Strain: Softer Transitions Between Light & Dark Modes"
+title: "Preventing Eye-Strain: Softer Transitions Between Light & Dark Modes"
 excerpt: Toggling between light and dark modes of your website or application can make a world of difference for people with sensitive eyes or the night owls that live and work in the dark. There isn't a technical standard for how this should be accomplished and an instant transition can be pretty harsh. We can fix that with a few lines of CSS.
 tags:
   - informative
   - rants
   - satire
+  - thoughts
 ---
 It seems like accessibility for software is in a weird, paradoxical place right now. On one hand, optional *Light* & *Dark* modes can help enhance the experience for people with optical sensitivities or weaknesses. On the other hand, there's no universal agreement on how it should be implemented. For a lot of projects, this results in a transition between modes that's harshly instant, leaving the user feeling like an unsuspecting victim in a particular *Raiders of the Lost Ark* scene.
 
@@ -16,7 +17,9 @@ I don't know if this is a problem for everyone, to be honest. I'm writing this f
 
 ## Why it Hurts
 
-The iris is a muscle of the eye that contracts to restrict the amount of light that's transmitted to the eye's lens. The big takeaway here is that *the iris is a muscle*. Its contraction *is a reflex to the stimulus of light* and, while that reflex can be pretty quick, it's still exponentially slower than light itself. 
+**Beware. Obvious information inbound.**
+
+The iris is a muscle of the eye that contracts to restrict the amount of light transmitted to the eye's lens. The big takeaway here is that *the iris is a muscle*. Its contraction *is a reflex to the stimulus of light* and, while that reflex can be pretty quick, it's still exponentially slower than light itself. 
 
 Since the brain needs time to process how much the iris should adjust to changes, and since the iris takes time to adjust, there's an extended period of time that the lens is exposed to potentially damaging amounts of light. This is especially true in dark environments where the iris is most relaxed, which is why the sudden shift from *Dark* mode to *Light* mode can be *literally painful* for some.
 

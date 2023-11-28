@@ -24,12 +24,10 @@
 	<meta name="keywords" content={meta.keywords} />
 </svelte:head>
 
-{#key content}
-	<main in:fade>
-		<PostHero {meta} />
+<main in:fade>
+	<PostHero {meta} />
 
-		<section class="container py-10" use:downloads>
-			<svelte:component this={content} />
-		</section>
-	</main>
-{/key}
+	<section class="container py-10" in:fade use:downloads>
+		<svelte:component this={content} />
+	</section>
+</main>
