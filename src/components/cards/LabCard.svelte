@@ -4,7 +4,7 @@
    export let lab;
 </script>
 
-<a href={lab.path}>
+<a title={lab.title} href={lab.path}>
    <article class="card">
       <section>
          {#if lab.featured}

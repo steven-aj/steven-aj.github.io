@@ -2,7 +2,7 @@
    export let post;
 </script>
 
-<a class="card" href={post.path}>
+<a title={post.title} class="card" href={post.path}>
    <article>
       <section style={`${post.cover ? `background-image: url(${post.cover});` : ''}`}>
          <h1>{post.title}</h1>
@@ -34,7 +34,8 @@
    }
    
    section {
-      @apply rounded-lg overflow-hidden bg-cover bg-blend-multiply m-0 p-0 h-full w-full;
+      @apply rounded-lg overflow-hidden bg-cover bg-center bg-blend-multiply m-0 p-0 h-full w-full;
+      box-shadow: inset 0rem 0rem 0.5rem rgba(0,0,0, 0.75);
    }
 
    section h1 {

@@ -15,7 +15,7 @@
    beforeUpdate(init);
 </script>
 
-<h1 class="container-fluid">Tagged: {tag}</h1>
+<h1 class="container-fluid">Tagged: "{tag}"</h1>
 
 <main class="container-fluid">
    <section id="posts">
