@@ -1,8 +1,8 @@
 ---
 status: review
-date: 11/23/2023
+date: 2023-11-23
 author: Steven Johnson
-cover: 
+cover: /assets/covers/eye-light.jpeg
 title: "Prevent Eye-Strain: Softer Transitions Between Light & Dark Modes"
 excerpt: Toggling between light and dark modes of your website or application can make a world of difference for people with sensitive eyes or the night owls that live and work in the dark. There isn't a technical standard for how this should be accomplished and an instant transition can be pretty harsh. We can fix that with a few lines of CSS.
 tags:
@@ -10,7 +10,7 @@ tags:
   - rants
   - satire
 ---
-It seems like accessibility concerns for software are in a weird, paradoxical place right now. On one hand, optional *Light* & *Dark* modes can help enhance the experience for people with optical sensitivities or weaknesses. On the other hand, this feature hasn't been standardized, so there's no universal agreement on how it should be implemented. For a lot of projects, this results in a transition between modes that's *harshly instant*, leaving the user feeling like an unsuspecting victim in a particular *Raiders of the Lost Ark* scene.
+It seems like accessibility for software is in a weird, paradoxical place right now. On one hand, optional *Light* & *Dark* modes can help enhance the experience for people with optical sensitivities or weaknesses. On the other hand, there's no universal agreement on how it should be implemented. For a lot of projects, this results in a transition between modes that's harshly instant, leaving the user feeling like an unsuspecting victim in a particular *Raiders of the Lost Ark* scene.
 
 I don't know if this is a problem for everyone, to be honest. I'm writing this from my own experience as a user. As both a night-owl *and a developer*, I find myself staring at screens more often than I probably should and in the dark more often than I probably should be. I feel like I'm not alone, though, and that we could engineer simple, yet thoughtful improvements to take care of our eyes.
 

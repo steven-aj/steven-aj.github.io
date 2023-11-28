@@ -17,8 +17,8 @@
 
 <h1 class="container-fluid">Tagged: {tag}</h1>
 
-<main class="container">
-   <section class="posts">
+<main class="container-fluid">
+   <section id="posts">
       <div class="grid">
          {#each posts as post}
             <PostCard {post} />
