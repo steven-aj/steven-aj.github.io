@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "d50fa8688c5ec21e",
+        "id": "4a042663755c414a",
         "type": "split",
         "children": [
           {
@@ -26,11 +26,11 @@
             ]
           },
           {
-            "id": "fe1d3941d333e733",
+            "id": "1b9589d30c3b26ba",
             "type": "tabs",
             "children": [
               {
-                "id": "2100cbee30c17e2c",
+                "id": "5db0fd8366b53483",
                 "type": "leaf",
                 "pinned": true,
                 "state": {
@@ -59,7 +59,7 @@
                       },
                       "serial": {
                         "columns": 119,
-                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"update content\"; git push origin develop\r\n[develop 5fcfe1a] update content\r\n 3 files changed, 78 insertions(+), 30 deletions(-)\r\nEnumerating objects: 17, done.\r\nCounting objects: 100% (17/17), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (9/9), done.\r\nWriting objects: 100% (9/9), 1.52 KiB | 1.52 MiB/s, done.\r\nTotal 9 (delta 8), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (8/8), completed with 8 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   aa19fbb..5fcfe1a  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % ",
+                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"content update\"; git push origin de",
                         "rows": 18
                       }
                     }
@@ -194,7 +194,7 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "2100cbee30c17e2c",
+  "active": "5db0fd8366b53483",
   "lastOpenFiles": [
     "singles/elevating-wordpress-plugin-development.md",
     "singles/12-types-of-material-to-collect-in-a-content-audit.md",
