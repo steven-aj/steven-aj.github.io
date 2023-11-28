@@ -17,6 +17,4 @@ Once you've fragmented and organized your project's content, it's time to collab
 
 ### Multi-Site Contexts
 
-
-
 You can use any mind-mapping or graphing app to generate a sitemap, though there are some affordable (*and some free*) tools built specifically for the job.
