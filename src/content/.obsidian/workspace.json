@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "singles/how-to-build-a-sitemap.md",
+                    "file": "singles/prevent-eye-strain-with-softer-transitions.md",
                     "mode": "source",
                     "source": false
                   }
@@ -60,8 +60,8 @@
                         "useWin32Conhost": true
                       },
                       "serial": {
-                        "columns": 122,
-                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"continue draft\"; git push origin develop\r\n[develop d5bf0fb] continue draft\r\n 2 files changed, 68 insertions(+), 21 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 1.39 KiB | 1.39 MiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   afe37bc..d5bf0fb  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"modify draft\"; git push origin develop\r\n[develop ad36c76] modify draft\r\n 2 files changed, 9 insertions(+), 9 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 1.06 KiB | 1.06 MiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   d5bf0fb..ad36c76  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % ",
+                        "columns": 119,
+                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"continue draft\"; git push origin develop\r\n[develop d5bf0fb] continue draft\r\n 2 files changed, 68 insertions(+), 21 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 1.39 KiB | 1.39 MiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   afe37bc..d5bf0fb  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"modify draft\"; git push origin develop\r\n[develop ad36c76] modify draft\r\n 2 files changed, 9 insertions(+), 9 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 1.06 KiB | 1.06 MiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   d5bf0fb..ad36c76  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"updated draft\"; git push origin develop",
                         "rows": 5
                       }
                     }
@@ -101,7 +101,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "[\"status\":review]",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,7 +122,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.5
+    "width": 273.5
   },
   "right": {
     "id": "f40341d69b51707b",
@@ -198,12 +198,13 @@
   },
   "active": "3cb1641c8db70649",
   "lastOpenFiles": [
-    "singles/how-to-build-a-sitemap.md",
     "singles/prevent-eye-strain-with-softer-transitions.md",
-    "singles/static-and-dynamic-sites.md",
-    "singles/elevating-wordpress-plugin-development.md",
-    "singles/are-we-a-good-fit.md",
+    "_templates/post-single.md",
     "singles/12-types-of-material-to-collect-in-a-content-audit.md",
+    "singles/are-we-a-good-fit.md",
+    "singles/elevating-wordpress-plugin-development.md",
+    "singles/how-to-build-a-sitemap.md",
+    "singles/static-and-dynamic-sites.md",
     "blog/are-we-a-good-fit.md",
     "blog/12-types-of-material-to-collect-in-a-content-audit.md",
     "blog",
@@ -218,7 +219,6 @@
     "_templates/page.md",
     "singles/a-published-post.md",
     "singles/another-published-oster.md",
-    "_templates/post-single.md",
     "_templates/site-meta.md",
     "singles/draft-post.md",
     "_templates/post-series.md",

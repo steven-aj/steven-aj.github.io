@@ -1,6 +1,6 @@
 ---
 status: review
-date: 2023-11-15
+date: 11/15/2023
 author: Steven Johnson
 cover: /assets/covers/site-content.jpeg
 title: How to Build A Sitemap

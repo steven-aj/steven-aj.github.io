@@ -10,7 +10,7 @@ tags:
   - rants
   - satire
 ---
-It seems like accessibility concerns for software are in a weird, paradoxical place right now. On one hand, optional *Light* & *Dark* modes can help enhance the experience for people with optical sensitivities or weaknesses. On the other hand, this feature hasn't been standardized, so there's no universal agreement on how it should be implemented. For a lot of projects, this results in a transition between modes that's *harshly instant*, leaving the user feeling like an unsuspecting victim in a particular *Raiders of the Lost Ark* scene.
+It seems like accessibility for software is in a weird, paradoxical place right now. On one hand, optional *Light* & *Dark* modes can help enhance the experience for people with optical sensitivities or weaknesses. On the other hand, there's no universal agreement on how it should be implemented. For a lot of projects, this results in a transition between modes that's harshly instant, leaving the user feeling like an unsuspecting victim in a particular *Raiders of the Lost Ark* scene.
 
 I don't know if this is a problem for everyone, to be honest. I'm writing this from my own experience as a user. As both a night-owl *and a developer*, I find myself staring at screens more often than I probably should and in the dark more often than I probably should be. I feel like I'm not alone, though, and that we could engineer simple, yet thoughtful improvements to take care of our eyes.
 
