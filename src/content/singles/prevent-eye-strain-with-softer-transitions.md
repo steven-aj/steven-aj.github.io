@@ -3,12 +3,13 @@ status: review
 date: 2023-11-23
 author: Steven Johnson
 cover: /assets/covers/eye-light.jpeg
-title: "Prevent Eye-Strain: Softer Transitions Between Light & Dark Modes"
+title: "Preventing Eye-Strain: Softer Transitions Between Light & Dark Modes"
 excerpt: Toggling between light and dark modes of your website or application can make a world of difference for people with sensitive eyes or the night owls that live and work in the dark. There isn't a technical standard for how this should be accomplished and an instant transition can be pretty harsh. We can fix that with a few lines of CSS.
 tags:
   - informative
   - rants
   - satire
+  - thoughts
 ---
 It seems like accessibility for software is in a weird, paradoxical place right now. On one hand, optional *Light* & *Dark* modes can help enhance the experience for people with optical sensitivities or weaknesses. On the other hand, there's no universal agreement on how it should be implemented. For a lot of projects, this results in a transition between modes that's harshly instant, leaving the user feeling like an unsuspecting victim in a particular *Raiders of the Lost Ark* scene.
 

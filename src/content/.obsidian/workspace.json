@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "singles/12-types-of-material-to-collect-in-a-content-audit.md",
+                    "file": "singles/are-we-a-good-fit.md",
                     "mode": "source",
                     "source": false
                   }
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "singles/12-types-of-material-to-collect-in-a-content-audit.md",
+                "file": "singles/are-we-a-good-fit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "singles/12-types-of-material-to-collect-in-a-content-audit.md",
+                "file": "singles/are-we-a-good-fit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "singles/12-types-of-material-to-collect-in-a-content-audit.md"
+                "file": "singles/are-we-a-good-fit.md"
               }
             }
           }
@@ -202,13 +202,13 @@
   },
   "active": "694c6399452c87df",
   "lastOpenFiles": [
-    "singles/are-we-a-good-fit.md",
-    "singles/elevating-wordpress-plugin-development.md",
     "singles/how-to-build-a-sitemap.md",
+    "singles/elevating-wordpress-plugin-development.md",
+    "singles/are-we-a-good-fit.md",
+    "singles/12-types-of-material-to-collect-in-a-content-audit.md",
     "singles/prevent-eye-strain-with-softer-transitions.md",
     "singles/static-and-dynamic-sites.md",
     "_templates/post-single.md",
-    "singles/12-types-of-material-to-collect-in-a-content-audit.md",
     "blog/are-we-a-good-fit.md",
     "blog/12-types-of-material-to-collect-in-a-content-audit.md",
     "blog",
