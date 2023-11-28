@@ -3,6 +3,7 @@
    import App from "$lib/shell";
    import LabCard from "$components/cards/LabCard.svelte";
    import EmptyNotice from "$components/sections/EmptyNotice.svelte";
+   import { fade } from "svelte/transition";
 
    export let data;
 
@@ -28,23 +29,19 @@
    <meta name="description" content={meta.description} />
 </svelte:head>
 
-{#if labs.length}
-   <section id="labs" class="posts">
-      <div class="grid">
-         {#each labs as lab}
-            <LabCard {lab} />
-         {/each}
-      </div>
-   </section>
-{:else}
-   <EmptyNotice
-      showIcon={false}
-      title={false}
-   />
-{/if}
+<main class="container-fluid" in:fade>
+   {#if labs.length}
+      <section id="labs" class="labs container">
+         <div class="grid">
+            {#each labs as lab}
+               <LabCard {lab} />
+            {/each}
+         </div>
+      </section>
+   {:else}
+      <EmptyNotice showIcon={false} title={false} />
+   {/if}
+</main>
 
-<style lang="postcss">
-   section {
-      @apply pt-10;
-   }
+<style>
 </style>

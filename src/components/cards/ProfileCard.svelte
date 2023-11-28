@@ -1,29 +1,22 @@
 <script>
    import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
    import { faGithub, faSlack } from "@fortawesome/free-brands-svg-icons";
-   import { Avatar } from "@skeletonlabs/skeleton";
+   // import { Avatar } from "@skeletonlabs/skeleton";
    import SvelteFa from "svelte-fa";
 
    export let profile;
-
-   function getInitialials(name) {
-      let initials = name.split(" ");
-      if (initials.length) {
-         return initials[0].charAt(0) + initials[1].charAt(0);
-      }
-   }
 </script>
 
 {#if profile}
-   <article class="card">
+   <article>
       <header>
-         <Avatar
-            width="w-32"
-            border="border-4 border-solid border-primary-500/80"
+         <img
+            class="headshot"
+            alt={`Headshot of ${profile.title}`}
             src={profile.cover}
-            initials={getInitialials(profile.title)}
          />
       </header>
+
       <section>
          <h1>{profile.title}</h1>
          <p class="tagline">{profile.tagline}</p>
@@ -31,6 +24,7 @@
             {#if profile.slack}
                <a
                   role="button"
+                  class="secondary"
                   title="Slack Lobby"
                   target="_blank"
                   href={`${profile.slack}`}
@@ -41,6 +35,7 @@
             {#if profile.github}
                <a
                   role="button"
+                  class="secondary"
                   title="GitHub Profile"
                   target="_blank"
                   href={`${profile.github}`}
@@ -51,6 +46,7 @@
             {#if profile.email}
                <a
                   role="button"
+                  class="secondary"
                   title="Email Me"
                   href={`mailto:${profile.email}`}
                >
@@ -63,50 +59,37 @@
 {/if}
 
 <style lang="postcss">
-   article.card {
-      @apply lg:grid
-      lg:grid-cols-2
-      md:flex 
-      md:flex-col
-      md:mt-8
-      md:py-4
-      items-center 
-      justify-center 
-      max-w-2xl 
-      w-full 
-      mx-auto
-      shadow-2xl
-      py-2
-      variant-glass-surface;
-      grid-template-columns: 1fr 2fr;
+   article {
+      @apply md:grid md:grid-cols-6 md:max-w-lg md:w-full md:m-auto p-0 md:!shadow-xl md:rounded-xl;
    }
 
-   article.card header {
-      @apply flex flex-col justify-center items-center p-0;
+   article header {
+      @apply col-span-2 m-0 overflow-hidden;
+      @apply flex w-full h-auto rounded-xl rounded-r-none overflow-hidden;
    }
 
-   article.card section {
-      @apply flex flex-col items-center lg:items-start my-2;
+   article img.headshot {
+      @apply max-w-xs md:max-w-lg w-full h-auto m-auto rounded-full;
    }
 
-   article.card h1 {
-      @apply h1;
+   article section {
+      @apply flex flex-col items-center justify-center col-span-4 m-0 md:py-4 py-8 px-4;
    }
 
-   article.card .tagline {
-      @apply text-slate-500 md:my-2 lg:p-0;
+   article section h1 {
+      @apply m-0;
    }
 
-   article.card .contact-options {
-      @apply flex flex-row mt-2 space-x-2;
+   article .contact-options {
+      @apply flex flex-row space-x-2;
    }
 
-   article.card .contact-options a[role="button"] {
-      @apply variant-soft-secondary
-      w-fit
-      p-2
-      rounded-lg
-      hover:variant-filled-primary
-      hover:shadow-lg;
+   article .contact-options a[role="button"] {
+      @apply p-2;
+   }
+
+   article .contact-options a[role="button"]:hover {
+      background-color: var(--primary);
+      border-color: var(--primary);
    }
 </style>

@@ -36,7 +36,7 @@ export default class PostItem implements IPostItem {
    }
 
    public get date() {
-      return this.meta.date;
+      return new Date(this.meta.date).toLocaleDateString();
    }
 
    public get excerpt() {

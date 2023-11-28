@@ -17,17 +17,6 @@
    {/if}
 </section>
 
-<style lang="postcss">
-   h2 {
-      @apply text-2xl m-4 text-surface-400-500-token;
-   }
-
-   .tags {
-      @apply flex gap-2 flex-wrap m-4;
-   }
-
-   .tags a.chip {
-      @apply variant-filled-secondary
-      hover:variant-filled-tertiary;
-   }
+<style>
+   
 </style>

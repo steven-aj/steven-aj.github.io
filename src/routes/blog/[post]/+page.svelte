@@ -1,30 +1,36 @@
 <script>
-	import { beforeUpdate } from "svelte";
-	import Shell from "$lib/shell";
+	import { fade } from "svelte/transition";
 
 	export let data;
 
-	let { meta, content } = data;
+	$: ({ meta, content } = data);
 
-	function init() {
-		Shell.showBackButton(true);
-		Shell.setHero({
-			title: meta.title,
-			date: meta.date,
-			tags: meta.tags,
-			cover: meta.cover,
-		});
+	function downloads(container) {
+		const anchors = container.getElementsByTagName('a');
+		if (anchors.length) {
+			for (let link of anchors) {
+				if (link.href.includes('/downloads/')) {
+					link.setAttribute('download', true);
+				}
+			}
+		}
 	}
-
-	beforeUpdate(init);
 </script>
 
-<section>
-	<svelte:component this={content} />
-</section>
+<svelte:head>
+   <meta name="title" content={meta.title} />
+   <meta name="author" content={meta.author} />
+   <meta name="keywords" content={meta.keywords} />
+</svelte:head>
 
-<style lang="postcss">
-	section {
-		@apply py-16;
-	}
+
+{#key content}
+	<main in:fade>
+		<section class="container" use:downloads>
+			<svelte:component this={content} />
+		</section>
+	</main>
+{/key}
+
+<style>
 </style>

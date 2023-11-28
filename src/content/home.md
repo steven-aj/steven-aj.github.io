@@ -6,7 +6,7 @@ author: Steven Johnson
 email: devtheory@icloud.com
 github: https://github.com/steven-aj
 slack: https://stevenaj.slack.com/archives/C066L1KJ256
-description: I'm a full-stack JavaScript developer with 7+ years of professional experience across WordPress and web application development.
+description: I'm a full-stack JavaScript developer who blogs about random, non-innovative things.
 keywords:
   - full-stack
   - developer
@@ -20,14 +20,6 @@ quotes:
   - Want your own SvelteKit blog on GitHub? Check out 'GH Smoothie'.
   - Ready to work? Click the Slack icon in my profile card to get started.
 ---
-## Still Tidying Up Here
+I like to blog about random, not-particularly-innovative things that come to mind. This space is mostly a catch-all for various thoughts and experiences, but I'm sure that you can find plenty to learn about me. 
 
-This project is still relatively new and you've caught me in the middle of development. Feel free to have a look around. 
-
-If you have any questions or find bugs along the way, please use the email button in my profile card at the top to let me know.
-
-#### 2023 Roadmap
-
-- Improved lab documentation
-- Blogging Series'
-- Contact Form
+**If you want to get in touch, try the *Slack* icon in the profile card above.**

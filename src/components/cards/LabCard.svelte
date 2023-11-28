@@ -4,18 +4,20 @@
    export let lab;
 </script>
 
-<a role="button" title={lab.title} href={lab.path}>
-   {#if lab.featured}
-      <span title="Featured Lab" class="featured-badge">
-         <SvelteFa icon={faStar} />
-      </span>
-   {/if}
+<a href={lab.path}>
    <article class="card">
       <section>
-         <h2>{lab.title}</h2>
-         {#if lab.description}
-            <blockquote>{lab.description}</blockquote>
+         {#if lab.featured}
+            <span title="Featured Lab" class="featured-badge">
+               <SvelteFa icon={faStar} />
+            </span>
          {/if}
+         <h2>{lab.title}</h2>
+         <p class="!text-neutral-500 text-center">
+            {#if lab.description}
+               {lab.description}
+            {/if}
+         </p>
       </section>
 
       <footer>
@@ -26,38 +28,18 @@
 
 <style lang="postcss">
    a {
-      @apply relative flex max-w-sm w-full snap-center;
-   }
-
-   a span.featured-badge {
-      @apply badge variant-filled-secondary absolute p-2 -top-2 right-4 z-10;
+      @apply contents;
    }
 
    article {
-      @apply w-full overflow-hidden;
+      @apply flex flex-col m-0;
    }
 
-   article:hover {
-      @apply shadow-lg;
+   article section {
+      @apply contents items-center justify-center;
    }
 
-   article header {
-      @apply flex flex-col p-0;
-   }
-
-   article header img {
-      @apply max-w-3xl w-full h-auto;
-   }
-
-   article h2 {
-      @apply text-xl my-4;
-   }
-
-   article .tags {
-      @apply flex flex-row justify-between items-center;
-   }
-
-   article footer time {
-      @apply my-2 text-surface-500 text-xs;
+   article section * {
+      @apply m-auto text-center;
    }
 </style>

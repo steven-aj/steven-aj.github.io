@@ -2,18 +2,16 @@
    export let post;
 </script>
 
-<a role="button" title={post.title} href={post.path}>
-   <article class="card">
-      {#if post.cover}
-         <header>
-            <img src={post.cover} alt={post.title} />
-         </header>
-      {/if}
-
-      <section>
+<a class="card" href={post.path}>
+   <article>
+      <section style={`${post.cover ? `background-image: url(${post.cover});` : ''}`}>
+         <h1>{post.title}</h1>
+      </section>
+   
+      <footer>
          {#if post.tags}
             <div class="tags">
-               <span class="badge variant-filled-secondary">
+               <span>
                   {post.tags[0]}
                </span>
                <span class="text-xs text-slate-500/50">
@@ -21,48 +19,34 @@
                </span>
             </div>
          {/if}
-         <h2>{post.title}</h2>
-         {#if post.excerpt}
-            <blockquote>{post.excerpt}</blockquote>
-         {/if}
-      </section>
-
-      <footer>
          <time>{post.date}</time>
       </footer>
    </article>
 </a>
 
 <style lang="postcss">
-   a {
-      @apply flex !w-fit;
+   a.card {
+      @apply contents h-full;
    }
 
    article {
-      @apply overflow-hidden;
+      @apply relative m-0;
+   }
+   
+   section {
+      @apply rounded-lg overflow-hidden bg-cover bg-blend-multiply m-0 p-0 h-full w-full;
    }
 
-   article:hover {
-      @apply shadow-lg;
+   section h1 {
+      @apply flex p-4 backdrop-blur-lg backdrop-brightness-50 text-neutral-200 text-xl w-full h-full items-center justify-center m-auto text-center self-center;
+      transition: opacity 1s;
    }
 
-   article header {
-      @apply flex flex-col p-0;
-   }
-
-   article header img {
-      @apply brightness-75;
-   }
-
-   article h2 {
-      @apply text-xl my-4;
-   }
-
-   article .tags {
-      @apply flex flex-row justify-between items-center;
+   article footer .tags {
+      @apply space-x-2;
    }
 
    article footer time {
-      @apply my-2 text-slate-500 text-xs;
+      @apply text-neutral-500;
    }
 </style>
