@@ -43,7 +43,7 @@
       <section id="recent">
          <h2>Recent Posts</h2>
          <div class="wrapper">
-            <ul>
+            <ul class="list-none p-0">
                {#each recent as post}
                   <li>
                      <a href={post.path}>{post.title}</a>
@@ -124,6 +124,6 @@
       @apply flex flex-col md:grid md:grid-cols-2 md:col-span-10;
 
       /* Margins */
-      @apply gap-4;
+      @apply mb-0 gap-4;
    }
 </style>
