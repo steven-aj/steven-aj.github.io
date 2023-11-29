@@ -61,20 +61,62 @@
 
 <style lang="postcss">
    article {
-      @apply md:grid md:grid-cols-6 md:max-w-lg md:w-full md:m-auto p-0 md:!shadow-xl md:rounded-xl;
+      /* Container */
+      @apply md:grid md:grid-cols-6 md:!shadow-xl;
+
+      /* Sizing */
+      @apply md:max-w-lg md:w-full;
+
+      /* Margins */
+      @apply md:m-auto;
+
+      /* Paddings */
+      @apply p-0;
+
+      /* Border */
+      @apply md:rounded-xl;
    }
 
    article header {
-      @apply col-span-2 m-0 overflow-hidden;
-      @apply flex w-full h-auto rounded-xl rounded-r-none overflow-hidden;
+      /* Container */
+      @apply flex overflow-hidden;
+
+      /* Sizing */
+      @apply col-span-2 w-full h-auto;
+
+      /* Margins */
+      @apply m-0;
+
+      /* Border */
+      @apply rounded-xl rounded-r-none;
    }
 
    article img.headshot {
-      @apply max-w-xs md:max-w-lg w-full h-auto m-auto rounded-full;
+      /* Sizing */
+      @apply w-full h-auto max-w-xs md:max-w-lg;
+
+      /* Margins */
+      @apply m-auto;
+
+      /* Border */
+      @apply rounded-full
    }
 
    article section {
-      @apply flex flex-col items-center justify-center col-span-4 m-0 md:py-4 py-8 px-4;
+      /* Container */
+      @apply flex flex-col;
+
+      /* Sizing */
+      @apply col-span-4;
+
+      /* Margins */
+      @apply m-0;
+
+      /* Paddings */
+      @apply md:py-4 py-8 px-4;
+
+      /* Alignments */
+      @apply items-center justify-center;
    }
 
    article section h1 {

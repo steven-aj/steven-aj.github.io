@@ -9,7 +9,3 @@
       </header>
    </article>
 </a>
-
-<style>
-   
-</style>

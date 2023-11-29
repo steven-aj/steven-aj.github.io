@@ -44,6 +44,3 @@
       <EmptyNotice showIcon={false} title={false} />
    {/if}
 </main>
-
-<style>
-</style>

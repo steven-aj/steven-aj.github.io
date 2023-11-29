@@ -28,18 +28,31 @@
 
 <style lang="postcss">
    a {
+      /* Container */
       @apply contents;
    }
 
    article {
-      @apply flex flex-col m-0;
+      /* Container */
+      @apply flex flex-col;
+
+      /* Margins */
+      @apply m-0;
    }
 
    article section {
-      @apply contents items-center justify-center;
+      /* Container */
+      @apply contents;
+
+      /* Alignments */
+      @apply items-center justify-center;
    }
 
    article section * {
-      @apply m-auto text-center;
+      /* Margins */
+      @apply m-auto;
+
+      /* Typography */
+      @apply text-center
    }
 </style>

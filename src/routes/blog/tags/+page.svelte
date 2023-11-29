@@ -11,7 +11,3 @@
       <TagCard {tag} />
    {/each}
 </div>
-
-<style>
-
-</style>

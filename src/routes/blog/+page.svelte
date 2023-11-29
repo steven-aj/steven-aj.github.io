@@ -69,11 +69,19 @@
 
 <style lang="postcss">
    main {
-      @apply flex flex-col-reverse lg:grid lg:grid-cols-12 gap-2;
+      /* Container */
+      @apply flex flex-col-reverse lg:grid lg:grid-cols-12;
+
+      /* Spacing */
+      @apply gap-2;
    }
 
    main aside {
-      @apply flex flex-col lg:block col-span-2 px-4;
+      /* Container */
+      @apply flex flex-col col-span-2 lg:block;
+
+      /* Paddings */
+      @apply px-4;
    }
 
    main aside button {
@@ -89,7 +97,14 @@
    }
 
    main aside section#tags .wrapper {
-      @apply flex flex-wrap gap-2 justify-center;
+      /* Container */
+      @apply flex flex-wrap;
+
+      /* Alignments */
+      @apply justify-center;
+
+      /* Spacing */
+      @apply gap-2;
    }
 
    main aside section#tags .badge {
@@ -105,6 +120,10 @@
    }
 
    section#posts {
-      @apply flex flex-col gap-4 md:grid md:grid-cols-2 md:col-span-10;
+      /* Container */
+      @apply flex flex-col md:grid md:grid-cols-2 md:col-span-10;
+
+      /* Margins */
+      @apply gap-4;
    }
 </style>

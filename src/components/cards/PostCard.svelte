@@ -26,20 +26,65 @@
 
 <style lang="postcss">
    a.card {
-      @apply contents h-full;
+      /* Container */
+      @apply contents;
+
+      /* Sizing */
+      @apply h-full;
    }
 
    article {
-      @apply relative m-0;
+      /* Container */
+      @apply relative;
+
+      /* Margins */
+      @apply m-0;
    }
    
    section {
-      @apply rounded-lg overflow-hidden bg-cover bg-center bg-blend-multiply m-0 p-0 h-full w-full;
+      /* Container */
+      @apply overflow-hidden;
+
+      /* Sizing */
+      @apply h-full w-full;
+
+      /* Margins */
+      @apply m-0;
+
+      /* Paddings */
+      @apply p-0;
+
+      /* Background */
+      @apply bg-cover bg-center bg-blend-multiply;
+
+      /* Border */
+      @apply rounded-lg;
       box-shadow: inset 0rem 0rem 0.5rem rgba(0,0,0, 0.75);
    }
 
    section h1 {
-      @apply flex p-4 backdrop-blur-lg backdrop-brightness-50 text-neutral-200 text-xl w-full h-full items-center justify-center m-auto text-center self-center;
+      /* Container */
+      @apply flex;
+
+      /* Sizing */
+      @apply w-full h-full;
+
+      /* Alignments */
+      @apply items-center justify-center self-center;
+
+      /* Margins */
+      @apply m-auto;
+
+      /* Paddings */
+      @apply p-4;
+
+      /* Typography */
+      @apply text-neutral-200 text-xl text-center;
+
+      /* Background */
+      @apply backdrop-blur-lg backdrop-brightness-50;
+      
+      /* Effects */
       transition: opacity 1s;
    }
 

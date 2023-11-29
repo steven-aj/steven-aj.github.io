@@ -77,13 +77,29 @@
 
 <style lang="postcss">
    header {
-      @apply sticky top-0 left-0 p-0 z-50;
-      transition: box-shadow 1.33s, var(--theme-mode);
+      /* Alignments */
+      @apply sticky top-0 left-0 z-50;
+
+      /* Paddings */
+      @apply p-0;
+
+      /* Background */
       background-color: var(--background-color);
+
+      /* Effects */
+      transition: box-shadow 1.33s, var(--theme-mode);
    }
 
    header nav {
-      @apply flex flex-col items-center md:flex-row py-0 px-4;
+      /* Container */
+      @apply flex flex-col md:flex-row;
+
+      /* Alignments */
+      @apply items-center;
+
+      /* Padding */
+      @apply py-0 px-4;
+
    }
 
    .logo {
@@ -91,7 +107,11 @@
    }
 
    header nav menu {
-      @apply w-full justify-between items-center md:w-auto md:justify-end;
+      /* Sizing */
+      @apply w-full md:w-auto;; 
+
+      /* Alignments */
+      @apply justify-between items-center md:justify-end;
    }
 
    header nav menu a {

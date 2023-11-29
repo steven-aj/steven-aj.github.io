@@ -15,7 +15,3 @@
    {/if}
    <p>{message}</p>
 </section>
-
-<style>
-   
-</style>
