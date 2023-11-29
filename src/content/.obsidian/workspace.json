@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "singles/are-we-a-good-fit.md",
+                    "file": "singles/websites-vs-web-apps.md",
                     "mode": "source",
                     "source": false
                   }
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "singles/are-we-a-good-fit.md",
+                "file": "singles/websites-vs-web-apps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "singles/are-we-a-good-fit.md",
+                "file": "singles/websites-vs-web-apps.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "singles/are-we-a-good-fit.md"
+                "file": "singles/websites-vs-web-apps.md"
               }
             }
           }
@@ -200,10 +200,11 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "66455f34b6f5886e",
+  "active": "c23eed7521f96ea6",
   "lastOpenFiles": [
     "singles/what-to-collect-in-a-content-audit.md",
     "singles/websites-vs-web-apps.md",
+    "singles/are-we-a-good-fit.md",
     "singles/modern-app-development-in-wordpress.md",
     "singles/elevating-wordpress-plugin-development.md",
     "singles/12-types-of-material-to-collect-in-a-content-audit.md",
@@ -215,7 +216,6 @@
     "site-meta.md",
     "about.md",
     "2023-11-15.md",
-    "singles/are-we-a-good-fit.md",
     "singles/how-to-build-a-sitemap.md",
     "singles/prevent-eye-strain-with-softer-transitions.md",
     "labs/todo-svelte.md",
