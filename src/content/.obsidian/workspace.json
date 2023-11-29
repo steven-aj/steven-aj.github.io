@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "home.md",
+                    "file": "singles/are-we-a-good-fit.md",
                     "mode": "source",
                     "source": false
                   }
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "home.md",
+                "file": "singles/are-we-a-good-fit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "home.md",
+                "file": "singles/are-we-a-good-fit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "home.md"
+                "file": "singles/are-we-a-good-fit.md"
               }
             }
           }
@@ -202,6 +202,9 @@
   },
   "active": "c23eed7521f96ea6",
   "lastOpenFiles": [
+    "singles/websites-vs-web-apps.md",
+    "singles/static-and-dynamic-sites.md",
+    "home.md",
     "site-meta.md",
     "about.md",
     "2023-11-15.md",
@@ -209,9 +212,7 @@
     "singles/how-to-build-a-sitemap.md",
     "singles/modern-app-development-in-wordpress.md",
     "singles/prevent-eye-strain-with-softer-transitions.md",
-    "singles/static-and-dynamic-sites.md",
     "singles/what-to-collect-in-a-content-audit.md",
-    "home.md",
     "labs/todo-svelte.md",
     "labs/gh-smoothie.md",
     "_templates/post-single.md",
@@ -229,7 +230,6 @@
     "singles/draft-post.md",
     "_templates/post-series.md",
     "singles",
-    "singsles/static-and-dynamic-sites.md",
     "singsles",
     "labs",
     "_templates",

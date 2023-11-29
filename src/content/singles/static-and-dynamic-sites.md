@@ -3,7 +3,7 @@ status: published
 date: 2023-09-15
 author: Steven Johnson
 cover: /assets/covers/abstract-tech-cube.jpeg
-title: Differences Between Dynamic and Static Websites, and Websites vs. Web Applications
+title: "Dynamic and Static Websites: What's the Difference?"
 excerpt: How do dynamic & static websites differ from one another? What about web sites vs applications?
 tags:
   - beginners
@@ -43,12 +43,5 @@ Dynamic websites, in contrast, use server-side technologies, such as PHP, Python
 
 **Performance**: Due to the server-side processing, dynamic websites may load slower compared to static sites, especially during high traffic.
 
-## Websites vs. Web Applications
-
-The terms "website" and "web application" are often used interchangeably, but they refer to different types of online platforms.
-
-**Websites**: Websites primarily provide static or dynamic content for informational purposes. They are designed to be consumed by users who read or navigate through the provided information. Examples include blogs, news sites, and company landing pages.
-
-**Web Applications**: Web applications, on the other hand, are more interactive and allow users to perform specific tasks. They often require user input, process data, and provide personalized results. Examples of web applications are online banking portals, social media networks, and productivity tools like Google Docs.
-
-In summary, static websites are simple and remain the same until manually updated, while dynamic websites offer interactivity and personalized content by fetching data from databases. Additionally, websites provide information, whereas web applications enable users to perform tasks and manipulate data. Understanding these distinctions can help users and developers make informed choices when creating or using online platforms.
+## Conclusion
+In summary, static websites are simple and remain the same until manually updated, while dynamic websites offer interactivity and personalized content by fetching data from databases. 

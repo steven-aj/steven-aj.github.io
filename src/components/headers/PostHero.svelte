@@ -32,7 +32,7 @@
       @apply items-center justify-end;
 
       /* Background */
-      @apply bg-cover bg-center bg-fixed;
+      @apply bg-cover bg-center;
 
       /* Border */
       @apply rounded-tl-lg rounded-tr-lg;
