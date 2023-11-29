@@ -61,7 +61,7 @@
                <LabCard {lab} />
             {/each}
          </div>
-         <a title="View Labs" href="/labs" role="button">View Labs</a>
+         <!-- <a title="View Labs" href="/labs" role="button">View Labs</a> -->
       </section>
    {/if}
 
@@ -73,7 +73,7 @@
                <PostCard {post} />
             {/each}
          </div>
-         <a title="All Posts" href="/blog" role="button">All Posts</a>
+         <!-- <a title="All Posts" href="/blog" role="button">All Posts</a> -->
       </section>
    {/if}
 </main>
