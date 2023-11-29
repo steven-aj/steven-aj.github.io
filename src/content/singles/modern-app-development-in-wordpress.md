@@ -3,7 +3,7 @@ status: published
 date: 2023-09-15
 author: Steven Johnson
 cover: /assets/covers/rocket-plug.jpeg
-title: Elevating WordPress Plugin Development in 2023
+title: Modern App Development in WordPress
 excerpt: An overview of implementing modern front-end frameworks as WordPress Plugins
 tags:
   - wordpress
@@ -13,7 +13,7 @@ tags:
   - rants
   - thoughts
 ---
-WordPress' popularity is based largely on its ecosystem of plugins & their ability to simplify constructing solutions for.. well.. everyone. In reality, a large portion of those plugins are poorly implemented with respect to the platform's core-development principles, ultimately impacting performance of the final product in a not-so-good way.
+WordPress' popularity is based largely on its ecosystem of plugins & their ability to simplify constructing solutions for.. well.. everyone. In reality, a large portion of those plugins are poorly implemented with respect to the platform's core principles, which ultimately impacts the performance of the final product.
 
 As time has gone on, WordPress has shifted much of its attention to expanding its block-building tools for both end-users and developers alike. Much of this has been in efforts to modernize the platform's potential, but it's lended itself to offering opportunities to enhance performance as well.
 

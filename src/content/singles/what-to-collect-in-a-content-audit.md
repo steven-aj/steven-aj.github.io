@@ -1,7 +1,7 @@
 ---
 status: published
 date: 07/01/2023
-title: 12 Types of Material to Collect in a Content Audit (Free PDF Included)
+title: What to Collect in a Content Audit (Free PDF Included)
 excerpt: When starting a new project, don't make the mistake of skipping a content audit and always remember that being upfront about what you need pays off in the long run. Check out my free PDF checklist to help you collect all the essential materials and learn how organize your client's information to build a solid foundation for development.
 author: Steven Johnson
 cover: /assets/covers/web-content.jpeg
@@ -10,19 +10,16 @@ tags:
   - beginners
   - free-stuff
 ---
-Clients generally know exactly what they want, but not always how to get there (or if they're even ready to try). For new projects, a content audit is essential for aligning expectations, building a sitemap and (*by extension*) defining a proper scope. Failing to conduct this is probably the most common mistake that new freelancers make.
-
+For new projects, a content audit is essential for aligning expectations, building a sitemap and, by extension, defining the project's scope. Read on, download a free PDF checklist to help you collect all the essential materials, and learn how organize your client's information to build a solid foundation for development.
 ## Collectible Material
 
-This isn't just a list of items to collect. It's a strategic roadmap toward building any project. A thorough content audit will serve as your cornerstone for success, helping to prevent the most common pitfalls that new freelancers encounter.
+Make no mistake - this isn't just a list of items to collect. It's a strategic roadmap toward building any project. Systematic organization early on not only facilitates the breakdown into manageable parts, but can also demonstrate expertise and foresight. Never be afraid to be upfront about the things you need. In the long run, you'll be grateful that you did and your client will appreciate the results.
 
-The provided PDF is a great starting point for a structured approach to collecting these materials. Organize them into folders by context to make it easier to break them into manageable pieces. Further organize those pieces into a sitemap proposal along the way. Systematic organization early on not only facilitates the breakdown into manageable parts, but can also demonstrate expertise and foresight.
+> Never be afraid to be upfront about the things you need.  In the long run, you'll be grateful that you did and your client will appreciate the results.
 
-As promised, you can [download the checklist of material here](/downloads/documents/content-audit-checklist.pdf). I encourage you to continue reading, though, to get a clear understanding of each piece worth collecting.
-
-> Never be afraid to be upfront about the things you need.  In the long run, you'll be grateful that you did and your client will appreciate your expertise.
-
+As promised, you can [download the checklist of material here](/downloads/documents/content-audit-checklist.pdf).
 ### Brand Guidelines and Style Guides
+
 Gathering brand & style guidelines early on will help you to ensure consistency in the website's design and content. You can glean a lot from logos and other materials listed here but, if they can provide it, be sure to get their specs for color schemes, typography and tone of voice.
 
 ### Previous Websites
@@ -32,14 +29,14 @@ Reviewing the content and structure of previous websites can help identify stren
 Blogs can provide valuable industry insights and thought leadership while helping to identify topics of interest to their target audience. Be sure to migrate any previously published articles and their associated media.
 
 ### Social Media Profiles
-Existing profiles can help provide content strategy, tone of voice and brand consistency. Ask if they have profiles on Facebook, Twitter, Instagram, LinkedIn or any other social media you should know about. 
+Existing profiles can help provide content strategy, tone of voice and brand consistency. Ask if they have profiles on Facebook, Twitter, Instagram, LinkedIn or any other social media you should know about. As a bonus, social profiles that already have some authority can help increase organic traffic to your client's project.
 
-> As a bonus, social profiles that already have some authority can help increase organic clicks to your client's project.
+> ... social profiles that already have some authority can help increase organic clicks to your client's project.
 
 ### Marketing Videos and Multimedia Content
-Videos and other multimedia can be embedded to engage visitors and provide a richer user experience. Ask for marketing videos, product demonstrations, webinars and any other multimedia content they can provide.
+Videos and other multimedia can be embedded to engage visitors and provide a richer user experience. Ask for marketing videos, product demonstrations, webinars and any other multimedia content they can provide. Remember that heavy items like videos and podcasts can have a negative impact on a project's performance. Use a CDN or other cloud service to do the heavy lifting.
 
-> Heavy items like videos and podcasts can have a negative impact on a project's performance. Use a CDN or other cloud service to do the heavy lifting.
+> ... heavy items like videos and podcasts can have a negative impact on a project's performance. Use a CDN or other cloud service to do the heavy lifting.
 
 ### Case Studies and Success Stories
 Case studies & success stories can be repurposed to build credibility and demonstrate the client's expertise. Don't be afraid to request access to their achievements, customer testimonials or any examples of positive impacts their products or services have made on their customers.

@@ -6,8 +6,8 @@ cover: /assets/covers/eye-light.jpeg
 title: "Preventing Eye-Strain: Softer Transitions Between Light & Dark Modes"
 excerpt: Toggling between light and dark modes of your website or application can make a world of difference for people with sensitive eyes or the night owls that live and work in the dark. There isn't a technical standard for how this should be accomplished and an instant transition can be pretty harsh. We can fix that with a few lines of CSS.
 tags:
-  - informative
   - rants
+  - informative
   - satire
   - thoughts
 ---
@@ -63,6 +63,6 @@ Then, in your component, set your globally accessible transition:
 
 With very little effort, we can pretty easily give our users time to adjust when transitioning between accessibility options.
 
-## Final Words
+## Yes, This Was a Rant
 
 I'll admit - this post probably could've been reduced to just the CSS examples, but I've tagged it as a `rant` for a reason. To me, this seems like a pretty obvious fix given how simple it is to implement. Maybe I just work in the dark too often.

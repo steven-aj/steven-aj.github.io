@@ -10,6 +10,7 @@
           {
             "id": "29b9e657c6f9c765",
             "type": "tabs",
+            "dimension": 77.77777777777779,
             "children": [
               {
                 "id": "c23eed7521f96ea6",
@@ -17,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "singles/elevating-wordpress-plugin-development.md",
+                    "file": "home.md",
                     "mode": "source",
                     "source": false
                   }
@@ -28,6 +29,7 @@
           {
             "id": "1b9589d30c3b26ba",
             "type": "tabs",
+            "dimension": 22.22222222222222,
             "children": [
               {
                 "id": "5db0fd8366b53483",
@@ -58,9 +60,9 @@
                         "useWin32Conhost": true
                       },
                       "serial": {
-                        "columns": 119,
-                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"content update\"; git push origin de",
-                        "rows": 18
+                        "columns": 122,
+                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"content update\"; git push origin develop\r\n[develop ccb2538] content update\r\n 2 files changed, 13 insertions(+), 12 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 990 bytes | 990.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   8b161aa..ccb2538  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % ",
+                        "rows": 5
                       }
                     }
                   },
@@ -99,7 +101,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "[\"status\":review]",
+                "query": "tag:rants",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -120,7 +122,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 273.5
+    "width": 248.5
   },
   "right": {
     "id": "f40341d69b51707b",
@@ -136,6 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,6 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "home.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +177,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "home.md"
+              }
             }
           }
         ]
@@ -194,26 +200,26 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "5db0fd8366b53483",
+  "active": "c23eed7521f96ea6",
   "lastOpenFiles": [
-    "singles/elevating-wordpress-plugin-development.md",
-    "singles/12-types-of-material-to-collect-in-a-content-audit.md",
+    "site-meta.md",
     "about.md",
-    "labs/todo-svelte.md",
-    "labs/gh-smoothie.md",
-    "singles/are-we-a-good-fit.md",
     "2023-11-15.md",
+    "singles/are-we-a-good-fit.md",
     "singles/how-to-build-a-sitemap.md",
+    "singles/modern-app-development-in-wordpress.md",
     "singles/prevent-eye-strain-with-softer-transitions.md",
     "singles/static-and-dynamic-sites.md",
+    "singles/what-to-collect-in-a-content-audit.md",
     "home.md",
+    "labs/todo-svelte.md",
+    "labs/gh-smoothie.md",
     "_templates/post-single.md",
     "blog/are-we-a-good-fit.md",
     "blog/12-types-of-material-to-collect-in-a-content-audit.md",
     "blog",
     "singles/building-a-sitemap.md",
     "experience.md",
-    "site-meta.md",
     "labs.md",
     "labs/library-demo.md",
     "_templates/page.md",
