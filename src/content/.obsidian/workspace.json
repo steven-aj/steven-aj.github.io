@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "singles/are-we-a-good-fit.md",
+                    "file": "singles/how-to-build-a-sitemap.md",
                     "mode": "source",
                     "source": false
                   }
@@ -61,7 +61,7 @@
                       },
                       "serial": {
                         "columns": 122,
-                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"content update\"; git push origin develop\r\n[develop ccb2538] content update\r\n 2 files changed, 13 insertions(+), 12 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 990 bytes | 990.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   8b161aa..ccb2538  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % ",
+                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"content update\"; git push origin develop\r\n[develop ccb2538] content update\r\n 2 files changed, 13 insertions(+), 12 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 990 bytes | 990.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   8b161aa..ccb2538  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"published\"; git push origin devel",
                         "rows": 5
                       }
                     }
@@ -101,7 +101,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:rants",
+                "query": "[status:preview]",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -118,7 +118,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -138,7 +139,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "singles/are-we-a-good-fit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "singles/are-we-a-good-fit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,9 +176,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "singles/are-we-a-good-fit.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -200,15 +197,15 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "c23eed7521f96ea6",
+  "active": "5db0fd8366b53483",
   "lastOpenFiles": [
     "singles/how-to-build-a-sitemap.md",
+    "singles/websites-vs-web-apps.md",
+    "singles/are-we-a-good-fit.md",
     "singles/modern-app-development-in-wordpress.md",
     "singles/prevent-eye-strain-with-softer-transitions.md",
     "singles/static-and-dynamic-sites.md",
-    "singles/websites-vs-web-apps.md",
     "singles/what-to-collect-in-a-content-audit.md",
-    "singles/are-we-a-good-fit.md",
     "singles/elevating-wordpress-plugin-development.md",
     "singles/12-types-of-material-to-collect-in-a-content-audit.md",
     "blog/are-we-a-good-fit.md",
