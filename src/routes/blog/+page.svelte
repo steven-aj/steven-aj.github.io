@@ -124,6 +124,6 @@
       @apply flex flex-col md:grid md:grid-cols-2 md:col-span-10;
 
       /* Margins */
-      @apply mb-0 gap-4;
+      @apply gap-4;
    }
 </style>
