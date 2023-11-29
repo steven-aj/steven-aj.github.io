@@ -32,7 +32,8 @@
       @apply items-center justify-end;
 
       /* Background */
-      @apply bg-cover bg-center bg-fixed;
+      @apply bg-cover bg-center bg-opacity-10;
+      background-color: var(--background-color);
 
       /* Border */
       @apply rounded-tl-lg rounded-tr-lg;

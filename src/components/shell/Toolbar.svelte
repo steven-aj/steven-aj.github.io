@@ -80,6 +80,9 @@
       /* Alignments */
       @apply sticky top-0 left-0 z-50;
 
+      /* Margins */
+      @apply !mb-0;
+
       /* Paddings */
       @apply p-0;
 
