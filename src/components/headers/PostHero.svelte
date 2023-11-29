@@ -16,11 +16,43 @@
 
 <style lang="postcss">
    header {
-      @apply relative flex flex-col mt-0 p-0 items-center justify-end h-96 bg-cover bg-center bg-fixed rounded-tl-lg rounded-tr-lg;
+      /* Container */
+      @apply relative flex flex-col;
+
+      /* Sizing */
+      @apply h-96;
+
+      /* Paddings */
+      @apply p-0;
+
+      /* Margins */
+      @apply mt-0;
+
+      /* Alignments */
+      @apply items-center justify-end;
+
+      /* Background */
+      @apply bg-cover bg-center bg-fixed;
+
+      /* Border */
+      @apply rounded-tl-lg rounded-tr-lg;
    }
 
    header .content {
-      @apply backdrop-blur-2xl backdrop-brightness-50 py-10 px-4 my-0 w-full text-center;
+      /* Sizing */
+      @apply w-full;
+
+      /* Margins */
+      @apply my-0;
+
+      /* Paddings */
+      @apply py-10 px-4;
+
+      /* Typography */
+      @apply text-center;
+
+      /* Background */
+      @apply backdrop-blur-2xl backdrop-brightness-50;
    }
 
    header h1 {
@@ -32,6 +64,16 @@
    }
 
    header .tags {
-      @apply flex flex-row flex-wrap my-4 gap-2 p-2 justify-center items-center;
+      /* Container */
+      @apply flex flex-row flex-wrap;
+
+      /* Alignments */
+      @apply justify-center items-center;
+
+      /* Margins */
+      @apply my-4 gap-2;
+
+      /* Paddings */
+      @apply p-2;
    }
 </style>

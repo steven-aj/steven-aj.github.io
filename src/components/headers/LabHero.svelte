@@ -31,7 +31,14 @@
 
 <style lang="postcss">
    header {
-      @apply flex flex-col items-center justify-center gap-2 mb-14;
+      /* Container */
+      @apply flex flex-col ;
+
+      /* Alignments */
+      @apply items-center justify-center;
+
+      /* Margins */
+      @apply gap-2 mb-14;
    }
 
    header h1 {
