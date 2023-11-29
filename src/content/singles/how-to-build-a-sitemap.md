@@ -1,5 +1,5 @@
 ---
-status: review
+status: preview
 date: 2023-11-15
 author: Steven Johnson
 cover: /assets/covers/site-content.jpeg
