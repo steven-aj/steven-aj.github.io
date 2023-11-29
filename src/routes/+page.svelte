@@ -80,6 +80,16 @@
 
 <style lang="postcss">
    a[role="button"] {
-      @apply flex max-w-lg w-full mx-auto self-center justify-center my-10;
+      /* Container */
+      @apply flex;
+
+      /* Alignments */
+      @apply self-center justify-center;
+
+      /* Sizing */
+      @apply max-w-lg w-full;
+
+      /* Margins */
+      @apply mx-auto my-10;
    }
 </style>
