@@ -2,6 +2,7 @@
    import { beforeUpdate } from "svelte";
    import Shell from "$lib/shell";
    import PostCard from "$components/cards/PostCard.svelte";
+    import { fade } from "svelte/transition";
 
    export let data;
 
@@ -17,7 +18,7 @@
 
 <h1 class="container-fluid">Tagged: "{tag}"</h1>
 
-<main class="container-fluid">
+<main class="container-fluid" in:fade>
    <section id="posts">
       <div class="grid">
          {#each posts as post}

@@ -25,7 +25,7 @@ export default class PostItem implements IPostItem {
 
    public get published() {
       if (dev) {
-         return this.meta.status === 'published' || this.meta.status === 'review';
+         return this.meta.status === 'published' || this.meta.status === 'preview';
       }
       else return this.meta.status === 'published';
    }
