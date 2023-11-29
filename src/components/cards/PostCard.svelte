@@ -3,7 +3,6 @@
 </script>
 
 <a title={post.title} class="card" href={post.path}>
-   <!-- <article> -->
    <section
       style={`${post.cover ? `background-image: url(${post.cover});` : ""}`}
    >
@@ -20,12 +19,6 @@
          </div>
       </div>
    </section>
-
-   <!-- <footer>
-         {#if post.tags}
-         {/if}
-      </footer>
-   </article> -->
 </a>
 
 <style lang="postcss">
