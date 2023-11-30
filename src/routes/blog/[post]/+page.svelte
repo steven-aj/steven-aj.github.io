@@ -27,6 +27,7 @@
 	<meta name="title" content={meta.title} />
 	<meta name="author" content={meta.author} />
 	<meta name="keywords" content={meta.keywords} />
+	<meta name="description" content={meta.excerpt} />
 </svelte:head>
 
 <main in:fade>
