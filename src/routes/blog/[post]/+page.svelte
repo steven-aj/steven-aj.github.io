@@ -24,6 +24,7 @@
 </script>
 
 <svelte:head>
+	<title>{meta.title}</title>
 	<meta name="title" content={meta.title} />
 	<meta name="author" content={meta.author} />
 	<meta name="keywords" content={meta.keywords} />
