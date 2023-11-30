@@ -7,7 +7,6 @@
 
    export let data;
 
-   const { meta } = data;
    const { menu, store } = Shell;
 
    function init() {
@@ -19,12 +18,6 @@
 
    onMount(init);
 </script>
-
-<svelte:head>
-   <meta name="title" content={meta.title} />
-   <meta name="author" content={meta.author} />
-   <meta name="keywords" content={meta.keywords} />
-</svelte:head>
 
 <Toolbar {store} {menu} />
 
