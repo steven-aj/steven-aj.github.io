@@ -3,7 +3,7 @@ status: published
 featured: "false"
 title: To-Do Svelte
 description: A minimalistic todo app built with Tauri + Svelte with toggling options between complete & incomplete lists.
-language: Svelte
+language: SvelteKit + Tauri
 repo: https://github.com/steven-aj/todo-svelte
 demo:
 ---
