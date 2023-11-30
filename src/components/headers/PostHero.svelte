@@ -5,10 +5,14 @@
 <header class="hero" style={`background-image: url(${meta.cover});`}>
    <div class="content">
       <h1>{meta.title}</h1>
-      <div class="tags">
-         {#each meta.tags as tag}
-            <a class="primary badge" href={`/blog/tags/${tag}`}>{tag}</a>
-         {/each}
+      <div aria-label="Post Tags" class="tags">
+         <ul>
+            {#each meta.tags as tag}
+               <li class="list-none">
+                  <a class="primary badge" href={`/blog/tags/${tag}`}>{tag}</a>
+               </li>
+            {/each}
+         </ul>
       </div>
       <time>Published {new Date(meta.date).toLocaleDateString()}</time>
    </div>
@@ -63,7 +67,7 @@
       @apply opacity-50 text-neutral-100 text-xs italic font-serif;
    }
 
-   header .tags {
+   header .tags ul {
       /* Container */
       @apply flex flex-row flex-wrap;
 
@@ -71,7 +75,7 @@
       @apply justify-center items-center;
 
       /* Margins */
-      @apply my-4 gap-2;
+      @apply mx-auto my-4 gap-2;
 
       /* Paddings */
       @apply p-2;
