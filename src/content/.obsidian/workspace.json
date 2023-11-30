@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "singles/prevent-eye-strain-with-softer-transitions.md",
+                    "file": "blog.md",
                     "mode": "source",
                     "source": false
                   }
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "singles/prevent-eye-strain-with-softer-transitions.md",
+                "file": "blog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "singles/prevent-eye-strain-with-softer-transitions.md",
+                "file": "blog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "singles/prevent-eye-strain-with-softer-transitions.md"
+                "file": "blog.md"
               }
             }
           }
@@ -202,12 +202,13 @@
   },
   "active": "c23eed7521f96ea6",
   "lastOpenFiles": [
+    "labs.md",
+    "singles/prevent-eye-strain-with-softer-transitions.md",
     "labs/gh-smoothie.md",
     "singles/how-to-build-a-sitemap.md",
     "singles/websites-vs-web-apps.md",
     "singles/are-we-a-good-fit.md",
     "singles/modern-app-development-in-wordpress.md",
-    "singles/prevent-eye-strain-with-softer-transitions.md",
     "singles/static-and-dynamic-sites.md",
     "singles/what-to-collect-in-a-content-audit.md",
     "singles/elevating-wordpress-plugin-development.md",
@@ -223,7 +224,6 @@
     "_templates/post-single.md",
     "singles/building-a-sitemap.md",
     "experience.md",
-    "labs.md",
     "labs/library-demo.md",
     "_templates/page.md",
     "singles/a-published-post.md",

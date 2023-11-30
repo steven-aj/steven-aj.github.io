@@ -11,7 +11,7 @@
 
    // let drawer = getDrawerStore();
 
-   let { posts, tags, recent } = data;
+   let { meta, content, posts, tags, recent } = data;
    let ready = false;
 
    function init() {
@@ -23,7 +23,14 @@
    beforeUpdate(init);
 </script>
 
-<h1 class="page-heading">Blog</h1>
+<svelte:head>
+   <meta name="title" content={meta.title} />
+   <meta name="author" content={meta.author} />
+   <meta name="keywords" content={meta.keywords} />
+   <meta name="description" content={meta.description} />
+</svelte:head>
+
+<h1 class="page-heading">{meta.title}</h1>
 
 <div class="content">
    <aside>
