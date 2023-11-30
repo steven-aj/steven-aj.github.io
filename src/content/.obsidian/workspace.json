@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "blog.md",
+                    "file": "home.md",
                     "mode": "source",
                     "source": false
                   }
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog.md",
+                "file": "home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog.md",
+                "file": "home.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog.md"
+                "file": "home.md"
               }
             }
           }
@@ -202,6 +202,9 @@
   },
   "active": "c23eed7521f96ea6",
   "lastOpenFiles": [
+    "site-meta.md",
+    "home.md",
+    "blog.md",
     "labs.md",
     "singles/prevent-eye-strain-with-softer-transitions.md",
     "labs/gh-smoothie.md",
@@ -216,8 +219,6 @@
     "blog/are-we-a-good-fit.md",
     "blog/12-types-of-material-to-collect-in-a-content-audit.md",
     "blog",
-    "home.md",
-    "site-meta.md",
     "about.md",
     "2023-11-15.md",
     "labs/todo-svelte.md",
@@ -228,7 +229,6 @@
     "_templates/page.md",
     "singles/a-published-post.md",
     "singles/another-published-oster.md",
-    "_templates/site-meta.md",
     "singles",
     "singsles",
     "labs",

@@ -67,7 +67,7 @@
 
    {#if posts.length}
       <section id="posts" class="posts container-fluid">
-         <h2>Recent Posts</h2>
+         <h2 class="text-center md:text-start">Recent Posts</h2>
          <div class="grid">
             {#each posts as post}
                <PostCard {post} />

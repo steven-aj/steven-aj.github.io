@@ -12,7 +12,7 @@
                <SvelteFa icon={faStar} />
             </span>
          {/if}
-         <h2>{lab.title}</h2>
+         <h1>{lab.title}</h1>
          <p class="!text-neutral-500 text-center">
             {#if lab.description}
                {lab.description}
@@ -21,7 +21,7 @@
       </section>
 
       <footer>
-         <p aria-hidden="true">{lab.language}</p>
+         <p class="m-0" aria-hidden="true">{lab.language}</p>
       </footer>
    </article>
 </a>
@@ -48,11 +48,19 @@
       @apply items-center justify-center;
    }
 
+   article section h1 {
+      @apply text-xl my-4;
+   }
+
    article section * {
       /* Margins */
       @apply m-auto;
 
       /* Typography */
-      @apply text-center
+      @apply text-center;
+   }
+
+   article section p {
+      @apply leading-6;
    }
 </style>

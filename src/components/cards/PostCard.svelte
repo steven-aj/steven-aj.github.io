@@ -2,8 +2,8 @@
    export let post;
 </script>
 
-<a title={post.title} class="card" href={post.path}>
-   <article class="custom">
+<a title={post.title} href={post.path} class="card" aria-label="article">
+   <article class="custom" role="contentinfo">
       <section
          style={`${post.cover ? `background-image: url(${post.cover});` : ""}`}
       >
