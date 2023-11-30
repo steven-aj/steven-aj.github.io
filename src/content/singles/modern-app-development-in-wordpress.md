@@ -1,7 +1,7 @@
 ---
 status: published
 date: 2023-09-15
-author: Steven Johnson
+author: Steven A.J.
 cover: /assets/covers/rocket-plug.jpeg
 title: Modern App Development in WordPress
 excerpt: An overview of implementing modern front-end frameworks as WordPress Plugins

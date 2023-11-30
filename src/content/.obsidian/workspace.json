@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "home.md",
+                    "file": "singles/are-we-a-good-fit.md",
                     "mode": "source",
                     "source": false
                   }
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "home.md",
+                "file": "singles/are-we-a-good-fit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "home.md",
+                "file": "singles/are-we-a-good-fit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "home.md"
+                "file": "singles/are-we-a-good-fit.md"
               }
             }
           }
@@ -202,24 +202,24 @@
   },
   "active": "c23eed7521f96ea6",
   "lastOpenFiles": [
-    "site-meta.md",
-    "home.md",
-    "blog.md",
-    "labs.md",
-    "singles/prevent-eye-strain-with-softer-transitions.md",
-    "labs/gh-smoothie.md",
     "singles/how-to-build-a-sitemap.md",
-    "singles/websites-vs-web-apps.md",
-    "singles/are-we-a-good-fit.md",
     "singles/modern-app-development-in-wordpress.md",
+    "singles/prevent-eye-strain-with-softer-transitions.md",
     "singles/static-and-dynamic-sites.md",
+    "singles/websites-vs-web-apps.md",
     "singles/what-to-collect-in-a-content-audit.md",
+    "about.md",
+    "blog.md",
+    "home.md",
+    "labs.md",
+    "site-meta.md",
+    "labs/gh-smoothie.md",
+    "singles/are-we-a-good-fit.md",
     "singles/elevating-wordpress-plugin-development.md",
     "singles/12-types-of-material-to-collect-in-a-content-audit.md",
     "blog/are-we-a-good-fit.md",
     "blog/12-types-of-material-to-collect-in-a-content-audit.md",
     "blog",
-    "about.md",
     "2023-11-15.md",
     "labs/todo-svelte.md",
     "_templates/post-single.md",

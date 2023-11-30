@@ -1,15 +1,15 @@
 ---
-title: About Me  
-author: Steven Johnson  
-date: 11/9/2023  
-description: A bit about me, my history and plans for the future  
+title: About Me
+author: Steven A.J.
+date: 11/9/2023
+description: A bit about me, my history and plans for the future
 keywords:
-   - about
-   - history
-   - career
-   - steven a.j.
-   - steven-aj
-   - steven johnson
+  - about
+  - history
+  - career
+  - steven a.j.
+  - steven-aj
+  - steven johnson
 ---
 ## History
 

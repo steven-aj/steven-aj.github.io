@@ -1,7 +1,7 @@
 ---
 status: published
 date: 2023-09-15
-author: Steven Johnson
+author: Steven A.J.
 cover: /assets/covers/web-developer.jpeg
 title: "Websites vs Web Applications: What's the Difference?"
 excerpt: A quick summary of the differences between a website & web application.

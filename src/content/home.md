@@ -2,7 +2,7 @@
 title: Steven Johnson
 tagline: Full-Stack Developer
 cover: /assets/profile/headshot-crop.png
-author: Steven Johnson
+author: Steven A.J.
 email: devtheory@icloud.com
 github: https://github.com/steven-aj
 slack: https://stevenaj.slack.com/archives/C066L1KJ256

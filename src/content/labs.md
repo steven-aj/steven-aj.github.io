@@ -1,6 +1,6 @@
 ---
 title: Code Labs
-author: Steven Johnson
+author: Steven A.J.
 date: 11/10/2023
 description: Random stuff from my personal collection
 cover: 
