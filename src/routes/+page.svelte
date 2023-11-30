@@ -29,6 +29,7 @@
 </script>
 
 <svelte:head>
+   <title>{profile.tagline} | {meta.author}</title>
    <meta name="title" content={meta.title} />
    <meta name="author" content={meta.author} />
    <meta name="keywords" content={meta.keywords} />

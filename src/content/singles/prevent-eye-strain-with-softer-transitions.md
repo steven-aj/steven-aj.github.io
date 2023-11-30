@@ -1,7 +1,7 @@
 ---
 status: published
 date: 2023-11-23
-author: Steven Johnson
+author: Steven A.J.
 cover: /assets/covers/eye-light.jpeg
 title: "Preventing Eye-Strain: Softer Transitions Between Light & Dark Modes"
 excerpt: Toggling between light and dark modes of your website or application can make a world of difference for people with sensitive eyes or the night owls that live and work in the dark. There isn't a technical standard for how this should be accomplished and an instant transition can be pretty harsh. We can fix that with a few lines of CSS.

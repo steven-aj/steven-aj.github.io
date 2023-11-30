@@ -3,7 +3,7 @@ status: published
 date: 07/01/2023
 title: What to Collect in a Content Audit (Free PDF Included)
 excerpt: When starting a new project, don't make the mistake of skipping a content audit and always remember that being upfront about what you need pays off in the long run. Check out my free PDF checklist to help you collect all the essential materials and learn how organize your client's information to build a solid foundation for development.
-author: Steven Johnson
+author: Steven A.J.
 cover: /assets/covers/web-content.jpeg
 tags:
   - informative

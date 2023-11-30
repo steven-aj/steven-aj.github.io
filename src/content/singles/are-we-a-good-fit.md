@@ -1,7 +1,7 @@
 ---
 status: published
 date: 11/07/2023
-author: Steven Johnson
+author: Steven A.J.
 cover: /assets/covers/jigsaw-cube.jpeg
 title: Are We a Good Fit?
 excerpt: Learn a bit more about me before getting in touch

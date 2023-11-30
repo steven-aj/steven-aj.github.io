@@ -1,7 +1,7 @@
 ---
 status: preview
 date: 2023-11-15
-author: Steven Johnson
+author: Steven A.J.
 cover: /assets/covers/site-content.jpeg
 title: How to Build A Sitemap
 excerpt: 

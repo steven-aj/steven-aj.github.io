@@ -1,7 +1,7 @@
 ---
 status: published
 date: 2023-09-15
-author: Steven Johnson
+author: Steven A.J.
 cover: /assets/covers/abstract-tech-cube.jpeg
 title: "Dynamic and Static Websites: What's the Difference?"
 excerpt: How do dynamic & static websites differ from one another? What about web sites vs applications?
