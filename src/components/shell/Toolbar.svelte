@@ -71,7 +71,7 @@
                   </li>
                {/each}
             {/if}
-            <li class="float-right md:float-none">
+            <li aria-hidden="true" role="presentation" class="float-right md:float-none">
                <ThemeButton />
             </li>
          </ul>
