@@ -5,8 +5,6 @@
    import Shell from "$lib/shell";
    import Toolbar from "$components/shell/Toolbar.svelte";
 
-   export let data;
-
    const { menu, store } = Shell;
 
    function init() {
