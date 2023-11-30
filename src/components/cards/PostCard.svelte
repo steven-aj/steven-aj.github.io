@@ -3,22 +3,29 @@
 </script>
 
 <a title={post.title} class="card" href={post.path}>
-   <section
-      style={`${post.cover ? `background-image: url(${post.cover});` : ""}`}
-   >
-      <div class="backdrop">
-         <h1>{post.title}</h1>
-         <time>{post.date}</time>
-         <div class="tags">
-            <a href={`/blog/tags/${post.tags[0]}`} class="badge primary">
-               {post.tags[0]}
-            </a>
-            <span class="text-xs text-neutral-400">
-               +{post.tags.length - 1} more
-            </span>
+   <article class="custom">
+      <section
+         style={`${post.cover ? `background-image: url(${post.cover});` : ""}`}
+      >
+         <div class="backdrop">
+            <h1>{post.title}</h1>
+            <time role="presentation" aria-hidden="true">{post.date}</time>
+            <div class="tags" role="presentation" aria-hidden="true">
+               <a
+                  aria-hidden="true"
+                  title={`More posts tagged "${post.tags[0]}"`}
+                  href={`/blog/tags/${post.tags[0]}`}
+                  class="badge primary"
+               >
+                  {post.tags[0]}
+               </a>
+               <span aria-hidden="true" class="text-xs text-neutral-400">
+                  +{post.tags.length - 1} more
+               </span>
+            </div>
          </div>
-      </div>
-   </section>
+      </section>
+   </article>
 </a>
 
 <style lang="postcss">
@@ -75,8 +82,7 @@
 
       /* Effects */
       @apply hover:backdrop-brightness-0 focus:backdrop-brightness-0;
-      transition: opacity 1s, background-color 1s,
-         backdrop-filter 1s;
+      transition: opacity 1s, background-color 1s, backdrop-filter 1s;
    }
 
    section h1 {

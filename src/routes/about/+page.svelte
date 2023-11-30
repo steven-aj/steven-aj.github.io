@@ -27,7 +27,7 @@
    <meta name="description" content={meta.description} />
 </svelte:head>
 
-<h1 class="page-heading">About Me</h1>
+<h1 class="page-heading">{meta.title}</h1>
 
 <main class="container" in:fade>
    <section>

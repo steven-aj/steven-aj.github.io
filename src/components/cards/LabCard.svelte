@@ -21,7 +21,7 @@
       </section>
 
       <footer>
-         <time>{lab.language}</time>
+         <p aria-hidden="true">{lab.language}</p>
       </footer>
    </article>
 </a>

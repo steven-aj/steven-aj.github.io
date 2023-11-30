@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "singles/are-we-a-good-fit.md",
+                    "file": "blog.md",
                     "mode": "source",
                     "source": false
                   }
@@ -61,7 +61,7 @@
                       },
                       "serial": {
                         "columns": 122,
-                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"content update\"; git push origin develop\r\n[develop ccb2538] content update\r\n 2 files changed, 13 insertions(+), 12 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 990 bytes | 990.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   8b161aa..ccb2538  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % ",
+                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"content update\"; git push origin develop\r\n[develop ccb2538] content update\r\n 2 files changed, 13 insertions(+), 12 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 990 bytes | 990.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   8b161aa..ccb2538  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"published\"; git push origin develop\r\n[develop 6ad4e4b] published\r\n 2 files changed, 11 insertions(+), 14 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 837 bytes | 837.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   023e20b..6ad4e4b  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"content update\"; git push origin develop\r\n[develop 8895f54] content update\r\n 2 files changed, 5 insertions(+), 6 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 682 bytes | 682.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   df91c29..8895f54  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"fix typos\"; git push origin develop\r\n[develop bc4da92] fix typos\r\n 2 files changed, 3 insertions(+), 4 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 783 bytes | 783.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   8895f54..bc4da92  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % ",
                         "rows": 5
                       }
                     }
@@ -101,7 +101,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:rants",
+                "query": "[status:preview]",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "singles/are-we-a-good-fit.md",
+                "file": "blog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "singles/are-we-a-good-fit.md",
+                "file": "blog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "singles/are-we-a-good-fit.md"
+                "file": "blog.md"
               }
             }
           }
@@ -202,13 +202,15 @@
   },
   "active": "c23eed7521f96ea6",
   "lastOpenFiles": [
-    "singles/how-to-build-a-sitemap.md",
-    "singles/modern-app-development-in-wordpress.md",
+    "labs.md",
     "singles/prevent-eye-strain-with-softer-transitions.md",
-    "singles/static-and-dynamic-sites.md",
+    "labs/gh-smoothie.md",
+    "singles/how-to-build-a-sitemap.md",
     "singles/websites-vs-web-apps.md",
-    "singles/what-to-collect-in-a-content-audit.md",
     "singles/are-we-a-good-fit.md",
+    "singles/modern-app-development-in-wordpress.md",
+    "singles/static-and-dynamic-sites.md",
+    "singles/what-to-collect-in-a-content-audit.md",
     "singles/elevating-wordpress-plugin-development.md",
     "singles/12-types-of-material-to-collect-in-a-content-audit.md",
     "blog/are-we-a-good-fit.md",
@@ -219,11 +221,9 @@
     "about.md",
     "2023-11-15.md",
     "labs/todo-svelte.md",
-    "labs/gh-smoothie.md",
     "_templates/post-single.md",
     "singles/building-a-sitemap.md",
     "experience.md",
-    "labs.md",
     "labs/library-demo.md",
     "_templates/page.md",
     "singles/a-published-post.md",
