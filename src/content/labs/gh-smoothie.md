@@ -3,7 +3,7 @@ status: published
 featured: "true"
 title: GH Smoothie
 description: A markdown-powered blogging framework for GitHub Pages. Built with SvelteKit.
-language: Svelte
+language: SvelteKit
 repo: https://github.com/steven-aj/gh-smoothie
 demo: https://steven-aj.github.io/gh-smoothie/
 ---
