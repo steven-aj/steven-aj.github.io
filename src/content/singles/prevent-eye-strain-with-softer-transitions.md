@@ -11,19 +11,19 @@ tags:
   - satire
   - thoughts
 ---
-It seems like accessibility for software is in a weird, paradoxical place right now. On one hand, optional *Light* & *Dark* modes can help enhance the experience for people with optical sensitivities or weaknesses. On the other hand, there's no universal agreement on how it should be implemented. For a lot of projects, this results in a transition between modes that's harshly instant, leaving the user feeling like an unsuspecting victim in a particular *Raiders of the Lost Ark* scene.
+It seems like accessibility for software is in a weird, paradoxical place right now. On one hand, optional "Light" & "Dark" modes can help enhance the experience for people with optical sensitivities or weaknesses. On the other hand, there's no universal agreement on how it should be implemented. For a lot of projects, this results in a transition between modes that's harshly instant, leaving the user feeling like an unsuspecting victim in a particular *Raiders of the Lost Ark* scene.
 
-I don't know if this is a problem for everyone, to be honest. I'm writing this from my own experience as a user. As both a night-owl *and a developer*, I find myself staring at screens more often than I probably should and in the dark more often than I probably should be. I feel like I'm not alone, though, and that we could engineer simple, yet thoughtful improvements to take care of our eyes.
+I don't know if this is a problem for everyone, to be honest. I'm writing this from my own experience as a user. As both a night-owl and a developer, I find myself staring at screens more often than I probably should and in the dark more often than I probably should be. I feel like I'm not alone, though, and that we could engineer simple, yet thoughtful improvements to take care of our eyes.
 
 ## Why it Hurts
 
 **Beware. Obvious information inbound.**
 
-The iris is a muscle of the eye that contracts to restrict the amount of light transmitted to the eye's lens. The big takeaway here is that *the iris is a muscle*. Its contraction *is a reflex to the stimulus of light* and, while that reflex can be pretty quick, it's still exponentially slower than light itself. 
+The iris is a muscle of the eye that contracts to restrict the amount of light transmitted to the eye's lens. The big takeaway here is that *the iris is a muscle*. Its contraction is a reflex to the stimulus of light and, while that reflex can be pretty quick, it's still exponentially slower than light itself. 
 
-Since the brain needs time to process how much the iris should adjust to changes, and since the iris takes time to adjust, there's an extended period of time that the lens is exposed to potentially damaging amounts of light. This is especially true in dark environments where the iris is most relaxed, which is why the sudden shift from *Dark* mode to *Light* mode can be *literally painful* for some.
+Since the brain needs time to process how much the iris should adjust to changes, and since the iris takes time to adjust, there's an extended period of time that the lens is exposed to potentially damaging amounts of light. This is especially true in dark environments where the iris is most relaxed, which is why the sudden shift from "Dark" mode to "Light" mode can be literally painful for some.
 
-**The problem is time**. To a sensible person, this probably sounds too obvious to bother blogging about. *We instinctively know that the eyes must adjust to changes in light*. Unfortunately, however, there are demonstrably too many engineers that fail to take this into consideration when implementing optional theme modes.
+**The problem is time**. To a sensible person, this probably sounds too obvious to bother blogging about. We instinctively know that the eyes must adjust to changes in light. Unfortunately, however, there are demonstrably too many engineers that fail to take this into consideration when implementing optional theme modes.
 
 ## A Simple Solution
 

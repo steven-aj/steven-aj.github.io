@@ -20,13 +20,17 @@
 {#if $store.toolbar}
    <header class="container-fluid" use:elevator>
       <nav>
-         <ul class="hidden md:flex md:flex-row md:items-center md:justify-center">
+         <ul
+            role="presentation"
+            aria-hidden="true"
+            class="hidden md:flex md:flex-row md:items-center md:justify-center"
+         >
             <li>
                <a href="/">
                   <img
                      title="Go Home"
                      class="logo"
-                     alt="steven-aj"
+                     alt="Logo of Steven A.J."
                      src="/assets/logo.svg"
                      in:fly={{ x: -100 }}
                   />
@@ -36,7 +40,7 @@
                <strong>{$store.toolbar.title}</strong>
             </li>
          </ul>
-         <menu>
+         <ul>
             {#if menu.lead}
                {#each menu.lead as menuItem}
                   <li>
@@ -70,7 +74,7 @@
             <li class="float-right md:float-none">
                <ThemeButton />
             </li>
-         </menu>
+         </ul>
       </nav>
    </header>
 {/if}
@@ -102,7 +106,6 @@
 
       /* Padding */
       @apply py-0 px-4;
-
    }
 
    .logo {
@@ -111,7 +114,7 @@
 
    header nav menu {
       /* Sizing */
-      @apply w-full md:w-auto;; 
+      @apply w-full md:w-auto;
 
       /* Alignments */
       @apply justify-between items-center md:justify-end;

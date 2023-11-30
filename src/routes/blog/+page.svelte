@@ -14,10 +14,6 @@
    let { posts, tags, recent } = data;
    let ready = false;
 
-   function openTagCloud() {
-      drawer.open();
-   }
-
    function init() {
       Shell.showBackButton(false);
       Shell.setHero(false);
@@ -29,13 +25,17 @@
 
 <h1 class="page-heading">Blog</h1>
 
-<main class="container-fluid" in:fade>
+<div class="content">
    <aside>
       <section id="tags">
          <h2>Tag Cloud</h2>
          <div class="wrapper">
             {#each tags as tag}
-               <a class="primary badge" href={`/blog/tags/${tag}`}>{tag}</a>
+               <a
+                  title={`Posts tagged "${tag}"`}
+                  class="primary badge"
+                  href={`/blog/tags/${tag}`}>{tag}</a
+               >
             {/each}
          </div>
       </section>
@@ -46,29 +46,29 @@
             <ul class="list-none p-0">
                {#each recent as post}
                   <li>
-                     <a href={post.path}>{post.title}</a>
+                     <a title={`Blog Post: ${post.title}`} href={post.path}>{post.title}</a>
                   </li>
                {/each}
             </ul>
          </div>
       </section>
    </aside>
-   
-   {#if data}
-      {#if posts.length}
-         <section id="posts" class="container-fluid" transition:fade>
+
+   <main class="container-fluid" in:fade>
+      {#if data}
+         {#if posts.length}
             {#each posts as post}
                <PostCard {post} />
             {/each}
-         </section>
-      {:else}
-         <EmptyNotice />
+         {:else}
+            <EmptyNotice />
+         {/if}
       {/if}
-   {/if}
-</main>
+   </main>
+</div>
 
 <style lang="postcss">
-   main {
+   div.content {
       /* Container */
       @apply flex flex-col-reverse lg:grid lg:grid-cols-12;
 
@@ -76,7 +76,7 @@
       @apply gap-2;
    }
 
-   main aside {
+   aside {
       /* Container */
       @apply flex flex-col col-span-2 lg:block;
 
@@ -84,19 +84,19 @@
       @apply px-4;
    }
 
-   main aside button {
+   aside button {
       @apply lg:hidden;
    }
 
-   main aside h2 {
+   aside h2 {
       @apply text-lg opacity-50;
    }
 
-   main aside section#tags {
+   aside section#tags {
       @apply items-center;
    }
 
-   main aside section#tags .wrapper {
+   aside section#tags .wrapper {
       /* Container */
       @apply flex flex-wrap;
 
@@ -107,19 +107,19 @@
       @apply gap-2;
    }
 
-   main aside section#tags .badge {
+   aside section#tags .badge {
       @apply hover:no-underline;
    }
 
-   main aside section#recent {
+   aside section#recent {
       @apply flex flex-col;
    }
 
-   main aside section#recent .wrapper {
+   aside section#recent .wrapper {
       @apply contents space-y-4;
    }
 
-   section#posts {
+   main {
       /* Container */
       @apply flex flex-col md:grid md:grid-cols-2 md:col-span-10;
 
