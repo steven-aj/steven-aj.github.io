@@ -9,7 +9,6 @@
       >
          <div class="backdrop">
             <h1>{post.title}</h1>
-            <time role="presentation" aria-hidden="true">{post.date}</time>
             <div class="tags" role="presentation" aria-hidden="true">
                <a
                   aria-hidden="true"
@@ -19,10 +18,11 @@
                >
                   {post.tags[0]}
                </a>
-               <span aria-hidden="true" class="text-xs text-neutral-400">
+               <span title={post.tags.slice(1, post.tags.length)} aria-hidden="true" class="text-xs text-neutral-400">
                   +{post.tags.length - 1} more
                </span>
             </div>
+            <time title={`Published on ${post.date}`} role="presentation" aria-hidden="true">{post.date}</time>
          </div>
       </section>
    </article>
