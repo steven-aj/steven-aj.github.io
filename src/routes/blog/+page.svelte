@@ -24,11 +24,11 @@
 </script>
 
 <svelte:head>
-   <title>{meta.title} | {meta.author}</title>
    <meta name="title" content={meta.title} />
    <meta name="author" content={meta.author} />
    <meta name="keywords" content={meta.keywords} />
    <meta name="description" content={meta.description} />
+   <title>{meta.title} | {meta.author}</title>
 </svelte:head>
 
 <h1 class="page-heading">{meta.title}</h1>
