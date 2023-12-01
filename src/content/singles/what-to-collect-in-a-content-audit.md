@@ -15,8 +15,6 @@ For new projects, a content audit is essential for aligning expectations, buildi
 
 Make no mistake - this isn't just a list of items to collect. It's a strategic roadmap toward building any project. Systematic organization early on not only facilitates the breakdown into manageable parts, but can also demonstrate expertise and foresight. Never be afraid to be upfront about the things you need. In the long run, you'll be grateful that you did and your client will appreciate the results.
 
-> Never be afraid to be upfront about the things you need.  In the long run, you'll be grateful that you did and your client will appreciate the results.
-
 As promised, you can [download the checklist of material here](/downloads/documents/content-audit-checklist.pdf).
 ### Brand Guidelines and Style Guides
 
@@ -31,12 +29,8 @@ Blogs can provide valuable industry insights and thought leadership while helpin
 ### Social Media Profiles
 Existing profiles can help provide content strategy, tone of voice and brand consistency. Ask if they have profiles on Facebook, Twitter, Instagram, LinkedIn or any other social media you should know about. As a bonus, social profiles that already have some authority can help increase organic traffic to your client's project.
 
-> ... social profiles that already have some authority can help increase organic clicks to your client's project.
-
 ### Marketing Videos and Multimedia Content
 Videos and other multimedia can be embedded to engage visitors and provide a richer user experience. Ask for marketing videos, product demonstrations, webinars and any other multimedia content they can provide. Remember that heavy items like videos and podcasts can have a negative impact on a project's performance. Use a CDN or other cloud service to do the heavy lifting.
-
-> ... heavy items like videos and podcasts can have a negative impact on a project's performance. Use a CDN or other cloud service to do the heavy lifting.
 
 ### Case Studies and Success Stories
 Case studies & success stories can be repurposed to build credibility and demonstrate the client's expertise. Don't be afraid to request access to their achievements, customer testimonials or any examples of positive impacts their products or services have made on their customers.

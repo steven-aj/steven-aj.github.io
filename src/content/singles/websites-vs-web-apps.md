@@ -17,5 +17,5 @@ Websites primarily provide static or dynamic content for informational purposes.
 ## Web Applications
 Web applications, on the other hand, are more interactive and allow users to perform specific tasks. They often require user input, process data, and provide personalized results. Examples of web applications are online banking portals, social media networks, and productivity tools like Google Docs.
 
-## Conclusion
+## TLDR;
 Websites provide information, whereas web applications enable users to perform tasks and manipulate data. Understanding these distinctions can help users and developers make informed choices when collaborating and building and maintaining projects.

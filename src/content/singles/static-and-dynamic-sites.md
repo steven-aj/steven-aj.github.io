@@ -43,5 +43,5 @@ Dynamic websites, in contrast, use server-side technologies, such as PHP, Python
 
 **Performance**: Due to the server-side processing, dynamic websites may load slower compared to static sites, especially during high traffic.
 
-## Conclusion
-In summary, static websites are simple and remain the same until manually updated, while dynamic websites offer interactivity and personalized content by fetching data from databases. 
+## TLDR;
+Static websites are simple and remain the same until manually updated, while dynamic websites offer interactivity and personalized content by fetching data from databases. 
