@@ -29,11 +29,11 @@
 </script>
 
 <svelte:head>
-   <title>{profile.tagline} | {meta.author}</title>
    <meta name="title" content={meta.title} />
    <meta name="author" content={meta.author} />
    <meta name="keywords" content={meta.keywords} />
    <meta name="description" content={meta.description} />
+   <title>{profile.tagline} | {meta.author}</title>
 </svelte:head>
 
 <main in:fade>
