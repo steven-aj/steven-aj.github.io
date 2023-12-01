@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "site-meta.md",
+                    "file": "terms-of-use.md",
                     "mode": "source",
                     "source": false
                   }
@@ -101,7 +101,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "[status:preview]",
+                "query": "[author:Steven Johnson]",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "site-meta.md",
+                "file": "terms-of-use.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "site-meta.md",
+                "file": "terms-of-use.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "site-meta.md"
+                "file": "terms-of-use.md"
               }
             }
           }
@@ -202,6 +202,13 @@
   },
   "active": "c23eed7521f96ea6",
   "lastOpenFiles": [
+    "home.md",
+    "labs/gh-smoothie.md",
+    "site-meta.md",
+    "terms-of-use.md",
+    "labs/library-demo.md",
+    "labs/lost-in-space-day-four-loop.md",
+    "singles/jekyll-alternative.md",
     "singles/are-we-a-good-fit.md",
     "singles/how-to-build-a-sitemap.md",
     "singles/modern-app-development-in-wordpress.md",
@@ -212,12 +219,7 @@
     "labs/ww-etl.md",
     "labs/todo-svelte.md",
     "labs/tauri-sveltekit.md",
-    "labs/lost-in-space-day-four-loop.md",
-    "labs/library-demo.md",
-    "labs/gh-smoothie.md",
-    "home.md",
     "labs.md",
-    "site-meta.md",
     "about.md",
     "blog.md",
     "singles/elevating-wordpress-plugin-development.md",
@@ -227,8 +229,6 @@
     "blog",
     "2023-11-15.md",
     "_templates/post-single.md",
-    "singles/building-a-sitemap.md",
-    "experience.md",
     "singles",
     "singsles",
     "labs",

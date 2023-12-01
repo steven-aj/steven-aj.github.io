@@ -24,7 +24,10 @@
 
 <slot />
 
-<footer>
+<footer class="container-fluid">
+   <div>
+      <a title="Terms of Use" href="/terms-of-use">Terms of Use</a>
+   </div>
    <span>Copyright &copy 2023 Steven Johnson. All rights reserved.</span>
 </footer>
 
