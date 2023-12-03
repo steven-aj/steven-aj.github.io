@@ -10,11 +10,9 @@ keywords:
   - use
   - steven a.j.
 ---
-## **Terms and Conditions**
-
 Welcome to my personal site.
 
-These terms and conditions outline the rules and regulations for the use of Steven A.J.'s Website, located at https://steven-aj.github.io.
+These terms and conditions outline the rules and regulations for the use of Steven A.J.'s Website, located at https://steven-aj.github.io. They are subject to change at the discretion of Steven A.J. and without notice.
 
 By accessing this website I assume you accept these terms and conditions. Do not continue to use Steven A.J. if you do not agree to take all of the terms and conditions stated on this page.
 
@@ -23,7 +21,7 @@ The following terminology applies to these Terms and Conditions, Privacy Stateme
 ### **Cookies**
 I do not directly employ the use of cookies.
 
-Most interactive websites use cookies to let us retrieve the user's details for each visit. Cookies are not used by my website to enable the functionality of certain areas to make it easier for people visiting my website. Some of my affiliate/advertising partners and/or third-party services or libraries may use cookies.
+Most interactive websites use cookies to allow the retrieval of the user's details for each visit. Cookies are not directly used by my website to enable this or similar functionality. Some of my affiliate/advertising partners and/or third-party services or libraries may use cookies.
 
 ### **License**
 
