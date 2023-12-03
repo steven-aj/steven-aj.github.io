@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "site-meta.md",
+                    "file": "singles/prevent-eye-strain-with-softer-transitions.md",
                     "mode": "source",
                     "source": false
                   }
@@ -61,7 +61,7 @@
                       },
                       "serial": {
                         "columns": 122,
-                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"content update\"; git push origin develop\r\n[develop ccb2538] content update\r\n 2 files changed, 13 insertions(+), 12 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 990 bytes | 990.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   8b161aa..ccb2538  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"published\"; git push origin develop\r\n[develop 6ad4e4b] published\r\n 2 files changed, 11 insertions(+), 14 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 837 bytes | 837.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   023e20b..6ad4e4b  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"content update\"; git push origin develop\r\n[develop 8895f54] content update\r\n 2 files changed, 5 insertions(+), 6 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 682 bytes | 682.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   df91c29..8895f54  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"fix typos\"; git push origin develop\r\n[develop bc4da92] fix typos\r\n 2 files changed, 3 insertions(+), 4 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 783 bytes | 783.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   8895f54..bc4da92  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"update content\";                      \r\n[develop d1afb31] update content\r\n 2 files changed, 8 insertions(+), 12 deletions(-)\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"update content\";\r\n[develop 82a3af5] update content\r\n 2 files changed, 8 insertions(+), 8 deletions(-)\r\nsteven@Stevens-MacBook-Pro content % git push origin develop\r\nEnumerating objects: 24, done.\r\nCounting objects: 100% (24/24), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (16/16), done.\r\nWriting objects: 100% (16/16), 1.58 KiB | 1.58 MiB/s, done.\r\nTotal 16 (delta 14), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (14/14), completed with 8 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   659e776..82a3af5  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % ",
+                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"content update\"; git push origin develop\r\n[develop ccb2538] content update\r\n 2 files changed, 13 insertions(+), 12 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 990 bytes | 990.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   8b161aa..ccb2538  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"published\"; git push origin develop\r\n[develop 6ad4e4b] published\r\n 2 files changed, 11 insertions(+), 14 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 837 bytes | 837.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   023e20b..6ad4e4b  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"content update\"; git push origin develop\r\n[develop 8895f54] content update\r\n 2 files changed, 5 insertions(+), 6 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 682 bytes | 682.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   df91c29..8895f54  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"fix typos\"; git push origin develop\r\n[develop bc4da92] fix typos\r\n 2 files changed, 3 insertions(+), 4 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 783 bytes | 783.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   8895f54..bc4da92  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"update content\";                      \r\n[develop d1afb31] update content\r\n 2 files changed, 8 insertions(+), 12 deletions(-)\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"update content\";\r\n[develop 82a3af5] update content\r\n 2 files changed, 8 insertions(+), 8 deletions(-)\r\nsteven@Stevens-MacBook-Pro content % git push origin develop\r\nEnumerating objects: 24, done.\r\nCounting objects: 100% (24/24), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (16/16), done.\r\nWriting objects: 100% (16/16), 1.58 KiB | 1.58 MiB/s, done.\r\nTotal 16 (delta 14), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (14/14), completed with 8 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   659e776..82a3af5  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"delete article for revision\"; git push origin develop\r\n[develop 292fb42] delete article for revision\r\n 3 files changed, 7 insertions(+), 49 deletions(-)\r\n delete mode 100644 src/content/singles/are-we-a-good-fit.md\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 892 bytes | 892.00 KiB/s, done.\r\nTotal 8 (delta 7), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (7/7), completed with 7 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   9c65cd1..292fb42  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"delete draft\"; git push origin dev",
                         "rows": 5
                       }
                     }
@@ -101,7 +101,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "[status:preview]",
+                "query": "[author:Steven Johnson]",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -138,7 +138,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "site-meta.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +154,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "site-meta.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,9 +175,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "site-meta.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -200,24 +196,26 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "c23eed7521f96ea6",
+  "active": "5db0fd8366b53483",
   "lastOpenFiles": [
-    "singles/are-we-a-good-fit.md",
-    "singles/how-to-build-a-sitemap.md",
-    "singles/modern-app-development-in-wordpress.md",
     "singles/prevent-eye-strain-with-softer-transitions.md",
-    "singles/static-and-dynamic-sites.md",
-    "singles/websites-vs-web-apps.md",
+    "singles/jekyll-alternative.md",
     "singles/what-to-collect-in-a-content-audit.md",
+    "singles/websites-vs-web-apps.md",
+    "singles/static-and-dynamic-sites.md",
+    "singles/modern-app-development-in-wordpress.md",
+    "labs/gh-smoothie.md",
+    "terms-of-use.md",
+    "singles/are-we-a-good-fit.md",
+    "home.md",
+    "site-meta.md",
+    "labs/library-demo.md",
+    "labs/lost-in-space-day-four-loop.md",
+    "singles/how-to-build-a-sitemap.md",
     "labs/ww-etl.md",
     "labs/todo-svelte.md",
     "labs/tauri-sveltekit.md",
-    "labs/lost-in-space-day-four-loop.md",
-    "labs/library-demo.md",
-    "labs/gh-smoothie.md",
-    "home.md",
     "labs.md",
-    "site-meta.md",
     "about.md",
     "blog.md",
     "singles/elevating-wordpress-plugin-development.md",
@@ -227,8 +225,6 @@
     "blog",
     "2023-11-15.md",
     "_templates/post-single.md",
-    "singles/building-a-sitemap.md",
-    "experience.md",
     "singles",
     "singsles",
     "labs",
