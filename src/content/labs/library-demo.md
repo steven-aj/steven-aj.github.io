@@ -1,6 +1,6 @@
 ---
 status: published
-featured: "true"
+featured: "false"
 title: Library Demo
 description: A simple demo of basic CRUD operations in the browser
 language: Svelte
