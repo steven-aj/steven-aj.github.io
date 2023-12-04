@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "legal/privacy-policy.md",
+                "file": "labs/gh-smoothie.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "legal/privacy-policy.md",
+                "file": "labs/gh-smoothie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "legal/privacy-policy.md",
+                "file": "labs/gh-smoothie.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "legal/privacy-policy.md"
+                "file": "labs/gh-smoothie.md"
               }
             }
           }
@@ -170,8 +170,8 @@
   },
   "active": "51764f9395e47c13",
   "lastOpenFiles": [
-    "legal/terms-of-use.md",
     "legal/privacy-policy.md",
+    "legal/terms-of-use.md",
     "legal",
     "Untitled.md",
     "singles/prevent-eye-strain-with-softer-transitions.md",
