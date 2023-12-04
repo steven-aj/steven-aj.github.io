@@ -13,13 +13,34 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "singles/prevent-eye-strain-with-softer-transitions.md",
+                "file": "legal/terms-of-use.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "53b7c05a000a5245",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "51764f9395e47c13",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "legal/privacy-policy.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "singles/prevent-eye-strain-with-softer-transitions.md",
+                "file": "legal/privacy-policy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "singles/prevent-eye-strain-with-softer-transitions.md",
+                "file": "legal/privacy-policy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "singles/prevent-eye-strain-with-softer-transitions.md"
+                "file": "legal/privacy-policy.md"
               }
             }
           }
@@ -147,16 +168,19 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "6ad8f7001534f5c4",
+  "active": "51764f9395e47c13",
   "lastOpenFiles": [
+    "legal/terms-of-use.md",
+    "legal/privacy-policy.md",
+    "legal",
+    "Untitled.md",
+    "singles/prevent-eye-strain-with-softer-transitions.md",
     "singles/what-to-collect-in-a-content-audit.md",
     "singles/websites-vs-web-apps.md",
     "singles/static-and-dynamic-sites.md",
-    "singles/prevent-eye-strain-with-softer-transitions.md",
     "singles/modern-app-development-in-wordpress.md",
     "singles/how-to-build-a-sitemap.md",
     "_templates/post-single.md",
-    "terms-of-use.md",
     "site-meta.md",
     "labs.md",
     "home.md",
@@ -172,10 +196,7 @@
     "labs/tauri-sveltekit.md",
     "singles/elevating-wordpress-plugin-development.md",
     "singles/12-types-of-material-to-collect-in-a-content-audit.md",
-    "blog/are-we-a-good-fit.md",
-    "blog/12-types-of-material-to-collect-in-a-content-audit.md",
     "blog",
-    "2023-11-15.md",
     "singles",
     "singsles",
     "labs",
