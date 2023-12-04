@@ -24,7 +24,7 @@ export default class Page implements IPage {
       const pagePath = path.split('/').reverse()[0].slice(null, -3);
 
       return new Page({
-         path: pagePath,
+         path: path.includes('/legal/') ? `/legal/${pagePath}` : pagePath,
          meta: page.metadata,
          content: page.default
       });
