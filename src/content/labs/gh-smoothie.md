@@ -7,9 +7,10 @@ language: SvelteKit
 repo: https://github.com/steven-aj/gh-smoothie
 demo: https://steven-aj.github.io/gh-smoothie/
 ---
-GH Smoothie is a blogging framework built as an alternative to Jekyll. Metadata for pages and posts is defined within the markdown's front matter. The repo features a workflow configuration for GitHub Pages to simplify deployment. Push your changes into `main` and GitHub will do the rest.
+GH Smoothie is a blogging framework built as an alternative to Jekyll. Feel free to fork it to your own collection & hack away.
 
-Feel free to fork it to your own collection & hack away.
+- Metadata for content is defined within the markdown's front matter. 
+- The repo features a workflow configuration for GitHub Pages to simplify deployment. Push your changes into `main` and GitHub will do the rest.
 ## Built With Obsidian in Mind
 
 [Obsidian](https://obsidian.md) is a free, open-source markdown editor with useful features to help manage your blog. GH Smoothie comes pre-installed with an <a target="_blank" href="https://help.obsidian.md/Files+and+folders/How+Obsidian+stores+data">Obsidian Vault</a> and three different front matter templates to help you get started.
