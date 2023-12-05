@@ -9,7 +9,7 @@ export default class LabsController {
          this.markdownEntries.map(LabItem.createFromPromise)
       ).then(filterPublished);
 
-      return labs;
+      return labs.sort(lab => lab.featured ? -1 : 1);
    }
 
    public async get(path) {
