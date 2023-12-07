@@ -59,7 +59,7 @@
                       },
                       "serial": {
                         "columns": 122,
-                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"published content\"; git push origin de",
+                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"published content\"; git push origin develop\r\n[develop 786238e] published content\r\n 2 files changed, 151 insertions(+), 17 deletions(-)\r\n create mode 100644 src/content/singles/pico-css-a-featherweight-css-library.md\r\nEnumerating objects: 14, done.\r\nCounting objects: 100% (14/14), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 4.15 KiB | 4.15 MiB/s, done.\r\nTotal 8 (delta 6), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (6/6), completed with 6 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   e444e26..786238e  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % ",
                         "rows": 18
                       }
                     }
