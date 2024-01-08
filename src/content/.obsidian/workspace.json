@@ -10,6 +10,7 @@
           {
             "id": "1ff3fd554666b8a7",
             "type": "tabs",
+            "dimension": 75.22222222222223,
             "children": [
               {
                 "id": "f15555bf45ba03a2",
@@ -17,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "singles/pico-css-a-featherweight-css-library.md",
+                    "file": "singles/I'm Switching Gears for 2024.md",
                     "mode": "source",
                     "source": false
                   }
@@ -28,6 +29,7 @@
           {
             "id": "4a251d11bd1fa21f",
             "type": "tabs",
+            "dimension": 24.77777777777778,
             "children": [
               {
                 "id": "b43d63863fb12cab",
@@ -58,9 +60,9 @@
                         "useWin32Conhost": true
                       },
                       "serial": {
-                        "columns": 122,
-                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"published content\"; git push origin develop\r\n[develop 786238e] published content\r\n 2 files changed, 151 insertions(+), 17 deletions(-)\r\n create mode 100644 src/content/singles/pico-css-a-featherweight-css-library.md\r\nEnumerating objects: 14, done.\r\nCounting objects: 100% (14/14), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 4.15 KiB | 4.15 MiB/s, done.\r\nTotal 8 (delta 6), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (6/6), completed with 6 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   e444e26..786238e  develop -> develop\r\nsteven@Stevens-MacBook-Pro content % ",
-                        "rows": 18
+                        "columns": 76,
+                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"New draft: Sw\r\nitching Gears for 2024\"; git push origin develop",
+                        "rows": 5
                       }
                     }
                   },
@@ -196,6 +198,8 @@
   },
   "active": "b43d63863fb12cab",
   "lastOpenFiles": [
+    "singles/I'm Switching Gears for 2024.md",
+    "_templates/post-single.md",
     "singles/pico-css-a-featherweight-css-library.md",
     "singles/modern-app-development-in-wordpress.md",
     "singles/how-to-build-a-sitemap.md",
@@ -211,19 +215,17 @@
     "legal/terms-of-use.md",
     "legal",
     "Untitled.md",
-    "_templates/post-single.md",
     "site-meta.md",
     "labs.md",
     "home.md",
-    "blog.md",
+    "journal.md",
     "singles/jekyll-alternative.md",
     "singles/are-we-a-good-fit.md",
     "labs/lost-in-space-day-four-loop.md",
     "labs/ww-etl.md",
     "labs/tauri-sveltekit.md",
     "singles/elevating-wordpress-plugin-development.md",
-    "singles/12-types-of-material-to-collect-in-a-content-audit.md",
-    "blog",
+    "journal",
     "singles",
     "singsles",
     "labs",

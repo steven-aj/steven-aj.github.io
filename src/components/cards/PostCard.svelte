@@ -13,7 +13,7 @@
                <a
                   aria-hidden="true"
                   title={`More posts tagged "${post.tags[0]}"`}
-                  href={`/blog/tags/${post.tags[0]}`}
+                  href={`/journal/tags/${post.tags[0]}`}
                   class="badge primary"
                >
                   {post.tags[0]}

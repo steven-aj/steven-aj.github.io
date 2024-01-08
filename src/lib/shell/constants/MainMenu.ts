@@ -23,8 +23,8 @@ const MainMenu: IMainMenu = {
 
    trail: [
       {
-         anchor: '/blog',
-         label: "Blog",
+         anchor: '/journal',
+         label: "Journal",
          icon: faBlog
       }
    ].toMenuItems()
