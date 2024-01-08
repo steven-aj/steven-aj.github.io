@@ -1,7 +1,7 @@
 import { Pages, Posts } from "$lib/api";
 
 export async function load() {
-   const page = await Pages.get('blog');
+   const page = await Pages.get('journal');
 
    return {
       meta: page.meta,

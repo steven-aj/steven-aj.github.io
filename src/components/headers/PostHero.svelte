@@ -9,7 +9,7 @@
          <ul>
             {#each meta.tags as tag}
                <li class="list-none">
-                  <a class="primary badge" href={`/blog/tags/${tag}`}>{tag}</a>
+                  <a class="primary badge" href={`/journal/tags/${tag}`}>{tag}</a>
                </li>
             {/each}
          </ul>

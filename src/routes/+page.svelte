@@ -67,13 +67,13 @@
 
    {#if posts.length}
       <section id="posts" class="posts container-fluid">
-         <h2 class="text-center md:text-start">Recent Posts</h2>
+         <h2 class="text-center md:text-start">Recent Entries</h2>
          <div class="grid">
             {#each posts as post}
                <PostCard {post} />
             {/each}
          </div>
-         <!-- <a title="All Posts" href="/blog" role="button">All Posts</a> -->
+         <!-- <a title="All Posts" href="/journal" role="button">All Posts</a> -->
       </section>
    {/if}
 </main>
