@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "singles/I'm Switching Gears for 2024.md",
+                    "file": "singles/switching-gears-for-2024.md",
                     "mode": "source",
                     "source": false
                   }
@@ -60,9 +60,9 @@
                         "useWin32Conhost": true
                       },
                       "serial": {
-                        "columns": 76,
-                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"New draft: Sw\r\nitching Gears for 2024\"; git push origin develop",
-                        "rows": 5
+                        "columns": 122,
+                        "data": "steven@Stevens-MacBook-Pro content % git pull origin develop\r\nremote: Enumerating objects: 62, done.\r\nremote: Counting objects: 100% (62/62), done.\r\nremote: Compressing objects: 100% (21/21), done.\r\nremote: Total 38 (delta 17), reused 34 (delta 16), pack-reused 0\r\nUnpacking objects: 100% (38/38), 5.20 KiB | 148.00 KiB/s, done.\r\nFrom https://github.com/steven-aj/steven-aj.github.io\r\n * branch            develop    -> FETCH_HEAD\r\n   a99a006..32181e4  develop    -> origin/develop\r\nUpdating a99a006..32181e4\r\nerror: Your local changes to the following files would be overwritten by merge:\r\n\u001b[8Csrc/content/.obsidian/workspace.json\r\nPlease commit your changes or stash them before you merge.\r\nAborting\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"drafting\"; git push origin develop\r\n[develop bfd696d] drafting\r\n 1 file changed, 3 insertions(+), 3 deletions(-)\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n \u001b[31m! [rejected]       \u001b[0m develop -> develop (non-fast-forward)\r\n\u001b[31merror: failed to push some refs to 'https://github.com/steven-aj/steven-aj.github.io.git'\r\n\u001b[33mhint: Updates were rejected because the tip of your current branch is behind\r\nhint: its remote counterpart. Integrate the remote changes (e.g.\r\nhint: 'git pull ...') before pushing again.\r\nhint: See the 'Note about fast-forwards' in 'git push --help' for details.\r\n\u001b[0msteven@Stevens-MacBook-Pro content % git checkout -b content\r\nSwitched to a new branch 'content'\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"drafting\"; git push origin content\r\n[content 2d19835] drafting\r\n 1 file changed, 1 insertion(+), 1 deletion(-)\r\nEnumerating objects: 17, done.\r\nCounting objects: 100% (17/17), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (12/12), done.\r\nWriting objects: 100% (12/12), 1.73 KiB | 1.73 MiB/s, done.\r\nTotal 12 (delta 10), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (10/10), completed with 5 local objects.\r\nremote: \r\nremote: Create a pull request for 'content' on GitHub by visiting:\r\nremote:      https://github.com/steven-aj/steven-aj.github.io/pull/new/content\r\nremote: \r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n * [new branch]      content -> content\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"continue draft\"; git push origin content\r\n[content d2497c7] continue draft\r\n 2 files changed, 19 insertions(+), 3 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 2.40 KiB | 2.40 MiB/s, done.\r\nTotal 8 (delta 6), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (6/6), completed with 6 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   2d19835..d2497c7  content -> content\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"drafting\"; git push origin content",
+                        "rows": 6
                       }
                     }
                   },
@@ -198,7 +198,7 @@
   },
   "active": "b43d63863fb12cab",
   "lastOpenFiles": [
-    "singles/I'm Switching Gears for 2024.md",
+    "singles/switching-gears-for-2024.md",
     "_templates/post-single.md",
     "singles/pico-css-a-featherweight-css-library.md",
     "singles/modern-app-development-in-wordpress.md",
