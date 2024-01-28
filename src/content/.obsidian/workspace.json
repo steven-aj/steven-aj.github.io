@@ -60,9 +60,9 @@
                         "useWin32Conhost": true
                       },
                       "serial": {
-                        "columns": 76,
-                        "data": "steven@Stevens-MacBook-Pro content % git add .; git commit -m \"New draft: Sw\r\nitching Gears for 2024\"; git push origin develop",
-                        "rows": 5
+                        "columns": 122,
+                        "data": "steven@Stevens-MacBook-Pro content % git pull origin develop\r\nremote: Enumerating objects: 62, done.\r\nremote: Counting objects: 100% (62/62), done.\r\nremote: Compressing objects: 100% (21/21), done.\r\nremote: Total 38 (delta 17), reused 34 (delta 16), pack-reused 0\r\nUnpacking objects: 100% (38/38), 5.20 KiB | 148.00 KiB/s, done.\r\nFrom https://github.com/steven-aj/steven-aj.github.io\r\n * branch            develop    -> FETCH_HEAD\r\n   a99a006..32181e4  develop    -> origin/develop\r\nUpdating a99a006..32181e4\r\nerror: Your local changes to the following files would be overwritten by merge:\r\n\u001b[8Csrc/content/.obsidian/workspace.json\r\nPlease commit your changes or stash them before you merge.\r\nAborting\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"drafting\"; git push origin d",
+                        "rows": 6
                       }
                     }
                   },
