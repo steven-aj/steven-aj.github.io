@@ -2,23 +2,13 @@
    import { onMount } from "svelte";
    import { fade } from "svelte/transition";
    import Shell from "$lib/shell";
+   import HomeHero from "$components/headers/HomeHero.svelte";
    import LabCard from "$components/cards/LabCard.svelte";
    import ProfileCard from "$components/cards/ProfileCard.svelte";
    import PostCard from "$components/cards/PostCard.svelte";
 
    export let data;
-   let { meta, profile, quotes, content, posts, labs } = data;
-
-   // function randomQuote(quoteSection) {
-   //    const list = quoteSection.getElementsByTagName("blockquote");
-
-   //    setInterval(() => {
-   //       const random = Math.floor(Math.random() * list.length);
-   //       quoteSection
-   //          .querySelector(`blockquote[data-index="${random}"]`)
-   //          .classList.toggle("!invisible", "!hidden");
-   //    }, 3000);
-   // }
+   let { meta, hero, content, profile, posts, labs } = data;
 
    function init() {
       Shell.setHero(false);
@@ -37,20 +27,23 @@
 </svelte:head>
 
 <main in:fade>
-   <section class="container">
-      <ProfileCard {profile} />
+   <section id="hero">
+      <HomeHero {hero} />
    </section>
+
+   {#if posts.length}
+      <section id="posts" class="posts container-fluid">
+         <h2 class="text-center md:text-start">Recent Journal Entries</h2>
+         <div class="grid">
+            {#each posts as post}
+               <PostCard {post} />
+            {/each}
+         </div>
+      </section>
+   {/if}
 
    <section class="container text-center my-14">
       <svelte:component this={content} />
-   </section>
-
-   <section class="quotes">
-      {#each quotes as quote, i}
-         <blockquote data-index={i} class="!hidden !invisible">
-            {quote}
-         </blockquote>
-      {/each}
    </section>
 
    {#if labs.length}
@@ -65,17 +58,9 @@
       </section>
    {/if}
 
-   {#if posts.length}
-      <section id="posts" class="posts container-fluid">
-         <h2 class="text-center md:text-start">Recent Entries</h2>
-         <div class="grid">
-            {#each posts as post}
-               <PostCard {post} />
-            {/each}
-         </div>
-         <!-- <a title="All Posts" href="/journal" role="button">All Posts</a> -->
-      </section>
-   {/if}
+   <section class="container">
+      <ProfileCard {profile} />
+   </section>
 </main>
 
 <style lang="postcss">
