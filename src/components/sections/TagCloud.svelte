@@ -11,7 +11,7 @@
    {#if tags.length}
       <div class="tags">
          {#each tags as tag}
-            <a class="chip" href={`/blog/tags/${tag}`} on:click={() => dispatch('select')}>{tag}</a>
+            <a class="chip" href={`/journal/tags/${tag}`} on:click={() => dispatch('select')}>{tag}</a>
          {/each}
       </div>
    {/if}

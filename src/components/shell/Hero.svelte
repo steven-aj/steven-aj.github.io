@@ -27,7 +27,7 @@
                   <a
                      class="chip variant-filled-secondary"
                      title={tag}
-                     href={`/blog/tags/${tag}`}>{tag}</a
+                     href={`/journal/tags/${tag}`}>{tag}</a
                   >
                {/each}
             </div>

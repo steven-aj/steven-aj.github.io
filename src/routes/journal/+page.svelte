@@ -42,19 +42,19 @@
                <a
                   title={`Posts tagged "${tag}"`}
                   class="primary badge"
-                  href={`/blog/tags/${tag}`}>{tag}</a
+                  href={`/journal/tags/${tag}`}>{tag}</a
                >
             {/each}
          </div>
       </section>
 
       <section id="recent">
-         <h2>Recent Posts</h2>
+         <h2>Recent Entries</h2>
          <div class="wrapper">
             <ul class="list-none p-0">
                {#each recent as post}
                   <li>
-                     <a title={`Blog Post: ${post.title}`} href={post.path}>{post.title}</a>
+                     <a title={`Journal Entry: ${post.title}`} href={post.path}>{post.title}</a>
                   </li>
                {/each}
             </ul>
