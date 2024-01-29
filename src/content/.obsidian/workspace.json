@@ -4,75 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "8a1f1b200cb791f1",
-        "type": "split",
+        "id": "1ff3fd554666b8a7",
+        "type": "tabs",
         "children": [
           {
-            "id": "1ff3fd554666b8a7",
-            "type": "tabs",
-            "dimension": 75.22222222222223,
-            "children": [
-              {
-                "id": "f15555bf45ba03a2",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "singles/switching-gears-for-2024.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
+            "id": "f15555bf45ba03a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "singles/switching-gears-for-2024.md",
+                "mode": "source",
+                "source": false
               }
-            ]
-          },
-          {
-            "id": "4a251d11bd1fa21f",
-            "type": "tabs",
-            "dimension": 24.77777777777778,
-            "children": [
-              {
-                "id": "b43d63863fb12cab",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "terminal:terminal",
-                  "state": {
-                    "terminal:terminal": {
-                      "cwd": "/Users/steven/Projects/steven-aj.github.io/src/content",
-                      "focus": false,
-                      "profile": {
-                        "args": [],
-                        "executable": "/bin/zsh",
-                        "name": "",
-                        "platforms": {
-                          "darwin": true
-                        },
-                        "pythonExecutable": "python3",
-                        "restoreHistory": true,
-                        "successExitCodes": [
-                          "0",
-                          "SIGINT",
-                          "SIGTERM"
-                        ],
-                        "terminalOptions": {},
-                        "type": "integrated",
-                        "useWin32Conhost": true
-                      },
-                      "serial": {
-                        "columns": 122,
-                        "data": "steven@Stevens-MacBook-Pro content % git pull origin develop\r\nremote: Enumerating objects: 62, done.\r\nremote: Counting objects: 100% (62/62), done.\r\nremote: Compressing objects: 100% (21/21), done.\r\nremote: Total 38 (delta 17), reused 34 (delta 16), pack-reused 0\r\nUnpacking objects: 100% (38/38), 5.20 KiB | 148.00 KiB/s, done.\r\nFrom https://github.com/steven-aj/steven-aj.github.io\r\n * branch            develop    -> FETCH_HEAD\r\n   a99a006..32181e4  develop    -> origin/develop\r\nUpdating a99a006..32181e4\r\nerror: Your local changes to the following files would be overwritten by merge:\r\n\u001b[8Csrc/content/.obsidian/workspace.json\r\nPlease commit your changes or stash them before you merge.\r\nAborting\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"drafting\"; git push origin develop\r\n[develop bfd696d] drafting\r\n 1 file changed, 3 insertions(+), 3 deletions(-)\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n \u001b[31m! [rejected]       \u001b[0m develop -> develop (non-fast-forward)\r\n\u001b[31merror: failed to push some refs to 'https://github.com/steven-aj/steven-aj.github.io.git'\r\n\u001b[33mhint: Updates were rejected because the tip of your current branch is behind\r\nhint: its remote counterpart. Integrate the remote changes (e.g.\r\nhint: 'git pull ...') before pushing again.\r\nhint: See the 'Note about fast-forwards' in 'git push --help' for details.\r\n\u001b[0msteven@Stevens-MacBook-Pro content % git checkout -b content\r\nSwitched to a new branch 'content'\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"drafting\"; git push origin content\r\n[content 2d19835] drafting\r\n 1 file changed, 1 insertion(+), 1 deletion(-)\r\nEnumerating objects: 17, done.\r\nCounting objects: 100% (17/17), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (12/12), done.\r\nWriting objects: 100% (12/12), 1.73 KiB | 1.73 MiB/s, done.\r\nTotal 12 (delta 10), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (10/10), completed with 5 local objects.\r\nremote: \r\nremote: Create a pull request for 'content' on GitHub by visiting:\r\nremote:      https://github.com/steven-aj/steven-aj.github.io/pull/new/content\r\nremote: \r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n * [new branch]      content -> content\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"continue draft\"; git push origin content\r\n[content d2497c7] continue draft\r\n 2 files changed, 19 insertions(+), 3 deletions(-)\r\nEnumerating objects: 15, done.\r\nCounting objects: 100% (15/15), done.\r\nDelta compression using up to 8 threads\r\nCompressing objects: 100% (8/8), done.\r\nWriting objects: 100% (8/8), 2.40 KiB | 2.40 MiB/s, done.\r\nTotal 8 (delta 6), reused 0 (delta 0), pack-reused 0\r\nremote: Resolving deltas: 100% (6/6), completed with 6 local objects.\r\nTo https://github.com/steven-aj/steven-aj.github.io.git\r\n   2d19835..d2497c7  content -> content\r\nsteven@Stevens-MacBook-Pro content % git add .; git commit -m \"drafting\"; git push origin content",
-                        "rows": 6
-                      }
-                    }
-                  },
-                  "pinned": true
-                }
-              }
-            ]
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -138,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "singles/switching-gears-for-2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "singles/switching-gears-for-2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "singles/switching-gears-for-2024.md"
+              }
             }
           }
         ]
@@ -196,9 +147,10 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "b43d63863fb12cab",
+  "active": "f15555bf45ba03a2",
   "lastOpenFiles": [
     "singles/switching-gears-for-2024.md",
+    "blog.md",
     "_templates/post-single.md",
     "singles/pico-css-a-featherweight-css-library.md",
     "singles/modern-app-development-in-wordpress.md",
@@ -218,14 +170,13 @@
     "site-meta.md",
     "labs.md",
     "home.md",
-    "blog.md",
+    "journal.md",
     "singles/jekyll-alternative.md",
     "singles/are-we-a-good-fit.md",
     "labs/lost-in-space-day-four-loop.md",
     "labs/ww-etl.md",
     "labs/tauri-sveltekit.md",
-    "singles/elevating-wordpress-plugin-development.md",
-    "blog",
+    "journal",
     "singles",
     "singsles",
     "labs",
