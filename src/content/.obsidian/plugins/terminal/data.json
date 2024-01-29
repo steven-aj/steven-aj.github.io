@@ -8,9 +8,9 @@
   "hideStatusBar": "focused",
   "language": "",
   "newInstanceBehavior": "newHorizontalSplit",
-  "noticeTimeout": 5,
-  "openChangelogOnUpdate": true,
-  "pinNewInstance": true,
+  "noticeTimeout": -1,
+  "openChangelogOnUpdate": false,
+  "pinNewInstance": false,
   "preferredRenderer": "webgl",
   "profiles": {
     "darwinExternalDefault": {
@@ -49,55 +49,10 @@
       "type": "integrated",
       "useWin32Conhost": true
     },
-    "developerConsole": {
-      "name": "",
-      "restoreHistory": true,
-      "successExitCodes": [
-        "0",
-        "SIGINT",
-        "SIGTERM"
-      ],
-      "terminalOptions": {},
-      "type": "developerConsole"
-    },
-    "linuxExternalDefault": {
+    "7e052487-df4f-483e-a377-3df730ec35cb": {
       "args": [],
-      "executable": "xterm",
-      "name": "",
-      "platforms": {
-        "linux": true
-      },
-      "restoreHistory": true,
-      "successExitCodes": [
-        "0",
-        "SIGINT",
-        "SIGTERM"
-      ],
-      "terminalOptions": {},
-      "type": "external"
-    },
-    "linuxIntegratedDefault": {
-      "args": [],
-      "executable": "/bin/sh",
-      "name": "",
-      "platforms": {
-        "linux": true
-      },
-      "pythonExecutable": "python3",
-      "restoreHistory": true,
-      "successExitCodes": [
-        "0",
-        "SIGINT",
-        "SIGTERM"
-      ],
-      "terminalOptions": {},
-      "type": "integrated",
-      "useWin32Conhost": true
-    },
-    "win32ExternalDefault": {
-      "args": [],
-      "executable": "C:\\Windows\\System32\\cmd.exe",
-      "name": "",
+      "executable": "powershell",
+      "name": "Powershell",
       "platforms": {
         "win32": true
       },
@@ -109,24 +64,6 @@
       ],
       "terminalOptions": {},
       "type": "external"
-    },
-    "win32IntegratedDefault": {
-      "args": [],
-      "executable": "C:\\Windows\\System32\\cmd.exe",
-      "name": "",
-      "platforms": {
-        "win32": true
-      },
-      "pythonExecutable": "python3",
-      "restoreHistory": true,
-      "successExitCodes": [
-        "0",
-        "SIGINT",
-        "SIGTERM"
-      ],
-      "terminalOptions": {},
-      "type": "integrated",
-      "useWin32Conhost": true
     }
   }
 }
