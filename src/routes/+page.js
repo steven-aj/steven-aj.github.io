@@ -6,8 +6,6 @@ export async function load() {
 	const posts = await Posts.getRecent(9);
 	const hero = await Posts.getRecent(1);
 
-	console.log(hero);
-
 	return {
 		meta,
 		hero: hero[0],
