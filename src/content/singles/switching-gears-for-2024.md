@@ -1,9 +1,9 @@
 ---
-status: draft
+status: published
 date: 2024-01-01
 author: Steven A.J.
 cover: 
-title: I'm Switching Gears for 2024
+title: I'm Switching (Hobby) Gears for 2024
 excerpt: As both a passionate gamer and developer, it only makes sense that I bring the two together. While I have no intentions of leaving web development, I'm finally making an official hobby of game dev.
 tags:
   - development
@@ -18,7 +18,7 @@ Unfortunately, I've spent very little professional time in the .NET ecosystem. A
 
 My first game was a Flappy Bird clone using a free asset pack from Itch.io, courtesy of <a target="_blank" href="https://megacrash.itch.io">MegaCrash</a>. I'll never publish it, of course, but for my first game in a *real game engine* (Godot), it was ton of fun to make.
 
-[Embed YouTube Clip Here]
+<iframe style="margin: 0 auto;" width="560" height="315" src="https://www.youtube.com/embed/SbweMRM0nWw?si=VPfLTg20QMSRQUIf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Okay, technically it's my *second* game, but the first was... well, a Flappy Bird clone made in Unity. After learning more about Unity's fiasco last year (I'm usually late to the party), I opted out of Unity & into Godot for personal projects. Since they both support C#, I figured it would be a good opportunity to go spelunking down that rabbit hole. 
 
@@ -27,7 +27,7 @@ Okay, technically it's my *second* game, but the first was... well, a Flappy Bir
 The overall mechanics are pretty simple, broken into three primary objects with some base prefabs to support them - a Player, Pipes & PipeFactory. The environment is a single Background object with a few controls.
 
 ### Player
-The 'Player' prefab extends Godot's CharacterBody2D to tap into the engine's physics runtime loop. This allowed me to control the body's mass and gravity scale, alleviating the need to scal the player's rate of fall. An upward velocity of a constant value, 'FlapStrength', is temporarily applied to the body when the player presses spacebar or left-clicks inside the game window.
+The 'Player' prefab extends Godot's CharacterBody2D to tap into the engine's physics runtime loop. This allowed me to control the body's mass and gravity scale, alleviating the need to scale the player's rate of fall. An upward velocity of a constant value, 'FlapStrength', is temporarily applied to the body when the player presses spacebar or left-clicks inside the game window.
 
 ### Pipes
 For the pipes, I built individual 'UpperPipe' & 'LowerPipe' objects. Each prefab has a CollisionBody2D component to trigger an event when the Player comes into contact. Ultimately, both objects are unified into a separate prefab of 'Pipes'. This was done to: a) easily align them with each other, b) ensure they spawn at the same time with minimal effort and, potentially, c) programmatically control the vertical gap between the two (*if I wanted to take it that far, that is... scope creep is real*). The only function of the 'Pipes' prefab is to translate its location across the x-axis, giving the player the illusion that they're always moving forward.
