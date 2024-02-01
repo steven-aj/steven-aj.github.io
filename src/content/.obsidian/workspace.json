@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1ff3fd554666b8a7",
+        "id": "2a264130453dcab5",
         "type": "tabs",
         "children": [
           {
-            "id": "f15555bf45ba03a2",
+            "id": "008c6eab22dbefd6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "singles/switching-gears-for-2024.md",
+                "file": "portfolio/sgvb-law.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "singles/switching-gears-for-2024.md",
+                "file": "portfolio/sgvb-law.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "singles/switching-gears-for-2024.md",
+                "file": "portfolio/sgvb-law.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "singles/switching-gears-for-2024.md"
+                "file": "portfolio/sgvb-law.md"
               }
             }
           }
@@ -147,15 +147,27 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "f15555bf45ba03a2",
+  "active": "008c6eab22dbefd6",
   "lastOpenFiles": [
-    "journal.md",
+    "portfolio/trainwreck.md",
+    "portfolio/simple-gift-series.md",
+    "portfolio/sgvb-law.md",
+    "portfolio/pikes-peak-united-way.md",
+    "portfolio/pbcatering.md",
+    "portfolio/institute-of-cannabis-research.md",
+    "portfolio/huerfano-county.md",
+    "portfolio/carolos-bistro.md",
+    "singles/how-to-build-a-sitemap.md",
+    "_templates/project.md",
+    "_templates/site.md",
+    "portfolio/Untitled",
     "singles/switching-gears-for-2024.md",
+    "portfolio",
+    "journal.md",
     "blog.md",
     "_templates/post-single.md",
     "singles/pico-css-a-featherweight-css-library.md",
     "singles/modern-app-development-in-wordpress.md",
-    "singles/how-to-build-a-sitemap.md",
     "singles/what-to-collect-in-a-content-audit.md",
     "singles/websites-vs-web-apps.md",
     "singles/static-and-dynamic-sites.md",
@@ -165,17 +177,7 @@
     "labs/library-demo.md",
     "labs/gh-smoothie.md",
     "legal/privacy-policy.md",
-    "legal/terms-of-use.md",
     "legal",
-    "Untitled.md",
-    "site-meta.md",
-    "labs.md",
-    "home.md",
-    "singles/jekyll-alternative.md",
-    "singles/are-we-a-good-fit.md",
-    "labs/lost-in-space-day-four-loop.md",
-    "labs/ww-etl.md",
-    "labs/tauri-sveltekit.md",
     "journal",
     "singles",
     "singsles",
