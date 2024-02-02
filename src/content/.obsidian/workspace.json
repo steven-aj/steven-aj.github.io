@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "portfolio/sgvb-law.md",
+                "file": "singles/breakout-prototype-practice.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7fbb0c6f2727a343",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "singles/switching-gears-for-2024.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "portfolio/sgvb-law.md",
+                "file": "singles/breakout-prototype-practice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "portfolio/sgvb-law.md",
+                "file": "singles/breakout-prototype-practice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "portfolio/sgvb-law.md"
+                "file": "singles/breakout-prototype-practice.md"
               }
             }
           }
@@ -149,9 +161,11 @@
   },
   "active": "008c6eab22dbefd6",
   "lastOpenFiles": [
+    "singles/switching-gears-for-2024.md",
+    "singles/breakout-prototype-practice.md",
+    "portfolio/sgvb-law.md",
     "portfolio/trainwreck.md",
     "portfolio/simple-gift-series.md",
-    "portfolio/sgvb-law.md",
     "portfolio/pikes-peak-united-way.md",
     "portfolio/pbcatering.md",
     "portfolio/institute-of-cannabis-research.md",
@@ -161,7 +175,6 @@
     "_templates/project.md",
     "_templates/site.md",
     "portfolio/Untitled",
-    "singles/switching-gears-for-2024.md",
     "portfolio",
     "journal.md",
     "blog.md",
@@ -176,7 +189,6 @@
     "labs/todo-svelte.md",
     "labs/library-demo.md",
     "labs/gh-smoothie.md",
-    "legal/privacy-policy.md",
     "legal",
     "journal",
     "singles",
