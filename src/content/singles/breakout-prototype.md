@@ -2,8 +2,8 @@
 status: preview
 date: 2024-02-02
 author: Steven A.J.
-cover: 
-title: Breakout Clone Prototype Practice
+cover: /assets/covers/breakout-prototype.jpg
+title: Breakout Clone Prototype
 excerpt: "I found a twenty-game challenge! Apparently, I incidentally completed challenge #1 with a Flappy Bird clone being the first in the list. Challenge #2: A Breakout Clone"
 tags:
   - development
