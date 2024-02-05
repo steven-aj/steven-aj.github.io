@@ -18,9 +18,13 @@ Unfortunately, I've spent very little professional time in the .NET ecosystem. A
 
 My first game was a Flappy Bird clone using a free asset pack from Itch.io, courtesy of <a target="_blank" href="https://megacrash.itch.io">MegaCrash</a>. I'll never publish it, of course, but for my first game in a *real game engine* (Godot), it was ton of fun to make.
 
-<iframe style="margin: 0 auto;" width="100%" height="auto" src="https://www.youtube.com/embed/SbweMRM0nWw?si=VPfLTg20QMSRQUIf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe class="m-auto" width="800" height="600" src="https://www.youtube.com/embed/SbweMRM0nWw?si=JEUU0Mg67mau2g9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Okay, technically it's my *second* game, but the first was... well, a Flappy Bird clone made in Unity. After learning more about Unity's fiasco last year (I'm usually late to the party), I opted out of Unity & into Godot for personal projects. Since they both support C#, I figured it would be a good opportunity to go spelunking down that rabbit hole. 
+
+## What I Learned
+
+Individual sprites can be painted with physics shapes, but that doesn't necessarily mean you *should* if you need any object-specific feedback from that collision. For this project, I learned that just because it *can be done* doesn't mean you should. For all future projects, I'll always build out an object with a sprite and manually add a separate collision shape to its parent. Lesson learned.
 
 ## Mechanical Breakdown
 
