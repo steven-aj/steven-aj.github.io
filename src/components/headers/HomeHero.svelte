@@ -5,19 +5,25 @@
 <header class="hero" style={`background-image: url(${hero.cover});`}>
     <div class="content">
         <h2>{hero.title}</h2>
-        <a class="cta" role="button" href={hero.path}>Read Entry</a>
-        <div class="tags" role="presentation" aria-hidden="true">
-            <a
-                aria-hidden="true"
-                title={`More posts tagged "${hero.tags[0]}"`}
-                href={`/journal/tags/${hero.tags[0]}`}
-                class="badge primary"
-            >
-                {hero.tags[0]}
-            </a>
-            <span title={hero.tags.slice(1, hero.tags.length)} aria-hidden="true" class="text-xs text-neutral-400">
-                +{hero.tags.length - 1} more
-             </span>
+        <div class="flex flex-col md:flex-row w-full -mb-14 py-6 items-center justify-between">
+            <div class="tags" role="presentation" aria-hidden="true">
+                <a
+                    aria-hidden="true"
+                    title={`More posts tagged "${hero.tags[0]}"`}
+                    href={`/journal/tags/${hero.tags[0]}`}
+                    class="badge primary"
+                >
+                    {hero.tags[0]}
+                </a>
+                <span
+                    title={hero.tags.slice(1, hero.tags.length)}
+                    aria-hidden="true"
+                    class="text-xs text-neutral-400"
+                >
+                    +{hero.tags.length - 1} more
+                </span>
+            </div>
+            <a class="cta" href={hero.path}>Read Entry</a>
         </div>
     </div>
 </header>
