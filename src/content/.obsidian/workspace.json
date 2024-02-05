@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "singles/breakout-prototype-practice.md",
+                "file": "singles/breakout-prototype.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "singles/breakout-prototype-practice.md",
+                "file": "singles/breakout-prototype.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "singles/breakout-prototype-practice.md",
+                "file": "singles/breakout-prototype.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "singles/breakout-prototype-practice.md"
+                "file": "singles/breakout-prototype.md"
               }
             }
           }
@@ -152,7 +152,7 @@
     "singles/switching-gears-for-2024.md",
     "singles/static-and-dynamic-sites.md",
     "singles/how-to-build-a-sitemap.md",
-    "singles/breakout-prototype-practice.md",
+    "singles/breakout-prototype.md",
     "portfolio/sgvb-law.md",
     "portfolio/trainwreck.md",
     "portfolio/simple-gift-series.md",
