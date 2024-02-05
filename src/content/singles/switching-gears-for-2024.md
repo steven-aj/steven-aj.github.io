@@ -18,7 +18,7 @@ Unfortunately, I've spent very little professional time in the .NET ecosystem. A
 
 My first game was a Flappy Bird clone using a free asset pack from Itch.io, courtesy of <a target="_blank" href="https://megacrash.itch.io">MegaCrash</a>. I'll never publish it, of course, but for my first game in a *real game engine* (Godot), it was ton of fun to make.
 
-<iframe class="my-4 mx-auto" width="560" height="315" src="https://www.youtube.com/embed/SbweMRM0nWw?si=JEUU0Mg67mau2g9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe class="m-auto" width="800" height="600" src="https://www.youtube.com/embed/SbweMRM0nWw?si=JEUU0Mg67mau2g9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Okay, technically it's my *second* game, but the first was... well, a Flappy Bird clone made in Unity. After learning more about Unity's fiasco last year (I'm usually late to the party), I opted out of Unity & into Godot for personal projects. Since they both support C#, I figured it would be a good opportunity to go spelunking down that rabbit hole. 
 
