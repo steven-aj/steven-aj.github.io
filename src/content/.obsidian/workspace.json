@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "contributions/carolos-bistro.md",
+                "file": "contributions/carlos-bistro.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "contributions.md",
+                "file": "contributions/carlos-bistro.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "contributions.md",
+                "file": "contributions/carlos-bistro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "contributions.md",
+                "file": "contributions/carlos-bistro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "contributions.md"
+                "file": "contributions/carlos-bistro.md"
               }
             }
           }
@@ -162,8 +162,8 @@
   },
   "active": "b76033a5ac9d28b6",
   "lastOpenFiles": [
-    "contributions/carolos-bistro.md",
     "contributions.md",
+    "contributions/carlos-bistro.md",
     "singles/breakout-prototype.md",
     "singles/switching-gears-for-2024.md",
     "singles/static-and-dynamic-sites.md",
