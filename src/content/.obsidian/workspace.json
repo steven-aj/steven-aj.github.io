@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b76033a5ac9d28b6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "contributions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "contributions/carolos-bistro.md",
+                "file": "contributions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "contributions/carolos-bistro.md",
+                "file": "contributions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "contributions/carolos-bistro.md"
+                "file": "contributions.md"
               }
             }
           }
@@ -147,8 +160,10 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "008c6eab22dbefd6",
+  "active": "b76033a5ac9d28b6",
   "lastOpenFiles": [
+    "contributions/carolos-bistro.md",
+    "contributions.md",
     "singles/breakout-prototype.md",
     "singles/switching-gears-for-2024.md",
     "singles/static-and-dynamic-sites.md",
@@ -160,7 +175,6 @@
     "contributions/pbcatering.md",
     "contributions/institute-of-cannabis-research.md",
     "contributions/huerfano-county.md",
-    "contributions/carolos-bistro.md",
     "_templates/project.md",
     "_templates/site.md",
     "portfolio/Untitled",
@@ -176,7 +190,6 @@
     "about.md",
     "labs/todo-svelte.md",
     "labs/library-demo.md",
-    "labs/gh-smoothie.md",
     "legal",
     "journal",
     "singles",
