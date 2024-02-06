@@ -1,6 +1,6 @@
 <script>
 	import { beforeUpdate } from "svelte";
-	import LabHero from "$components/headers/LabHero.svelte";
+	// import ContributionHero from "$components/headers/ContributionHero.svelte";
 	import App from "$lib/shell";
 
 	export let data;
@@ -10,7 +10,7 @@
 	function init() {
 		App.showBackButton(true);
 		App.setHero({
-			title: "Lab: " + meta.title,
+			title: "Contribution: " + meta.title,
 			description: meta.description,
 			cover: meta.screenshot,
 		});
@@ -20,7 +20,7 @@
 </script>
 
 <main>
-	<LabHero {meta} />
+	<!-- <ContributionHero {meta} /> -->
 
 	<section class="container">
 		<svelte:component this={content} />

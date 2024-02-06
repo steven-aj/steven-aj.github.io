@@ -13,7 +13,7 @@ export default class ContributionItem implements IContributionItem {
 
    static async createFromPromise([path, resolver]) {
       const contribution = await resolver();
-      const contributionPath = path.slice(18, -3);
+      const contributionPath = path.slice(27, -3);
    
       return new ContributionItem({
          path: `/contributions/${contributionPath}`,
