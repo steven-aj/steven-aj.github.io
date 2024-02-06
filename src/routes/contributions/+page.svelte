@@ -34,7 +34,7 @@
 
 <main class="container-fluid" in:fade>
    {#if contributions.length}
-      <section id="labs" class="labs container">
+      <section id="contributions" class="contributions container">
          <div class="grid">
             {#each contributions as contribution}
                <ContributionCard {contribution} />
