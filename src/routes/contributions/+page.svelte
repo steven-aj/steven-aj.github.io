@@ -1,13 +1,13 @@
 <script>
    import { onMount } from "svelte";
-   import App from "$lib/shell";
-   import LabCard from "$components/cards/LabCard.svelte";
-   import EmptyNotice from "$components/sections/EmptyNotice.svelte";
    import { fade } from "svelte/transition";
+   import App from "$lib/shell";
+   import ContributionCard from "$components/cards/ContributionCard.svelte";
+   import EmptyNotice from "$components/sections/EmptyNotice.svelte";
 
    export let data;
 
-   let { meta, content, labs } = data;
+   let { meta, content, contributions } = data;
 
    function init() {
       App.showBackButton(false);
@@ -24,20 +24,20 @@
 
 <svelte:head>
    <meta name="title" content={meta.title} />
-   <meta name="author" content={meta.author} />
-   <meta name="keywords" content={meta.keywords} />
-   <meta name="description" content={meta.description} />
+   <!-- <meta name="author" content={meta.author} /> -->
+   <!-- <meta name="keywords" content={meta.keywords} /> -->
+   <!-- <meta name="description" content={meta.description} /> -->
    <title>{meta.title} | {meta.author}</title>
 </svelte:head>
 
 <h1 class="page-heading">{meta.title}</h1>
 
 <main class="container-fluid" in:fade>
-   {#if labs.length}
+   {#if contributions.length}
       <section id="labs" class="labs container">
          <div class="grid">
-            {#each labs as lab}
-               <LabCard {lab} />
+            {#each contributions as contribution}
+               <ContributionCard {contribution} />
             {/each}
          </div>
       </section>
