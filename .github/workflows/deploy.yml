@@ -35,7 +35,7 @@ jobs:
 
       - name: Sync external-content files
         run: |
-          rsync -a --exclude images/ content-stub/ src/lib/markdown/
+          rsync -a --exclude _assets/ content-stub/ src/lib/markdown/
 
       - name : Sync external-content images
         run: |
