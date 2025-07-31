@@ -32,11 +32,11 @@ jobs:
 
       - name: Sync external-content files
         run: |
-          rsync -ar --exclude _assets/ content-stub/ src/lib/markdown/
+          rsync -ar --delete --exclude _assets/ content-stub/ src/lib/markdown/
 
       - name : Sync external-content images
         run: |
-          rsync -ar content-stub/_assets/images/ static/_assets/images/
+          rsync -ar --delete content-stub/_assets/images/ static/_assets/images/
 
       - name : Remove external-content stub
         run: |
