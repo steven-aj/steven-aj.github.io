@@ -1,6 +1,6 @@
 import PostItem from "../models/PostItem";
 import { sortByDate, filterPublished } from "../shared/utils";
-import { uniq } from "lodash";
+import uniq from "lodash/uniq";
 
 export default class PostsController {
    private markdownEntries = Object.entries(import.meta.glob('/src/lib/markdown/posts/*.md'));

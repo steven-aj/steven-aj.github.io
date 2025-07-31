@@ -6,8 +6,6 @@
    import { quintIn } from "svelte/easing";
 
    let { children, data } = $props();
-
-   console.log(data.gh);
 </script>
 
 <svelte:head>
