@@ -1,7 +1,15 @@
-import adapter from '@sveltejs/adapter-auto';
+import fs from 'fs';
+import path from 'path';
+import adapter from '@sveltejs/adapter-static';
 import mdsvexConfig from './mdsvex.config.js';
 import { sveltePreprocess } from 'svelte-preprocess';
 import { mdsvex } from 'mdsvex';
+
+const postFiles = fs.readdirSync('src/lib/markdown/posts');
+
+const postEntries = postFiles
+	.filter(f => f.endsWith('.md'))
+	.map(f => `/posts/${f.replace(/\.md$/, '')}`);
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -24,13 +32,13 @@ const config = {
 			'$json': 'src/lib/json'
 		},
 		prerender: {
-			crawl: true,
 			entries: [
-				'*', 
-				'/src/lib/markdown/posts/[post]',
-				'/src/lib/markdown/micros/[micro]',
-				'/src/lib/markdown/extras/[extra]',
-			]
+				"/", 
+				"/about", 
+				"/posts", 
+				...postEntries
+			],
+			crawl: true
 		}
 	},
 

@@ -1,6 +1,5 @@
 <script lang="ts">
     let { copyright, github } = $props();
-    console.log(github.avatar_url);
 </script>
 
 <footer>
