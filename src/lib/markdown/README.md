@@ -11,6 +11,7 @@ keywords:
   - open source
   - personal
 ---
+
 # What It's All About
 
 There's been a recent push by various communities to bring the web back to what it used to be. Call it nostalgia, call it cynicism for the current state of things - call it what you will, but I think it's **about damned time**.
