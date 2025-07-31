@@ -14,7 +14,7 @@ export async function load({fetch, url}) {
    GitHub.fetcher = fetch;
 
    // @ts-ignore
-   const page = await import(`$markdown/site-meta.md`);
+   const page = await import(`$markdown/meta.md`);
    const gitHubMeta = await GitHub.fetch();
    const { keywords, copyright } = page.metadata;
    const path = url;
