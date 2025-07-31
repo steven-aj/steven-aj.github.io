@@ -26,9 +26,6 @@ jobs:
           node-version: 20
           cache: npm
 
-      - name: Install dependencies
-        run: npm install
-
       - name: Clone external-content stub
         run: |
           git clone --depth=1 --branch main ${{ vars.CONTENT_REPO_URL }} content-stub
@@ -45,6 +42,9 @@ jobs:
         run: |
           rm -rf content-stub
 
+      - name: Install dependencies
+        run: npm install
+
       - name: Build site
         env:
           BASE_PATH: '/${{ github.event.repository.name }}'
@@ -52,7 +52,7 @@ jobs:
           npm run build
 
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           # this should match the `pages` option in your adapter-static options
           path: 'build/'
