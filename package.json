@@ -32,6 +32,7 @@
 		"lodash": "^4.17.21",
 		"node-fetch": "^3.3.2",
 		"rehype-raw": "^7.0.0",
+		"remark-slug": "^7.0.1",
 		"svelte-preprocess": "^6.0.3"
 	}
 }
