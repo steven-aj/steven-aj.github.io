@@ -8,6 +8,7 @@ on:
     types: [closed]
   repository_dispatch:
     types: [rebuild]
+  workflow_dispatch:
 
 jobs:
   build_site:
