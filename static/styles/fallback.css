@@ -1,11 +1,11 @@
 @font-face {
    font-family: 'Audiowide';
-   src: url('_assets/fonts/Audiowide/Audiowide-Regular.ttf') format('truetype');
+   src: url('/_assets/fonts/Audiowide/Audiowide-Regular.ttf') format('truetype');
 }
 
 @font-face {
    font-family: 'Anta';
-   src: url('_assets/fonts/Anta/Anta-Regular.ttf') format('truetype');
+   src: url('/_assets/fonts/Anta/Anta-Regular.ttf') format('truetype');
 }
 
 :root {
