@@ -1,0 +1,19 @@
+{
+"movies":{"exportDate":"7/25/25, 3:00 PM"
+,"movies":[{"movie":{"id":"1","identificationCode":"5","lastChange":"2025-07-25T14:58:49-0500"
+,"name":"Star Trek: First Contact"
+,"year":"1996"
+,"genres":[{"idref":"2"}]
+}
+},{"movie":{"id":"3","identificationCode":"4","lastChange":"2025-07-25T14:58:55-0500"
+,"name":"Star Trek: Generations"
+,"year":"1994"
+,"genres":[{"idref":"2"}]
+}
+}]
+,"genres":[{"genre":{"id":"2","identificationCode":"3","lastChange":"2025-07-25T14:50:48-0500"
+,"name":"Sci-Fi"
+,"movies":[{"idref":"1"},{"idref":"3"}]
+}
+}]
+}}
