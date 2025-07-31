@@ -4,7 +4,7 @@ import rehypeRaw from "rehype-raw"
 const mdsvexConfig = {
     extensions: [".svelte", ".md"],
     smartypants: { dashes: 'oldschool' },
-    rehypPlugins: [rehypeRaw],
+    rehypePlugins: [rehypeRaw],
     layout: {}
 }
 

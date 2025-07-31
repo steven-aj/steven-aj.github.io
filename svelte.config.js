@@ -1,6 +1,6 @@
 import adapter from '@sveltejs/adapter-auto';
-import mdsvexConfig from './mdsvex.config.js';
 import { sveltePreprocess } from 'svelte-preprocess';
+import mdsvexConfig from './mdsvex.config.js';
 import { mdsvex } from 'mdsvex';
 
 /** @type {import('@sveltejs/kit').Config} */
