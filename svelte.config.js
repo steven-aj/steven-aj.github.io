@@ -22,6 +22,15 @@ const config = {
 			'$components': 'src/lib/components',
 			'$markdown': 'src/lib/markdown',
 			'$json': 'src/lib/json'
+		},
+		prerender: {
+			crawl: true,
+			entries: [
+				'*', 
+				'/src/lib/markdown/posts/[post]',
+				'/src/lib/markdown/micros/[micro]',
+				'/src/lib/markdown/extras/[extra]',
+			]
 		}
 	},
 
