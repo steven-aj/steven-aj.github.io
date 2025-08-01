@@ -143,8 +143,9 @@ Vibrant Synthwave City Night Colors
 
    .card {
       background-color: var(--background);
-      padding: 0 1rem;
+      padding: 1rem;
       border-radius: 1rem;
+      color: var(--text-muted);
    }
 
    .card h2 {
@@ -153,6 +154,6 @@ Vibrant Synthwave City Night Colors
    }
    
    .glow {
-      box-shadow: 0 0 3rem var(--border);
+      box-shadow: 2px 7px 0 var(--border);
    }
 }
