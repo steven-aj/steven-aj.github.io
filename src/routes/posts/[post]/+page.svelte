@@ -4,7 +4,7 @@
 	let { meta, content } = data;
 </script>
 
-<time>{new Date(meta.date).toLocaleDateString('en-US', { dateStyle: "full" })}</time>
+<time>Posted: {new Date(meta.date).toLocaleDateString('en-US', { dateStyle: "full" })}</time>
 
 <h2>{meta.title}</h2>
 
@@ -12,14 +12,16 @@
 	<svelte:component this={content} />
 </section>
 
+
 <style>
-	/* .cover {
-		margin-bottom: 1.5rem;
-	} */
+	h2 {
+		display: flex;
+		align-self: center;
+	}
 
 	h2 {
 		width: fit-content;
-		text-align:center;
+		text-align: center;
 		/* padding: 2rem 0; */
 		/* border-top: thick solid var(--border); */
 	}
@@ -28,5 +30,6 @@
 		margin-top: 2rem;
 		padding: 0.5rem 1rem;
 		text-align: center;
+		color: var(--purple);
 	}
 </style>

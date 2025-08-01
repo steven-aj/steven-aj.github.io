@@ -18,7 +18,7 @@
 <Header title={data.title} />
 
 {#key data.path.pathname}
-   <main in:fade={{ easing: quintIn }}>
+   <main class="container" in:fade={{ easing: quintIn }}>
       {@render children()}
    </main>
 {/key}

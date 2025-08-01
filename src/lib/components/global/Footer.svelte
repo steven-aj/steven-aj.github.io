@@ -37,8 +37,8 @@
         color: #f5f5f5;
         padding: 2rem 1rem;
         text-align: center;
-        border-top: medium solid var(--border);
-        border-bottom: thin dotted var(--border);
+        // border-top: medium solid var(--border);
+        // border-bottom: thin dotted var(--border);
         margin-top: 3rem;
         // box-shadow: 0 0rem 1rem var(--border);
     }
@@ -49,7 +49,7 @@
         margin: auto;
         margin-bottom: 2rem;
         border-radius: 100%;
-        border: thick solid var(--background);
+        // border: thick solid var(--background);
     }
 
     div.links {
@@ -59,7 +59,7 @@
     div.baseline {
         display: flex;
         flex-direction: column;
-        font-size: 0.9rem; color: var(--text);
+        // font-size: 0.9rem; color: var(--text);
         gap: 0.5rem;
     }
 
@@ -68,7 +68,7 @@
     }
 
     span.faded {
-        color: var(--text-muted);
+        // color: var(--text-muted);
         font-style: italic;
         font-weight: normal;
     }

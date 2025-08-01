@@ -1,3 +1,4 @@
+@import "/styles/typography.css";
 @import "/styles/water.css";
 @import "/styles/prism/synthwave84.css";
 // @import "/styles/prism/laserwave.css";
@@ -18,43 +19,42 @@ Vibrant Synthwave City Night Colors
    orange: #FF4F00
 **/
 
-@font-face {
-   font-family: 'Anta';
-   src: url('/fonts/Anta/Anta-Regular.ttf') format('truetype');
-}
 
-@font-face {
-   font-family: 'FlowCircular';
-   src: url('/fonts/Flow_Circular/FlowCircular-Regular.ttf') format('truetype');
-}
-
-@font-face {
-   font-family: 'Audiowide';
-   src: url('/fonts/Audiowide/Audiowide-Regular.ttf') format('truetype');
-}
 
 :root {
-   --background-body: #F5F5F5;
-   --background: #F5F5F5;
+   // Synthwave Vintage Lights and Patterns Collage
+   --white: #F5F5F5;
+   --off-white: #e4e4e4;
+   --deep-purple: #2D0F68;
+   --light-purple: #A26BFF;
+   --blue: #3D5BFF;
+
+   // Vibrant Synthwave City Night Colors
+   --black: #000000;
+   --pink: #b90082;
+   --light-blue: #00B2FF;
+   --purple: #7A00FF;
+   --orange: #FF4F00;
+
+   --background-body: var(--white);
+   --background: var(--white);
    --background-alt: #f7f7f7;
    --selection: #9e9e9e;
    --text-main: #363636;
    --text-bright: #000;
    --text-muted: #70777f;
-   --links: #b90082;
+   --links: var(--pink);
    --focus: #A26BFF;
-   --border: #2D0F68;
+   --border: var(--purple);
    --code: #000;
-   --animation-duration: 0.1s;
    --button-base: #d0cfcf;
    --button-hover: #9b9b9b;
    --scrollbar-thumb: rgb(170, 170, 170);
    --scrollbar-thumb-hover: var(--button-hover);
    --form-placeholder: #949494;
    --form-text: #1d1d1d;
-   --variable: #3D5BFF;
-   --highlight: #FF4B4B;
-   --select-arrow: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23161f27'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E");
+   --variable: var(--blue);
+   --highlight: var(--orange);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -63,13 +63,13 @@ Vibrant Synthwave City Night Colors
       --background: #161f27;
       --background-alt: #1a242f;
       --selection: #1c76c5;
-      --text-main: #dbdbdb;
+      --text-main: var(--off-white);
       --text-bright: #fff;
       --text-muted: #a9b1ba;
-      --links: #b90082;
-      --focus: #e0009d;
-      --border: #7A00FF77;
-      --code: #00B2FF;
+      --links: var(--pink);
+      --focus: var(--pink);
+      --border: var(--deep-purple);
+      --code: var(--light-blue);
       --animation-duration: 0.1s;
       --button-base: #0c151c;
       --button-hover: #040a0f;
@@ -77,37 +77,46 @@ Vibrant Synthwave City Night Colors
       --scrollbar-thumb-hover: rgb(0, 0, 0);
       --form-placeholder: #a9a9a9;
       --form-text: #fff;
-      --variable: #d941e2;
-      --highlight: #efdb43;
+      --variable: var(--pink);
+      --highlight: var(--orange);
       --select-arrow: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23efefef'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E");
    }
 }
 
-@media screen and (min-width: 350px) {
-   main {
-      padding: 0 0.5rem;
-      // text-align: justify;
-   }
-}
-
 :global {
-   h2 {
-      text-align: left !important;
-      font-size: xx-large !important;
+   body {
+      max-width: 1024px;
    }
-
-   h3 {
-      font-size: x-large;
+   
+   h2 {
+      color: var(--blue);
+      font-size: xx-large !important;
+      padding: 0;
+      // opacity: 0.5;
+   }
+   
+   h3, h4 {
+      color: var(--blue);
+      margin: 3rem 0;
    }
 
    main {
       font-family: Anta !important;
    }
 
-   p, main a {
+   article h2 {
+      text-align: center !important;
+   }
+
+   p,
+   main>a {
       line-height: 2.77rem;
       font-size: x-large;
       text-align: justify;
+   }
+
+   p {
+      padding: 0 0.16rem
    }
 
    pre {
@@ -123,12 +132,27 @@ Vibrant Synthwave City Night Colors
       color: var(--code);
       opacity: 0.45;
    }
-   
+
    pre.language-bash::before {
       content: 'bash';
    }
 
    pre.language-javascript::before {
       content: 'javascript'
+   }
+
+   .card {
+      background-color: var(--background);
+      padding: 0 1rem;
+      border-radius: 1rem;
+   }
+
+   .card h2 {
+      color: var(--purple);
+      text-align: center;
+   }
+   
+   .glow {
+      box-shadow: 0 0 3rem var(--border);
    }
 }

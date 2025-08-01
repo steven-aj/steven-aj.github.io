@@ -12,7 +12,7 @@ keywords:
   - blog
 ---
 
-# Welcome, from The Void 
+## Welcome, from The Void 
 
 A digital garden sprouted from a love for software & rooted in self-reliance and authenticity. No tracking, no spin - just raw thoughts, deep dives and occasional open-source news. 
 

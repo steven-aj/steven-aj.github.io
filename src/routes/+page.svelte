@@ -15,18 +15,14 @@
    <meta name="description" content={meta.description} />
 </svelte:head>
 
-<section class="container">
+<section class="glow card">
    <svelte:component this={content} />
 </section>
-
-<hr />
 
 <RecentPosts title="Recent Posts" {posts} />
 
 <style>
-   hr {
-      border: thin dashed var(--border);
-      width: 77%;
-      margin: 2rem auto;
+   section {
+      margin: 2rem 0;
    }
 </style>

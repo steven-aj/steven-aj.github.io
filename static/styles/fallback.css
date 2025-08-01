@@ -24,7 +24,7 @@
    --button-base: #d0cfcf;
    --button-hover: #9b9b9b;
    --scrollbar-thumb: rgb(170, 170, 170);
-   --scrollbar-thumb-hover: var(--button-hover);
+   /* --scrollbar-thumb-hover: var(--button-hover); */
    --form-placeholder: #949494;
    --form-text: #1d1d1d;
    --variable: #3D5BFF;
@@ -48,7 +48,7 @@
       --animation-duration: 0.1s;
       --button-base: #0c151c;
       --button-hover: #040a0f;
-      --scrollbar-thumb: var(--button-hover);
+      /* --scrollbar-thumb: var(--button-hover); */
       --scrollbar-thumb-hover: rgb(0, 0, 0);
       --form-placeholder: #a9a9a9;
       --form-text: #fff;
@@ -63,7 +63,7 @@ body {
     align-items: center;
     height: 90vh;
     /* margin: auto; */
-    background-color: var(--background-body);
+    /* background-color: var(--background-body); */
 }
 
 div.container {
@@ -73,14 +73,14 @@ div.container {
     align-items: center;
     margin: auto;
     border-radius: 2rem;
-    background-color: var(--background);
-    border: 10px solid var(--border);
-    box-shadow: 0 0 5rem var(--border);
+    /* background-color: var(--background); */
+    /* border: 10px solid var(--border); */
+    /* box-shadow: 0 0 5rem var(--border); */
 }
 
 h1, p {
     text-align: center;
-    color: var(--text-main)
+    /* color: var(--text-main) */
 }
 
 h1 {
