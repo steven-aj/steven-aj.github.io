@@ -1,17 +1,21 @@
 class GitHub {
 
-    url: string;
-    fetcher: any;
+    http: any;
+    profile: string;
+    repo: string;
 
     constructor() {
-        this.url = "https://api.github.com/users/steven-aj";
+        this.profile = "https://api.github.com/users/steven-aj";
+        this.repo = "https://api.github.com/repos/steven-aj/steven-aj/git/trees/main";
     }
 
-    async fetch(url: string = this.url) {
-        if (!this.fetcher) throw new Error(`GitHub Service: Fetcher not provided.`);
+    private async fetch(endpoint: string = this.profile) {
+        if (!this.http) throw new Error(`GitHub Service: Fetcher not provided.`);
+
+        await this.http(endpoint)
         
         try {
-            const response = await this.fetcher(url);
+            const response = await this.http(endpoint);
             
             if (!response.ok) {
                 throw new Error(`Response status: ${response.status}`);
@@ -21,6 +25,11 @@ class GitHub {
         } catch (error) {
             console.error(error);
         }
+    }
+
+    public async getUser() {
+        const user = await this.fetch();
+        return user;
     }
 }
 

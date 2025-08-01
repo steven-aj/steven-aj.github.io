@@ -10,34 +10,41 @@ import GitHub from '$lib/services/GitHub.js';
 export const prerender = true;
 export const ssr = false;
 
-export async function load({fetch, url}) {
-   GitHub.fetcher = fetch;
 
-   // @ts-ignore
-   const page = await import(`$markdown/meta.md`);
-   const gitHubMeta = await GitHub.fetch();
-   const { keywords, copyright } = page.metadata;
-   const path = url;
+let page;
 
-
-   // Register each imported language module
+// Register each imported language module
+function initLanguageModels() {
    hljs.registerLanguage('xml', xml); // for HTML
    hljs.registerLanguage('css', css);
    hljs.registerLanguage('json', json);
    hljs.registerLanguage('javascript', javascript);
    hljs.registerLanguage('typescript', typescript);
    hljs.registerLanguage('shell', shell);
+}
+
+export async function load({ fetch, url }) {
+   GitHub.http = fetch;
+
+   initLanguageModels();
+
+   // @ts-ignore
+   page = await import(`$markdown/meta.md`);
+   const gitHubUser = await GitHub.getUser();
+   const { keywords, copyright } = page.metadata;
+   const path = url;
+
 
    return {
       hljs,
       path,
       keywords,
       copyright,
-      title: gitHubMeta.login,
-      author: gitHubMeta.name,
-      description: gitHubMeta.bio,
+      title: gitHubUser.login,
+      author: gitHubUser.name,
+      description: gitHubUser.bio,
       gh: {
-         ...gitHubMeta
+         ...gitHubUser
       }
    }
 }

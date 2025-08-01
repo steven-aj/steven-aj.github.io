@@ -114,7 +114,7 @@ body {
   max-width: 800px;
   margin: 20px auto;
   padding: 0 10px;
-  word-wrap: break-word;
+  word-wrap: normal;
   color: #363636;
   color: var(--text-main);
   background: #fff;
