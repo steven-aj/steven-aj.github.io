@@ -1,6 +1,6 @@
 <script>
    // import PostCard from "$components/PostCard.svelte";
-   import RecentPosts from '$components/RecentPosts.svelte';
+   import RecentPosts from '$components/posts/RecentPosts.svelte';
 
    export let data;
 
