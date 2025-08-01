@@ -36,7 +36,8 @@ const config = {
 			entries: [
 				"/", 
 				"/about", 
-				"/posts", 
+				"/posts",
+				"/settings",
 				...postEntries
 			],
 			crawl: true
