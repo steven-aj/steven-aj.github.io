@@ -29,7 +29,8 @@ const config = {
 			'$api': 'src/lib/api',
 			'$components': 'src/lib/components',
 			'$markdown': 'src/lib/markdown',
-			'$json': 'src/lib/json'
+			'$json': 'src/lib/json',
+			'$config': 'src/static.config.js'
 		},
 		prerender: {
 			entries: [

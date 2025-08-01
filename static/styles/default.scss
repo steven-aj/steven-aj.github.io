@@ -1,7 +1,8 @@
-@import "/styles/typography.css";
 @import "/styles/water.css";
 @import "/styles/prism/synthwave84.css";
 // @import "/styles/prism/laserwave.css";
+@import "/styles/typography.css";
+// @import "highlight.js/styles/atom-one-dark.css";
 
 /**
 Synthwave Vintage Lights and Patterns Collage
@@ -20,16 +21,15 @@ Vibrant Synthwave City Night Colors
 **/
 
 
-
 :root {
-   // Synthwave Vintage Lights and Patterns Collage
+   /* Synthwave Vintage Lights and Patterns Collage */
    --white: #F5F5F5;
    --off-white: #e4e4e4;
    --deep-purple: #2D0F68;
    --light-purple: #A26BFF;
    --blue: #3D5BFF;
 
-   // Vibrant Synthwave City Night Colors
+   /* Vibrant Synthwave City Night Colors */
    --black: #000000;
    --pink: #b90082;
    --light-blue: #00B2FF;
@@ -44,6 +44,7 @@ Vibrant Synthwave City Night Colors
    --text-bright: #000;
    --text-muted: #70777f;
    --links: var(--pink);
+   --links-hover: var(--purple);
    --focus: #A26BFF;
    --border: var(--purple);
    --code: #000;
@@ -67,6 +68,7 @@ Vibrant Synthwave City Night Colors
       --text-bright: #fff;
       --text-muted: #a9b1ba;
       --links: var(--pink);
+      --links-hover: var(--orange);
       --focus: var(--pink);
       --border: var(--deep-purple);
       --code: var(--light-blue);
@@ -87,36 +89,13 @@ Vibrant Synthwave City Night Colors
    body {
       max-width: 1024px;
    }
-   
-   h2 {
-      color: var(--blue);
-      font-size: xx-large !important;
-      padding: 0;
-      // opacity: 0.5;
-   }
-   
-   h3, h4 {
-      color: var(--blue);
-      margin: 3rem 0;
+
+   a:hover {
+      color: var(--links-hover);
    }
 
    main {
       font-family: Anta !important;
-   }
-
-   article h2 {
-      text-align: center !important;
-   }
-
-   p,
-   main>a {
-      line-height: 2.77rem;
-      font-size: x-large;
-      text-align: justify;
-   }
-
-   p {
-      padding: 0 0.16rem
    }
 
    pre {
@@ -142,18 +121,13 @@ Vibrant Synthwave City Night Colors
    }
 
    .card {
-      background-color: var(--background);
       padding: 1rem;
       border-radius: 1rem;
       color: var(--text-muted);
+      background-color: var(--background);
    }
 
-   .card h2 {
-      color: var(--purple);
-      text-align: center;
-   }
-   
    .glow {
-      box-shadow: 2px 7px 0 var(--deep-purple);
+      box-shadow: 2px 7px 0 var(--pink);
    }
 }

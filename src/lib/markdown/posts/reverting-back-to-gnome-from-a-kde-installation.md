@@ -114,6 +114,7 @@ gsettings reset-recursively org.gnome.desktop.interface
 Below is a list of known directories created by KDE Plasma during installation.
 
 > [!CAUTION]
+>
 > Be sure to run `rpm -qf <path>` to see if anything is being used. You may also want to run `dnf repoquery --whatrequires <package>` to cross-reference dependencies.
 
 #### `/usr/share/icons`
