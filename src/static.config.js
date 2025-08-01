@@ -12,5 +12,9 @@ export default {
             name: "Posts",
             route: "/posts"
         },
+        {
+            name: "Posts",
+            route: "/settings"
+        },
     ]
 }
