@@ -1,23 +1,24 @@
 <script lang="ts">
    import { goto } from "$app/navigation";
 
-   export let title: string;
-   export let posts;
+   let { title, posts, glow } = $props();
+
+   glow = glow === null ? false : glow;
 </script>
 
 {#if posts.length}
    <h2>{title}</h2>
-   <section id="RecentPosts" class="card">
+   <section id="RecentPosts" class={`card ${glow ? 'glow' : ''}`}>
       <!-- <ul> -->
       {#each posts as post}
          <a href={post.path}>
             <span itemprop="category">{post.category}</span>
             <span class="title">{post.title}</span>
-            <span itemprop="date"
-               >{post.date.toLocaleDateString("en-US", {
+            <span itemprop="date">
+               {post.date.toLocaleDateString("en-US", {
                   dateStyle: "full",
-               })}</span
-            >
+               })}
+            </span>
          </a>
       {/each}
       <!-- </ul> -->
@@ -66,7 +67,7 @@
 
    a:active span[itemprop="category"],
    a:hover span[itemprop="category"] {
-      color: var(--code);
+      color: var(--orange);
       opacity: 1;
    }
 
