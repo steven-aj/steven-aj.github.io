@@ -19,7 +19,7 @@
    <svelte:component this={content} />
 </section>
 
-<RecentPosts title="Recent Posts" {posts} />
+<RecentPosts title="Recent Posts" {posts} glow={false} />
 
 <style>
    section {

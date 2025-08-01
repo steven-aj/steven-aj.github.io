@@ -27,7 +27,6 @@
 
 <style lang="scss">
    @use "static/styles/default.scss";
-
    main {
       display: flex;
       flex-direction: column;
