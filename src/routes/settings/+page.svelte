@@ -1,16 +1,24 @@
-<script>
+<script lang="ts">
     import { Monitor, Speech } from "@lucide/svelte";
+
+    export let data;
+
+    let { censor } = data;
+
+    function updateSettings() {
+        localStorage.setItem('censor', `${censor}`);
+    }
 </script>
 
 <div>
-    <h2>Preferences</h2>
+    <h2>User Preferences</h2>
 
     <p>
         These configurations are stored in your browser. You'll need to adjust
-        them across all devices you visit on.
+        them across all devices you visit from.
     </p>
 
-    <form>
+    <form onchange={updateSettings}>
         <h3>Global Settings</h3>
         <section>
             <Monitor size="32" color="var(--blue)" opacity="0.7" />
@@ -35,11 +43,16 @@
             <div>
                 <label for="profanity">
                     <span>Profanity Filter</span>
-                    <input id="profanity" name="profanity" type="checkbox" />
+                    <input
+                        id="profanity"
+                        name="profanity"
+                        type="checkbox"
+                        bind:checked={censor}
+                    />
                 </label>
                 <span class="tooltip">
                     Censor naughty words from my content. This doesn't work on
-                    images, of course.
+                    images, of course, and won't hide profanity in slugs.
                 </span>
             </div>
         </section>

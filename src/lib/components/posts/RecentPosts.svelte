@@ -1,9 +1,12 @@
 <script lang="ts">
-   import { goto } from "$app/navigation";
+   import Censor, { cleanDocument } from "$lib/services/Censor";
+    import { onMount } from "svelte";
 
    let { title, posts, glow } = $props();
 
    glow = glow === null ? false : glow;
+
+   onMount(() => cleanDocument());
 </script>
 
 {#if posts.length}
@@ -13,7 +16,7 @@
       {#each posts as post}
          <a href={post.path}>
             <span itemprop="category">{post.category}</span>
-            <span class="title">{post.title}</span>
+            <span class="title">{@html Censor.cleanProfanity(post.title)}</span>
             <span itemprop="date">
                {post.date.toLocaleDateString("en-US", {
                   dateStyle: "full",

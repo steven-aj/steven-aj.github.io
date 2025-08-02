@@ -1,7 +1,7 @@
 import rehypeRaw from "rehype-raw"
 import remarkSlug from "remark-slug";
 import rehypeCallouts from "rehype-callouts";
-// import { visit } from "unist-util-visit";
+import profanityClassifier from "./plugins/remark/profanityClassifier.js";
 
 const calloutConfigs = {
     tags: {
@@ -15,7 +15,7 @@ const mdsvexConfig = {
     extensions: [".md"],
     smartypants: { dashes: 'oldschool' },
     rehypePlugins: [rehypeRaw, [rehypeCallouts, calloutConfigs]],
-    remarkPlugins: [remarkSlug],
+    remarkPlugins: [remarkSlug, profanityClassifier],
     layout: {}
 }
 

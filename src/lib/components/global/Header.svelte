@@ -109,7 +109,7 @@
       // text-shadow: 2px 2px 2px var(--pink);
       color: var(--pink);
       background-color: var(--background);
-      box-shadow: 2px 2px 0 var(--pink);
+      box-shadow: 2px 2px 2px var(--pink);
    }
 
    @media screen and (max-width: 450px) {

@@ -1,6 +1,16 @@
 @font-face {
+   font-family: 'Audiowide';
+   src: url('/fonts/Audiowide/Audiowide-Regular.ttf') format('truetype');
+}
+
+@font-face {
    font-family: 'Anta';
    src: url('/fonts/Anta/Anta-Regular.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Wavefont';
+   src: url('/fonts/Wavefont/Wavefont-VariableFont.ttf') format('truetype');
 }
 
 @font-face {
@@ -9,8 +19,27 @@
 }
 
 @font-face {
-   font-family: 'Audiowide';
-   src: url('/fonts/Audiowide/Audiowide-Regular.ttf') format('truetype');
+   font-family: 'Redacted';
+   src: url('/fonts/Redacted/Redacted-Regular.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Barcode';
+   src: url('/fonts/Libre_Barcode_39_Extended/LibreBarcode39Extended-Regular.ttf') format('truetype');
+}
+
+a {
+   color: var(--links);
+   text-decoration: none;
+}
+
+a:hover {
+   color: var(--links-hover);
+}
+
+article h2 {
+   color: var(--purple);
+   text-align: center;
 }
 
 h2 {
@@ -48,16 +77,9 @@ p {
    padding: 0 0.16rem
 }
 
-a {
-   color: var(--links);
-   text-decoration: none;
-}
-
-a:hover {
-   color: var(--links-hover);
-}
-
-article h2 {
-   color: var(--purple);
-   text-align: center;
+span.profane[data-censor="true"] {
+   font-family: Redacted;
+   /* color: var(--red); */
+   /* font-size: 3rem; */
+   /* letter-spacing: 0.5rem; */
 }
