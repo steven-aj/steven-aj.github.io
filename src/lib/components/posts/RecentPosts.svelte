@@ -32,16 +32,20 @@
    a {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      width: 100%;
-      padding: 1rem 0;
-      color: var(--blue);
+      /* width: 100%; */
+      padding: 1rem;
+      color: var(--light-blue);
+      border-radius: 1rem 0 1rem 0;
+      border-left: thick solid;
+      border-right: thick solid;
+      border-color: transparent;
    }
 
    a:active,
    a:hover {
-      color: var(--links);
+      color: var(--purple);
       text-decoration: none;
+      border-color: var(--orange);
    }
 
    a span {
@@ -53,10 +57,8 @@
    a > span.title {
       font-size: x-large;
    }
-
    a:active > span.title,
    a:hover > span.title {
-      text-decoration: underline;
       font-size: x-large;
    }
 
@@ -72,7 +74,7 @@
 
    a:active span[itemprop="category"],
    a:hover span[itemprop="category"] {
-      color: var(--purple);
+      color: var(--links);
       opacity: 1;
       text-decoration: none !;
    }
