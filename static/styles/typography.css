@@ -38,7 +38,7 @@ h4 {
 }
 
 p,
-main > a {
+main>a {
    line-height: 2.77rem;
    font-size: x-large;
    text-align: justify;
@@ -48,7 +48,16 @@ p {
    padding: 0 0.16rem
 }
 
-.card h2 {
+a {
+   color: var(--links);
+   text-decoration: none;
+}
+
+a:hover {
+   color: var(--links-hover);
+}
+
+article h2 {
    color: var(--purple);
    text-align: center;
 }

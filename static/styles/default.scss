@@ -1,27 +1,5 @@
-@import "/styles/water.css";
 @import "/styles/prism/synthwave84.css";
-// @import "/styles/prism/laserwave.css";
 @import "/styles/typography.css";
-// @import 'remark-github-blockquote-alert/alert.css';
-
-// @import "highlight.js/styles/atom-one-dark.css";
-
-/**
-Synthwave Vintage Lights and Patterns Collage
-   white: #F5F5F5
-   deep-purple: #2D0F68
-   light-purple: #A26BFF
-   blue: #3D5BFF
-   orange: #FF4B4B
-
-Vibrant Synthwave City Night Colors
-   black: #000000
-   pink: #FF00B2
-   blue: #00B2FF
-   purple: #7A00FF
-   orange: #FF4F00
-**/
-
 
 :root {
    /* Synthwave Vintage Lights and Patterns Collage */
@@ -37,7 +15,13 @@ Vibrant Synthwave City Night Colors
    --light-blue: #00B2FF;
    --purple: #7A00FF;
    --orange: #FF4F00;
+   --yellow: #ffae00;
+   --red: #b90037;
+   --green: #3dff57;
+}
 
+:root {
+   color-scheme: light;
    --background-body: var(--white);
    --background: var(--white);
    --background-alt: #f7f7f7;
@@ -58,10 +42,13 @@ Vibrant Synthwave City Night Colors
    --form-text: #1d1d1d;
    --variable: var(--blue);
    --highlight: var(--orange);
+   --caution: var(--yellow);
+   --danger: var(--red);
 }
 
 @media (prefers-color-scheme: dark) {
    :root {
+      color-scheme: dark;
       --background-body: #000000;
       --background: #161f27;
       --background-alt: #1a242f;
@@ -69,8 +56,8 @@ Vibrant Synthwave City Night Colors
       --text-main: var(--off-white);
       --text-bright: #fff;
       --text-muted: #a9b1ba;
-      --links: var(--blue);
-      --links-hover: var(--pink);
+      --links: var(--pink);
+      --links-hover: var(--orange);
       --focus: var(--pink);
       --border: var(--deep-purple);
       --code: var(--light-blue);
@@ -90,10 +77,9 @@ Vibrant Synthwave City Night Colors
 :global {
    body {
       max-width: 1024px;
-   }
-
-   a:hover {
-      color: var(--links-hover);
+      background-color: var(--background-body);
+      margin: auto auto;
+      padding: 0 1rem;
    }
 
    main {
@@ -122,14 +108,85 @@ Vibrant Synthwave City Night Colors
       content: 'javascript'
    }
 
-   .card {
-      padding: 1rem;
-      border-radius: 1rem;
+   article {
+      padding: 1rem 1.618rem ;
       color: var(--text-muted);
       background-color: var(--background);
+      border-radius: 2rem 0 2rem 0;
+      hyphens: auto;
+      text-align: justify;
+      word-wrap: break-word;
+   }
+
+   code {
+      color: var(--code);
+      background-color: var(--background);
+      padding: 0.16rem 0.5rem;
+      border-radius: 0.5rem;
+   }
+
+   blockquote {
+      margin: 3rem 0;
+      padding: 0.5rem 1.61rem;
+      border-radius: 1rem;;
+      // border-radius: 0 1rem 1rem 0;
+      border-left: thick solid var(--pink);
+   }
+
+   blockquote div.callout-content p {
+      color: var(--text-muted);
+      font-size: large;
+   }
+
+   blockquote summary {
+      display: flex;
+      gap: 0.5rem;
+      font-weight: bold;
+      padding-top: 1rem;
+      font-size: large;
+   }
+
+   blockquote[data-callout="note"] {
+      border-color: var(--light-blue);
+      box-shadow: 0rem 0rem 1rem var(--light-blue);
+      summary {
+         color: var(--light-blue);
+      }
+   }
+
+   blockquote[data-callout="tip"] {
+      border-color: var(--green);
+      box-shadow: 0rem 0rem 1rem var(--green);
+      summary {
+         color: var(--green);
+      }
+   }
+
+   blockquote[data-callout="important"] {
+      border-color: var(--light-purple);
+      box-shadow: 0rem 0rem 1rem var(--light-purple);
+      summary {
+         color: var(--light-purple);
+      }
+   }
+
+   blockquote[data-callout="caution"] {
+      border-color: var(--caution);
+      box-shadow: 0rem 0rem 1rem var(--caution);
+      summary {
+         color: var(--caution);
+      }
+   }
+
+   blockquote[data-callout="warning"] {
+      border-color: var(--danger);
+      box-shadow: 0rem 0rem 1rem var(--danger);
+      summary {
+         color: var(--danger);
+      }
    }
 
    .glow {
-      box-shadow: 2px 7px 0 var(--pink);
+      box-shadow: 4px 6px 0 var(--pink);
    }
 }

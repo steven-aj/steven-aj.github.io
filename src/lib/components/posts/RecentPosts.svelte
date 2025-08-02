@@ -8,7 +8,7 @@
 
 {#if posts.length}
    <h2>{title}</h2>
-   <section id="RecentPosts" class={`card ${glow ? 'glow' : ''}`}>
+   <article id="RecentPosts" class={`card ${glow ? "glow" : ""}`}>
       <!-- <ul> -->
       {#each posts as post}
          <a href={post.path}>
@@ -22,7 +22,7 @@
          </a>
       {/each}
       <!-- </ul> -->
-   </section>
+   </article>
 {/if}
 
 <style>
@@ -31,23 +31,24 @@
       flex-direction: column;
       align-items: flex-start;
       width: 100%;
-      padding: 1rem 1rem;
-      /* margin: 3rem 0; */
-      /* gap: 0.33rem; */
-      /* border-bottom: thin dotted var(--border); */
+      padding: 1rem 0;
+      color: var(--blue);
    }
 
+   a:active,
    a:hover {
+      color: var(--links);
       text-decoration: none;
-      /* background-color: var(--background); */
-      /* border-right: thick solid var(--border); */
-      /* border-bottom: thin solid var(--border); */
+   }
+
+   a span {
+      hyphens: auto;
+      text-align: justify;
+      word-wrap: break-word;
    }
 
    a > span.title {
-      /* color: var(--links); */
       font-size: x-large;
-      /* line-height: 1.7rem; */
    }
 
    a:active > span.title,
@@ -62,13 +63,15 @@
       color: var(--text-muted);
       text-transform: uppercase;
       font-size: medium;
-      opacity: 0.5;
+      opacity: 0.25;
+      text-decoration: none;
    }
 
    a:active span[itemprop="category"],
    a:hover span[itemprop="category"] {
-      color: var(--orange);
+      color: var(--purple);
       opacity: 1;
+      text-decoration: none !;
    }
 
    a > span[itemprop="date"] {
@@ -77,5 +80,7 @@
       color: var(--text-muted);
       opacity: 0.5;
       font-size: medium;
+      text-decoration: none;
+      margin-top: 0.1rem;
    }
 </style>

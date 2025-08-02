@@ -15,14 +15,16 @@
    <meta name="description" content={meta.description} />
 </svelte:head>
 
-<section class="glow card">
+<h2>{meta.title}</h2>
+
+<article class="glow card">
    <svelte:component this={content} />
-</section>
+</article>
 
 <RecentPosts title="Recent Posts" {posts} glow={false} />
 
 <style>
-   section {
+   article {
       margin: 2rem 0;
    }
 </style>

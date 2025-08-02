@@ -10,8 +10,9 @@ import GitHub from '$lib/services/GitHub.js';
 export const prerender = true;
 export const ssr = false;
 
-
+let path;
 let page;
+let ghUser;
 
 // Register each imported language module
 function initLanguageModels() {
@@ -30,21 +31,21 @@ export async function load({ fetch, url }) {
 
    // @ts-ignore
    page = await import(`$markdown/meta.md`);
-   const gitHubUser = await GitHub.getUser();
    const { keywords, copyright } = page.metadata;
-   const path = url;
 
+   path = url;
+   ghUser = await GitHub.getUser();
 
    return {
       hljs,
       path,
       keywords,
       copyright,
-      title: gitHubUser.login,
-      author: gitHubUser.name,
-      description: gitHubUser.bio,
+      title: ghUser.login,
+      author: ghUser.name,
+      description: ghUser.bio,
       gh: {
-         ...gitHubUser
+         ...ghUser
       }
    }
 }

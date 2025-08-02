@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-	import { fly, slide } from "svelte/transition";
+	import { slide } from "svelte/transition";
 
 	export let data;
 
 	let { meta, content } = data;
 
 	let time: string | null = null;
-
+	
 	onMount(() => {
 		time = "Posted: " + new Date(meta.date).toLocaleDateString("en-US", {
 			dateStyle: "full",
@@ -23,9 +23,9 @@
 	<meta name="description" content={data.description} />
 </svelte:head>
 
-{#key time}
-	<time transition:slide={{ axis: "x", delay: 100 }}>{time}</time>
-{/key}
+{#if time !== null}
+	<time hidden={!time} in:slide={{ axis: "x", duration: 100, delay: 500 }}>{time}</time>
+{/if}
 
 <h2>{meta.title}</h2>
 
@@ -45,18 +45,17 @@
 	}
 
 	time {
-		display: flex;
-		margin-top: 2rem;
+		display: block;
+		max-width: fit-content;
+		overflow: hidden;
+		white-space: nowrap;
+		margin: 2rem 0;
 		padding: 0.5rem 1rem;
-		text-align: center;
 		border-radius: 0 16px 16px 0;
+		opacity: 0.8;
 		color: var(--text-muted);
-		width: fit-content;
 		background-color: var(--background);
 		border: thin solid var(--deep-purple);
-		opacity: 0.8;
 		box-shadow: 3px 2px 0 var(--pink);
-		border-left: 12px solid var(--border);
-		overflow: hidden;
 	}
 </style>

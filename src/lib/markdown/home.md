@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Welcome, from The Void
 cover: 
 author: Steven A.J.
 email: johnsonstheory@duck.com
@@ -12,10 +12,12 @@ keywords:
   - blog
 ---
 
-## Welcome, from The Void 
+### Open Code. Neon Dreams.
 
-A digital garden sprouted from a love for software & rooted in self-reliance and authenticity. No tracking, no spin - just raw thoughts, deep dives and occasional open-source news. 
+You've found my digital garden - a place rooted in authenticity and nurtured by a love for software. This is my place to think, reflect, connect, and contribute. Consume what you need & leave the rest.
 
-Not a portfolio & not for profit. This is my place to think, reflect, connect, and contribute. Consume what you need, leave the rest.
+There's no tracking here and no spin. It's not a portfolio & it's not for profit - just raw thoughts, deep dives and occasional open-source news. 
 
-**Welcome to my garden.** May peace find you in the most chaotic of places.
+**Welcome, Void Walker**. 
+
+*May peace find you in the most chaotic of places.*

@@ -6,7 +6,7 @@
    let { title } = $props();
 </script>
 
-<header class="container">
+<header>
    <div class="split">
       <h1><a href="/">{title}</a></h1>
       <a class="icon-btn" href="/settings" aria-label="Settings">
@@ -41,6 +41,7 @@
       flex-direction: column;
       gap: 1rem;
       width: 100%;
+      margin-bottom: 1rem;
    }
 
    div.split {
@@ -48,6 +49,7 @@
       justify-content: space-between;
       align-items: center;
       width: 100%;
+      height: 100%;
    }
 
    h1 {
@@ -75,16 +77,16 @@
    }
 
    nav {
+      justify-self: center;
+      align-self: center;
       grid-row: 2;
       display: flex;
       word-break: none;
-      margin: 0.5rem 0;
       gap: 1rem;
-      padding: 0.8rem 1.61rem;
-      // background-color: var(--background);
+      height: 100%;
+      width: 93%;
       border-radius: 1rem;
-      width: 100%;
-      // box-shadow: 0 0 5px var(--purple);
+      padding: 1rem 0;
    }
 
    nav > a {
@@ -92,10 +94,22 @@
       text-transform: uppercase;
       font-size: large;
       color: var(--orange);
+      padding: 1rem;
+      border-radius: 0.5rem;
    }
    
+   nav > a:hover,
+   nav > a:active {
+      color: var(--pink);
+      background-color: var(--background);
+   }
+
    nav > a[data-active="true"] {
-      text-shadow: 3px -6px 6px var(--pink);
+      font-weight: bolder;
+      // text-shadow: 2px 2px 2px var(--pink);
+      color: var(--pink);
+      background-color: var(--background);
+      box-shadow: 2px 2px 0 var(--pink);
    }
 
    @media screen and (max-width: 450px) {

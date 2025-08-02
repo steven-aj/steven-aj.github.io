@@ -42,7 +42,7 @@ export default class PostItem implements IPostItem {
       const slug = path.split('/').reverse()[0].slice(null, -3);
       
       return new PostItem({
-         path: `/posts/${slug}`,
+         path: `/blog/${slug}`,
          meta: metadata
       });
    }

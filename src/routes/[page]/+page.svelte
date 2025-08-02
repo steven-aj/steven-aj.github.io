@@ -12,6 +12,6 @@
    <meta name="description" content={meta.description} />
 </svelte:head>
 
-<section class="container">
+<article class="glow">
    <svelte:component this={content} />
-</section>
+</article>
