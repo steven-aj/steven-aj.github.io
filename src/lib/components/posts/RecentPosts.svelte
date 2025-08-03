@@ -32,7 +32,6 @@
    a {
       display: flex;
       flex-direction: column;
-      /* width: 100%; */
       padding: 1rem;
       color: var(--light-blue);
       border-radius: 1rem 0 1rem 0;
@@ -43,7 +42,7 @@
 
    a:active,
    a:hover {
-      color: var(--purple);
+      /* color: var(--purple); */
       text-decoration: none;
       border-color: var(--orange);
    }
@@ -59,7 +58,8 @@
    }
    a:active > span.title,
    a:hover > span.title {
-      font-size: x-large;
+      font-weight: bolder;
+      text-shadow: 0 0 9px var(--blue);
    }
 
    a > span[itemprop="category"] {

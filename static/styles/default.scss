@@ -23,7 +23,7 @@
 :root {
    color-scheme: light;
    --background-body: var(--white);
-   --background: var(--white);
+   --background: var(--off-white);
    --background-alt: #f7f7f7;
    --selection: #9e9e9e;
    --text-main: #363636;
@@ -33,7 +33,7 @@
    --links-hover: var(--purple);
    --focus: #A26BFF;
    --border: var(--purple);
-   --code: #000;
+   --code: var(--light-blue);
    --button-base: #d0cfcf;
    --button-hover: #9b9b9b;
    --scrollbar-thumb: rgb(170, 170, 170);

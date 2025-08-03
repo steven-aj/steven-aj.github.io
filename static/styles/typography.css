@@ -78,8 +78,8 @@ p {
 }
 
 span.profane[data-censor="true"] {
-   font-family: Redacted;
-   /* color: var(--red); */
-   /* font-size: 3rem; */
-   /* letter-spacing: 0.5rem; */
+   font-family: Wavefont;
+   font-size: x-large;
+   letter-spacing: 0.5rem;
+   margin-right: -3px;
 }

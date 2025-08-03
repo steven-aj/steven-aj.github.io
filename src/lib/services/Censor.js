@@ -10,7 +10,6 @@ Censor.setCleanFunction((str) => {
 
 //@ts-ignore
 function redactProfanity(htmlElement) {
-   console.log(htmlElement);
    let censorPrefs = localStorage.getItem("censor");
    if (!censorPrefs) return;
 

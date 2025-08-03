@@ -1,7 +1,4 @@
 <script lang="ts">
-    import { page } from "$app/state";
-    import staticConfig from "$config";
-
     let { copyright, github } = $props();
 </script>
 
@@ -16,7 +13,7 @@
     footer {
         display: flex;
         flex-direction: column;
-        color: #f5f5f5;
+        color: var(--text-main);
         padding: 2rem 1rem;
         text-align: center;
         border-top: thin solid var(--border);
@@ -29,7 +26,6 @@
         margin: auto;
         margin-bottom: 2rem;
         border-radius: 100%;
-        // border: thick solid var(--background);
     }
 
     section.links {

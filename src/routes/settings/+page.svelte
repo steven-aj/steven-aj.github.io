@@ -42,7 +42,7 @@
             <Speech size="32" color="var(--blue)" opacity="0.7" />
             <div>
                 <label for="profanity">
-                    <span>Profanity Filter</span>
+                    <span>SFW Mode</span>
                     <input
                         id="profanity"
                         name="profanity"
@@ -52,7 +52,7 @@
                 </label>
                 <span class="tooltip">
                     Censor naughty words from my content. This doesn't work on
-                    images, of course, and won't hide profanity in slugs.
+                    images, of course, and it won't hide profanity in slugs.
                 </span>
             </div>
         </section>

@@ -12,6 +12,8 @@
    <meta name="description" content={meta.description} />
 </svelte:head>
 
+<h2>{@html meta.title}</h2>
+
 <article class="glow">
    <svelte:component this={content} />
 </article>

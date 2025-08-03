@@ -42,16 +42,12 @@
 
 <style>
 	h2 {
-		align-self: center;
-	}
-
-	h2 {
+		padding-left: 0;
 		width: fit-content;
-		text-align: center;
 	}
 
 	section {
-		color: var(--text-muted);
+		color: var(--text-main);
 	}
 
 	time {
@@ -63,7 +59,7 @@
 		padding: 0.5rem 1rem;
 		border-radius: 0 16px 16px 0;
 		opacity: 0.8;
-		color: var(--text-muted);
+		color: var(--text-main);
 		background-color: var(--background);
 		border-top: thin solid var(--deep-purple);
 		border-left: medium solid var(--deep-purple);
