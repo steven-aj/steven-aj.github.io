@@ -9,33 +9,26 @@
 <header>
    <div class="split">
       <h1><a href="/">{title}</a></h1>
-      <a class="icon-btn" href="/settings" role="button" aria-label="Site Settings">
-         <Settings size="28" color={`var(--pink)`} aria-label="Settings Icon"/>
+      <a
+         class="icon-btn"
+         href="/settings"
+         role="button"
+         aria-label="Site Settings"
+      >
+         <Settings size="28" color={`var(--pink)`} aria-label="Settings Icon" />
       </a>
    </div>
 
    <nav aria-label="Main Menu">
       {#each staticConfig.links as link}
-         <a href={link.route} data-active={page.url.pathname == link.route}>{link.name}</a>
+         <a href={link.route} data-active={page.url.pathname == link.route}
+            >{link.name}</a
+         >
       {/each}
    </nav>
 </header>
 
 <style lang="scss">
-   a.icon-btn {
-      display: flex;
-      padding: 0.75rem;
-      justify-content: center;
-      align-items: center;
-      border-radius: 0.5rem;
-   }
-   
-   a.icon-btn:hover,
-   a.icon-btn:active
-   a.icon-btn[toggled="true"] {
-      background-color: var(--background);
-   }
-
    header {
       display: flex;
       flex-direction: column;
@@ -57,8 +50,16 @@
       font-family: Audiowide;
       width: fit-content;
       text-transform: uppercase;
-      background: -webkit-linear-gradient(to bottom right, var(--pink), var(--deep-purple));
-      background: linear-gradient(to bottom right, var(--pink), var(--deep-purple));
+      background: -webkit-linear-gradient(
+         to bottom right,
+         var(--pink),
+         var(--deep-purple)
+      );
+      background: linear-gradient(
+         to bottom right,
+         var(--pink),
+         var(--deep-purple)
+      );
       padding: 0 1rem;
       background-clip: text;
       -webkit-background-clip: text;
@@ -69,8 +70,18 @@
    h1 a:hover,
    h1 a:focus {
       text-decoration: none;
-      background: -webkit-linear-gradient(to top right, var(--pink), var(--deep-purple), var(--background));
-      background: linear-gradient(to top right, var(--pink), var(--deep-purple), var(--background));
+      background: -webkit-linear-gradient(
+         to top right,
+         var(--pink),
+         var(--deep-purple),
+         var(--background)
+      );
+      background: linear-gradient(
+         to top right,
+         var(--pink),
+         var(--deep-purple),
+         var(--background)
+      );
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -97,7 +108,7 @@
       padding: 1rem;
       border-radius: 0.5rem;
    }
-   
+
    nav > a:hover,
    nav > a:active {
       color: var(--pink);

@@ -19,14 +19,14 @@ function redactProfanity(htmlElement) {
    htmlElement.setAttribute("data-censor", censorPrefs);
 }
 
-export default Censor;
-
 export function cleanDocument() {
    const profanity = document.querySelectorAll("span.profane");
-   
+
    if (!profanity.length) return;
 
    for (let i = 0; i < profanity.length; i++) {
       redactProfanity(profanity[i]);
    }
 }
+
+export default Censor;
