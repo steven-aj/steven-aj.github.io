@@ -9,7 +9,7 @@ const postFiles = fs.readdirSync('src/lib/markdown/posts');
 
 const postEntries = postFiles
 	.filter(f => f.endsWith('.md'))
-	.map(f => `/posts/${f.replace(/\.md$/, '')}`);
+	.map(f => `/blog/${f.replace(/\.md$/, '')}`);
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {

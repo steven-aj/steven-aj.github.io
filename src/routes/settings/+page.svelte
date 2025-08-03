@@ -1,5 +1,6 @@
 <script lang="ts">
-    import { Monitor, Speech } from "@lucide/svelte";
+    import Monitor from "@lucide/svelte/icons/monitor";
+    import Speech from "@lucide/svelte/icons/speech";
 
     export let data;
 

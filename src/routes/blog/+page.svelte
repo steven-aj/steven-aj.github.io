@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-   <title>{data.title}/Posts</title>
+   <title>{data.title}/Blog</title>
    <meta name="title" content={data.title} />
    <meta name="author" content={data.author} />
    <meta name="keywords" content={data.keywords} />
