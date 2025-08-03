@@ -41,7 +41,7 @@ export default class PostsController {
       const postPath = path.slice(19, -3);
    
       return new PostItem({
-         path: `/posts/${postPath}`,
+         path: `/blog/${postPath}`,
          meta: metadata
       });
    }

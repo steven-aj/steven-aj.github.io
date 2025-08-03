@@ -1,11 +1,15 @@
-<script>
+<script lang="ts">
    import "highlight.js/styles/atom-one-dark.css";
    import Header from "$lib/components/global/Header.svelte";
    import Footer from "$lib/components/global/Footer.svelte";
    import { fade } from "svelte/transition";
    import { quintIn } from "svelte/easing";
+   import { onNavigate } from "$app/navigation";
+    import { onMount } from "svelte";
 
    let { children, data } = $props();
+
+   
 </script>
 
 <svelte:head>

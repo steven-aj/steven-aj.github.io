@@ -1,19 +1,22 @@
 <script lang="ts">
-   import { goto } from "$app/navigation";
+   import Censor, { cleanDocument } from "$lib/services/Censor";
+    import { onMount } from "svelte";
 
    let { title, posts, glow } = $props();
 
    glow = glow === null ? false : glow;
+
+   onMount(() => cleanDocument());
 </script>
 
 {#if posts.length}
    <h2>{title}</h2>
-   <section id="RecentPosts" class={`card ${glow ? 'glow' : ''}`}>
+   <article id="RecentPosts" class={`card ${glow ? "glow" : ""}`}>
       <!-- <ul> -->
       {#each posts as post}
          <a href={post.path}>
             <span itemprop="category">{post.category}</span>
-            <span class="title">{post.title}</span>
+            <span class="title">{@html Censor.cleanProfanity(post.title)}</span>
             <span itemprop="date">
                {post.date.toLocaleDateString("en-US", {
                   dateStyle: "full",
@@ -22,38 +25,41 @@
          </a>
       {/each}
       <!-- </ul> -->
-   </section>
+   </article>
 {/if}
 
 <style>
    a {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      width: 100%;
-      padding: 1rem 1rem;
-      /* margin: 3rem 0; */
-      /* gap: 0.33rem; */
-      /* border-bottom: thin dotted var(--border); */
+      padding: 1rem;
+      color: var(--light-blue);
+      border-radius: 1rem 0 1rem 0;
+      border-left: thick solid;
+      border-right: thick solid;
+      border-color: transparent;
    }
 
+   a:active,
    a:hover {
+      /* color: var(--purple); */
       text-decoration: none;
-      /* background-color: var(--background); */
-      /* border-right: thick solid var(--border); */
-      /* border-bottom: thin solid var(--border); */
+      border-color: var(--orange);
+   }
+
+   a span {
+      hyphens: auto;
+      text-align: justify;
+      word-wrap: break-word;
    }
 
    a > span.title {
-      /* color: var(--links); */
       font-size: x-large;
-      /* line-height: 1.7rem; */
    }
-
    a:active > span.title,
    a:hover > span.title {
-      text-decoration: underline;
-      font-size: x-large;
+      font-weight: bolder;
+      text-shadow: 0 0 9px var(--blue);
    }
 
    a > span[itemprop="category"] {
@@ -62,13 +68,15 @@
       color: var(--text-muted);
       text-transform: uppercase;
       font-size: medium;
-      opacity: 0.5;
+      opacity: 0.25;
+      text-decoration: none;
    }
 
    a:active span[itemprop="category"],
    a:hover span[itemprop="category"] {
-      color: var(--orange);
+      color: var(--links);
       opacity: 1;
+      text-decoration: none !;
    }
 
    a > span[itemprop="date"] {
@@ -77,5 +85,7 @@
       color: var(--text-muted);
       opacity: 0.5;
       font-size: medium;
+      text-decoration: none;
+      margin-top: 0.1rem;
    }
 </style>

@@ -7,14 +7,14 @@
 </script>
 
 <svelte:head>
-   <title>{data.title}/Posts</title>
+   <title>{data.title}/Blog</title>
    <meta name="title" content={data.title} />
    <meta name="author" content={data.author} />
    <meta name="keywords" content={data.keywords} />
    <meta name="description" content={data.description} />
 </svelte:head>
 
-<RecentPosts title="Blog Posts" {posts} glow="true" />
+<RecentPosts title="Blog Entries" {posts} glow="true" />
 
 <style>
 

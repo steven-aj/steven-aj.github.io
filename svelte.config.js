@@ -9,14 +9,18 @@ const postFiles = fs.readdirSync('src/lib/markdown/posts');
 
 const postEntries = postFiles
 	.filter(f => f.endsWith('.md'))
-	.map(f => `/posts/${f.replace(/\.md$/, '')}`);
+	.map(f => `/blog/${f.replace(/\.md$/, '')}`);
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://svelte.dev/docs/kit/integrations
 	// for more information about preprocessors
 	preprocess: [
-		sveltePreprocess({}),
+		sveltePreprocess({
+			scss: {
+				includePaths: ['src', 'node_modules']
+			}
+		}),
 		mdsvex(mdsvexConfig),
 	],
 
@@ -34,9 +38,9 @@ const config = {
 		},
 		prerender: {
 			entries: [
-				"/", 
-				"/about", 
-				"/posts",
+				"/",
+				"/about",
+				"/blog",
 				"/settings",
 				...postEntries
 			],
