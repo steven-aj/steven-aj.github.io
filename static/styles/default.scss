@@ -173,16 +173,14 @@
 
    pre {
       border-radius: 0.5rem;
-   }
-
-   pre code {
-      margin-top: 1rem;
+      padding: 3rem 1rem !important;
    }
 
    pre::before {
       float: right;
       color: var(--code);
       opacity: 0.45;
+      margin-top: -2rem;
    }
 
    pre.language-bash::before {
