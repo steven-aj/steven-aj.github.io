@@ -44,8 +44,8 @@ article h2 {
 
 h2 {
    font-size: xx-large !important;
-   background: -webkit-linear-gradient(to bottom right, var(--pink), var(--purple)), var(--blue);
-   background: linear-gradient(to bottom right, var(--pink), var(--purple), var(--blue));
+   background: -webkit-linear-gradient(to bottom right, var(--light-blue), var(--blue));
+   background: linear-gradient(to bottom right, var(--light-blue), var(--blue));
    padding: 0 1rem;
    background-clip: text;
    -webkit-background-clip: text;
