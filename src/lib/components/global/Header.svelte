@@ -1,7 +1,7 @@
 <script lang="ts">
    import { page } from "$app/state";
    import staticConfig from "$config";
-   import { Settings } from "@lucide/svelte";
+   import Settings from "@lucide/svelte/icons/settings";
 
    let { title } = $props();
 </script>
