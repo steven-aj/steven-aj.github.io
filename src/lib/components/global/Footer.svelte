@@ -1,7 +1,7 @@
 <script lang="ts">
     import Censor, { cleanDocument } from "$lib/services/Censor";
     import { onMount } from "svelte";
-    let { copyright } = $props();
+    let { copyright, github } = $props();
 
     onMount(cleanDocument)
 </script>

@@ -9,12 +9,12 @@
 <header>
    <div class="split">
       <h1><a href="/">{title}</a></h1>
-      <a class="icon-btn" href="/settings" aria-label="Settings">
-         <Settings size="28" color={`var(--pink)`}/>
+      <a class="icon-btn" href="/settings" role="button" aria-label="Site Settings">
+         <Settings size="28" color={`var(--pink)`} aria-label="Settings Icon"/>
       </a>
    </div>
 
-   <nav>
+   <nav aria-label="Main Menu">
       {#each staticConfig.links as link}
          <a href={link.route} data-active={page.url.pathname == link.route}>{link.name}</a>
       {/each}

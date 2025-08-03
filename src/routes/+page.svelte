@@ -1,6 +1,6 @@
 <script>
    // import PostCard from "$components/PostCard.svelte";
-   import RecentPosts from '$components/blog/RecentPosts.svelte';
+   import RecentPosts from "$components/blog/RecentPosts.svelte";
 
    export let data;
 
@@ -15,10 +15,12 @@
    <meta name="description" content={meta.description} />
 </svelte:head>
 
-<h2>{meta.title}</h2>
+<article>
+   <h2>{meta.title}</h2>
 
-<article class="glow card">
-   <svelte:component this={content} />
+   <section class="glow card">
+      <svelte:component this={content} />
+   </section>
 </article>
 
 <RecentPosts title="Recent Posts" {posts} glow={false} />
