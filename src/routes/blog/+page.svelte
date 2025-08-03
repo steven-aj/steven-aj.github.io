@@ -1,5 +1,5 @@
 <script>
-   import RecentPosts from '$components/posts/RecentPosts.svelte';
+   import RecentPosts from '$components/blog/RecentPosts.svelte';
 
    export let data;
 

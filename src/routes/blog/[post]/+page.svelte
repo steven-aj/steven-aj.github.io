@@ -34,35 +34,35 @@
 	>
 {/if}
 
-<h2>{@html Censor.cleanProfanity(meta.title)}</h2>
 
-<section>
-	<svelte:component this={content} />
-</section>
+<article>
+	<h2>{@html Censor.cleanProfanity(meta.title)}</h2>
+	
+	<section>
+		<svelte:component this={content} />
+	</section>
+</article>
 
 <style>
-	h2 {
-		padding-left: 0;
-		width: fit-content;
-	}
-
 	section {
-		color: var(--text-main);
+		position: relative;
+		margin-top: 2rem;
 	}
 
 	time {
-		display: block;
+		display: flex;
+		align-self: flex-end;
 		max-width: fit-content;
 		overflow: hidden;
 		white-space: nowrap;
-		margin: 2rem 0;
+		margin: 0 0 2rem 0;
 		padding: 0.5rem 1rem;
-		border-radius: 0 16px 16px 0;
+		border-radius: 16px 0 0 16px;
 		opacity: 0.8;
 		color: var(--text-main);
 		background-color: var(--background);
 		border-top: thin solid var(--deep-purple);
-		border-left: medium solid var(--deep-purple);
-		box-shadow: 3px 2px 0 var(--pink);
+		border-right: medium solid var(--deep-purple);
+		box-shadow: -3px 2px 0 var(--pink);
 	}
 </style>

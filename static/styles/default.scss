@@ -87,6 +87,7 @@
    }
 
    article {
+      position: relative;
       padding: 1rem 1.618rem;
       color: var(--text-muted);
       background-color: var(--background);
@@ -167,20 +168,31 @@
    code {
       color: var(--code);
       background-color: var(--background);
-      padding: 0.16rem 0.5rem;
+      padding: 0.1rem 0.4rem;
       border-radius: 0.5rem;
+      overflow-x: scroll;
    }
 
    pre {
+      position: relative;
       border-radius: 0.5rem;
-      padding: 3rem 1rem !important;
+      padding: 1rem;
+      overflow-x: hidden;
    }
 
    pre::before {
-      float: right;
+      position: absolute;
+      right: 1.61rem;
       color: var(--code);
       opacity: 0.45;
-      margin-top: -2rem;
+   }
+
+   pre code {
+      display: block;
+      background-color: var(--background);
+      padding: 2rem 0.5rem;
+      border-radius: 0.5rem;
+      overflow-x: scroll;
    }
 
    pre.language-bash::before {
@@ -188,7 +200,11 @@
    }
 
    pre.language-javascript::before {
-      content: 'javascript'
+      content: 'js'
+   }
+
+   pre.language-markdown::before {
+      content: 'md'
    }
 
    .glow {
