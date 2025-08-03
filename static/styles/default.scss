@@ -88,10 +88,6 @@
 
    article {
       position: relative;
-      padding: 1rem 1.618rem;
-      color: var(--text-muted);
-      background-color: var(--background);
-      border-radius: 2rem 0 2rem 0;
       hyphens: auto;
       text-align: justify;
       word-wrap: break-word;
@@ -205,6 +201,13 @@
 
    pre.language-markdown::before {
       content: 'md'
+   }
+
+   .card {
+      color: var(--text-muted);
+      background-color: var(--background);
+      border-radius: 2rem 0 2rem 0;
+      padding: 1rem 1.618rem;
    }
 
    .glow {
