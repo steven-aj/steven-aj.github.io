@@ -1,11 +1,15 @@
 <script lang="ts">
-    let { copyright, github } = $props();
+    import Censor, { cleanDocument } from "$lib/services/Censor";
+    import { onMount } from "svelte";
+    let { copyright } = $props();
+
+    onMount(cleanDocument)
 </script>
 
 <footer>
     <section class="baseline">
         <span class="copyright">{@html copyright}</span>
-        <span class="faded">Don't steal my shit.</span>
+        <span class="faded">{@html Censor.cleanProfanity("Don't steal my shit")}</span>
     </section>
 </footer>
 
