@@ -1,13 +1,15 @@
 <script lang="ts">
     import Monitor from "@lucide/svelte/icons/monitor";
     import Speech from "@lucide/svelte/icons/speech";
+    import { cleanDocument } from "$lib/services/Censor.js";
 
     export let data;
 
     let { censor } = data;
 
-    function updateSettings() {
-        localStorage.setItem('censor', `${censor}`);
+    function updateCensor(checkbox: HTMLInputElement) {
+        localStorage.setItem('censor', `${checkbox.value}`);
+        cleanDocument();
     }
 </script>
 
@@ -19,10 +21,10 @@
         them across all devices you visit from.
     </p>
 
-    <form onchange={updateSettings}>
+    <form>
         <h3>Global Settings</h3>
-        <section>
-            <Monitor size="32" color="var(--blue)" opacity="0.7" />
+        <section aria-label="Theme Mode">
+            <Monitor size="32" color="var(--purple)" opacity="0.7" aria-label="Theme Mode Icon"/>
             <div>
                 <label for="mode">
                     <span>Theme Mode</span>
@@ -39,8 +41,8 @@
             </div>
         </section>
 
-        <section>
-            <Speech size="32" color="var(--blue)" opacity="0.7" />
+        <section aria-label="SFW Mode">
+            <Speech size="32" color="var(--purple)" opacity="0.7" aria-label="SFW Mode Icon" />
             <div>
                 <label for="profanity">
                     <span>SFW Mode</span>
@@ -49,6 +51,8 @@
                         name="profanity"
                         type="checkbox"
                         bind:checked={censor}
+                        value={censor}
+                        onchange={({currentTarget}) => updateCensor(currentTarget)}
                     />
                 </label>
                 <span class="tooltip">
@@ -71,6 +75,7 @@
         flex-direction: column;
         gap: 0.2rem;
         border-top: thin solid var(--border);
+        color: var(--form-text);
     }
 
     form h3 {

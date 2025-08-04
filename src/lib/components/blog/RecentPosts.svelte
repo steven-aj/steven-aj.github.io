@@ -14,7 +14,7 @@
    <article id="RecentPosts" class={`card ${glow ? "glow" : ""}`}>
       <!-- <ul> -->
       {#each posts as post}
-         <a href={post.path}>
+         <a href={post.path} aria-label="Blog Post Link">
             <span itemprop="category">{post.category}</span>
             <span class="title">{@html Censor.cleanProfanity(post.title)}</span>
             <span itemprop="date">

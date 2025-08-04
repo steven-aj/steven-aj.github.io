@@ -4,12 +4,15 @@
    import Footer from "$lib/components/global/Footer.svelte";
    import { fade } from "svelte/transition";
    import { quintIn } from "svelte/easing";
-   import { onNavigate } from "$app/navigation";
-    import { onMount } from "svelte";
+   import { onMount } from "svelte";
 
    let { children, data } = $props();
 
-   
+   onMount(() => {
+      if (!localStorage.getItem('censor')) {
+         localStorage.setItem('censor', 'true');
+      }
+   })
 </script>
 
 <svelte:head>

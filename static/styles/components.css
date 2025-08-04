@@ -1,0 +1,74 @@
+a.icon-btn {
+   display: flex;
+   padding: 0.75rem;
+   justify-content: center;
+   align-items: center;
+   border-radius: 0.5rem;
+}
+
+a.icon-btn:hover,
+a.icon-btn:active a.icon-btn[toggled="true"] {
+   background-color: var(--background);
+}
+
+blockquote div.callout-content p {
+   color: var(--text-muted);
+   font-size: large;
+   line-height: 2rem;
+}
+
+blockquote[data-callout="note"] {
+   border-color: var(--light-blue);
+   box-shadow: 0rem 0rem 1rem var(--light-blue);
+
+   summary {
+      color: var(--light-blue);
+   }
+}
+
+blockquote[data-callout="tip"] {
+   border-color: var(--green);
+   box-shadow: 0rem 0rem 1rem var(--green);
+
+   summary {
+      color: var(--green);
+   }
+}
+
+blockquote[data-callout="important"] {
+   border-color: var(--light-purple);
+   box-shadow: 0rem 0rem 1rem var(--light-purple);
+
+   summary {
+      color: var(--light-purple);
+   }
+}
+
+blockquote[data-callout="caution"] {
+   border-color: var(--caution);
+   box-shadow: 0rem 0rem 1rem var(--caution);
+
+   summary {
+      color: var(--caution);
+   }
+}
+
+blockquote[data-callout="warning"] {
+   border-color: var(--danger);
+   box-shadow: 0rem 0rem 1rem var(--danger);
+
+   summary {
+      color: var(--danger);
+   }
+}
+
+.card {
+   color: var(--text-muted);
+   background-color: var(--background);
+   border-radius: 2rem 0 2rem 0;
+   padding: 1rem 1.618rem;
+}
+
+.glow {
+   box-shadow: 4px 6px 0 var(--pink);
+}
