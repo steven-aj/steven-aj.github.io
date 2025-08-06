@@ -27,6 +27,7 @@
 
 <style>
    article {
-      margin: 2rem 0;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
    }
 </style>

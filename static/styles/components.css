@@ -11,8 +11,11 @@ a.icon-btn:active a.icon-btn[toggled="true"] {
    background-color: var(--background);
 }
 
+blockquote.callout {
+      border-radius: 1rem;
+}
+
 blockquote div.callout-content p {
-   color: var(--text-muted);
    font-size: large;
    line-height: 2rem;
 }

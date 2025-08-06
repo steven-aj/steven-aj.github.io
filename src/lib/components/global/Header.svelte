@@ -4,6 +4,7 @@
    import Settings from "@lucide/svelte/icons/settings";
 
    let { title } = $props();
+   console.log(page.url.pathname);
 </script>
 
 <header>
@@ -14,8 +15,9 @@
          href="/settings"
          role="button"
          aria-label="Site Settings"
+         data-active={page.url.pathname == "/settings"}
       >
-         <Settings size="28" color={`var(--pink)`} aria-label="Settings Icon" />
+         <Settings size="28" color={`${page.url.pathname === "/settings" ? 'var(--pink)' : 'var(--light-blue)'}`} aria-label="Settings Icon" />
       </a>
    </div>
 
@@ -64,7 +66,7 @@
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      color: var(--purple);
+      // color: var(--purple);
    }
 
    h1 a:hover,
@@ -121,6 +123,10 @@
       color: var(--pink);
       background-color: var(--background);
       box-shadow: 2px 2px 2px var(--pink);
+   }
+
+   a[role="button"][data-active="true"] {
+      box-shadow: inset -2px -2px 2px var(--pink);
    }
 
    @media screen and (max-width: 450px) {
