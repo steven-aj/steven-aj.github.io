@@ -36,7 +36,7 @@ jobs:
 
       - name : Sync external-content images
         run: |
-          rsync -ar --delete content-stub/assets/images static/images/
+          rsync -ar --delete content-stub/assets/images static/assets/images/
 
       - name : Remove external-content stub
         run: |
