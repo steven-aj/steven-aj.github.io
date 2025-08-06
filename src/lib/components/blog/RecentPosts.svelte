@@ -78,6 +78,7 @@
       text-transform: uppercase;
       font-size: medium;
       text-decoration: none;
+      opacity: 0.6;
    }
 
    a:active .category,
