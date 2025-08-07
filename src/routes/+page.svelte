@@ -1,10 +1,11 @@
 <script>
    // import PostCard from "$components/PostCard.svelte";
    import RecentPosts from "$components/blog/RecentPosts.svelte";
+   import MicroJournal from "$components/activities/MicroJournal.svelte";
 
    export let data;
 
-   let { meta, content, posts } = data;
+   let { meta, content, posts, daily } = data;
 </script>
 
 <svelte:head>
@@ -25,9 +26,8 @@
 
 <RecentPosts title="Recent Posts" {posts} glow={false} />
 
+<MicroJournal title="Micro Journal" {daily} />
+
 <style>
-   article {
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-   }
+   
 </style>

@@ -1,4 +1,4 @@
-import type { IPostItem, IPostMeta } from "../shared/interfaces/post.interfaces";
+import type { IPostItem, IPostMeta } from "../shared/interfaces";
 
 export default class PostItem implements IPostItem {
    path: string;
@@ -40,7 +40,7 @@ export default class PostItem implements IPostItem {
    static async create([path, resolver]: Array<any>) {
       const { metadata } = await resolver();
       const slug = path.split('/').reverse()[0].slice(null, -3);
-      
+
       return new PostItem({
          path: `/blog/${slug}`,
          meta: metadata

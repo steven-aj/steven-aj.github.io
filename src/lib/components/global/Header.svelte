@@ -4,7 +4,6 @@
    import Settings from "@lucide/svelte/icons/settings";
 
    let { title } = $props();
-   console.log(page.url.pathname);
 </script>
 
 <header>
