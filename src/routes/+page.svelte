@@ -24,10 +24,6 @@
    </section>
 </article>
 
-<RecentPosts title="Recent Posts" {posts} glow={false} />
-
 <MicroJournal title="Micro Journal" {daily} />
 
-<style>
-   
-</style>
+<RecentPosts title="Recent Posts" {posts} glow={false} />
