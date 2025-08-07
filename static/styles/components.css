@@ -75,3 +75,15 @@ blockquote[data-callout="warning"] {
 .glow {
    box-shadow: 4px 6px 0 var(--pink);
 }
+
+.journal section {
+   padding: 3rem;
+}
+
+.journal section p {
+   font-size: medium;
+}
+
+.journal hr {
+   border: thin dashed;
+}

@@ -1,12 +1,12 @@
-import type { IPostItem, IPostMeta } from "../shared/interfaces/post.interfaces";
+import type { IDailyItem, IDailyMeta } from "../shared/interfaces";
 
-export default class MicroItem implements IPostItem {
+export default class DailyItem implements IDailyItem {
    path: string;
-   meta: IPostMeta;
+   meta: IDailyMeta;
 
-   constructor(post: IPostItem) {
-      this.path = post.path;
-      this.meta = post.meta;
+   constructor(daily: IDailyItem) {
+      this.path = daily.path;
+      this.meta = daily.meta;
    }
 
    public get date(): Date {
@@ -16,10 +16,6 @@ export default class MicroItem implements IPostItem {
    public get category() {
       return this.meta.category;
    }
-
-   // public get excerpt() {
-   //    return this.meta.excerpt;
-   // }
 
    public get tags() {
       return this.meta.tags;
@@ -31,7 +27,11 @@ export default class MicroItem implements IPostItem {
 
    static async create([path, resolver]: Array<any>) {
       const { metadata } = await resolver();
+      const dailyDate = path.split('/').reverse()[0].slice(null, -3);
       
-      return new MicroItem({ ...metadata });
+      return new DailyItem({ 
+         path: dailyDate, 
+         meta: metadata 
+      });
    }
 }

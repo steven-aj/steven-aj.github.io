@@ -1,14 +1,16 @@
-import { Posts } from "$lib/api";
+import { Posts, Daily } from "$lib/api";
 
 export async function load({ parent, url }) {
+	const posts = await Posts.getRecent(8);
+	const meta = await parent();
 
 	// @ts-ignore
 	const page = await import('$markdown/home.md');
-	
-	const meta = await parent();
-	const posts = await Posts.getRecent(8);
 	const { title, description, keywords } = page.metadata;
 	const content = page.default;
+
+	const dailyEntries = await Daily.getRecent();
+	const daily = await import(`$markdown/daily/${dailyEntries[0].path}.md`);
 	
 	return {
 		meta: {
@@ -18,6 +20,10 @@ export async function load({ parent, url }) {
 			author: meta.author
 		},
 		content,
-		posts
+		posts,
+		daily: {
+			meta: daily.metadata,
+			content: daily.default
+		}
 	};
 }

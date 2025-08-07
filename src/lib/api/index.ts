@@ -1,15 +1,19 @@
+import DailyController from "./controllers/DailyController";
 import PostsController from "./controllers/PostsController";
 
-class Data {
+class ContentAPI {
+
+   public readonly Daily: DailyController;
    public readonly Posts: PostsController;
 
    constructor() {
+      this.Daily = new DailyController();
       this.Posts = new PostsController();
    }
 }
 
-const Collections = new Data();
-const { Posts } = Collections;
+const Collections = new ContentAPI();
+const { Posts, Daily } = Collections;
 
 export default Collections;
-export { Posts };
+export { Posts, Daily };
