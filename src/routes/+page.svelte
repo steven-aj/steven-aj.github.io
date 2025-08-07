@@ -27,7 +27,3 @@
 <MicroJournal title="Micro Journal" {daily} />
 
 <RecentPosts title="Recent Posts" {posts} glow={false} />
-
-<style>
-   
-</style>
