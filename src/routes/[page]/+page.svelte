@@ -14,6 +14,6 @@
 
 <h2>{@html meta.title}</h2>
 
-<article class="card glow">
+<article>
    <svelte:component this={content} />
 </article>

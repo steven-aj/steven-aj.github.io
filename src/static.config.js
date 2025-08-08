@@ -5,6 +5,10 @@ export default {
             route: "/"
         },
         {
+            name: "Journal",
+            route: "/journal"
+        },
+        {
             name: "Blog",
             route: "/blog"
         },

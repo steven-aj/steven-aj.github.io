@@ -12,9 +12,8 @@
 {#if posts.length}
    <article id="RecentPosts">
       <h2>{title}</h2>
-      <section class={`card ${glow ? "glow" : ""}`}>
-         <!-- <ul> -->
-         {#each posts as post}
+      {#each posts as post}
+         <section>
             <a href={post.path} aria-label="Blog Post Link">
                <span class={`category ${post.category.toLowerCase()}`}>
                   {post.category}
@@ -28,29 +27,25 @@
                   })}
                </span>
             </a>
-         {/each}
-         <!-- </ul> -->
-      </section>
+         </section>
+      {/each}
    </article>
 {/if}
 
 <style>
+   section {
+      border-bottom: thin dotted var(--border);
+   }
    a {
       display: flex;
       flex-direction: column;
       padding: 1rem;
-      /* color: var(--light-blue); */
       border-radius: 1rem 0 1rem 0;
-      /* border-left: thick solid; */
-      /* border-right: thick solid; */
-      /* border-color: transparent; */
    }
 
    a:active,
    a:hover {
-      /* color: var(--purple); */
       text-decoration: none;
-      /* border-color: var(--orange); */
    }
 
    a span {
@@ -61,14 +56,14 @@
 
    a > span.title {
       font-size: x-large;
-      color: var(--light-purple);
+      color: var(--pink);
    }
 
    a:active > span.title,
    a:hover > span.title {
       font-weight: bolder;
-      color: var(--blue);
-      text-shadow: 0 0 5px var(--blue);
+      color: var(--pink);
+      text-shadow: 0 0 5px var(--pink);
    }
 
    .category {
@@ -78,12 +73,10 @@
       text-transform: uppercase;
       font-size: medium;
       text-decoration: none;
-      opacity: 0.6;
    }
 
    a:active .category,
    a:hover .category {
-      opacity: 1;
       text-decoration: none !;
    }
 

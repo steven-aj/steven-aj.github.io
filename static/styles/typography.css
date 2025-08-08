@@ -14,6 +14,12 @@
 }
 
 @font-face {
+   font-family: 'PressStart2P';
+   src: url('/fonts/Press_Start_2P/PressStart2P-Regular.ttf') format('truetype');
+}
+
+/* Redactive Fonts */
+@font-face {
    font-family: 'Wavefont';
    src: url('/fonts/Wavefont/Wavefont-VariableFont.ttf') format('truetype');
 }
@@ -52,6 +58,8 @@ h2 {
    background: linear-gradient(to bottom right, var(--light-blue), var(--blue));
    padding: 0 1rem;
    background-clip: text;
+   text-justify: auto;
+   width: fit-content;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }

@@ -41,6 +41,7 @@ const config = {
 				"/",
 				"/about",
 				"/blog",
+				"/journal",
 				"/settings",
 				...postEntries
 			],

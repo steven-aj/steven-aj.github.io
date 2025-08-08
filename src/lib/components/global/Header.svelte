@@ -16,7 +16,7 @@
          aria-label="Site Settings"
          data-active={page.url.pathname == "/settings"}
       >
-         <Settings size="28" color={`${page.url.pathname === "/settings" ? 'var(--pink)' : 'var(--light-blue)'}`} aria-label="Settings Icon" />
+         <Settings size="28" color={`${page.url.pathname === "/settings" ? 'var(--pink)' : 'var(--text-muted)'}`} aria-label="Settings Icon" />
       </a>
    </div>
 
@@ -54,18 +54,17 @@
       background: -webkit-linear-gradient(
          to bottom right,
          var(--pink),
-         var(--deep-purple)
+         var(--purple)
       );
       background: linear-gradient(
          to bottom right,
          var(--pink),
-         var(--deep-purple)
+         var(--purple)
       );
       padding: 0 1rem;
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      // color: var(--purple);
    }
 
    h1 a:hover,
@@ -118,7 +117,6 @@
 
    nav > a[data-active="true"] {
       font-weight: bolder;
-      // text-shadow: 2px 2px 2px var(--pink);
       color: var(--pink);
       background-color: var(--background);
       box-shadow: 2px 2px 2px var(--pink);

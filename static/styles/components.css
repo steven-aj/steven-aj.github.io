@@ -66,24 +66,30 @@ blockquote[data-callout="warning"] {
 }
 
 .card {
-   color: var(--text-muted);
    background-color: var(--background);
    border-radius: 2rem 0 2rem 0;
    padding: 1rem 1.618rem;
 }
 
-.glow {
-   box-shadow: 4px 6px 0 var(--pink);
+.card p {
+   opacity: 0.9;
 }
 
-.journal section {
+.glow {
+   box-shadow: 4px 6px 0 var(--deep-purple);
+}
+
+.journal {
    padding: 3rem;
 }
 
-.journal section p {
-   font-size: medium;
+.journal p {
+   font-size: small;
+   font-family: PressStart2P;
 }
 
 .journal hr {
    border: thin dashed;
+   margin: 3rem auto;
+   max-width: 720px;
 }

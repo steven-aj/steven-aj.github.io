@@ -2,9 +2,9 @@
    let { title, daily } = $props();
 </script>
 
-<article class="journal">
+<article>
    <h2>{title}</h2>
-   <section class="card">
+   <section class="journal card">
       <h3>
          {new Date(daily.meta.date).toLocaleDateString("en-US", {
             dateStyle: "full",
