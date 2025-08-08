@@ -26,4 +26,4 @@
 
 <RecentPosts title="Recent Posts" {posts} glow={false} />
 
-<MicroJournal title="Micro Journal" {daily} />
+<MicroJournal title="Latest Journal Entry" {daily} />

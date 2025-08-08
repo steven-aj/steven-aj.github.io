@@ -66,10 +66,13 @@ blockquote[data-callout="warning"] {
 }
 
 .card {
-   color: var(--text-muted);
    background-color: var(--background);
    border-radius: 2rem 0 2rem 0;
    padding: 1rem 1.618rem;
+}
+
+.card p {
+   opacity: 0.9;
 }
 
 .glow {
