@@ -86,6 +86,7 @@ blockquote[data-callout="warning"] {
 .journal p {
    font-size: small;
    font-family: PressStart2P;
+   color: var(--text-muted);
 }
 
 .journal hr {
