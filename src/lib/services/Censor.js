@@ -4,6 +4,13 @@ const Censor = new CensorSensor();
 
 Censor.removeWord("hell");
 
+Censor.addWord("shit.");
+Censor.addWord("fuck.");
+Censor.addWord("ass.");
+Censor.addWord("asshole.");
+Censor.addWord("motherfucker.");
+
+
 Censor.setCleanFunction((str) => {
    return `<span class="profane" data-censor="true">${str}</span>`;
 });
