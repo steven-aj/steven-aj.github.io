@@ -56,14 +56,14 @@
 
    a > span.title {
       font-size: x-large;
-      color: var(--light-purple);
+      color: var(--pink);
    }
 
    a:active > span.title,
    a:hover > span.title {
       font-weight: bolder;
-      color: var(--blue);
-      text-shadow: 0 0 5px var(--blue);
+      color: var(--pink);
+      text-shadow: 0 0 5px var(--pink);
    }
 
    .category {

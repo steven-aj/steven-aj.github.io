@@ -73,7 +73,7 @@ blockquote[data-callout="warning"] {
 }
 
 .glow {
-   box-shadow: 4px 6px 0 var(--pink);
+   box-shadow: 4px 6px 0 var(--deep-purple);
 }
 
 .journal section {
