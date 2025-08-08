@@ -79,14 +79,17 @@ blockquote[data-callout="warning"] {
    box-shadow: 4px 6px 0 var(--deep-purple);
 }
 
-.journal section {
+.journal {
    padding: 3rem;
 }
 
-.journal section p {
-   font-size: medium;
+.journal p {
+   font-size: small;
+   font-family: PressStart2P;
 }
 
 .journal hr {
    border: thin dashed;
+   margin: 3rem auto;
+   max-width: 720px;
 }

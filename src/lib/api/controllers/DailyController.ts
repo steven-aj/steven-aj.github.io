@@ -36,6 +36,12 @@ export default class DailyController {
       return daily.slice(0, 1)[0];
    }
 
+   public async getCurrentMonth() {
+      const currentDate = new Date();
+      const daily: DailyItem[] = await this.getAll();
+      return daily.filter((item) => item.date.getMonth() === currentDate.getMonth());
+   }
+
    public async getRecent(count = 1) {
       const daily: DailyItem[] = await this.getAll();
       return daily.slice(0, count);
