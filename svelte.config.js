@@ -49,7 +49,7 @@ const config = {
 		}
 	},
 
-	extensions: [".svelte", ".md"],
+	extensions: [".svelte", ".md"]
 };
 
 export default config;
