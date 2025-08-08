@@ -52,6 +52,8 @@ h2 {
    background: linear-gradient(to bottom right, var(--light-blue), var(--blue));
    padding: 0 1rem;
    background-clip: text;
+   text-justify: auto;
+   width: fit-content;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }

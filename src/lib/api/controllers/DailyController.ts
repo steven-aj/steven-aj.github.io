@@ -31,6 +31,11 @@ export default class DailyController {
       return uniq(tags);
    }
 
+   public async getLatest() {
+      const daily: DailyItem[] = await this.getAll();
+      return daily.slice(0, 1)[0];
+   }
+
    public async getRecent(count = 1) {
       const daily: DailyItem[] = await this.getAll();
       return daily.slice(0, count);

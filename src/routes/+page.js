@@ -9,8 +9,8 @@ export async function load({ parent, url }) {
 	const { title, description, keywords } = page.metadata;
 	const content = page.default;
 
-	const dailyEntries = await Daily.getRecent();
-	const daily = await import(`$markdown/daily/${dailyEntries[0].path}.md`);
+	const daily = await Daily.getLatest();
+	const latestDaily = await import(`$markdown/daily/${daily.path}.md`);
 	
 	return {
 		meta: {
@@ -22,8 +22,8 @@ export async function load({ parent, url }) {
 		content,
 		posts,
 		daily: {
-			meta: daily.metadata,
-			content: daily.default
+			meta: latestDaily.metadata,
+			content: latestDaily.default
 		}
 	};
 }
