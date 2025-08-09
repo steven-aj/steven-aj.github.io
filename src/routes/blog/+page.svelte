@@ -14,7 +14,7 @@
    <meta name="description" content={data.description} />
 </svelte:head>
 
-<RecentPosts title="Blog Entries" {posts} glow="true" />
+<RecentPosts title="Blog Entries" {posts} glow={true} card={true} />
 
 <style>
 
