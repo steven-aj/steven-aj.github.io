@@ -1,6 +1,6 @@
 export async function load({ parent, params }) {
 	const meta = await parent();
-	const post = await import(`$markdown/posts/${params.post}.md`);
+	const post = await import(`$markdown/blog/${params.category}/${params.post}.md`);
 	const content = post.default;
 
 	return {

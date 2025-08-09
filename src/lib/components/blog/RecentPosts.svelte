@@ -80,7 +80,7 @@
       text-decoration: none !;
    }
 
-   .category.tutorial {
+   .category.tutorials {
       color: var(--green);
    }
 
@@ -88,12 +88,16 @@
       color: var(--orange);
    }
 
-   .category.rant {
-      color: var(--red);
+   .category.rants {
+      color: var(--purple);
    }
 
    .category.meta {
       color: var(--yellow);
+   }
+
+   .category.gaming {
+      color: var(--light-blue);
    }
 
    a > .date {

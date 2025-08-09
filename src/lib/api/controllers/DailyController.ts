@@ -46,14 +46,4 @@ export default class DailyController {
       const daily: DailyItem[] = await this.getAll();
       return daily.slice(0, count);
    }
-
-   static async create([path, resolver]: any[]) {
-      const { metadata } = await resolver();
-      const dailyPath = path.slice(19, -3);
-   
-      return new DailyItem({
-         path: dailyPath,
-         meta: metadata
-      });
-   }
 }
