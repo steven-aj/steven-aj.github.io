@@ -5,12 +5,12 @@ export default {
             route: "/"
         },
         {
-            name: "Journal",
-            route: "/journal"
-        },
-        {
             name: "Blog",
             route: "/blog"
+        },
+        {
+            name: "Journal",
+            route: "/journal"
         },
         {
             name: "About",
