@@ -32,7 +32,7 @@ jobs:
       - name: Checkout content repo
         uses: actions/checkout@v4
         with:
-          respository: ${{ secrets.CONTENT_REPO }}
+          repository: ${{ secrets.CONTENT_REPO }}
           token: ${{ secrets.CONTENT_REPO_TOKEN }}
           path: content-stub
           ref: main
