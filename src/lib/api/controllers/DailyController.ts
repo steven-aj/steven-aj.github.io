@@ -3,7 +3,7 @@ import { sortByDate, filterPublished } from "../shared/utils";
 import uniq from "lodash/uniq";
 
 export default class DailyController {
-   private markdownEntries = Object.entries(import.meta.glob('/src/lib/markdown/daily/**/*.md'));
+   private markdownEntries = Object.entries(import.meta.glob('/src/lib/markdown/daily/*.md'));
 
    async getAll() {
       const daily: DailyItem[] = await Promise.all(
@@ -45,15 +45,5 @@ export default class DailyController {
    public async getRecent(count = 1) {
       const daily: DailyItem[] = await this.getAll();
       return daily.slice(0, count);
-   }
-
-   static async create([path, resolver]: any[]) {
-      const { metadata } = await resolver();
-      const dailyPath = path.slice(19, -3);
-   
-      return new DailyItem({
-         path: dailyPath,
-         meta: metadata
-      });
    }
 }

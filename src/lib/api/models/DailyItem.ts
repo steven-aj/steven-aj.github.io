@@ -1,6 +1,7 @@
 import type { IDailyItem, IDailyMeta } from "../shared/interfaces";
 
 export default class DailyItem implements IDailyItem {
+
    path: string;
    meta: IDailyMeta;
 
@@ -27,8 +28,8 @@ export default class DailyItem implements IDailyItem {
 
    static async create([path, resolver]: Array<any>) {
       const { metadata } = await resolver();
-      const dailyDate = path.split('/').reverse()[0].slice(null, -3);
-      
+      const dailyDate = path.split('daily/')[1].slice(0, -3);
+            
       return new DailyItem({ 
          path: dailyDate, 
          meta: metadata 

@@ -20,10 +20,17 @@ function readFilesRecursively(dir) {
 }
 
 const postFiles = readFilesRecursively('src/lib/markdown/blog');
+// const dailyFiles = readFilesRecursively('src/lib/markdown/daily');
 
 const postEntries = postFiles
 	.filter(f => f.endsWith('.md'))
-	.map(f => `/blog/${f.replace(/\.md$/, '')}`);
+	.map(f => f.split('markdown')[1])
+	.map(f => `${f.replace(/\.md$/, '')}`);
+
+// const dailyEntries = dailyFiles
+// 	.filter(f => f.endsWith('.md'))
+// 	.map(f => f.split('markdown')[1])
+// 	.map(f => `${f.replace(/\.md$/, '')}`);
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -55,6 +62,7 @@ const config = {
 				"/",
 				"/about",
 				"/blog",
+				"/blog/*",
 				"/journal",
 				"/settings",
 				...postEntries

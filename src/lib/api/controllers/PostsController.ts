@@ -35,14 +35,4 @@ export default class PostsController {
       const posts: PostItem[] = await this.getAll();
       return posts.slice(0, count);
    }
-
-   static async create([path, resolver]: any[]) {
-      const { metadata } = await resolver();
-      // const postPath = path.split('markdown')[1].slice(0, -3);
-   
-      return new PostItem({
-         path: path,
-         meta: metadata
-      });
-   }
 }
