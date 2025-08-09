@@ -5,7 +5,21 @@ import mdsvexConfig from './mdsvex.config.js';
 import { sveltePreprocess } from 'svelte-preprocess';
 import { mdsvex } from 'mdsvex';
 
-const postFiles = fs.readdirSync('src/lib/markdown/posts');
+function readFilesRecursively(dir) {
+	let results = [];
+	const list = fs.readdirSync(dir, { withFileTypes: true });
+	for (const entry of list) {
+		const fullPath = path.join(dir, entry.name);
+		if (entry.isDirectory()) {
+			results = results.concat(readFilesRecursively(fullPath));
+		} else if (entry.isFile()) {
+			results.push(fullPath);
+		}
+	}
+	return results;
+}
+
+const postFiles = readFilesRecursively('src/lib/markdown/blog');
 
 const postEntries = postFiles
 	.filter(f => f.endsWith('.md'))

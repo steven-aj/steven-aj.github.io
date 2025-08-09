@@ -3,7 +3,7 @@ import { sortByDate, filterPublished } from "../shared/utils";
 import uniq from "lodash/uniq";
 
 export default class PostsController {
-   private markdownEntries = Object.entries(import.meta.glob('/src/lib/markdown/posts/*.md'));
+   private markdownEntries = Object.entries(import.meta.glob('/src/lib/markdown/blog/**/*.md'));
 
    async getAll() {
       const posts: PostItem[] = await Promise.all(
@@ -38,10 +38,10 @@ export default class PostsController {
 
    static async create([path, resolver]: any[]) {
       const { metadata } = await resolver();
-      const postPath = path.slice(19, -3);
+      // const postPath = path.split('markdown')[1].slice(0, -3);
    
       return new PostItem({
-         path: `/blog/${postPath}`,
+         path: path,
          meta: metadata
       });
    }

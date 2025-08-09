@@ -3,7 +3,7 @@ import { sortByDate, filterPublished } from "../shared/utils";
 import uniq from "lodash/uniq";
 
 export default class DailyController {
-   private markdownEntries = Object.entries(import.meta.glob('/src/lib/markdown/daily/*.md'));
+   private markdownEntries = Object.entries(import.meta.glob('/src/lib/markdown/daily/**/*.md'));
 
    async getAll() {
       const daily: DailyItem[] = await Promise.all(

@@ -39,10 +39,10 @@ export default class PostItem implements IPostItem {
 
    static async create([path, resolver]: Array<any>) {
       const { metadata } = await resolver();
-      const slug = path.split('/').reverse()[0].slice(null, -3);
+      const slug = path.split('markdown')[1].slice(0, -3);
 
       return new PostItem({
-         path: `/blog/${slug}`,
+         path: `${slug}`,
          meta: metadata
       });
    }
