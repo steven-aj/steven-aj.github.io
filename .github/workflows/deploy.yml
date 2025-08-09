@@ -26,13 +26,20 @@ jobs:
           node-version: 20
           cache: npm
 
-      - name: Clone external-content stub
-        run: |
-          git clone --depth=1 --branch main ${{ vars.CONTENT_REPO_URL }} content-stub
+      #- name: Clone external-content stub
+       # run: |
+        #  git clone --depth=1 --branch main ${{ vars.CONTENT_REPO_URL }} content-stub
+      - name: Checkout content repo
+        uses: actions/checkout@v4
+        with:
+          respository: ${{ secrets.CONTENT_REPO }}
+          token: ${{ secrets.CONTENT_REPO_TOKEN }}
+          path: content-stub
+          ref: main
 
       - name: Sync external-content files
         run: |
-          rsync -ar --delete --exclude _images/ content-stub/ src/lib/markdown/
+          rsync -ar --delete --exclude assets/ content-stub/ src/lib/markdown/
 
       - name : Sync external-content images
         run: |

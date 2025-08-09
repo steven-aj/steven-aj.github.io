@@ -2,6 +2,7 @@
 @import "/styles/typography.css";
 @import "/styles/components.css";
 @import "/styles/colors.css";
+@import "/styles/katex/katex.min.css";
 
 :global {
    body {
@@ -22,6 +23,12 @@
       word-wrap: break-word;
       margin-top: 1rem;
       margin-bottom: 1rem;
+   }
+
+   article ul {
+      font-size: x-large;
+      line-height: 2.5rem;
+      color: var(--text-muted);
    }
 
    blockquote {

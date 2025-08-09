@@ -8,7 +8,7 @@ export default class DailyController {
    async getAll() {
       const daily: DailyItem[] = await Promise.all(
          this.markdownEntries.map(DailyItem.create)
-      ).then(filterPublished).then(sortByDate);
+      ).then(sortByDate);
 
       return daily;
    }
