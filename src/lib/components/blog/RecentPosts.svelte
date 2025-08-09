@@ -80,7 +80,7 @@
       text-decoration: none !;
    }
 
-   .category.tutorials {
+   .category.tutorial {
       color: var(--green);
    }
 
@@ -88,7 +88,7 @@
       color: var(--orange);
    }
 
-   .category.rants {
+   .category.rant {
       color: var(--purple);
    }
 
