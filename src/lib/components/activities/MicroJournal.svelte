@@ -1,10 +1,14 @@
 <script>
-   let { title, daily } = $props();
+   let { title, daily, card } = $props();
+
+   let cardStyle = card ? "card" : "";
 </script>
 
 <article>
-   <h2>{title}</h2>
-   <section class="journal card">
+   {#if title}
+      <h2>{title}</h2>
+   {/if}
+   <section class={`journal ${cardStyle}`}>
       <h3>
          {new Date(daily.meta.date).toLocaleDateString("en-US", {
             dateStyle: "full",

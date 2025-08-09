@@ -80,13 +80,17 @@ blockquote[data-callout="warning"] {
 }
 
 .journal {
+   padding: 0 3rem;
+}
+
+.journal.card {
    padding: 3rem;
+   color: var(--text-muted);
 }
 
 .journal p {
-   font-size: small;
+   font-size: medium;
    font-family: PressStart2P;
-   color: var(--text-muted);
 }
 
 .journal hr {

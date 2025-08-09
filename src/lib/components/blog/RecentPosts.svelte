@@ -2,9 +2,10 @@
    import Censor, { cleanDocument } from "$lib/services/Censor";
    import { onMount } from "svelte";
 
-   let { title, posts, glow } = $props();
+   let { title, posts, card, glow } = $props();
 
-   glow = glow === null ? false : glow;
+   glow = glow ? "glow" : "";
+   card = card ? "card" : "";
 
    onMount(() => cleanDocument());
 </script>
@@ -12,8 +13,8 @@
 {#if posts.length}
    <article id="RecentPosts">
       <h2>{title}</h2>
-      {#each posts as post}
-         <section>
+      <section class={`${card} ${glow}`}>
+         {#each posts as post}
             <a href={post.path} aria-label="Blog Post Link">
                <span class={`category ${post.category.toLowerCase()}`}>
                   {post.category}
@@ -27,8 +28,8 @@
                   })}
                </span>
             </a>
-         </section>
-      {/each}
+         {/each}
+      </section>
    </article>
 {/if}
 
