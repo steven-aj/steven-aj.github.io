@@ -92,6 +92,7 @@
       align-self: center;
       grid-row: 2;
       display: flex;
+      flex-wrap: wrap;
       word-break: none;
       gap: 1rem;
       height: 100%;
@@ -103,10 +104,13 @@
    nav > a {
       font-family: Anta;
       text-transform: uppercase;
+      align-self: center;
+      justify-self: center;
       font-size: large;
       color: var(--orange);
       padding: 1rem;
       border-radius: 0.5rem;
+      flex: auto auto fit-content;
    }
 
    nav > a:hover,
