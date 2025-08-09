@@ -1,5 +1,5 @@
 export async function filterPublished(posts: any) {
-   return posts.filter((post: any) => post.published || !post.published)
+   return posts.filter((post: any) => post.published)
 }
 
 export function sortByDate(posts: any) {
