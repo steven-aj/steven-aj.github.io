@@ -1,0 +1,95 @@
+@import "/styles/prism/synthwave84.css";
+@import "/styles/typography.css";
+@import "/styles/components.css";
+@import "/styles/colors.css";
+@import "/styles/katex/katex.min.css";
+
+:global {
+   body {
+      max-width: 1024px;
+      background-color: var(--background-body);
+      margin: auto auto;
+      padding: 0 1rem;
+   }
+
+   main {
+      font-family: Anta !important;
+   }
+
+   article {
+      position: relative;
+      hyphens: auto;
+      text-align: justify;
+      word-wrap: break-word;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+   }
+
+   article ul {
+      font-size: x-large;
+      line-height: 2.5rem;
+      color: var(--text-muted);
+   }
+
+   blockquote {
+      margin: 3rem 0;
+      padding: 0.5rem 1.61rem;
+      color: var(--text-muted);
+      border-left: thick solid var(--pink);
+   }
+   
+   blockquote p {
+      font-size: medium;
+      font-family: PressStart2P;
+   }
+
+   blockquote summary {
+      display: flex;
+      gap: 0.5rem;
+      font-weight: bold;
+      padding-top: 1rem;
+      font-size: large;
+   }
+
+   code {
+      color: var(--code);
+      background-color: var(--background);
+      padding: 0.1rem 0.4rem;
+      border-radius: 0.5rem;
+      overflow-x: scroll;
+   }
+
+   pre {
+      position: relative;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      overflow-x: hidden;
+   }
+
+   pre::before {
+      position: absolute;
+      right: 1.61rem;
+      color: var(--code);
+      opacity: 0.45;
+   }
+
+   pre code {
+      display: block;
+      background-color: var(--background);
+      padding: 2rem 0.5rem;
+      border-radius: 0.5rem;
+      overflow-x: scroll;
+   }
+
+   pre.language-bash::before {
+      content: 'bash';
+   }
+
+   pre.language-javascript::before {
+      content: 'js'
+   }
+
+   pre.language-markdown::before {
+      content: 'md'
+   }
+}

@@ -1,0 +1,53 @@
+@import "/styles/typography.css";
+@import "/styles/components.css";
+@import "/styles/colors.css";
+
+body {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    margin: auto;
+    color: var(--text-main);
+    /* background-color: var(--background-body); */
+}
+
+body {
+    max-width: 1024px;
+    background-color: var(--background-body);
+    margin: auto auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: Audiowide;
+    font-size: xx-large !important;
+    background: -webkit-linear-gradient(to bottom right, var(--light-blue), var(--blue));
+    background: linear-gradient(to bottom right, var(--light-blue), var(--blue));
+    padding: 0 1rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+article {
+    font-family: Anta;
+    margin: auto auto;
+}
+
+span {
+    font-style: italic;
+}
+
+a {
+    font-size: x-large;
+    color: var(--orange);
+    width: fit-content;
+    margin: auto;
+}
+
+a:hover,
+a:active {
+    color: var(--pink);
+    background-color: var(--background-body) !important;
+}

@@ -1,0 +1,82 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  repository_dispatch:
+    types: [content-published]
+  workflow_dispatch:
+
+jobs:
+  build_site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # If you're using pnpm, add this step then change the commands and cache key below to use `pnpm`
+      # - name: Install pnpm
+      #   uses: pnpm/action-setup@v2
+      #   with:
+      #     version: 8
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      #- name: Clone external-content stub
+       # run: |
+        #  git clone --depth=1 --branch main ${{ vars.CONTENT_REPO_URL }} content-stub
+      - name: Checkout content repo
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ secrets.CONTENT_REPO }}
+          token: ${{ secrets.CONTENT_REPO_TOKEN }}
+          path: content-stub
+          ref: main
+
+      - name: Sync external-content files
+        run: |
+          rsync -ar --delete --exclude assets/ content-stub/ src/lib/markdown/
+
+      - name : Sync external-content images
+        run: |
+          rsync -ar --delete content-stub/assets/images static/assets/images/
+
+      - name : Remove external-content stub
+        run: |
+          rm -rf content-stub
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build site
+        env:
+          BASE_PATH: '/${{ github.event.repository.name }}'
+        run: |
+          npm run build
+
+      - name: Upload Artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # this should match the `pages` option in your adapter-static options
+          path: 'build/'
+
+  deploy:
+    needs: build_site
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
