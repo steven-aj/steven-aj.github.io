@@ -70,6 +70,8 @@ const config = {
 				"/about",
 				"/blog",
 				"/blog/*",
+				"/news",
+				"/news/*",
 				"/journal",
 				"/settings",
 				...postEntries,
