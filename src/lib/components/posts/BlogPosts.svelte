@@ -80,26 +80,31 @@
 
    a:active .category,
    a:hover .category {
-      text-decoration: none !;
+      text-decoration: none;
    }
 
-   .category.tutorial {
+   a:active .category.tutorial,
+   a:hover .category.tutorial {
       color: var(--green);
    }
 
-   .category.news {
+   a:active .category.news,
+   a:hover .category.news {
       color: var(--orange);
    }
 
-   .category.rant {
+   a:active .category.rant,
+   a:hover .category.rant {
       color: var(--purple);
    }
 
-   .category.meta {
+   a:active .category.meta,
+   a:hover .category.meta {
       color: var(--yellow);
    }
 
-   .category.gaming {
+   a:active .category.gaming,
+   a:hover .category.gaming {
       color: var(--light-blue);
    }
 
@@ -109,7 +114,7 @@
       text-decoration: none;
       margin-top: 0.1rem;
       color: var(--off-white);
-      opacity: 0.6;
+      opacity: 0.4;
       font-size: 0.875em;
    }
 </style>

@@ -80,28 +80,17 @@
 
    a:active .category,
    a:hover .category {
-      text-decoration: none !;
+      text-decoration: none;
    }
 
-   .category.open-source {
+   a:active .category.open-source,
+   a:hover .category.open-source {
       color: var(--green);
    }
 
-   .category.alert {
+   .category.alert{
       color: var(--yellow);
    }
-
-   /* .category.rant {
-      color: var(--purple);
-   } */
-
-   /* .category.meta {
-      color: var(--yellow);
-   } */
-
-   /* .category.gaming {
-      color: var(--light-blue);
-   } */
 
    a > .date {
       display: flex;
@@ -109,7 +98,7 @@
       text-decoration: none;
       margin-top: 0.1rem;
       color: var(--off-white);
-      opacity: 0.6;
+      opacity: 0.5;
       font-size: 0.875em;
    }
 </style>
