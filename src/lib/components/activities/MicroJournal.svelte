@@ -7,7 +7,7 @@
    date.setUTCHours(12);
 </script>
 
-<div>
+<article>
    {#if title}
       <h2>{title}</h2>
    {/if}
@@ -21,4 +21,4 @@
       <!-- svelte-ignore svelte_component_deprecated -->
       <svelte:component this={daily.content} />
    </section>
-</div>
+</article>
