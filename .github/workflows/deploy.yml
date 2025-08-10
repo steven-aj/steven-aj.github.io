@@ -39,7 +39,7 @@ jobs:
 
       - name: Sync external-content files
         run: |
-          rsync -ar --delete --exclude assets/ content-stub/ src/lib/markdown/
+          rsync -ar --delete --exclude '{assets/, _templates/, _reminders, .obsidian/}' content-stub/ src/lib/markdown/
 
       - name : Sync external-content images
         run: |
