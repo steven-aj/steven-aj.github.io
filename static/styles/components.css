@@ -79,7 +79,7 @@ blockquote[data-callout="warning"] {
 }
 
 .glow {
-   box-shadow: 4px 6px 0 var(--deep-purple);
+   box-shadow: 4px 6px 0 color-mix(in srgb, var(--deep-purple) 50%, transparent);
 }
 
 .journal {

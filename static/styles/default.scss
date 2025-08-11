@@ -101,4 +101,11 @@
    pre.language-markdown::before {
       content: 'md'
    }
+
+   select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-image: none;
+   }
 }

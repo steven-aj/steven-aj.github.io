@@ -8,11 +8,40 @@
 
    let { children, data } = $props();
 
+   function setTheme(theme: string) {
+      document.documentElement.setAttribute("data-theme", theme);
+   }
+
+   function autoTheme() {
+      const darkMode = window.matchMedia(
+         "(prefers-color-scheme: dark)",
+      ).matches;
+      setTheme(darkMode ? "dark" : "light");
+   }
+
    onMount(() => {
-      if (!localStorage.getItem('censor')) {
-         localStorage.setItem('censor', 'true');
+      if (!localStorage.getItem("censor")) {
+         localStorage.setItem("censor", "true");
       }
-   })
+
+      if (!localStorage.getItem("theme")) {
+         localStorage.setItem("censor", "auto");
+      }
+
+      // Initial load
+      if (document.documentElement.dataset.theme === "auto") {
+         autoTheme();
+      }
+
+      // React to system changes
+      window
+         .matchMedia("(prefers-color-scheme: dark)")
+         .addEventListener("change", (e) => {
+            if (document.documentElement.dataset.theme === "auto") {
+               setTheme(e.matches ? "dark" : "light");
+            }
+         });
+   });
 </script>
 
 <svelte:head>
