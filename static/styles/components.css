@@ -11,6 +11,11 @@ a.icon-btn:active a.icon-btn[toggled="true"] {
    background-color: var(--background);
 }
 
+a.icon-btn:hover .lucide,
+a.icon-btn:active .lucide {
+   stroke: var(--purple);
+}
+
 blockquote.callout {
       border-radius: 1rem;
 }
