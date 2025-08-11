@@ -33,14 +33,26 @@
          autoTheme();
       }
 
+      document.documentElement.dataset.theme =
+         localStorage.getItem("theme") || "auto";
+
       // React to system changes
       window
          .matchMedia("(prefers-color-scheme: dark)")
          .addEventListener("change", (e) => {
+            if (
+               document.documentElement.dataset.theme ===
+               localStorage.getItem("theme")
+            )
+               return;
             if (document.documentElement.dataset.theme === "auto") {
                setTheme(e.matches ? "dark" : "light");
             }
          });
+
+      requestAnimationFrame(() => {
+         document.documentElement.setAttribute('data-ready', 'true');
+      });
    });
 </script>
 
