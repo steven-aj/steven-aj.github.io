@@ -66,7 +66,8 @@
    a:hover > span.title {
       font-weight: bolder;
       color: var(--pink);
-      text-shadow: 0 0 5px var(--pink);
+      text-decoration: underline;
+      /* text-shadow: 0 0 5px var(--pink); */
    }
 
    .category {
@@ -123,8 +124,8 @@
       flex-direction: row;
       text-decoration: none;
       margin-top: 0.1rem;
-      color: var(--off-white);
-      opacity: 0.4;
+      color: var(--text-muted);
+      opacity: 0.5;
       font-size: 0.875em;
    }
 </style>
