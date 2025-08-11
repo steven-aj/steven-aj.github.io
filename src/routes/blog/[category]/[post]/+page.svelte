@@ -14,6 +14,7 @@
 			"Posted: " +
 			new Date(meta.date).toLocaleDateString("en-US", {
 				dateStyle: "full",
+				timeZone: "America/Chicago"
 			});
 
 		cleanDocument();
