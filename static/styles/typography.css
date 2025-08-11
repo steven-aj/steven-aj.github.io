@@ -9,6 +9,11 @@
 }
 
 @font-face {
+   font-family: 'FallingSky';
+   src: url('/fonts/Falling_Sky/FallingSkyLight-K2EX.otf') format('opentype');
+}
+
+@font-face {
    font-family: 'Orbitron';
    src: url('/fonts/Orbitron/Orbitron-VariableFont_wght.ttf') format('truetype');
 }
@@ -88,7 +93,6 @@ p,
 main>a {
    line-height: 2.77rem;
    font-size: x-large;
-   /* text-align: justify; */
 }
 
 p {

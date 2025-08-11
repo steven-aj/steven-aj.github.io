@@ -22,6 +22,7 @@
         text-align: center;
         border-top: thin solid var(--border);
         margin-top: 3rem;
+        font-family: Anta;
     }
 
     img#Avatar {

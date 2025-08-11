@@ -2,11 +2,9 @@
    // import PostCard from "$components/PostCard.svelte";
    import BlogPosts from "$components/posts/BlogPosts.svelte";
    import MicroJournal from "$components/activities/MicroJournal.svelte";
-    import NewsPosts from "$components/posts/NewsPosts.svelte";
 
    export let data;
-
-   let { meta, content, news, posts, daily } = data;
+   let { meta, content, posts, daily } = data;
 </script>
 
 <svelte:head>
@@ -17,16 +15,15 @@
    <meta name="description" content={meta.description} />
 </svelte:head>
 
-<article>
-   <h2>{meta.title}</h2>
-
-   <section class="glow card">
-      <svelte:component this={content} />
-   </section>
-</article>
-
-<NewsPosts title="Recent News" {news} glow={false} card={true} />
+<section>
+   <article>
+      <h2>{meta.title}</h2>
+      <div class="glow card">
+         <svelte:component this={content} />
+      </div>
+   </article>
+</section>
 
 <BlogPosts title="Recent Posts" {posts} glow={false} card={true} />
 
-<MicroJournal title="Latest Journaling" card={true} {daily} />
+<MicroJournal title="Journal Page" card={true} {daily} />

@@ -16,7 +16,11 @@
          aria-label="Site Settings"
          data-active={page.url.pathname == "/settings"}
       >
-         <Settings size="28" color={`${page.url.pathname === "/settings" ? 'var(--pink)' : 'var(--text-muted)'}`} aria-label="Settings Icon" />
+         <Settings
+            size="28"
+            color={`${page.url.pathname === "/settings" ? "var(--pink)" : "var(--text-muted)"}`}
+            aria-label="Settings Icon"
+         />
       </a>
    </div>
 
@@ -51,41 +55,46 @@
       font-family: Audiowide;
       width: fit-content;
       text-transform: uppercase;
+      padding: 0 1rem;
+   }
+
+   h1 a {
+      color: var(--text-muted);
+   }
+
+   h1 a:hover,
+   h1 a:active,
+   h1 a:focus {
       background: -webkit-linear-gradient(
          to bottom right,
          var(--pink),
          var(--purple)
       );
-      background: linear-gradient(
-         to bottom right,
-         var(--pink),
-         var(--purple)
-      );
-      padding: 0 1rem;
+      background: linear-gradient(to bottom right, var(--pink), var(--purple));
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
    }
 
-   h1 a:hover,
-   h1 a:focus {
-      text-decoration: none;
-      background: -webkit-linear-gradient(
-         to top right,
-         var(--pink),
-         var(--deep-purple),
-         var(--background)
-      );
-      background: linear-gradient(
-         to top right,
-         var(--pink),
-         var(--deep-purple),
-         var(--background)
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-   }
+   // h1 a:hover,
+   // h1 a:focus {
+   //    text-decoration: none;
+   //    background: -webkit-linear-gradient(
+   //       to top right,
+   //       var(--pink),
+   //       var(--deep-purple),
+   //       var(--background)
+   //    );
+   //    background: linear-gradient(
+   //       to top right,
+   //       var(--pink),
+   //       var(--deep-purple),
+   //       var(--background)
+   //    );
+   //    background-clip: text;
+   //    -webkit-background-clip: text;
+   //    -webkit-text-fill-color: transparent;
+   // }
 
    nav {
       justify-self: center;
