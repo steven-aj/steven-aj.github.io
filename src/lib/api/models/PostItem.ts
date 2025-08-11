@@ -21,6 +21,12 @@ export default class PostItem implements IPostItem {
       return new Date(this.meta.date);
    }
 
+   public get dateStr(): String {
+      return this.date.toLocaleDateString("en-US", {
+         dateStyle: "full",
+      });
+   }
+
    public get category() {
       return this.meta.category;
    }
@@ -32,6 +38,11 @@ export default class PostItem implements IPostItem {
    public get tags() {
       return this.meta.tags;
    }
+
+   public hasCategory(str: string) {
+      return this.meta.category.includes(str);
+   }
+
 
    public hasTag(str: string) {
       return this.meta.tags.includes(str);

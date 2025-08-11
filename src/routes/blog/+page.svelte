@@ -19,7 +19,7 @@
 
 <svelte:component this={content} />
 
-<BlogPosts title="Recent Posts" {posts} glow={true} card={true} />
+<BlogPosts title={false} {posts} glow={false} card={false} />
 
 <style>
 

@@ -13,13 +13,31 @@ export default class PostsController {
       return posts;
    }
 
-   public async filterTag(tag: string) {
+   public async filterByCategory(category: string) {
+      const byCategory = (post: PostItem) => post.hasCategory(category);
+
+      var posts = await this.getAll()
+         .then(posts => posts.filter(byCategory));
+
+      return posts;
+   }
+
+   public async filterByTag(tag: string) {
       const byTag = (post: PostItem) => post.hasTag(tag);
 
       var posts = await this.getAll()
          .then(posts => posts.filter(byTag));
 
       return posts;
+   }
+
+   public async getCategories() {
+      const toCategory = (post: PostItem) => post.category;
+
+      var categories: PostItem[] | string[] = await this.getAll()
+      categories = categories.map(toCategory);
+
+      return uniq(categories);
    }
 
    public async getTags() {

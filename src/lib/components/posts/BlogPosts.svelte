@@ -25,9 +25,7 @@
                   {@html Censor.cleanProfanity(post.title)}
                </span>
                <span class="date">
-                  {post.date.toLocaleDateString("en-US", {
-                     dateStyle: "full",
-                  })}
+                  {post.dateStr}
                </span>
             </a>
          {/each}

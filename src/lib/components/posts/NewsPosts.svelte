@@ -25,9 +25,7 @@
                   {@html Censor.cleanProfanity(article.title)}
                </span>
                <span class="date">
-                  {article.date.toLocaleDateString("en-US", {
-                     dateStyle: "full",
-                  })}
+                  {article.dateStr}
                </span>
             </a>
          {/each}
