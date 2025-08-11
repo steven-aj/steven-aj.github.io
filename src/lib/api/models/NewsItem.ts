@@ -18,7 +18,9 @@ export default class NewsItem implements IPostItem {
    }
 
    public get date(): Date {
-      return new Date(this.meta.date);
+      const date = new Date(this.meta.date);
+      date.setUTCHours(12);
+      return date;
    }
 
    public get dateStr(): String {
