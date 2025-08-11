@@ -68,11 +68,12 @@ const config = {
 			entries: [
 				"/",
 				"/about",
+				"/journal",
 				"/blog",
 				"/blog/*",
 				"/news",
 				"/news/*",
-				"/journal",
+				"/posts",
 				"/settings",
 				...postEntries,
 				...newsEntries
