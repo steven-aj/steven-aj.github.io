@@ -1,8 +1,11 @@
 <script>
-   let { news } = $props();
+   let { title, news } = $props();
 </script>
 
-<h2>Recent News</h2>
+{#if title}
+   <h2>{title}</h2>
+{/if}
+
 <div class="grid">
    {#each news.posts as article}
       <a href={article.path}>
@@ -34,8 +37,9 @@
 
    .grid a article h3 {
       text-align: center;
-      font-size: 15pt;
+      font-size: 16pt;
       color: var(--pink);
+      font-family: FallingSky;
    }
 
    .grid a:hover,

@@ -19,16 +19,25 @@
    article {
       position: relative;
       hyphens: auto;
-      text-align: justify;
       word-wrap: break-word;
       margin-top: 1rem;
       margin-bottom: 1rem;
    }
 
-   article ul {
-      font-size: x-large;
+   article ul,
+   article ol {
+      font-size: large;
       line-height: 2.5rem;
       color: var(--text-muted);
+      margin: 0;
+      padding: 1rem;
+   }
+
+   article ul li,
+   article ol li {
+      margin: 1rem 0;
+      line-height: 1.8rem;
+      text-align: left;
    }
 
    blockquote {
@@ -37,7 +46,7 @@
       color: var(--text-muted);
       border-left: thick solid var(--pink);
    }
-   
+
    blockquote p {
       font-size: medium;
       font-family: PressStart2P;
@@ -91,5 +100,13 @@
 
    pre.language-markdown::before {
       content: 'md'
+   }
+
+   .category.alert{
+      color: var(--yellow);
+   }
+
+   .category.open-source {
+      color: var(--blue);
    }
 }
