@@ -124,7 +124,7 @@
 
    nav > a:hover,
    nav > a:active {
-      color: var(--pink);
+      color: var(--purple);
       background-color: var(--background);
    }
 
