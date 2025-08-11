@@ -10,11 +10,11 @@
 	let time: string | null = null;
 
 	onMount(() => {
-		time =
-			"Posted: " +
-			new Date(meta.date).toLocaleDateString("en-US", {
-				dateStyle: "full",
-			});
+		const date = new Date(meta.date);
+		date.setUTCHours(12);
+		time = "Posted: " + date.toLocaleDateString("en-US", {
+			dateStyle: "full"
+		});
 
 		cleanDocument();
 	});
