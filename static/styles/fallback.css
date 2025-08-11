@@ -4,19 +4,17 @@
 
 body {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    position: relative;
     height: 90vh;
     margin: auto;
     color: var(--text-main);
-    /* background-color: var(--background-body); */
-}
-
-body {
     max-width: 1024px;
     background-color: var(--background-body);
     margin: auto auto;
     padding: 0 1rem;
     text-align: center;
+    overflow: hidden;
 }
 
 h1 {
@@ -31,6 +29,8 @@ h1 {
 }
 
 article {
+    display: flex;
+    flex-direction: column;
     font-family: Anta;
     margin: auto auto;
 }
@@ -44,10 +44,25 @@ a {
     color: var(--orange);
     width: fit-content;
     margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 a:hover,
 a:active {
     color: var(--pink);
     background-color: var(--background-body) !important;
+}
+
+body::before {
+    content: "Oops...";
+    display: block;
+    margin: auto auto;
+    z-index: -10;
+    position: absolute;
+    font-size: 120pt;
+    font-family: FallingSky;
+    color: var(--background);
+    text-align: right;
+    width: fit-content
 }
