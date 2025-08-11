@@ -13,21 +13,20 @@
    <meta name="description" content={data.description} />
 </svelte:head>
 
-<div>
-   <h2>This Month</h2>
+<h2>This Month</h2>
 
+<section>
    {#if entries.length}
       {#each entries as daily}
          <MicroJournal title={false} {daily} card={true} />
       {/each}
    {/if}
-</div>
+</section>
 
 <style>
-   div {
+   section {
       display: flex;
       flex-direction: column;
       gap: 3rem;
-      /* margin: 4rem 0; */
    }
 </style>
