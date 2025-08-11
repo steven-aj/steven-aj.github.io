@@ -108,6 +108,16 @@
       color: var(--light-blue);
    }
 
+   a:active .category.alert,
+   a:hover .category.alert {
+      color: var(--yellow);
+   }
+
+   a:active .category.open-source,
+   a:hover .category.open-source {
+      color: var(--blue);
+   }
+
    a > .date {
       display: flex;
       flex-direction: row;

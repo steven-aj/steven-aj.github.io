@@ -6,6 +6,7 @@ function loadSettings() {
 
 export async function load() {
    return {
+      theme: localStorage.getItem('auto') || 'auto',
       censor: localStorage.getItem('censor') === 'true'
    }
 }

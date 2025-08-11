@@ -2,15 +2,36 @@
     import Monitor from "@lucide/svelte/icons/monitor";
     import Speech from "@lucide/svelte/icons/speech";
     import { cleanDocument } from "$lib/services/Censor.js";
+    import { onMount } from "svelte";
 
     export let data;
 
-    let { censor } = data;
+    let { theme, censor } = data;
+
+    function saveTheme(target: HTMLSelectElement) {
+        localStorage.setItem("theme", target.value);
+        document.documentElement.dataset.theme =
+            localStorage.getItem("theme") || target.value;
+    }
+
+    function applyTheme(val: string) {
+        localStorage.setItem("theme", val);
+        // keep dataset equal to stored value (or map 'auto' to actual light/dark if you prefer)
+        document.documentElement.dataset.theme = val;
+    }
 
     function updateCensor(checkbox: HTMLInputElement) {
-        localStorage.setItem('censor', `${checkbox.value}`);
+        localStorage.setItem("censor", `${checkbox.value}`);
         cleanDocument();
     }
+
+    onMount(() => {
+        theme =
+            localStorage.getItem("theme") ??
+            document.documentElement.dataset.theme ??
+            "auto";
+        applyTheme(theme);
+    });
 </script>
 
 <div>
@@ -24,14 +45,25 @@
     <form>
         <h3>Global Settings</h3>
         <section aria-label="Theme Mode">
-            <Monitor size="32" color="var(--purple)" opacity="0.7" aria-label="Theme Mode Icon"/>
+            <Monitor
+                size="32"
+                color="var(--purple)"
+                opacity="0.7"
+                aria-label="Theme Mode Icon"
+            />
             <div>
                 <label for="mode">
                     <span>Theme Mode</span>
-                    <select id="mode" name="mode">
-                        <option>Automatic</option>
-                        <option>Light</option>
-                        <option>Dark</option>
+                    <select
+                        bind:value={theme}
+                        id="mode"
+                        name="mode"
+                        onchange={({ currentTarget }) =>
+                            saveTheme(currentTarget)}
+                    >
+                        <option value="auto">Automatic</option>
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
                     </select>
                 </label>
                 <span class="tooltip">
@@ -42,7 +74,12 @@
         </section>
 
         <section aria-label="SFW Mode">
-            <Speech size="32" color="var(--purple)" opacity="0.7" aria-label="SFW Mode Icon" />
+            <Speech
+                size="32"
+                color="var(--purple)"
+                opacity="0.7"
+                aria-label="SFW Mode Icon"
+            />
             <div>
                 <label for="profanity">
                     <span>SFW Mode</span>
@@ -52,7 +89,8 @@
                         type="checkbox"
                         bind:checked={censor}
                         value={censor}
-                        onchange={({currentTarget}) => updateCensor(currentTarget)}
+                        onchange={({ currentTarget }) =>
+                            updateCensor(currentTarget)}
                     />
                 </label>
                 <span class="tooltip">
@@ -65,11 +103,6 @@
 </div>
 
 <style>
-    :root {
-        --select-arrow: --select-arrow:
-            url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23efefef'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E");
-    }
-
     form {
         display: flex;
         flex-direction: column;
