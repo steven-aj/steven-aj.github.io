@@ -19,7 +19,7 @@
 <section>
    <h2>Recent News</h2>
    <svelte:component this={news.content} />
-   <NewsGrid {news} />
+   <NewsGrid title={false} {news} />
    <a class="btn card" href="/news">All News</a>
 </section>
 

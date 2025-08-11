@@ -58,6 +58,8 @@
    a > span.title {
       font-size: x-large;
       color: var(--pink);
+      font-family: FallingSky;
+      margin: 0.25rem 0;
    }
 
    a:active > span.title,
