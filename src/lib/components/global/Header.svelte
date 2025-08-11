@@ -132,7 +132,7 @@
       font-weight: bolder;
       color: var(--pink);
       background-color: var(--background);
-      box-shadow: 2px 2px 2px var(--pink);
+      box-shadow: 1px 1px 1px var(--pink);
    }
 
    a[role="button"][data-active="true"] {
