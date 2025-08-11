@@ -10,13 +10,10 @@
 	let time: string | null = null;
 
 	onMount(() => {
-		time =
-			"Posted: " +
-			new Date(meta.date).toLocaleDateString("en-US", {
-				dateStyle: "full",
-				timeZone: "America/Chicago"
-			});
-
+		const date = new Date(meta.date);
+		time = "Posted: " + date.toLocaleDateString("en-US", {
+			dateStyle: "full"
+		});
 		cleanDocument();
 	});
 </script>
@@ -29,7 +26,6 @@
 	<meta name="description" content={data.description} />
 </svelte:head>
 
-
 {#if time !== null}
 	<time hidden={!time} in:slide={{ axis: "x", duration: 100, delay: 500 }}
 		>{time}</time
@@ -38,7 +34,7 @@
 
 <article>
 	<h2>{@html Censor.cleanProfanity(meta.title)}</h2>
-	
+
 	<section>
 		<svelte:component this={content} />
 	</section>
@@ -48,7 +44,7 @@
 	h2 {
 		padding: 0;
 	}
-	
+
 	section {
 		position: relative;
 		margin-top: 2rem;
