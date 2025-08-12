@@ -46,7 +46,6 @@
 
    .grid a:hover,
    .grid a:active {
-      border-color: var(--deep-purple);
       scale: 1.02;
       border-radius: 2rem 0 2rem 0;
    }

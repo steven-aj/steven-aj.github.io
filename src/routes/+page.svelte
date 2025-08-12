@@ -24,6 +24,6 @@
    </article>
 </section>
 
-<BlogPosts title="Recent Posts" {posts} glow={false} card={true} />
+<BlogPosts title="Recent Posts" {posts} glow={false} card={false} />
 
 <MicroJournal title="Journal Page" card={true} {daily} />
