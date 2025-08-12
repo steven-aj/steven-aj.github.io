@@ -50,9 +50,8 @@ a {
    text-decoration: none;
 }
 
-a:hover {
+a:hover:not(span) {
    color: var(--links-hover);
-   text-decoration: underline;
 }
 
 article h2 {
@@ -99,6 +98,10 @@ main>a {
 
 p {
    padding: 0 0.16rem;
+}
+
+p a:hover {
+   text-decoration: underline;
 }
 
 span.profane[data-censor="true"] {

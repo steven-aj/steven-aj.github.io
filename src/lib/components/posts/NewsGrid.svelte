@@ -33,6 +33,8 @@
       align-items: center;
       background-color: var(--background);
       padding: 1rem;
+      border: medium solid;
+      border-color: transparent;
    }
 
    .grid a article h3 {
@@ -44,22 +46,24 @@
 
    .grid a:hover,
    .grid a:active {
-      box-shadow: 4px 6px 0 var(--deep-purple);
+      border-color: var(--deep-purple);
+      scale: 1.02;
+      border-radius: 2rem 0 2rem 0;
    }
 
    .grid a:hover article h3,
    .grid a:active article h3 {
       color: var(--purple);
-      text-shadow: 1px 2px 6px var(--purple);
-   }
-
-   .grid a article span {
-      opacity: 0.5;
+      text-decoration: underline;
    }
 
    .grid a:hover article .category,
    .grid a:active article .category {
       opacity: 1;
+   }
+
+   .grid a article span {
+      opacity: 0.5;
    }
 
    .grid a article .category {
