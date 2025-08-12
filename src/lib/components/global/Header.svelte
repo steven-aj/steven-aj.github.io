@@ -25,11 +25,15 @@
    </div>
 
    <nav aria-label="Main Menu">
-      {#each staticConfig.links as link}
-         <a href={link.route} data-active={page.url.pathname == link.route}
-            >{link.name}</a
-         >
-      {/each}
+      <ul>
+         {#each staticConfig.links as link}
+            <li>
+               <a href={link.route} data-active={page.url.pathname == link.route}
+                  >{link.name}</a
+               >
+            </li>
+         {/each}
+      </ul>
    </nav>
 </header>
 
@@ -76,41 +80,28 @@
       -webkit-text-fill-color: transparent;
    }
 
-   // h1 a:hover,
-   // h1 a:focus {
-   //    text-decoration: none;
-   //    background: -webkit-linear-gradient(
-   //       to top right,
-   //       var(--pink),
-   //       var(--deep-purple),
-   //       var(--background)
-   //    );
-   //    background: linear-gradient(
-   //       to top right,
-   //       var(--pink),
-   //       var(--deep-purple),
-   //       var(--background)
-   //    );
-   //    background-clip: text;
-   //    -webkit-background-clip: text;
-   //    -webkit-text-fill-color: transparent;
-   // }
-
    nav {
       justify-self: center;
-      align-self: center;
       grid-row: 2;
+      border-radius: 1rem;
+      // padding: 1rem 0;
+   }
+   
+   nav ul {
       display: flex;
       flex-wrap: wrap;
-      word-break: none;
+      // word-break: none;
       gap: 1rem;
       height: 100%;
-      width: 93%;
-      border-radius: 1rem;
-      padding: 1rem 0;
+      // width: 93%;
+      list-style: none;
    }
 
-   nav > a {
+   nav ul li {
+      margin: 1rem 0;
+   }
+
+   nav ul li a {
       font-family: Anta;
       text-transform: uppercase;
       align-self: center;
@@ -122,13 +113,13 @@
       flex: auto auto fit-content;
    }
 
-   nav > a:hover,
-   nav > a:active {
+   nav ul li a:hover,
+   nav ul li a:active {
       color: var(--purple);
       background-color: var(--background);
    }
 
-   nav > a[data-active="true"] {
+   nav ul li a[data-active="true"] {
       font-weight: bolder;
       color: var(--pink);
       background-color: var(--background);
