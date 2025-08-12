@@ -1,8 +1,6 @@
 ---
-title: Welcome, from The Void
-cover: 
+title: 👋 Hi, I'm Steven
 author: Steven A.J.
-email: johnsonstheory@duck.com
 description: A personal mind-dump, blog and gateway to the indieweb.
 keywords:
   - indieweb
@@ -11,13 +9,10 @@ keywords:
   - personal
   - blog
 ---
-
 ### Open Code. Neon Dreams.
 
-You've found my digital garden - a place rooted in authenticity and nurtured by a love for software. This is my place to think, reflect, connect, and contribute. Consume what you need & leave the rest.
+This is my digital garden of sorts; raw thoughts, lazy writing, and occasional open-source news. Have a look at [what I'm all about](/about) if you're interested.
 
-There's no tracking here and no spin. It's not a portfolio & it's not for profit - just raw thoughts, deep dives and occasional open-source news. 
+Things are still experimental here, but you're welcomed to browse around while I get stuff in order.
 
-**Welcome, Void Walker**. 
-
-*May peace find you in the most chaotic of places.*
+Welcome to the void.

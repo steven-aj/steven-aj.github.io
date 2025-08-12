@@ -44,6 +44,7 @@
    src: url('/fonts/Libre_Barcode_39_Extended/LibreBarcode39Extended-Regular.ttf') format('truetype');
 }
 
+
 a {
    color: var(--links);
    text-decoration: none;
@@ -51,6 +52,7 @@ a {
 
 a:hover {
    color: var(--links-hover);
+   text-decoration: underline;
 }
 
 article h2 {
@@ -104,4 +106,8 @@ span.profane[data-censor="true"] {
    font-size: x-large;
    letter-spacing: 0.5rem;
    margin-right: -3px;
+}
+
+a .category {
+   font-family: Anta;
 }

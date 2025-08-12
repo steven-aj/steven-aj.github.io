@@ -34,9 +34,6 @@
 {/if}
 
 <style>
-   section {
-      border-bottom: thin dotted var(--border);
-   }
    a {
       display: flex;
       flex-direction: column;
