@@ -17,7 +17,7 @@ a.icon-btn:active .lucide {
 }
 
 blockquote.callout {
-      border-radius: 1rem;
+   border-radius: 1rem;
 }
 
 blockquote div.callout-content p {
@@ -46,6 +46,7 @@ blockquote[data-callout="tip"] {
 blockquote[data-callout="important"] {
    border-color: var(--light-purple);
    box-shadow: 0rem 0rem 1rem var(--light-purple);
+
    summary {
       color: var(--light-purple);
    }
@@ -54,6 +55,7 @@ blockquote[data-callout="important"] {
 blockquote[data-callout="caution"] {
    border-color: var(--caution);
    box-shadow: 0rem 0rem 1rem var(--caution);
+
    summary {
       color: var(--caution);
    }
@@ -83,17 +85,27 @@ blockquote[data-callout="warning"] {
 }
 
 .journal {
-   padding: 0 3rem;
+   padding: 0 1rem;
 }
 
 .journal.card {
-   padding: 3rem;
+   padding: 2rem;
    color: var(--text-muted);
 }
 
+@media screen and (max-width: 600px) {
+   .journal {
+      padding: 0.5rem !important;
+   }
+
+   .journal.card {
+      padding: 0.5rem 1rem !important;
+   }
+}
+
 .journal p {
-   font-size: small;
-   font-family: PressStart2P;
+   font-size: large;
+   font-family: TypeLightSans;
 }
 
 .journal hr {
