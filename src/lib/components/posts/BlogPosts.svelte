@@ -11,12 +11,12 @@
 </script>
 
 {#if posts.length}
-   <article id="RecentPosts">
-      {#if title}
-         <h2>{title}</h2>
-      {/if}
-      <section class={`${card} ${glow}`}>
-         {#each posts as post}
+   {#if title}
+      <h2>{title}</h2>
+   {/if}
+   <section class={`${card} ${glow}`}>
+      {#each posts as post}
+         <article id="RecentPosts">
             <a href={post.path} aria-label="Blog Post Link">
                <span class={`category ${post.category.toLowerCase()}`}>
                   {post.category}
@@ -28,24 +28,32 @@
                   {post.dateStr}
                </span>
             </a>
-         {/each}
-      </section>
-   </article>
+         </article>
+      {/each}
+   </section>
 {/if}
 
 <style>
-   section {
-      border-bottom: thin dotted var(--border);
+   article {
    }
+   
    a {
       display: flex;
       flex-direction: column;
       padding: 1rem;
-      border-radius: 1rem 0 1rem 0;
+      background-color: var(--background);
    }
-
+   
    a:active,
    a:hover {
+      border-radius: 1rem 0 1rem 0;
+      text-decoration: none;
+      scale: 1.02;
+   }
+
+   article a:active,
+   article a:hover {
+      border-radius: 1rem 0 1rem 0;
       text-decoration: none;
    }
 

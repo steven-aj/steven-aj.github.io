@@ -5,11 +5,15 @@
 @import "/styles/katex/katex.min.css";
 
 :global {
-   html[data-ready="true"] *:not(nav *, .category) {
+   html[data-ready="true"] *:not(nav *, .category, a.icon-btn, a.icon-btn *, p *) {
       transition:
          background-color 6s ease,
          color 6s ease,
          stroke 6s ease;
+   }
+   
+   main {
+      font-family: Anta;
    }
 
    body {
@@ -17,10 +21,6 @@
       background-color: var(--background-body);
       margin: auto auto;
       padding: 0 1rem;
-   }
-
-   main {
-      font-family: Anta;
    }
 
    article {
@@ -55,8 +55,8 @@
    }
 
    blockquote p {
-      font-size: medium;
-      font-family: PressStart2P;
+      font-size: large;
+      font-family: FallingSky;
    }
 
    blockquote summary {

@@ -44,12 +44,13 @@
    src: url('/fonts/Libre_Barcode_39_Extended/LibreBarcode39Extended-Regular.ttf') format('truetype');
 }
 
+
 a {
    color: var(--links);
    text-decoration: none;
 }
 
-a:hover {
+a:hover:not(span) {
    color: var(--links-hover);
 }
 
@@ -99,9 +100,17 @@ p {
    padding: 0 0.16rem;
 }
 
+p a:hover {
+   text-decoration: underline;
+}
+
 span.profane[data-censor="true"] {
    font-family: Wavefont;
    font-size: x-large;
    letter-spacing: 0.5rem;
    margin-right: -3px;
+}
+
+a .category {
+   font-family: Anta;
 }
