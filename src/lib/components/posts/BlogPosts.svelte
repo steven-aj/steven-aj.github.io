@@ -34,9 +34,6 @@
 {/if}
 
 <style>
-   article {
-   }
-   
    a {
       display: flex;
       flex-direction: column;
@@ -49,6 +46,7 @@
       border-radius: 1rem 0 1rem 0;
       text-decoration: none;
       scale: 1.02;
+      background-color: var(--background-alt);
    }
 
    article a:active,

@@ -51,6 +51,7 @@
 
    section .btn:hover,
    section .btn:active {
+      background-color: var(--background-alt);
       box-shadow: 4px 6px 0 var(--deep-purple);
       scale: 1.03;
    }

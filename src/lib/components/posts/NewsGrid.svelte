@@ -48,6 +48,7 @@
    .grid a:active {
       scale: 1.02;
       border-radius: 2rem 0 2rem 0;
+      background-color: var(--background-alt);
    }
 
    .grid a:hover article h3,
