@@ -19,7 +19,7 @@
          {#each news as article}
             <a href={article.path} aria-label="News Article Link">
                <span class={`category ${article.category.toLowerCase()}`}>
-                  {article.category}
+                  {article.type}/{article.category}
                </span>
                <span class="title">
                   {@html Censor.cleanProfanity(article.title)}

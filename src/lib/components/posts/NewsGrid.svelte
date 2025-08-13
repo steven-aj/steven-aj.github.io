@@ -11,7 +11,7 @@
       <a href={article.path}>
          <article>
             <span class={`category ${article.category}`}
-               >{article.category}</span
+               >{article.type}/{article.category}</span
             >
             <h3>{article.title}</h3>
             <span class="date">{article.dateStr}</span>
@@ -48,11 +48,12 @@
    .grid a:active {
       scale: 1.02;
       border-radius: 2rem 0 2rem 0;
+      background-color: var(--background-alt);
    }
 
    .grid a:hover article h3,
    .grid a:active article h3 {
-      color: var(--purple);
+      color: var(--orange);
       text-decoration: underline;
    }
 

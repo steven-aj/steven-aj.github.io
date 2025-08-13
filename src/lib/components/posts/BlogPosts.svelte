@@ -19,7 +19,7 @@
          <article id="RecentPosts">
             <a href={post.path} aria-label="Blog Post Link">
                <span class={`category ${post.category.toLowerCase()}`}>
-                  {post.category}
+                  {post.type}/{post.category}
                </span>
                <span class="title">
                   {@html Censor.cleanProfanity(post.title)}
@@ -34,9 +34,6 @@
 {/if}
 
 <style>
-   article {
-   }
-   
    a {
       display: flex;
       flex-direction: column;
@@ -49,6 +46,7 @@
       border-radius: 1rem 0 1rem 0;
       text-decoration: none;
       scale: 1.02;
+      background-color: var(--background-alt);
    }
 
    article a:active,
@@ -73,7 +71,7 @@
    a:active > span.title,
    a:hover > span.title {
       font-weight: bolder;
-      color: var(--pink);
+      color: var(--orange);
       text-decoration: underline;
       /* text-shadow: 0 0 5px var(--pink); */
    }

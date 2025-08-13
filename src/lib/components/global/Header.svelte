@@ -90,10 +90,8 @@
    nav ul {
       display: flex;
       flex-wrap: wrap;
-      // word-break: none;
       gap: 1rem;
       height: 100%;
-      // width: 93%;
       list-style: none;
    }
 
