@@ -28,6 +28,10 @@
          localStorage.setItem("censor", "auto");
       }
 
+      if (!localStorage.getItem("redactionStyle")) {
+         localStorage.setItem("redactionStyle", "synthwave");
+      }
+
       // Initial load
       if (document.documentElement.dataset.theme === "auto") {
          autoTheme();

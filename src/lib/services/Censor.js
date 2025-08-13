@@ -12,15 +12,19 @@ Censor.addWord("motherfucker.");
 
 
 Censor.setCleanFunction((str) => {
-   return `<span class="profane" data-censor="true">${str}</span>`;
+   return `<span class="profane" data-censor="true" data-redaction="synthwave">${str}</span>`;
 });
 
 //@ts-ignore
 function redactProfanity(htmlElement) {
    let censorPrefs = localStorage.getItem("censor");
-   if (!censorPrefs) return;
+   let redactionStylePrefs = localStorage.getItem("redactionStyle");
+
+   if (!censorPrefs || !redactionStylePrefs) return;
 
    let elCensorState = htmlElement.getAttribute("data-censor");
+   htmlElement.setAttribute("data-redaction", redactionStylePrefs);
+   
    if (elCensorState === censorPrefs) return;
 
    htmlElement.setAttribute("data-censor", censorPrefs);
