@@ -3,15 +3,22 @@
     import Speech from "@lucide/svelte/icons/speech";
     import { cleanDocument } from "$lib/services/Censor.js";
     import { onMount } from "svelte";
+    import { slide } from "svelte/transition";
+    import { Strikethrough } from "@lucide/svelte";
 
     export let data;
 
-    let { theme, censor } = data;
+    let { theme, censor, redactionSyle } = data;
 
     function saveTheme(target: HTMLSelectElement) {
         localStorage.setItem("theme", target.value);
         document.documentElement.dataset.theme =
             localStorage.getItem("theme") || target.value;
+    }
+
+    function saveRedactionStyle(target: HTMLSelectElement) {
+        localStorage.setItem("redactionStyle", target.value);
+        cleanDocument();
     }
 
     function applyTheme(val: string) {
@@ -99,6 +106,37 @@
                 </span>
             </div>
         </section>
+
+        {#if censor}
+        <section transition:slide={{axis: 'y'}} aria-label="Redaction Font">
+            <Strikethrough
+                size="32"
+                color="var(--purple)"
+                opacity="0.7"
+                aria-label="Redaction Style Icon"
+            />
+            <div>
+                <label for="redactionStyle">
+                    <span>Redaction Style</span>
+                    <select
+                        bind:value={redactionSyle}
+                        id="redactionStyle"
+                        name="redactionStyle"
+                        onchange={({ currentTarget }) =>
+                            saveRedactionStyle(currentTarget)}
+                    >
+                        <option value="synthwave">Synthwave</option>
+                        <option value="block">Block</option>
+                        <option value="circular">Circular</option>
+                        <option value="barcode">Barcode</option>
+                    </select>
+                </label>
+                <span class="tooltip">
+                    If SFW Mode is making it difficult to read.
+                </span>
+            </div>
+        </section>
+        {/if}
     </form>
 </div>
 

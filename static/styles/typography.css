@@ -109,11 +109,23 @@ p a:hover {
    text-decoration: underline;
 }
 
-span.profane[data-censor="true"] {
-   font-family: Wavefont;
-   font-size: x-large;
+span.profane[data-censor="true"][data-redaction="synthwave"] {
    letter-spacing: 0.5rem;
-   margin-right: -3px;
+   /* margin-right: -3px; */
+   /* font-size: x-large;    */
+   font-family: Wavefont;
+}
+
+span.profane[data-censor="true"][data-redaction="block"] {
+   font-family: Redacted;
+}
+
+span.profane[data-censor="true"][data-redaction="circular"] {
+   font-family: FlowCircular;
+}
+
+span.profane[data-censor="true"][data-redaction="barcode"] {
+   font-family: Barcode;
 }
 
 a .category {
