@@ -5,7 +5,7 @@
 @import "/styles/katex/katex.min.css";
 
 :global {
-   html[data-ready="true"] *:not(nav *, .category, a, a.icon-btn, a.icon-btn *, p *) {
+   html[data-ready="true"] *:not(nav *, .category, a, article a *, a article *, a.icon-btn, a.icon-btn *, p *) {
       transition:
          background-color 6s ease,
          color 6s ease,

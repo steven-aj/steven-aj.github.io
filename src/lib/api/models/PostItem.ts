@@ -1,10 +1,13 @@
 import type { IPostItem, IPostMeta } from "../shared/interfaces";
 
 export default class PostItem implements IPostItem {
+
+   type: string;
    path: string;
    meta: IPostMeta;
 
    constructor(post: IPostItem) {
+      this.type = post.type;
       this.path = post.path;
       this.meta = post.meta;
    }
@@ -53,6 +56,7 @@ export default class PostItem implements IPostItem {
       const slug = path.split('markdown')[1].slice(0, -3);
 
       return new PostItem({
+         type: 'blog',
          path: slug,
          meta: metadata
       });

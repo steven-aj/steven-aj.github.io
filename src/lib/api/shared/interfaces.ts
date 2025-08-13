@@ -22,6 +22,7 @@ export interface INewsMeta {
 }
 
 export interface INewsItem {
+   type: string;
    path: string;
    meta: IDailyMeta;
 }
@@ -41,6 +42,7 @@ export interface IPostMeta {
 }
 
 export interface IPostItem {
+   type: string;
    path: string;
    meta: IPostMeta;
 }
